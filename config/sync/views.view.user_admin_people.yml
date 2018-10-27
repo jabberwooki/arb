@@ -38,7 +38,7 @@ display:
       exposed_form:
         type: basic
         options:
-          submit_button: Filtrer
+          submit_button: Filter
           reset_button: true
           reset_button_label: Reset
           exposed_sorts_label: 'Sort by'
@@ -53,8 +53,8 @@ display:
           id: 0
           total_pages: 0
           tags:
-            previous: '‹ Précédent'
-            next: 'Suivant ›'
+            previous: '‹ Previous'
+            next: 'Next ›'
             first: '« First'
             last: 'Last »'
           expose:
@@ -251,7 +251,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: Etat
+          label: Status
           exclude: false
           alter:
             alter_text: false
@@ -647,7 +647,7 @@ display:
               administrator: '0'
           is_grouped: true
           group_info:
-            label: Etat
+            label: Status
             description: ''
             identifier: status
             optional: true

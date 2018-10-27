@@ -1,0 +1,69 @@
+uuid: a42726db-4b74-4b34-847e-7f4e1f1dc827
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.group.regional_group.field_code
+    - field.field.group.regional_group.field_internet_site
+    - field.field.group.regional_group.field_presentation
+    - field.field.group.regional_group.field_process_progress
+    - field.field.group.regional_group.field_region_image
+    - group.type.regional_group
+  module:
+    - link
+    - text
+id: group.regional_group.default
+targetEntityType: group
+bundle: regional_group
+mode: default
+content:
+  field_internet_site:
+    weight: 3
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_presentation:
+    weight: 4
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_process_progress:
+    weight: 2
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_region_image:
+    type: entity_reference_entity_view
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+  label:
+    label: hidden
+    type: string
+    weight: 1
+    region: content
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden:
+  changed: true
+  created: true
+  field_code: true
+  langcode: true
+  uid: true

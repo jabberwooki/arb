@@ -1,0 +1,11 @@
+uuid: 362dfa8d-9dfd-4e78-939c-fb596db78cb9
+langcode: fr
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.process_progress
+id: taxonomy_term.process_progress
+target_entity_type_id: taxonomy_term
+target_bundle: process_progress
+default_langcode: site_default
+language_alterable: false

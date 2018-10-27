@@ -1,0 +1,14 @@
+uuid: 4291d05c-ec3a-4209-8cef-5ca920ad1181
+langcode: fr
+status: true
+dependencies:
+  config:
+    - group.type.regional_group
+id: regional_group-anonymous
+label: Anonyme
+weight: -102
+internal: true
+audience: anonymous
+group_type: regional_group
+permissions_ui: true
+permissions: {  }

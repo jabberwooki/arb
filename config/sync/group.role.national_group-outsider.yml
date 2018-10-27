@@ -1,0 +1,14 @@
+uuid: 12f25721-68ee-4d05-8080-41ba56f65b1c
+langcode: fr
+status: true
+dependencies:
+  config:
+    - group.type.national_group
+id: national_group-outsider
+label: Outsider
+weight: -101
+internal: true
+audience: outsider
+group_type: national_group
+permissions_ui: true
+permissions: {  }

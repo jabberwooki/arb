@@ -1,0 +1,88 @@
+uuid: 2851774b-9933-4824-92bb-642f8d731a44
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.group.regional_group.field_code
+    - field.field.group.regional_group.field_internet_site
+    - field.field.group.regional_group.field_presentation
+    - field.field.group.regional_group.field_process_progress
+    - field.field.group.regional_group.field_region_image
+    - group.type.regional_group
+  module:
+    - link
+    - path
+    - text
+id: group.regional_group.default
+targetEntityType: group
+bundle: regional_group
+mode: default
+content:
+  field_code:
+    weight: 4
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_internet_site:
+    weight: 3
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_presentation:
+    weight: 1
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea_with_summary
+    region: content
+  field_process_progress:
+    weight: 2
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_region_image:
+    weight: 7
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  label:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 6
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 8
+    region: content
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  langcode: true

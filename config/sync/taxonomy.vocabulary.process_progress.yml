@@ -1,0 +1,9 @@
+uuid: 6fb9c934-35ce-4f7d-a568-e4bfe6c49639
+langcode: fr
+status: true
+dependencies: {  }
+name: 'Avancement processus ARB'
+vid: process_progress
+description: ''
+hierarchy: 0
+weight: 0

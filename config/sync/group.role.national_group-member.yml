@@ -1,0 +1,14 @@
+uuid: 4304ab1a-4547-472d-b7b4-731e0593579c
+langcode: fr
+status: true
+dependencies:
+  config:
+    - group.type.national_group
+id: national_group-member
+label: Membre
+weight: -100
+internal: true
+audience: member
+group_type: national_group
+permissions_ui: true
+permissions: {  }

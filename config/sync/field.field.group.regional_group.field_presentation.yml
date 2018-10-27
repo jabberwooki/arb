@@ -1,0 +1,22 @@
+uuid: f2fd36db-5d73-4e8b-ad81-4466c5c4e828
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.group.field_presentation
+    - group.type.regional_group
+  module:
+    - text
+id: group.regional_group.field_presentation
+field_name: field_presentation
+entity_type: group
+bundle: regional_group
+label: Présentation
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+field_type: text_with_summary

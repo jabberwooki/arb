@@ -1,0 +1,10 @@
+uuid: b8ec09e6-f102-44e5-8550-41f3c4cc9152
+langcode: fr
+status: true
+dependencies: {  }
+id: national_group
+label: 'Groupe national'
+description: 'Permet de créer un groupe spécifique destiné à la structure nationale AFB.'
+creator_membership: true
+creator_wizard: true
+creator_roles: {  }

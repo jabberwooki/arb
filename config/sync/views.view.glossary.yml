@@ -77,7 +77,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: Titre
+          label: Title
           exclude: false
           alter:
             alter_text: false
@@ -124,7 +124,7 @@ display:
           id: name
           table: users_field_data
           field: name
-          label: Auteur
+          label: Author
           relationship: uid
           plugin_id: field
           type: user_name

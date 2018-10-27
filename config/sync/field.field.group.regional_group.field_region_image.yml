@@ -1,0 +1,28 @@
+uuid: c35a6fd6-613d-4fff-88e0-5972a9efdfa1
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.group.field_region_image
+    - group.type.regional_group
+    - media.type.image
+id: group.regional_group.field_region_image
+field_name: field_region_image
+entity_type: group
+bundle: regional_group
+label: Image
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference
