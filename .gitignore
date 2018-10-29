@@ -22,3 +22,6 @@
 
 # Ignore .env files as they are personal
 /.env
+
+# Ignore prepros files
+web/themes/custom/arb/prepros-6.config
