@@ -1,4 +1,4 @@
-uuid: c0050036-bc65-4b73-85aa-869c95e28b5e
+uuid: 66c863b8-5f74-4929-bf25-0d406e23f6da
 langcode: fr
 status: true
 dependencies:
@@ -7,11 +7,11 @@ dependencies:
   module:
     - system
   theme:
-    - bartik
+    - arb_barrio
 _core:
   default_config_hash: DweBpscQZdG0-fHkSpUzdYucrNH45G_KF7Z82V-oyQM
-id: bartik_account_menu
-theme: bartik
+id: arb_barrio_account_menu
+theme: arb_barrio
 region: secondary_menu
 weight: 0
 provider: null

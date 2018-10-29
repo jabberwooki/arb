@@ -1,0 +1,22 @@
+uuid: 26c0ae4f-1f30-4319-9e1a-f84bba6764ae
+langcode: fr
+status: true
+dependencies:
+  theme:
+    - arb_barrio
+_core:
+  default_config_hash: X9I1OB0W3WlWtrK-CNcg6hNWwa8wficanpH8pYnDZDE
+id: arb_barrio_local_tasks
+theme: arb_barrio
+region: content
+weight: -40
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Onglets
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

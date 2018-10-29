@@ -1,15 +1,15 @@
-uuid: a5ec81ad-bc1f-410e-8205-ad547fab1fe0
+uuid: 388ffbf8-5085-404c-8c66-e9a0156084c3
 langcode: fr
 status: true
 dependencies:
   module:
     - system
   theme:
-    - bartik
+    - arb_barrio
 _core:
   default_config_hash: oXUb3JZR2WW5VOdw4HrhRicCsq51mCgLfRyvheG68ck
-id: bartik_breadcrumbs
-theme: bartik
+id: arb_barrio_breadcrumbs
+theme: arb_barrio
 region: breadcrumb
 weight: 0
 provider: null

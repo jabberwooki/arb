@@ -1,13 +1,13 @@
-uuid: eccde979-f503-4a4d-a1f9-1921734e67e0
+uuid: 67220cd1-48e6-4c29-a8f6-72db3d1654a7
 langcode: fr
 status: true
 dependencies:
   theme:
-    - bartik
+    - arb_barrio
 _core:
   default_config_hash: 13GQpeITIJsp1kyPniXtWZfyFH87vb1xxJCHifL4UeE
-id: bartik_local_actions
-theme: bartik
+id: arb_barrio_local_actions
+theme: arb_barrio
 region: content
 weight: -20
 provider: null

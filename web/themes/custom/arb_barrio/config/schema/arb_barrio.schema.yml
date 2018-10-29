@@ -1,0 +1,5 @@
+# Schema for the configuration files of the Bootstrap Barrio Subtheme.
+
+arb_barrio.settings:
+  type: theme_settings
+  label: 'ARB Bootstrap Barrio Subtheme settings'

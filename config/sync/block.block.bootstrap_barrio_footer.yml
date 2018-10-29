@@ -1,4 +1,4 @@
-uuid: ec72ff16-daab-46cf-bde1-7e1f2579a0d9
+uuid: d431b6a2-5210-4e62-b273-8e0d7ee36fd9
 langcode: fr
 status: true
 dependencies:
@@ -7,11 +7,11 @@ dependencies:
   module:
     - system
   theme:
-    - bartik
+    - bootstrap_barrio
 _core:
   default_config_hash: kkISXE1LT2FJEoYnqCrCpeFB-2pmGmMxMklVk7rQcfg
-id: bartik_footer
-theme: bartik
+id: bootstrap_barrio_footer
+theme: bootstrap_barrio
 region: footer_fifth
 weight: 0
 provider: null

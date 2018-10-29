@@ -35,6 +35,7 @@
         "cweagans/composer-patches": "^1.6.5",
         "drupal-composer/drupal-scaffold": "^2.5",
         "drupal/admin_toolbar": "^1.24",
+        "drupal/bootstrap_barrio": "^4.17",
         "drupal/chosen": "^2.6",
         "drupal/config_installer": "^1.8",
         "drupal/config_split": "^1.4",
