@@ -28,9 +28,10 @@ content:
       crop_preview_image_style: crop_thumbnail
       crop_list:
         - frontpage_slide
-      crop_types_required:
-        - frontpage_slide
+        - headline
+        - news_block
       progress_indicator: throbber
+      crop_types_required: {  }
     third_party_settings: {  }
   langcode:
     type: language_select
