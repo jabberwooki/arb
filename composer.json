@@ -47,6 +47,7 @@
         "drupal/field_group": "^1.0",
         "drupal/group": "^1.0@RC",
         "drupal/image_widget_crop": "^2.2",
+        "drupal/sitemap": "^1.4",
         "drush/drush": "^9.0.0",
         "harvesthq/chosen": "^1.8",
         "vlucas/phpdotenv": "^2.4",
