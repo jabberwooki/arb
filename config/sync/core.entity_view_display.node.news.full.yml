@@ -1,0 +1,67 @@
+uuid: fb9479bb-ba3a-4b37-9381-c3bd01a68638
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.full
+    - field.field.node.news.body
+    - field.field.node.news.field_news_image
+    - field.field.node.news.field_news_type
+    - node.type.news
+  module:
+    - ds
+    - taxonomy
+    - text
+    - user
+third_party_settings:
+  ds:
+    layout:
+      id: ds_1col
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        wrappers:
+          ds_content: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        classes:
+          layout_class: {  }
+    regions:
+      ds_content:
+        - field_news_image
+        - field_news_type
+        - body
+id: node.news.full
+targetEntityType: node
+bundle: news
+mode: full
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    region: ds_content
+  field_news_image:
+    type: entity_reference_entity_view
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: ds_content
+  field_news_type:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: entity_reference_rss_category
+    region: ds_content
+hidden:
+  langcode: true
+  links: true

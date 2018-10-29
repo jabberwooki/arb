@@ -1,0 +1,10 @@
+uuid: dff629ca-93d3-4199-905f-45f6e92906dd
+langcode: fr
+status: true
+dependencies:
+  module:
+    - node
+id: node.headline
+label: 'A la une'
+targetEntityType: node
+cache: true

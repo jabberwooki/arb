@@ -1,0 +1,64 @@
+uuid: fd17688d-6d7d-4dad-9c2b-dccb8737a457
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.news_block
+    - field.field.node.news.body
+    - field.field.node.news.field_news_image
+    - field.field.node.news.field_news_type
+    - node.type.news
+  module:
+    - ds
+    - user
+third_party_settings:
+  ds:
+    layout:
+      id: ds_1col
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        wrappers:
+          ds_content: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        classes:
+          layout_class: {  }
+    regions:
+      ds_content:
+        - field_news_image
+        - node_post_date
+        - node_title
+    fields:
+      node_title:
+        plugin_id: node_title
+        weight: 2
+        label: hidden
+        formatter: default
+      node_post_date:
+        plugin_id: node_post_date
+        weight: 1
+        label: hidden
+        formatter: ds_post_date_long
+id: node.news.news_block
+targetEntityType: node
+bundle: news
+mode: news_block
+content:
+  field_news_image:
+    type: entity_reference_entity_view
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: news_block
+      link: false
+    third_party_settings: {  }
+    region: ds_content
+hidden:
+  body: true
+  field_news_type: true
+  langcode: true
+  links: true

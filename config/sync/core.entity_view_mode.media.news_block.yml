@@ -1,0 +1,10 @@
+uuid: 81e33b03-5009-4136-b4d9-08083b1a8c67
+langcode: fr
+status: true
+dependencies:
+  module:
+    - media
+id: media.news_block
+label: 'Bloc actus'
+targetEntityType: media
+cache: true

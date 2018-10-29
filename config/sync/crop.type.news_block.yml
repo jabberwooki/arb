@@ -1,0 +1,12 @@
+uuid: 96773ff5-617d-4c75-92bf-af91a5866238
+langcode: fr
+status: true
+dependencies: {  }
+label: 'Bloc actus'
+id: news_block
+description: ''
+aspect_ratio: '255:170'
+soft_limit_width: 260
+soft_limit_height: 180
+hard_limit_width: 260
+hard_limit_height: 180
