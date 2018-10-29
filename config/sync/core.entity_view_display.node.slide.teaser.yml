@@ -79,11 +79,13 @@ content:
       url_plain: false
     third_party_settings: {  }
   field_slide_image:
-    type: entity_reference_entity_id
+    type: entity_reference_entity_view
     weight: 0
     region: ds_content
     label: hidden
-    settings: {  }
+    settings:
+      view_mode: frontpage_slideshow
+      link: false
     third_party_settings: {  }
   field_text:
     type: basic_string
