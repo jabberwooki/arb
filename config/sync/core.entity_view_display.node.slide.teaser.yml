@@ -1,0 +1,97 @@
+uuid: d27e7cbf-4b69-4371-b0d0-1f3bd9121a14
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.slide.field_link
+    - field.field.node.slide.field_slide_image
+    - field.field.node.slide.field_text
+    - node.type.slide
+  module:
+    - ds
+    - field_group
+    - link
+    - user
+third_party_settings:
+  ds:
+    layout:
+      id: ds_1col
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        wrappers:
+          ds_content: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        classes:
+          layout_class: {  }
+    regions:
+      ds_content:
+        - field_slide_image
+        - group_slide_infos
+        - node_title
+        - field_text
+        - field_link
+    fields:
+      node_title:
+        plugin_id: node_title
+        weight: 2
+        label: hidden
+        formatter: default
+  field_group:
+    group_slide_infos:
+      children:
+        - node_title
+        - field_text
+        - field_link
+      parent_name: ''
+      weight: 1
+      format_type: html_element
+      format_settings:
+        id: ''
+        classes: slide-infos
+        element: div
+        show_label: false
+        label_element: h3
+        attributes: ''
+        effect: none
+        speed: fast
+      label: 'Infos diapo'
+id: node.slide.teaser
+targetEntityType: node
+bundle: slide
+mode: teaser
+content:
+  field_link:
+    type: link_separate
+    weight: 4
+    region: ds_content
+    label: hidden
+    settings:
+      trim_length: 80
+      rel: ''
+      target: ''
+      url_only: false
+      url_plain: false
+    third_party_settings: {  }
+  field_slide_image:
+    type: entity_reference_entity_id
+    weight: 0
+    region: ds_content
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+  field_text:
+    type: basic_string
+    weight: 3
+    region: ds_content
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true
+  links: true

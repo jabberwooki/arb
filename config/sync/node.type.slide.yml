@@ -1,0 +1,17 @@
+uuid: 1ae98488-ed78-4745-8b1c-69ca18c0a1b0
+langcode: fr
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Diapositive
+type: slide
+description: 'Image visible dans le diaporama de la page d''accueil de la plate-forme et/ou le diaporama de la page d''accueil d''une région.'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false
