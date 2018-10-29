@@ -1,4 +1,4 @@
-uuid: 66c863b8-5f74-4929-bf25-0d406e23f6da
+uuid: 25c3e59e-18dc-446c-a7e2-600ad011ea50
 langcode: fr
 status: true
 dependencies:
@@ -7,12 +7,12 @@ dependencies:
   module:
     - system
   theme:
-    - arb_barrio
+    - arb
 _core:
   default_config_hash: DweBpscQZdG0-fHkSpUzdYucrNH45G_KF7Z82V-oyQM
-id: arb_barrio_account_menu
-theme: arb_barrio
-region: secondary_menu
+id: arb_account_menu
+theme: arb
+region: navigation
 weight: 0
 provider: null
 plugin: 'system_menu_block:account'

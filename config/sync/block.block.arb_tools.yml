@@ -1,4 +1,4 @@
-uuid: 02438058-d0ec-4aa1-aaad-3e75e93a21f7
+uuid: 4da0f8cb-d073-45a0-9a1d-17ed6f124278
 langcode: fr
 status: true
 dependencies:
@@ -7,11 +7,11 @@ dependencies:
   module:
     - system
   theme:
-    - bootstrap_barrio
+    - arb
 _core:
   default_config_hash: NeHSoqm4XFqA7_0bDmR429ZZQt3LRbZMNRJTMsFyOfI
-id: bootstrap_barrio_tools
-theme: bootstrap_barrio
+id: arb_tools
+theme: arb
 region: sidebar_first
 weight: 0
 provider: null

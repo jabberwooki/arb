@@ -1,22 +1,22 @@
-uuid: 6f5654d1-9103-436b-b1e2-9b6e19e634f9
+uuid: 2520836f-d09d-4b90-8a62-d96baaa40771
 langcode: fr
 status: true
 dependencies:
   module:
     - search
   theme:
-    - arb_barrio
+    - bootstrap
 _core:
-  default_config_hash: za-39d5WDUg6XvbyqSnuVYEeq6QM4qKJxW8MnoAha5A
-id: arb_barrio_search
-theme: arb_barrio
-region: sidebar_first
+  default_config_hash: F3d5hyAFunLh4PhGviJF019fHn1Z3_zy5gzsQ0tX1K0
+id: bootstrap_search
+theme: bootstrap
+region: sidebar_second
 weight: -1
 provider: null
 plugin: search_form_block
 settings:
   id: search_form_block
-  label: Rechercher
+  label: Search
   provider: search
   label_display: visible
 visibility: {  }

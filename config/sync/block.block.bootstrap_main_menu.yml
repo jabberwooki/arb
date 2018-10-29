@@ -1,4 +1,4 @@
-uuid: 2d303ab7-81d6-454f-8b0f-c6d23104a9ce
+uuid: b12250fb-c2bd-400a-8244-1135a3000769
 langcode: fr
 status: true
 dependencies:
@@ -7,20 +7,20 @@ dependencies:
   module:
     - system
   theme:
-    - bootstrap_barrio
+    - bootstrap
 _core:
-  default_config_hash: rx9IrdDv7Ldc4kpalZAxdhIPZfYIeOMh1N-qKoQZwHo
-id: bootstrap_barrio_main_menu
-theme: bootstrap_barrio
-region: primary_menu
-weight: 0
+  default_config_hash: GT_zYl7I9VAILH8OxMRe-VDvFadCDHxRcnmBc5xEmf0
+id: bootstrap_main_menu
+theme: bootstrap
+region: navigation_collapsible
+weight: 10
 provider: null
 plugin: 'system_menu_block:main'
 settings:
   id: 'system_menu_block:main'
-  label: 'Navigation principale'
+  label: 'Main navigation'
   provider: system
   label_display: '0'
   level: 1
-  depth: 1
+  depth: 2
 visibility: {  }

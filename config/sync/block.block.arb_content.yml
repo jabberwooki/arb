@@ -1,15 +1,15 @@
-uuid: 5860cfd3-0a73-4a7e-9125-752c32fcf794
+uuid: f4152b6f-dae4-431a-9a51-0b3849828339
 langcode: fr
 status: true
 dependencies:
   module:
     - system
   theme:
-    - arb_barrio
+    - arb
 _core:
   default_config_hash: 9EoWV2Lot6FVSr50t4hoKgiz1LIXYWNG-IIPYsWxBqo
-id: arb_barrio_content
-theme: arb_barrio
+id: arb_content
+theme: arb
 region: content
 weight: 0
 provider: null

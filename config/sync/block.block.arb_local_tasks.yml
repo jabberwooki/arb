@@ -1,13 +1,13 @@
-uuid: 864ee3c8-2405-4506-b439-5477f5083be2
+uuid: 094cdd4c-a492-45e3-af97-c5e5e1c35005
 langcode: fr
 status: true
 dependencies:
   theme:
-    - bootstrap_barrio
+    - arb
 _core:
   default_config_hash: X9I1OB0W3WlWtrK-CNcg6hNWwa8wficanpH8pYnDZDE
-id: bootstrap_barrio_local_tasks
-theme: bootstrap_barrio
+id: arb_local_tasks
+theme: arb
 region: content
 weight: -40
 provider: null

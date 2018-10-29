@@ -1,4 +1,4 @@
-uuid: d431b6a2-5210-4e62-b273-8e0d7ee36fd9
+uuid: 72ba26b0-66f3-4f64-a8ee-d13211adc900
 langcode: fr
 status: true
 dependencies:
@@ -7,12 +7,12 @@ dependencies:
   module:
     - system
   theme:
-    - bootstrap_barrio
+    - arb
 _core:
   default_config_hash: kkISXE1LT2FJEoYnqCrCpeFB-2pmGmMxMklVk7rQcfg
-id: bootstrap_barrio_footer
-theme: bootstrap_barrio
-region: footer_fifth
+id: arb_footer
+theme: arb
+region: navigation
 weight: 0
 provider: null
 plugin: 'system_menu_block:footer'

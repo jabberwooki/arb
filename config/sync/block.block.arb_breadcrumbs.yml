@@ -1,16 +1,16 @@
-uuid: 388ffbf8-5085-404c-8c66-e9a0156084c3
+uuid: 17ce731e-4010-43e2-93ae-66bb03f36a7b
 langcode: fr
 status: true
 dependencies:
   module:
     - system
   theme:
-    - arb_barrio
+    - arb
 _core:
   default_config_hash: oXUb3JZR2WW5VOdw4HrhRicCsq51mCgLfRyvheG68ck
-id: arb_barrio_breadcrumbs
-theme: arb_barrio
-region: breadcrumb
+id: arb_breadcrumbs
+theme: arb
+region: navigation
 weight: 0
 provider: null
 plugin: system_breadcrumb_block

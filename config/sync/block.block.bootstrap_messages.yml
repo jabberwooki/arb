@@ -1,17 +1,17 @@
-uuid: 99bca329-bfac-4e8c-9efd-1f43b25aa388
+uuid: 264124d6-4e24-416d-b6f1-cf1e2f54b7e4
 langcode: fr
 status: true
 dependencies:
   module:
     - system
   theme:
-    - arb_barrio
+    - bootstrap
 _core:
-  default_config_hash: KHQIJ7Vfl25lTjzIc7qIvnuistt-Mw2O0kG4jCofmkI
-id: arb_barrio_messages
-theme: arb_barrio
-region: highlighted
-weight: 0
+  default_config_hash: 9RnnTUBcn0WRWXfrGOnId2H0Q31uQUeu_F5TnDxl2yg
+id: bootstrap_messages
+theme: bootstrap
+region: header
+weight: -50
 provider: null
 plugin: system_messages_block
 settings:

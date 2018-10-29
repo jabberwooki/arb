@@ -1,15 +1,15 @@
-uuid: dddb772d-a280-4f59-b16c-c798835ba715
+uuid: 718f61d4-e0c0-47bb-950c-890a7c2d4dd9
 langcode: fr
 status: true
 dependencies:
   module:
     - group
   theme:
-    - arb_barrio
+    - arb
 _core:
   default_config_hash: MjMChFykEa-4UxdnGstVk1FcXqwUF3p_GBJLIFT3_XI
-id: arb_barrio_group_operations
-theme: arb_barrio
+id: arb_group_operations
+theme: arb
 region: sidebar_first
 weight: -20
 provider: null

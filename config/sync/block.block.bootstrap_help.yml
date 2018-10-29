@@ -1,22 +1,22 @@
-uuid: 5df0c7d0-a94d-455b-903a-02673b84efcd
+uuid: 794fbd90-709d-449a-b9ab-cee21fb2eb31
 langcode: fr
 status: true
 dependencies:
   module:
     - help
   theme:
-    - arb_barrio
+    - bootstrap
 _core:
-  default_config_hash: 8I8iACSa0sKO3k3jlvUG1ge52rfcKX7USJAQYnzuBgg
-id: arb_barrio_help
-theme: arb_barrio
-region: content
+  default_config_hash: MhtNdV__HKRTab0ZPjkPNfYL4Ng4UPBucDLoC7Rg5Eo
+id: bootstrap_help
+theme: bootstrap
+region: help
 weight: -30
 provider: null
 plugin: help_block
 settings:
   id: help_block
-  label: Aide
+  label: Help
   provider: help
   label_display: '0'
 visibility: {  }
