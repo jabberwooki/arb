@@ -47,6 +47,7 @@
         "drupal/field_group": "^1.0",
         "drupal/group": "^1.0@RC",
         "drupal/image_widget_crop": "^2.2",
+        "drupal/inline_entity_form": "^1.0@RC",
         "drupal/sitemap": "^1.4",
         "drupal/social_media_links": "^2.6",
         "drush/drush": "^9.0.0",
