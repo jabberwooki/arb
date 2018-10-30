@@ -1,0 +1,25 @@
+uuid: 51edac0d-dd86-4abd-94d9-11558dc092a9
+langcode: fr
+status: true
+dependencies:
+  config:
+    - crop.type.region_slide
+  module:
+    - crop
+name: region_slide
+label: 'Diapo région'
+effects:
+  e8e8bb0f-0837-4237-91c3-890513a8aded:
+    uuid: e8e8bb0f-0837-4237-91c3-890513a8aded
+    id: crop_crop
+    weight: 1
+    data:
+      crop_type: region_slide
+  b1166eb9-8277-4c25-8941-bfb09eaf2dc3:
+    uuid: b1166eb9-8277-4c25-8941-bfb09eaf2dc3
+    id: image_scale
+    weight: 2
+    data:
+      width: 1920
+      height: null
+      upscale: false

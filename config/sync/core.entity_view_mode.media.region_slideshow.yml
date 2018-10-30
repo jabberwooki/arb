@@ -1,0 +1,10 @@
+uuid: 7b548558-52de-424e-beb4-74f5c0de3e47
+langcode: fr
+status: true
+dependencies:
+  module:
+    - media
+id: media.region_slideshow
+label: 'Diaporama région'
+targetEntityType: media
+cache: true
