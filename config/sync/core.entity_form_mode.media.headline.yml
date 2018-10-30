@@ -1,0 +1,10 @@
+uuid: 0a9690e3-9287-42cd-a367-79686907e553
+langcode: fr
+status: true
+dependencies:
+  module:
+    - media
+id: media.headline
+label: 'A la une'
+targetEntityType: media
+cache: true

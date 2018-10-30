@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.slide.field_text
     - node.type.slide
   module:
+    - inline_entity_form
     - link
     - path
 id: node.slide.default
@@ -33,10 +34,17 @@ content:
     weight: 1
     settings:
       match_operator: CONTAINS
-      size: 60
-      placeholder: ''
+      form_mode: default
+      override_labels: false
+      label_singular: ''
+      label_plural: ''
+      collapsible: false
+      collapsed: false
+      allow_new: true
+      allow_existing: false
+      allow_duplicate: false
     third_party_settings: {  }
-    type: entity_reference_autocomplete
+    type: inline_entity_form_complex
     region: content
   field_text:
     weight: 2
