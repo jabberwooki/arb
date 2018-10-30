@@ -10,8 +10,33 @@ dependencies:
     - field.field.group.regional_group.field_region_image
     - group.type.regional_group
   module:
+    - ds
     - link
     - text
+third_party_settings:
+  ds:
+    layout:
+      id: ds_1col
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        wrappers:
+          ds_content: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        classes:
+          layout_class: {  }
+    regions:
+      ds_content:
+        - field_region_image
+        - label
+        - field_process_progress
+        - field_internet_site
+        - field_presentation
+        - langcode
 id: group.regional_group.default
 targetEntityType: group
 bundle: regional_group
@@ -28,14 +53,15 @@ content:
       target: ''
     third_party_settings: {  }
     type: link
-    region: content
+    region: ds_content
   field_presentation:
     weight: 4
     label: hidden
-    settings: {  }
+    settings:
+      trim_length: 600
     third_party_settings: {  }
-    type: text_default
-    region: content
+    type: text_trimmed
+    region: ds_content
   field_process_progress:
     weight: 2
     label: hidden
@@ -43,27 +69,35 @@ content:
       link: true
     third_party_settings: {  }
     type: entity_reference_label
-    region: content
+    region: ds_content
   field_region_image:
     type: entity_reference_entity_view
     weight: 0
     label: hidden
     settings:
-      view_mode: default
+      view_mode: region_slideshow
       link: false
     third_party_settings: {  }
-    region: content
+    region: ds_content
   label:
     label: hidden
     type: string
     weight: 1
-    region: content
+    region: ds_content
     settings:
       link_to_entity: false
+    third_party_settings: {  }
+  langcode:
+    type: language
+    weight: 5
+    region: ds_content
+    label: above
+    settings:
+      link_to_entity: false
+      native_language: false
     third_party_settings: {  }
 hidden:
   changed: true
   created: true
   field_code: true
-  langcode: true
   uid: true
