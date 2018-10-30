@@ -9,7 +9,6 @@ dependencies:
     - node.type.slide
   module:
     - link
-    - media_library
     - path
 id: node.slide.default
 targetEntityType: node
@@ -32,9 +31,12 @@ content:
     region: content
   field_slide_image:
     weight: 1
-    settings: {  }
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
-    type: media_library_widget
+    type: entity_reference_autocomplete
     region: content
   field_text:
     weight: 2

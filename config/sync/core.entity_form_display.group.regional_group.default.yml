@@ -11,7 +11,6 @@ dependencies:
     - group.type.regional_group
   module:
     - link
-    - media_library
     - path
     - text
 id: group.regional_group.default
@@ -51,10 +50,13 @@ content:
     type: options_buttons
     region: content
   field_region_image:
-    weight: 2
-    settings: {  }
+    weight: 7
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
-    type: media_library_widget
+    type: entity_reference_autocomplete
     region: content
   label:
     type: string_textfield
