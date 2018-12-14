@@ -52,6 +52,7 @@
         "drupal/inline_entity_form": "^1.0@RC",
         "drupal/sitemap": "^1.4",
         "drupal/social_media_links": "^2.6",
+        "drupal/twig_tweak": "^2.1",
         "drush/drush": "^9.0.0",
         "harvesthq/chosen": "^1.8",
         "vlucas/phpdotenv": "^2.4",
