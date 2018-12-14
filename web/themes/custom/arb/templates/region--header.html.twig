@@ -40,8 +40,16 @@
               </div>
             </div>
 
-            <div class="col-xs-9">
+            <div class="col-xs-7">
               {{ content }}
+            </div>
+
+            <div class="col-xs-2">
+            {% if logged_in %}
+              <span class="icon glyphicon glyphicon-search" aria-hidden="true"></span>
+            {% endif %}
+
+            {{ drupal_block('system_menu_block:account') }}
             </div>
             
         </div>
