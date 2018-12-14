@@ -23,5 +23,6 @@
 {% if content %}
   <div id="sidebar"{{ attributes.addClass(classes) }}>
     {{ content }}
+    {{ drupal_block('system_menu_block:account') }}
   </div>
 {% endif %}
