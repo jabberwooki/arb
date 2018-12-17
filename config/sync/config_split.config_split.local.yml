@@ -8,8 +8,10 @@ description: 'Modules activés localement seulement.'
 folder: ../config/envs/local
 module:
   devel: 0
+  smtp: 0
 theme: {  }
-blacklist: {  }
+blacklist:
+  - system.mail
 graylist: {  }
 graylist_dependents: true
 graylist_skip_equal: true
