@@ -3,8 +3,13 @@ langcode: fr
 status: true
 dependencies:
   config:
+    - field.field.user.user.field_directory
     - field.field.user.user.field_firstname
+    - field.field.user.user.field_function
     - field.field.user.user.field_lastname
+    - field.field.user.user.field_organisation
+    - field.field.user.user.field_quatuor_member
+    - field.field.user.user.field_region
     - field.field.user.user.user_picture
     - image.style.thumbnail
   module:
@@ -18,23 +23,44 @@ bundle: user
 mode: default
 content:
   field_firstname:
-    weight: 7
-    label: above
+    weight: 1
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_function:
+    weight: 4
+    label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
     type: string
     region: content
   field_lastname:
-    weight: 6
-    label: above
+    weight: 2
+    label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
     type: string
     region: content
-  member_for:
+  field_organisation:
+    weight: 3
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_region:
     weight: 5
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
     region: content
   user_picture:
     type: image
@@ -46,4 +72,7 @@ content:
     third_party_settings: {  }
     label: hidden
 hidden:
+  field_directory: true
+  field_quatuor_member: true
   langcode: true
+  member_for: true
