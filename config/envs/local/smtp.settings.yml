@@ -5,7 +5,7 @@ smtp_port: '587'
 smtp_protocol: tls
 smtp_username: fa5ec791df1fe6889db3c83c7eac4143
 smtp_password: 4a5e393a311f55303df958ff2aeb8ff5
-smtp_from: christophe.espiau@gmail.com
+smtp_from: christophe.espiau@korora.fr
 smtp_fromname: 'Christophe Espiau'
 smtp_client_hostname: ''
 smtp_client_helo: ''
