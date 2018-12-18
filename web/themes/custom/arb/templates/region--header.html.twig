@@ -24,7 +24,8 @@
   <div{{ attributes.addClass(classes) }}>
 
         <div class="row">
-            <div class="col-xs-3 col-sm-2">
+            
+            <div class="col-xs-1">
               <div class="hamburger hamburger-open">
                 <button type="button" id="sidebarCollapse" class="btn navbar-btn">
                   <i class="glyphicon glyphicon-menu-hamburger"></i>
@@ -40,16 +41,20 @@
               </div>
             </div>
 
-            <div class="col-xs-7">
+            <div class="col-xs-8">
               {{ content }}
             </div>
 
-            <div class="col-xs-2">
+            <div class="col-xs-1">
             {% if logged_in %}
-              <span class="icon glyphicon glyphicon-search" aria-hidden="true"></span>
+                <div class="search-button">
+                    <span class="icon glyphicon glyphicon-search" aria-hidden="true"></span>
+                </div>
             {% endif %}
-
-            {{ drupal_block('system_menu_block:account') }}
+            </div>
+            
+            <div class="col-xs-2">
+                {{ drupal_block('system_menu_block:account') }}
             </div>
             
         </div>

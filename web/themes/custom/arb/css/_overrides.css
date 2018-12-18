@@ -1,0 +1,79 @@
+/*
+Error: Undefined variable: "$alert-link-font-weight".
+        on line 10 of component/_alert.scss
+        from line 3 of _overrides.scss
+
+5: @import "component/field";
+6: @import "component/file";
+7: @import "component/filter";
+8: @import "component/form";
+9: @import "component/icon";
+10: @import "component/navbar";
+11: @import "component/node";
+12: @import "component/panel";
+13: @import "component/progress-bar";
+14: @import "component/table-drag";
+15: @import "component/tabs";
+
+Backtrace:
+component/_alert.scss:10
+_overrides.scss:3
+C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.13/lib/sass/script/tree/variable.rb:49:in `_perform'
+C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.13/lib/sass/script/tree/node.rb:50:in `perform'
+C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:394:in `visit_prop'
+C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.13/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.13/lib/sass/stack.rb:79:in `block in with_base'
+C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.13/lib/sass/stack.rb:115:in `with_frame'
+C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.13/lib/sass/stack.rb:79:in `with_base'
+C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:158:in `visit'
+C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:430:in `block (2 levels) in visit_rule'
+C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:430:in `map'
+C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:430:in `block in visit_rule'
+C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:428:in `visit_rule'
+C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.13/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.13/lib/sass/stack.rb:79:in `block in with_base'
+C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.13/lib/sass/stack.rb:115:in `with_frame'
+C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.13/lib/sass/stack.rb:79:in `with_base'
+C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:158:in `visit'
+C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:325:in `block (2 levels) in visit_import'
+C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:325:in `map'
+C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:325:in `block in visit_import'
+C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.13/lib/sass/stack.rb:88:in `block in with_import'
+C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.13/lib/sass/stack.rb:115:in `with_frame'
+C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.13/lib/sass/stack.rb:88:in `with_import'
+C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:322:in `visit_import'
+C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.13/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.13/lib/sass/stack.rb:79:in `block in with_base'
+C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.13/lib/sass/stack.rb:115:in `with_frame'
+C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.13/lib/sass/stack.rb:79:in `with_base'
+C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:158:in `visit'
+C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.13/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.13/lib/sass/tree/visitors/base.rb:52:in `map'
+C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.13/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
+C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.13/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
+C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.13/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:157:in `visit'
+C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:8:in `visit'
+C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.13/lib/sass/tree/root_node.rb:36:in `css_tree'
+C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.13/lib/sass/tree/root_node.rb:20:in `render'
+C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.13/lib/sass/engine.rb:268:in `render'
+C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.13/lib/sass/exec/sass_scss.rb:415:in `run'
+C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.13/lib/sass/exec/sass_scss.rb:63:in `process_result'
+C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.13/lib/sass/exec/base.rb:52:in `parse'
+C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.13/lib/sass/exec/base.rb:19:in `parse!'
+C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.13/bin/sass:13:in `<top (required)>'
+C:/Program Files (x86)/Prepros/resources/app/ruby/loader.rb:15:in `load'
+C:/Program Files (x86)/Prepros/resources/app/ruby/loader.rb:15:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Undefined variable: \"$alert-link-font-weight\".\A         on line 10 of component/_alert.scss\A         from line 3 of _overrides.scss\A \A 5: @import \"component/field\";\A 6: @import \"component/file\";\A 7: @import \"component/filter\";\A 8: @import \"component/form\";\A 9: @import \"component/icon\";\A 10: @import \"component/navbar\";\A 11: @import \"component/node\";\A 12: @import \"component/panel\";\A 13: @import \"component/progress-bar\";\A 14: @import \"component/table-drag\";\A 15: @import \"component/tabs\";"; }

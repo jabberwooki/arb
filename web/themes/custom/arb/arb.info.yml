@@ -23,6 +23,8 @@ regions:
 libraries:
   - 'arb/sliding-menu'
   - 'arb/hamburger'
+  - 'arb/searchbar'
+  - 'arb/fonts'
 
 libraries-extend:
   bootstrap/framework:
