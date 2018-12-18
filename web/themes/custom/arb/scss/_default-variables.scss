@@ -12,3 +12,31 @@
 
 // Set the proper directory for the Bootstrap Glyphicon font.
 $icon-font-path: '../bootstrap/assets/fonts/bootstrap/';
+
+//## Font, line-height, and color for body text, headings, and more.
+$font-family-sans-serif:  Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$font-family-title:      Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+
+
+//Colors
+$brand-primary:         #1D495D !default;
+$brand-secondary:       #1FAD00 !default;
+
+//** Global text color on `<body>`.
+$text-color:            $brand-primary !default;
+
+//** By default, this inherits from the `<body>`.
+$headings-font-family:    inherit !default;
+$headings-font-weight:    700 !default;
+$headings-line-height:    1.1 !default;
+$headings-color:          #1D495D !default;
+
+//Link transition
+a{
+transition : all .25s ease-in-out;
+-moz-transition : all .25s ease-in-out;
+-webkit-transition : all .25s ease-in-out;
+	&:hover{
+		text-decoration: none;
+	}
+}

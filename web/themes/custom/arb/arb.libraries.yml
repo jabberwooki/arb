@@ -33,3 +33,15 @@ hamburger:
     theme:
       css/hamburger.css: {}
 
+searchbar:
+  js:
+    js/searchbar.js: {}
+  dependencies:
+    - core/jquery
+    
+fonts:
+  css:
+    theme:
+      '//fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i': { type: external, minified: true }
+      '//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css': {type: external}
+
