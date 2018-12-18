@@ -5,7 +5,10 @@
     border-top: none;
     background: $brand-primary;
     a{
-       color: $brand-secondary; 
+       color: $brand-secondary;
+        &:hover{
+            color: white;
+        }
     }
     
 }
