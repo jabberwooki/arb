@@ -8,6 +8,7 @@
 
 use Drupal\Core\Entity\EntityInterface;
 
+
 function arb_regions_user_insert(Drupal\Core\Entity\EntityInterface $entity) {
   //$region = entity_load('group', $entity->get('field_region')->getString());
   $region_id = $entity->get('field_region')->getString();
@@ -26,3 +27,24 @@ function arb_regions_user_insert(Drupal\Core\Entity\EntityInterface $entity) {
   );
 }
 
+/**
+ * Implements hook_form_FORM_ID_alter().
+ */
+function arb_regions_form_user_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
+  // Modification d'un compte utilisateur
+  if ($form_id == 'user_form'  && Drupal::currentUser()->id() != 1) {
+    $edited_user_roles = $form['account']['roles']['#default_value'];
+    // Si le compte modifié n'est pas un administrateur technique, le champ Région est obligatoire
+    if (!in_array('administrator', $edited_user_roles)) {
+      $form['field_region']['widget']['#required'] = TRUE;
+    }
+  }
+  // Création d'un compte utilisateur
+  elseif ($form_id == 'user_register_form' && Drupal::currentUser()->id() != 1) {
+    $current_user_roles = \Drupal::currentUser()->getRoles();
+    // Si l'utilisateur connecté n'est pas un administrateur technique, le champ Région est obligatoire
+    if (!in_array('administrator', $current_user_roles)) {
+      $form['field_region']['widget']['#required'] = TRUE;
+    }
+  }
+}
