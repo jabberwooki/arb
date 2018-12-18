@@ -8771,3 +8771,15 @@ p:last-child,
   color: #1D495D;
   font-size: 20px;
 }
+
+.footer {
+  margin-top: 0;
+  padding-top: 35px;
+  padding-bottom: 36px;
+  border-top: none;
+  background: #1D495D;
+}
+
+.footer a {
+  color: #1FAD00;
+}
