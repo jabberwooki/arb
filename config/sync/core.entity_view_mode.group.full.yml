@@ -1,0 +1,10 @@
+uuid: 20881962-ec4c-4423-893e-bec8844c700a
+langcode: fr
+status: true
+dependencies:
+  module:
+    - group
+id: group.full
+label: 'Contenu complet'
+targetEntityType: group
+cache: true
