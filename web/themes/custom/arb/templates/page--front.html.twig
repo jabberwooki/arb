@@ -196,6 +196,15 @@
     </div>
 {% endblock %}
 
+<section class='container-fluid'>
+    {# prefooter #}
+      {% if page.prefooter %}
+        {% block prefooter %}
+          <div class="prefooter container">{{ page.prefooter }}</div>
+        {% endblock %}
+      {% endif %}
+</section>
+
 {% if page.footer %}
     {% block footer %}
         <footer class="footer container-fluid" role="contentinfo">
