@@ -35,7 +35,14 @@ third_party_settings:
         - label
         - field_process_progress
         - field_internet_site
+        - 'dynamic_token_field:group-regions_backlink'
         - field_presentation
+    fields:
+      'dynamic_token_field:group-regions_backlink':
+        plugin_id: 'dynamic_token_field:group-regions_backlink'
+        weight: 4
+        label: hidden
+        formatter: default
 id: group.regional_group.default
 targetEntityType: group
 bundle: regional_group
@@ -54,7 +61,7 @@ content:
     type: link
     region: ds_content
   field_presentation:
-    weight: 4
+    weight: 5
     label: hidden
     settings:
       trim_length: 600
