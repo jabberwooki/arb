@@ -24,7 +24,7 @@
   <div{{ attributes.addClass(classes) }}>
 
         <div class="row">
-            
+            {% if logged_in %}
             <div class="col-xs-1">
               <div class="hamburger hamburger-open">
                 <button type="button" id="sidebarCollapse" class="btn navbar-btn">
@@ -40,6 +40,7 @@
                 </button>
               </div>
             </div>
+            {% endif %}
 
             <div class="col-xs-8">
               {{ content }}
