@@ -55,6 +55,7 @@
         "drupal/smtp": "^1.0@beta",
         "drupal/social_media_links": "^2.6",
         "drupal/twig_tweak": "^2.1",
+        "drupal/twitter_embed": "^1.0@alpha",
         "drupal/views_bootstrap": "^3.1",
         "drush/drush": "^9.0.0",
         "harvesthq/chosen": "^1.8",
