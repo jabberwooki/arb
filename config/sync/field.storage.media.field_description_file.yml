@@ -1,0 +1,19 @@
+uuid: 8265a0b9-5bf6-431a-ae75-20ff2e56cc50
+langcode: fr
+status: true
+dependencies:
+  module:
+    - media
+    - text
+id: media.field_description_file
+field_name: field_description_file
+entity_type: media
+type: text_with_summary
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
