@@ -1,0 +1,10 @@
+uuid: 1e9b301b-7451-4eca-92e3-34fd05e8e35b
+langcode: fr
+status: true
+dependencies:
+  module:
+    - media
+id: media.region_header
+label: 'Bandeau région'
+targetEntityType: media
+cache: true
