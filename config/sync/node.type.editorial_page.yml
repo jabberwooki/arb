@@ -1,0 +1,17 @@
+uuid: 04a32b70-4cd7-4780-81bb-58aa23f5249e
+langcode: fr
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Page éditoriale'
+type: editorial_page
+description: 'Pages d''information accessible depuis les blocs de la page d''accueil.'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

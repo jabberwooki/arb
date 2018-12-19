@@ -1,0 +1,21 @@
+uuid: 86caf086-93e9-4ea0-8608-e659e9660f43
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_editorial_type
+    - node.type.editorial_page
+  module:
+    - options
+id: node.editorial_page.field_editorial_type
+field_name: field_editorial_type
+entity_type: node
+bundle: editorial_page
+label: Type
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

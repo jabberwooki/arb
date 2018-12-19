@@ -1,0 +1,30 @@
+uuid: cec3e49e-44ab-416f-8d05-47e6189a028c
+langcode: fr
+status: true
+dependencies:
+  config:
+    - views.view.editorial_pages
+  module:
+    - system
+    - views
+  theme:
+    - arb
+id: views_block__editorial_pages_arb_infos
+theme: arb
+region: content
+weight: -2
+provider: null
+plugin: 'views_block:editorial_pages-arb_infos'
+settings:
+  id: 'views_block:editorial_pages-arb_infos'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

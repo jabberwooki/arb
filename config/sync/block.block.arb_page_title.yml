@@ -9,7 +9,7 @@ _core:
 id: arb_page_title
 theme: arb
 region: content
-weight: -2
+weight: -5
 provider: null
 plugin: page_title_block
 settings:

@@ -1,0 +1,22 @@
+uuid: 4a843ce4-27f8-4d15-8d5a-9f92ad51fa74
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.editorial_page
+  module:
+    - text
+id: node.editorial_page.body
+field_name: body
+entity_type: node
+bundle: editorial_page
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary
