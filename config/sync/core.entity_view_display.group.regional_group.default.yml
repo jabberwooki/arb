@@ -31,6 +31,7 @@ third_party_settings:
           layout_class: {  }
     regions:
       ds_content:
+        - field_region_image
         - label
         - field_process_progress
         - field_internet_site
@@ -41,7 +42,7 @@ bundle: regional_group
 mode: default
 content:
   field_internet_site:
-    weight: 2
+    weight: 3
     label: hidden
     settings:
       trim_length: 80
@@ -53,7 +54,7 @@ content:
     type: link
     region: ds_content
   field_presentation:
-    weight: 3
+    weight: 4
     label: hidden
     settings:
       trim_length: 600
@@ -61,17 +62,26 @@ content:
     type: text_trimmed
     region: ds_content
   field_process_progress:
-    weight: 1
+    weight: 2
     label: hidden
     settings:
       link: true
     third_party_settings: {  }
     type: entity_reference_label
     region: ds_content
+  field_region_image:
+    type: entity_reference_entity_view
+    weight: 0
+    region: ds_content
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
   label:
     label: hidden
     type: string
-    weight: 0
+    weight: 1
     region: ds_content
     settings:
       link_to_entity: false
@@ -80,6 +90,5 @@ hidden:
   changed: true
   created: true
   field_code: true
-  field_region_image: true
   langcode: true
   uid: true
