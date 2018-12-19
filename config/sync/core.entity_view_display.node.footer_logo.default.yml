@@ -1,0 +1,40 @@
+uuid: 5d8ed6eb-63a0-43e9-857d-3ba2fed919b0
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.node.footer_logo.field_logo
+    - node.type.footer_logo
+  module:
+    - field_image_link
+    - user
+id: node.footer_logo.default
+targetEntityType: node
+bundle: footer_logo
+mode: default
+content:
+  field_logo:
+    weight: 102
+    label: above
+    settings:
+      link_title_display: false
+      link_title_tag: ''
+      link_title_position: ''
+      link_rel: ''
+      link_target: ''
+      svg_render_as_image: true
+      svg_attributes:
+        width: null
+        height: null
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image_link
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true

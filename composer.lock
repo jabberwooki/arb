@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "28397695aaeca331c68ef78a1ece238d",
+    "content-hash": "627889281ac51cdc1b49363e78eed2d7",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -2950,6 +2950,48 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/field_group"
             }
+        },
+        {
+            "name": "drupal/field_image_link",
+            "version": "dev-1.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/field_image_link",
+                "reference": "c083c8655df307620d077bca3402f59f1c43bc7c"
+            },
+            "require": {
+                "drupal/core": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.x-dev",
+                    "datestamp": "1531953821",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Project has not opted into security advisory coverage!"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "alphawebgroup",
+                    "homepage": "https://www.drupal.org/user/330008"
+                }
+            ],
+            "description": "Provides the field_image_link module.",
+            "homepage": "https://www.drupal.org/project/field_image_link",
+            "support": {
+                "source": "http://cgit.drupalcode.org/field_image_link"
+            },
+            "time": "2018-07-18T22:56:21+00:00"
         },
         {
             "name": "drupal/group",
@@ -9014,6 +9056,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
+        "drupal/field_image_link": 20,
         "drupal/group": 5,
         "drupal/inline_entity_form": 5,
         "drupal/smtp": 10,

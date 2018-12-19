@@ -1,0 +1,17 @@
+uuid: 31def3a5-45b8-4877-82d9-8a3da1a5126d
+langcode: fr
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Logo pied de page'
+type: footer_logo
+description: 'Permets d''ajouter un logo et une url associée dans un bloc dans la région Pre-footer'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false
