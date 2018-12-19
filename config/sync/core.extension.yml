@@ -28,6 +28,7 @@ module:
   entity_browser: 0
   field: 0
   field_group: 0
+  field_image_link: 0
   field_ui: 0
   file: 0
   filter: 0
@@ -62,6 +63,7 @@ module:
   token: 0
   toolbar: 0
   twig_tweak: 0
+  twitter_embed: 0
   update: 0
   user: 0
   views_bootstrap: 0

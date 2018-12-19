@@ -1,0 +1,42 @@
+uuid: e1c26e64-7afd-4f13-8d72-8bd2ffe7df0b
+langcode: fr
+status: true
+dependencies:
+  module:
+    - twitter_embed
+  theme:
+    - arb
+id: twittertimeline
+theme: arb
+region: prefooter
+weight: 0
+provider: null
+plugin: twitter_embed_timeline
+settings:
+  id: twitter_embed_timeline
+  label: 'Twitter Timeline'
+  provider: twitter_embed
+  label_display: '0'
+  username: AFBiodiversite
+  type: profile
+  type_value: ''
+  display_style: timeline
+  theme: light
+  chrome:
+    noheader: 0
+    nofooter: 0
+    noborders: 0
+    transparent: 0
+    noscrollbar: 0
+  width: '0'
+  height: '600'
+  link_color: '#2b7bb9'
+  border_color: '#000000'
+  tweet_limit: '1'
+  show_replies: 0
+  aria_polite: polite
+  language: ''
+  hide_username: false
+  hide_followers_count: false
+  size: null
+visibility: {  }

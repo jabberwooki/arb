@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1117cc0a96a5c72ce562797bba31b719",
+    "content-hash": "627889281ac51cdc1b49363e78eed2d7",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -2952,6 +2952,48 @@
             }
         },
         {
+            "name": "drupal/field_image_link",
+            "version": "dev-1.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/field_image_link",
+                "reference": "c083c8655df307620d077bca3402f59f1c43bc7c"
+            },
+            "require": {
+                "drupal/core": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.x-dev",
+                    "datestamp": "1531953821",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Project has not opted into security advisory coverage!"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "alphawebgroup",
+                    "homepage": "https://www.drupal.org/user/330008"
+                }
+            ],
+            "description": "Provides the field_image_link module.",
+            "homepage": "https://www.drupal.org/project/field_image_link",
+            "support": {
+                "source": "http://cgit.drupalcode.org/field_image_link"
+            },
+            "time": "2018-07-18T22:56:21+00:00"
+        },
+        {
             "name": "drupal/group",
             "version": "1.0.0-rc2",
             "source": {
@@ -3502,6 +3544,57 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/twig_tweak",
                 "issues": "https://www.drupal.org/project/issues/twig_tweak"
+            }
+        },
+        {
+            "name": "drupal/twitter_embed",
+            "version": "1.0.0-alpha1",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/twitter_embed",
+                "reference": "8.x-1.0-alpha1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/twitter_embed-8.x-1.0-alpha1.zip",
+                "reference": "8.x-1.0-alpha1",
+                "shasum": "ac3b4ca948eaf2ff2729fa792eabb307b12d3653"
+            },
+            "require": {
+                "drupal/core": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0-alpha1",
+                    "datestamp": "1525460880",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Project has not opted into security advisory coverage!"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "colorfield",
+                    "homepage": "https://www.drupal.org/user/2295486"
+                }
+            ],
+            "description": "Simple embed of Twitter widgets, without OAuth.",
+            "homepage": "https://www.drupal.org/project/twitter_embed",
+            "keywords": [
+                "Drupal"
+            ],
+            "support": {
+                "source": "http://cgit.drupalcode.org/twitter_embed",
+                "issues": "https://www.drupal.org/project/issues/twitter_embed"
             }
         },
         {
@@ -8963,9 +9056,11 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
+        "drupal/field_image_link": 20,
         "drupal/group": 5,
         "drupal/inline_entity_form": 5,
-        "drupal/smtp": 10
+        "drupal/smtp": 10,
+        "drupal/twitter_embed": 15
     },
     "prefer-stable": true,
     "prefer-lowest": false,

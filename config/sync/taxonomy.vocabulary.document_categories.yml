@@ -1,0 +1,9 @@
+uuid: 1e00eff6-a158-4d05-990c-0448704d0dbb
+langcode: fr
+status: true
+dependencies: {  }
+name: 'Catégories de document'
+vid: document_categories
+description: ''
+hierarchy: 0
+weight: 0

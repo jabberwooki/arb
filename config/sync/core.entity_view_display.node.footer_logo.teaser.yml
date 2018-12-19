@@ -1,0 +1,57 @@
+uuid: d5419987-bd96-4998-aa52-cdcf5128a84b
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.footer_logo.field_logo
+    - node.type.footer_logo
+  module:
+    - ds
+    - field_image_link
+    - user
+third_party_settings:
+  ds:
+    layout:
+      id: ds_1col
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        wrappers:
+          ds_content: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        classes:
+          layout_class: {  }
+    regions:
+      ds_content:
+        - field_logo
+id: node.footer_logo.teaser
+targetEntityType: node
+bundle: footer_logo
+mode: teaser
+content:
+  field_logo:
+    type: image_link
+    weight: 0
+    region: ds_content
+    label: visually_hidden
+    settings:
+      link_title_display: false
+      link_title_tag: ''
+      link_title_position: ''
+      link_rel: ''
+      link_target: ''
+      svg_render_as_image: true
+      svg_attributes:
+        width: null
+        height: null
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+hidden:
+  langcode: true
+  links: true

@@ -20,9 +20,11 @@
     'region-' ~ region|clean_class,
   ]
 %}
-{% if content %}
-  <div id="sidebar"{{ attributes.addClass(classes) }}>
-    {{ content }}
-    {{ drupal_block('system_menu_block:account') }}
-  </div>
+{% if logged_in %}
+    {% if content %}
+      <div id="sidebar"{{ attributes.addClass(classes) }}>
+        {{ content }}
+        {{ drupal_block('system_menu_block:account') }}
+      </div>
+    {% endif %}
 {% endif %}
