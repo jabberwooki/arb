@@ -92,11 +92,21 @@
     {% endblock %}
 {% endif %}
 
-{# Main #}
-{% block main %}
-    <div role="main" class="main-container {{ container }} js-quickedit-main-content">
-        <div class="row">
+<section>
+    <div class='container-fluid'>
 
+        <div class='row'>
+            {# Header #}
+            {% if page.top %}
+                {% block top %}
+                    <div class="top row">
+                        {{ page.top }}
+                    </div>
+                {% endblock %}
+            {% endif %}
+        </div>
+
+        <div class='header row'>
             {# Header #}
             {% if page.header %}
                 {% block header %}
@@ -105,6 +115,34 @@
                     </div>
                 {% endblock %}
             {% endif %}
+        </div>
+
+        {# Hamburger #}
+        {% if page.hamburger %}
+            {% block hamburger %}
+                <div class='hamburger'>
+                    {{ page.hamburger }}
+                </div>
+            {% endblock %}
+        {% endif %}
+    </div>
+
+    <div class='row'>
+        {# Highlighted #}
+        {% if page.highlighted %}
+            {% block highlighted %}
+                <div class="highlighted">{{ page.highlighted }}</div>
+            {% endblock %}
+        {% endif %}
+    </div>
+
+    </div>
+</section>
+
+{# Main #}
+{% block main %}
+    <div role="main" class="main-container {{ container }} js-quickedit-main-content">
+        <div class="row">
 
             {# Sidebar First #}
             {% if page.sidebar_first %}
@@ -126,13 +164,6 @@
             %}
             <section{{ content_attributes.addClass(content_classes) }}>
 
-                {# Highlighted #}
-                {% if page.highlighted %}
-                    {% block highlighted %}
-                        <div class="highlighted">{{ page.highlighted }}</div>
-                    {% endblock %}
-                {% endif %}
-
                 {# Help #}
                 {% if page.help %}
                     {% block help %}
@@ -143,7 +174,6 @@
                 {# Content #}
                 {% block content %}
                     <a id="main-content"></a>
-
                     {# Début bloc Inscrivez-vous #}
                     {% if not logged_in %}
                         {{ drupal_block('arb_register_block') }}
@@ -168,7 +198,7 @@
 
 {% if page.footer %}
     {% block footer %}
-        <footer class="footer {{ container }}" role="contentinfo">
+        <footer class="footer container-fluid" role="contentinfo">
             {{ page.footer }}
         </footer>
     {% endblock %}
