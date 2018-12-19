@@ -23,6 +23,7 @@ regions:
 libraries:
   - 'arb/sliding-menu'
   - 'arb/hamburger'
+  - 'arb/slick'
   - 'arb/searchbar'
   - 'arb/fonts'
 

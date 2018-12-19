@@ -15,6 +15,7 @@ framework:
     bootstrap/assets/javascripts/bootstrap/scrollspy.js: {}
     bootstrap/assets/javascripts/bootstrap/tab.js: {}
     bootstrap/assets/javascripts/bootstrap/transition.js: {}
+    js/arb.js: {}
 
 sliding-menu:
   js:
@@ -32,6 +33,16 @@ hamburger:
   css:
     theme:
       css/hamburger.css: {}
+      
+slick:
+  js:
+    libraries/slick/slick/slick.min.js: {}
+  css:
+    theme:
+      libraries/slick/slick/slick.css: {}
+      libraries/slick/slick/slick-theme.css: {}
+  dependencies:
+    - core/jquery
 
 searchbar:
   js:
