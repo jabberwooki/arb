@@ -9,9 +9,20 @@ favicon:
 schemas:
   bootstrap: 8000
   arb: 8000
-fluid_container: 0
 table_responsive: '-1'
 table: ''
+region_wells:
+  navigation: ''
+  navigation_collapsible: ''
+  header: ''
+  hamburger: ''
+  highlighted: ''
+  help: ''
+  content: ''
+  sidebar_first: ''
+  sidebar_second: ''
+  footer: ''
+fluid_container: 0
 features:
   comment_user_picture: true
   comment_user_verification: true
@@ -21,4 +32,3 @@ logo:
   path: ''
   url: ''
   use_default: true
-langcode: fr
