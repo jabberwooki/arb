@@ -1,0 +1,23 @@
+uuid: 31ae0f78-0deb-4fc9-bfda-e49530a54401
+langcode: fr
+status: true
+dependencies:
+  module:
+    - ctools
+    - group
+id: region
+label: Région
+type: 'canonical_entities:group'
+pattern: 'regions/[group:title]'
+selection_criteria:
+  5c65ea02-a1fa-4dbb-b8f2-79e36cd852a0:
+    id: 'entity_bundle:group'
+    bundles:
+      regional_group: regional_group
+    negate: false
+    context_mapping:
+      group: group
+    uuid: 5c65ea02-a1fa-4dbb-b8f2-79e36cd852a0
+selection_logic: and
+weight: -5
+relationships: {  }
