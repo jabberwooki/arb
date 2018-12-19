@@ -189,16 +189,11 @@ display:
         row: false
         pager: false
       style:
-        type: grid
+        type: default
         options:
+          row_class: col-md-3
+          default_row_class: true
           uses_fields: false
-          columns: 4
-          automatic_width: true
-          alignment: horizontal
-          col_class_default: true
-          col_class_custom: ''
-          row_class_default: true
-          row_class_custom: ''
       row:
         type: 'entity:node'
         options:
@@ -207,7 +202,7 @@ display:
       pager:
         type: some
         options:
-          items_per_page: 4
+          items_per_page: 12
           offset: 0
     cache_metadata:
       max-age: -1
