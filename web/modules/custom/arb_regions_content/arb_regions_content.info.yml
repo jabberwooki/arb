@@ -1,0 +1,24 @@
+name: 'Export/Import des régions'
+type: module
+hidden: FALSE
+description: "Permet d'exporter les régions ARB depuis une instance Drupal et de les importer dans une autre instance Drupal."
+package: ARBs
+core: 8.x
+dependencies:
+  - default_content
+
+default_content:
+  group:
+    - 8f0d5d62-ec30-456f-b4ce-0b4085d76a17
+    - 8763ec7c-e123-43d6-8178-05066b0b151d
+    - 09abb2ec-8f78-4213-96ae-bcc83bb27ea6
+    - 81a594c6-bdd6-4373-b3e0-d3b692bf03ea
+    - a9aebd57-ef49-42dd-bb78-e5471340d887
+    - a2a5780c-7e20-448d-92b3-9f047722f9b4
+    - 51bb6595-d788-4691-a78c-233699b3a7c4
+    - 4a836d54-609a-48d8-8f6d-454ac383c436
+    - e852fd4e-2743-452e-bf66-bf5f4579d35d
+    - fc6c8975-c271-4aeb-b995-b1a3d0336ab0
+    - 1fefa950-57bc-475a-86b9-b0270b453b99
+    - 16be4732-eb13-45ad-85ee-58029980f7d4
+    - 99379fef-d765-4b75-9984-6bd5cb6c4a5e

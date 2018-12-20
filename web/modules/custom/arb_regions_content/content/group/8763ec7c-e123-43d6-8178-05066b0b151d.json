@@ -1,0 +1,148 @@
+{
+    "_links": {
+        "self": {
+            "href": "http:\/\/default\/regions\/bourgogne-franche-comte?_format=hal_json"
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/group\/regional_group"
+        },
+        "http:\/\/drupal.org\/rest\/relation\/group\/regional_group\/uid": [
+            {
+                "href": "http:\/\/default\/user\/1?_format=hal_json",
+                "lang": "fr"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/group\/regional_group\/field_process_progress": [
+            {
+                "href": "http:\/\/default\/taxonomy\/term\/2?_format=hal_json"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/group\/regional_group\/field_region_image": [
+            {
+                "href": "http:\/\/default\/media\/18?_format=hal_json"
+            }
+        ]
+    },
+    "id": [
+        {
+            "value": 5
+        }
+    ],
+    "uuid": [
+        {
+            "value": "8763ec7c-e123-43d6-8178-05066b0b151d"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "fr",
+            "lang": "fr"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "regional_group"
+        }
+    ],
+    "label": [
+        {
+            "value": "Bourgogne-Franche-Comt\u00e9",
+            "lang": "fr"
+        }
+    ],
+    "_embedded": {
+        "http:\/\/drupal.org\/rest\/relation\/group\/regional_group\/uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "f356a791-9cd0-4449-beaa-c76e683147e4"
+                    }
+                ],
+                "lang": "fr"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/group\/regional_group\/field_process_progress": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/taxonomy\/term\/2?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/taxonomy_term\/process_progress"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "f5555fd0-d430-4c1e-9494-819e7051c2e6"
+                    }
+                ]
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/group\/regional_group\/field_region_image": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/media\/18?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/media\/image"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "9c0f37c3-bf91-40f3-aa11-992393e5b5b1"
+                    }
+                ]
+            }
+        ]
+    },
+    "created": [
+        {
+            "value": "2018-12-19T16:34:09+00:00",
+            "lang": "fr",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "changed": [
+        {
+            "value": "2018-12-19T16:35:02+00:00",
+            "lang": "fr",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "path": [
+        {
+            "alias": "\/regions\/bourgogne-franche-comte",
+            "pid": 11,
+            "langcode": "fr",
+            "lang": "fr"
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true,
+            "lang": "fr"
+        }
+    ],
+    "field_code": [
+        {
+            "value": "FR-BFC"
+        }
+    ],
+    "field_presentation": [
+        {
+            "value": "<p>Lorem ipsum dolor sit amet,sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, &nbsp;At vero eos et accusam et justo duo dolores et ea rebum. &nbsp;Lorem ipsum dolor sit amet, &nbsp;no sea takimata sanctus est Lorem ipsum dolor sit amet. &nbsp;Stet clita kasd gubergren, &nbsp;no sea takimata sanctus est Lorem ipsum dolor sit amet. &nbsp;no sea takimata sanctus est Lorem ipsum dolor sit amet. &nbsp;no sea takimata sanctus est Lorem ipsum dolor sit amet. &nbsp;sed diam voluptua. &nbsp;<\/p>\r\n",
+            "format": "full_html",
+            "processed": "<p>Lorem ipsum dolor sit amet,sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, \u00a0At vero eos et accusam et justo duo dolores et ea rebum. \u00a0Lorem ipsum dolor sit amet, \u00a0no sea takimata sanctus est Lorem ipsum dolor sit amet. \u00a0Stet clita kasd gubergren, \u00a0no sea takimata sanctus est Lorem ipsum dolor sit amet. \u00a0no sea takimata sanctus est Lorem ipsum dolor sit amet. \u00a0no sea takimata sanctus est Lorem ipsum dolor sit amet. \u00a0sed diam voluptua. \u00a0<\/p>\n",
+            "summary": ""
+        }
+    ]
+}

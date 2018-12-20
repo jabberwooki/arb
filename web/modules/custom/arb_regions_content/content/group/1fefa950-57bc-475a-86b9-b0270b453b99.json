@@ -1,0 +1,148 @@
+{
+    "_links": {
+        "self": {
+            "href": "http:\/\/default\/regions\/occitanie?_format=hal_json"
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/group\/regional_group"
+        },
+        "http:\/\/drupal.org\/rest\/relation\/group\/regional_group\/uid": [
+            {
+                "href": "http:\/\/default\/user\/1?_format=hal_json",
+                "lang": "fr"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/group\/regional_group\/field_process_progress": [
+            {
+                "href": "http:\/\/default\/taxonomy\/term\/6?_format=hal_json"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/group\/regional_group\/field_region_image": [
+            {
+                "href": "http:\/\/default\/media\/25?_format=hal_json"
+            }
+        ]
+    },
+    "id": [
+        {
+            "value": 12
+        }
+    ],
+    "uuid": [
+        {
+            "value": "1fefa950-57bc-475a-86b9-b0270b453b99"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "fr",
+            "lang": "fr"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "regional_group"
+        }
+    ],
+    "label": [
+        {
+            "value": "Occitanie",
+            "lang": "fr"
+        }
+    ],
+    "_embedded": {
+        "http:\/\/drupal.org\/rest\/relation\/group\/regional_group\/uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "f356a791-9cd0-4449-beaa-c76e683147e4"
+                    }
+                ],
+                "lang": "fr"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/group\/regional_group\/field_process_progress": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/taxonomy\/term\/6?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/taxonomy_term\/process_progress"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "c67d6b25-ec38-40a1-931f-d7cb5e860bf7"
+                    }
+                ]
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/group\/regional_group\/field_region_image": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/media\/25?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/media\/image"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "225dacf2-29df-4466-b0ff-e8fd9607223e"
+                    }
+                ]
+            }
+        ]
+    },
+    "created": [
+        {
+            "value": "2018-12-19T16:47:23+00:00",
+            "lang": "fr",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "changed": [
+        {
+            "value": "2018-12-20T13:18:46+00:00",
+            "lang": "fr",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "path": [
+        {
+            "alias": "\/regions\/occitanie",
+            "pid": 32,
+            "langcode": "fr",
+            "lang": "fr"
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true,
+            "lang": "fr"
+        }
+    ],
+    "field_code": [
+        {
+            "value": "FR-OCC"
+        }
+    ],
+    "field_presentation": [
+        {
+            "value": "<p>Lorem ipsum dolor sit amet,sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, &nbsp;At vero eos et accusam et justo duo dolores et ea rebum. &nbsp;Lorem ipsum dolor sit amet, &nbsp;no sea takimata sanctus est Lorem ipsum dolor sit amet. &nbsp;Stet clita kasd gubergren, &nbsp;no sea takimata sanctus est Lorem ipsum dolor sit amet. &nbsp;no sea takimata sanctus est Lorem ipsum dolor sit amet. &nbsp;no sea takimata sanctus est Lorem ipsum dolor sit amet. &nbsp;sed diam voluptua. &nbsp;<\/p>\r\n",
+            "format": "full_html",
+            "processed": "<p>Lorem ipsum dolor sit amet,sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, \u00a0At vero eos et accusam et justo duo dolores et ea rebum. \u00a0Lorem ipsum dolor sit amet, \u00a0no sea takimata sanctus est Lorem ipsum dolor sit amet. \u00a0Stet clita kasd gubergren, \u00a0no sea takimata sanctus est Lorem ipsum dolor sit amet. \u00a0no sea takimata sanctus est Lorem ipsum dolor sit amet. \u00a0no sea takimata sanctus est Lorem ipsum dolor sit amet. \u00a0sed diam voluptua. \u00a0<\/p>\n",
+            "summary": ""
+        }
+    ]
+}

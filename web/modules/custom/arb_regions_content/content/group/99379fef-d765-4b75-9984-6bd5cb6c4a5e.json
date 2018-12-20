@@ -1,0 +1,148 @@
+{
+    "_links": {
+        "self": {
+            "href": "http:\/\/default\/regions\/provence-alpes-cote-dazur?_format=hal_json"
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/group\/regional_group"
+        },
+        "http:\/\/drupal.org\/rest\/relation\/group\/regional_group\/uid": [
+            {
+                "href": "http:\/\/default\/user\/1?_format=hal_json",
+                "lang": "fr"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/group\/regional_group\/field_process_progress": [
+            {
+                "href": "http:\/\/default\/taxonomy\/term\/2?_format=hal_json"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/group\/regional_group\/field_region_image": [
+            {
+                "href": "http:\/\/default\/media\/27?_format=hal_json"
+            }
+        ]
+    },
+    "id": [
+        {
+            "value": 14
+        }
+    ],
+    "uuid": [
+        {
+            "value": "99379fef-d765-4b75-9984-6bd5cb6c4a5e"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "fr",
+            "lang": "fr"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "regional_group"
+        }
+    ],
+    "label": [
+        {
+            "value": "Provence-Alpes-C\u00f4te d'Azur",
+            "lang": "fr"
+        }
+    ],
+    "_embedded": {
+        "http:\/\/drupal.org\/rest\/relation\/group\/regional_group\/uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "f356a791-9cd0-4449-beaa-c76e683147e4"
+                    }
+                ],
+                "lang": "fr"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/group\/regional_group\/field_process_progress": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/taxonomy\/term\/2?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/taxonomy_term\/process_progress"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "f5555fd0-d430-4c1e-9494-819e7051c2e6"
+                    }
+                ]
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/group\/regional_group\/field_region_image": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/media\/27?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/media\/image"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "4ac0f48a-05ea-4e9e-a883-9554d2517fbd"
+                    }
+                ]
+            }
+        ]
+    },
+    "created": [
+        {
+            "value": "2018-12-19T16:50:42+00:00",
+            "lang": "fr",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "changed": [
+        {
+            "value": "2018-12-19T16:51:26+00:00",
+            "lang": "fr",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "path": [
+        {
+            "alias": "\/regions\/provence-alpes-cote-dazur",
+            "pid": 38,
+            "langcode": "fr",
+            "lang": "fr"
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true,
+            "lang": "fr"
+        }
+    ],
+    "field_code": [
+        {
+            "value": "FR-PAC"
+        }
+    ],
+    "field_presentation": [
+        {
+            "value": "<p>Lorem ipsum dolor sit amet,sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, &nbsp;At vero eos et accusam et justo duo dolores et ea rebum. &nbsp;Lorem ipsum dolor sit amet, &nbsp;no sea takimata sanctus est Lorem ipsum dolor sit amet. &nbsp;Stet clita kasd gubergren, &nbsp;no sea takimata sanctus est Lorem ipsum dolor sit amet. &nbsp;no sea takimata sanctus est Lorem ipsum dolor sit amet. &nbsp;no sea takimata sanctus est Lorem ipsum dolor sit amet. &nbsp;sed diam voluptua. &nbsp;<\/p>\r\n",
+            "format": "full_html",
+            "processed": "<p>Lorem ipsum dolor sit amet,sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, \u00a0At vero eos et accusam et justo duo dolores et ea rebum. \u00a0Lorem ipsum dolor sit amet, \u00a0no sea takimata sanctus est Lorem ipsum dolor sit amet. \u00a0Stet clita kasd gubergren, \u00a0no sea takimata sanctus est Lorem ipsum dolor sit amet. \u00a0no sea takimata sanctus est Lorem ipsum dolor sit amet. \u00a0no sea takimata sanctus est Lorem ipsum dolor sit amet. \u00a0sed diam voluptua. \u00a0<\/p>\n",
+            "summary": ""
+        }
+    ]
+}

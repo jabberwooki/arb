@@ -1,0 +1,155 @@
+{
+    "_links": {
+        "self": {
+            "href": "http:\/\/default\/regions\/nouvelle-aquitaine?_format=hal_json"
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/group\/regional_group"
+        },
+        "http:\/\/drupal.org\/rest\/relation\/group\/regional_group\/uid": [
+            {
+                "href": "http:\/\/default\/user\/1?_format=hal_json",
+                "lang": "fr"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/group\/regional_group\/field_process_progress": [
+            {
+                "href": "http:\/\/default\/taxonomy\/term\/2?_format=hal_json"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/group\/regional_group\/field_region_image": [
+            {
+                "href": "http:\/\/default\/media\/8?_format=hal_json"
+            }
+        ]
+    },
+    "id": [
+        {
+            "value": 3
+        }
+    ],
+    "uuid": [
+        {
+            "value": "fc6c8975-c271-4aeb-b995-b1a3d0336ab0"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "fr",
+            "lang": "fr"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "regional_group"
+        }
+    ],
+    "label": [
+        {
+            "value": "Nouvelle Aquitaine",
+            "lang": "fr"
+        }
+    ],
+    "_embedded": {
+        "http:\/\/drupal.org\/rest\/relation\/group\/regional_group\/uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "f356a791-9cd0-4449-beaa-c76e683147e4"
+                    }
+                ],
+                "lang": "fr"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/group\/regional_group\/field_process_progress": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/taxonomy\/term\/2?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/taxonomy_term\/process_progress"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "f5555fd0-d430-4c1e-9494-819e7051c2e6"
+                    }
+                ]
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/group\/regional_group\/field_region_image": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/media\/8?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/media\/image"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "13e74060-1925-4c38-86a6-1662c2bf3a17"
+                    }
+                ]
+            }
+        ]
+    },
+    "created": [
+        {
+            "value": "2018-10-30T11:24:15+00:00",
+            "lang": "fr",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "changed": [
+        {
+            "value": "2018-12-19T13:54:16+00:00",
+            "lang": "fr",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "path": [
+        {
+            "alias": "\/regions\/nouvelle-aquitaine",
+            "pid": 4,
+            "langcode": "fr",
+            "lang": "fr"
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true,
+            "lang": "fr"
+        }
+    ],
+    "field_code": [
+        {
+            "value": "FR-NAQ"
+        }
+    ],
+    "field_internet_site": [
+        {
+            "uri": "http:\/\/www.biodiversite-nouvelle-aquitaine.fr\/",
+            "title": "",
+            "options": []
+        }
+    ],
+    "field_presentation": [
+        {
+            "value": "<p>Lorem ipsum dolor sit amet,sed diam voluptua.&nbsp; no sea takimata sanctus est Lorem ipsum dolor sit amet.&nbsp; consetetur sadipscing elitr,&nbsp; Stet clita kasd gubergren,&nbsp; consetetur sadipscing elitr,&nbsp; sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,&nbsp; sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,&nbsp; sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,&nbsp; no sea takimata sanctus est Lorem ipsum dolor sit amet. &nbsp;<\/p>\r\n\r\n<p>Lorem ipsum dolor sit amet,sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,&nbsp; consetetur sadipscing elitr,&nbsp; no sea takimata sanctus est Lorem ipsum dolor sit amet.&nbsp; no sea takimata sanctus est Lorem ipsum dolor sit amet.&nbsp; consetetur sadipscing elitr,&nbsp; Lorem ipsum dolor sit amet,&nbsp; At vero eos et accusam et justo duo dolores et ea rebum.&nbsp; sed diam voluptua.&nbsp; sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, &nbsp;<\/p>\r\n\r\n<p>Lorem ipsum dolor sit amet,consetetur sadipscing elitr,&nbsp; At vero eos et accusam et justo duo dolores et ea rebum.&nbsp; Stet clita kasd gubergren,&nbsp; no sea takimata sanctus est Lorem ipsum dolor sit amet.&nbsp; Lorem ipsum dolor sit amet,&nbsp; consetetur sadipscing elitr,&nbsp; no sea takimata sanctus est Lorem ipsum dolor sit amet.&nbsp; sed diam voluptua.&nbsp; sed diam voluptua. &nbsp;<\/p>\r\n\r\n<p>&nbsp;<\/p>\r\n",
+            "format": "full_html",
+            "processed": "<p>Lorem ipsum dolor sit amet,sed diam voluptua.\u00a0 no sea takimata sanctus est Lorem ipsum dolor sit amet.\u00a0 consetetur sadipscing elitr,\u00a0 Stet clita kasd gubergren,\u00a0 consetetur sadipscing elitr,\u00a0 sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,\u00a0 sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,\u00a0 sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,\u00a0 no sea takimata sanctus est Lorem ipsum dolor sit amet. \u00a0<\/p>\n\n<p>Lorem ipsum dolor sit amet,sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,\u00a0 consetetur sadipscing elitr,\u00a0 no sea takimata sanctus est Lorem ipsum dolor sit amet.\u00a0 no sea takimata sanctus est Lorem ipsum dolor sit amet.\u00a0 consetetur sadipscing elitr,\u00a0 Lorem ipsum dolor sit amet,\u00a0 At vero eos et accusam et justo duo dolores et ea rebum.\u00a0 sed diam voluptua.\u00a0 sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, \u00a0<\/p>\n\n<p>Lorem ipsum dolor sit amet,consetetur sadipscing elitr,\u00a0 At vero eos et accusam et justo duo dolores et ea rebum.\u00a0 Stet clita kasd gubergren,\u00a0 no sea takimata sanctus est Lorem ipsum dolor sit amet.\u00a0 Lorem ipsum dolor sit amet,\u00a0 consetetur sadipscing elitr,\u00a0 no sea takimata sanctus est Lorem ipsum dolor sit amet.\u00a0 sed diam voluptua.\u00a0 sed diam voluptua. \u00a0<\/p>\n\n<p>\u00a0<\/p>\n",
+            "summary": "Lorem ipsum dolor sit amet,sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,  consetetur sadipscing elitr,  no sea takimata sanctus est Lorem ipsum dolor sit amet.  "
+        }
+    ]
+}
