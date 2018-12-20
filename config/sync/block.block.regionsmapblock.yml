@@ -1,0 +1,26 @@
+uuid: 3d1e7b8c-38c4-4b08-9df4-177e6ab0c92b
+langcode: fr
+status: true
+dependencies:
+  module:
+    - arb_regions
+    - system
+  theme:
+    - arb
+id: regionsmapblock
+theme: arb
+region: content
+weight: -4
+provider: null
+plugin: regions_map_block
+settings:
+  id: regions_map_block
+  label: 'Regions Map Block'
+  provider: arb_regions
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: "<front>\r\n/regions"
+    negate: false
+    context_mapping: {  }

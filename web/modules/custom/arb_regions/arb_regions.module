@@ -48,3 +48,16 @@ function arb_regions_form_user_form_alter(&$form, \Drupal\Core\Form\FormStateInt
     }
   }
 }
+
+/**
+ * Implements hook_theme().
+ */
+function arb_regions_theme($existing, $type, $theme, $path) {
+  return [
+    'regions_map__block' => [
+      'variables' => [
+        'data' => NULL,
+      ],
+    ],
+  ];
+}

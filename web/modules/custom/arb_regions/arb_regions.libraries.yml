@@ -1,0 +1,5 @@
+regions-map:
+  version: 1.x
+  css:
+    theme:
+      css/regions-map.css: {}

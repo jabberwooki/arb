@@ -1,0 +1,16 @@
+.block-regions-map-block .region.color-0 {
+    fill: #e4e4e4;
+}
+.block-regions-map-block .region.color-1 {
+    fill: #5bb6e3;
+}
+.block-regions-map-block .region.color-2 {
+    fill: #f08946;
+}
+.block-regions-map-block .region.color-3 {
+    fill: #00c400;
+}
+
+.block-regions-map-block a:hover {
+    cursor: pointer;
+}

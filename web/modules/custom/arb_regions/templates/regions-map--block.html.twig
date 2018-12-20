@@ -1,0 +1,104 @@
+{#
+/**
+ * @file
+ * Default theme implementation to display a block.
+ *
+ * Available variables:
+ * - $block->subject: Block title.
+ * - $content: Block content.
+ * - $block->module: Module that generated the block.
+ * - $block->delta: An ID for the block, unique within each module.
+ * - $block->region: The block region embedding the current block.
+ * - $classes: String of classes that can be used to style contextually through
+ *   CSS. It can be manipulated through the variable $classes_array from
+ *   preprocess functions. The default values can be one or more of the
+ *   following:
+ *   - block: The current template type, i.e., "theming hook".
+ *   - block-[module]: The module generating the block. For example, the user
+ *     module is responsible for handling the default user navigation block. In
+ *     that case the class would be 'block-user'.
+ * - $title_prefix (array): An array containing additional output populated by
+ *   modules, intended to be displayed in front of the main title tag that
+ *   appears in the template.
+ * - $title_suffix (array): An array containing additional output populated by
+ *   modules, intended to be displayed after the main title tag that appears in
+ *   the template.
+ *
+ * Helper variables:
+ * - $classes_array: Array of html class attribute values. It is flattened
+ *   into a string within the variable $classes.
+ * - $block_zebra: Outputs 'odd' and 'even' dependent on each block region.
+ * - $zebra: Same output as $block_zebra but independent of any block region.
+ * - $block_id: Counter dependent on each block region.
+ * - $id: Same output as $block_id but independent of any block region.
+ * - $is_front: Flags true when presented in the front page.
+ * - $logged_in: Flags true when the current user is a logged-in member.
+ * - $is_admin: Flags true when the current user is an administrator.
+ * - $block_html_id: A valid HTML ID and guaranteed unique.
+ *
+ * @ingroup templates
+ *
+ * @see bootstrap_preprocess_block()
+ * @see template_preprocess()
+ * @see template_preprocess_block()
+ * @see bootstrap_process_block()
+ * @see template_process()
+ */
+#}
+
+{#
+/**
+ * ------------------------------- INFORMATIONS VARIABLES REGIONS ------------------------------------------------------
+ *
+ * La variable data (générée dans le block RegionsMapBlock) contient les données des 13 + 5 régions (id, name et progress).
+ *
+ * Pour accéder aux données d'une région, par exemple Bretagne :
+ + - identifiant : {{ data['FR-BRE'].id }}
+ * - nom : {{ data['FR-BRE'].name }}
+ * - indice de progression : {{ data['FR-BRE'].progress }} (valeurs possibles : 0, 1, 2 ou 3).
+ *
+ * Ces données sont disponibles aussi dans les fichiers inclus, donc dans regions-map.svg.
+ * Pour voir le contenu de la variable data : {{ kint(data) }}
+ *
+ * Codes région :
+ * FR-ARA	Auvergne-Rhône-Alpes
+ * FR-BFC	Bourgogne- * FRanche-Comté
+ * FR-BRE	Bretagne
+ * FR-CVL	Centre-Val de Loire
+ * FR-COR	Corse
+ * FR-GES	Grand Est
+ * FR-HDF	Hauts-de- * FRance
+ * FR-IDF	Île-de- * FRance
+ * FR-NOR	Normandie
+ * FR-NAQ	Nouvelle-Aquitaine
+ * FR-OCC	Occitanie
+ * FR-PDL	Pays de la Loire
+ * FR-PAC	Provence-Alpes-Côte d'Azur
+
+ * FR-GP	Guadeloupe	(voir également les informations de ISO 3166-1:GP)
+ * FR-GF	Guyane ( * FRançaise)	(voir également les informations de ISO 3166-1:GF)
+ * FR-MQ	Martinique	(voir également les informations de ISO 3166-1:MQ)
+ * FR-RE	La Réunion	(voir également les informations de ISO 3166-1:RE)
+ * FR-YT	Mayotte	(voir également les informations de ISO 3166-1:YT)
+ *
+ * ---------------------------------------------------------------------------------------------------------------------
+ */
+#}
+
+{%
+set classes = [
+'block',
+'block-' ~ configuration.provider|clean_class,
+'block-' ~ plugin_id|clean_class,
+'clearfix',
+]
+%}
+<section{{ attributes.addClass(classes) }}>
+    <h2{{ title_attributes.addClass('block-title') }}>Carte interactive des ARB</h2>
+
+    <div id="interactive-map">
+    {% block content %}
+        {% include '@arb/../images/regions-map.svg' %}
+    {% endblock %}
+    </div>
+</section>
