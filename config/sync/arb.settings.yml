@@ -21,8 +21,8 @@ region_wells:
   content: ''
   sidebar_first: ''
   sidebar_second: ''
+  prefooter: ''
   footer: ''
-fluid_container: 0
 features:
   comment_user_picture: true
   comment_user_verification: true
@@ -31,5 +31,4 @@ features:
 logo:
   path: ''
   url: ''
-  use_default: true
-langcode: fr
+  use_default: false
