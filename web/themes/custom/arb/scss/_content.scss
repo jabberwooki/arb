@@ -1,7 +1,26 @@
 
 
+/*CARTE DE FRANCE*/
+a .region:hover {
+    fill-opacity: 0.5;
+}
+
+
 /*SLICK FLECHES*/
 .slick-prev:before,
 .slick-next:before {
     color:$brand-primary !important;
+}
+
+.main-container{
+    -moz-box-shadow: 0px 0px 10px 0px #ccc;
+    -webkit-box-shadow: 0px 0px 10px 0px #ccc;
+    -o-box-shadow: 0px 0px 10px 0px #ccc;
+    box-shadow: 0px 0px 10px 0px #ccc;
+    filter:progid:DXImageTransform.Microsoft.Shadow(color=#ccc, Direction=NaN, Strength=10);
+    border-radius: 10px;
+    margin-top: -80px;
+    z-index: 1000;
+    position: relative;
+    background: #fff;
 }
