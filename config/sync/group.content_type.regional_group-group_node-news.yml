@@ -1,0 +1,19 @@
+uuid: 722df7e5-2967-4eea-89d9-6ad5d43c8d06
+langcode: fr
+status: true
+dependencies:
+  config:
+    - group.type.regional_group
+    - node.type.news
+  module:
+    - gnode
+    - node
+id: regional_group-group_node-news
+label: 'Groupe régional: Group node (Actualité)'
+description: 'Adds <em class="placeholder">Actualité</em> content to groups both publicly and privately.'
+group_type: regional_group
+content_plugin: 'group_node:news'
+plugin_config:
+  group_cardinality: 0
+  entity_cardinality: 1
+  use_creation_wizard: true
