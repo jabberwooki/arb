@@ -8805,10 +8805,13 @@ a .region:hover {
   box-shadow: 0px 0px 10px 0px #ccc;
   filter: progid:DXImageTransform.Microsoft.Shadow(color=#ccc, Direction=NaN, Strength=10);
   border-radius: 10px;
-  margin-top: -80px;
   z-index: 1000;
   position: relative;
   background: #fff;
+}
+
+.path-frontpage .main-container {
+  margin-top: -80px;
 }
 
 .footer {
