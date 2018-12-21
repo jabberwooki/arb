@@ -94,7 +94,9 @@ set classes = [
 ]
 %}
 <section{{ attributes.addClass(classes) }}>
+    {% if is_front %}
     <h2{{ title_attributes.addClass('block-title') }}>Carte interactive des ARB</h2>
+    {% endif %}
 
     <div id="interactive-map">
     {% block content %}
