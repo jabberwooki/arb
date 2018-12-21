@@ -9,8 +9,8 @@ dependencies:
     - arb
 id: regionsmapblock
 theme: arb
-region: content
-weight: -4
+region: content_right
+weight: -9
 provider: null
 plugin: regions_map_block
 settings:

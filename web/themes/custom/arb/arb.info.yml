@@ -13,6 +13,8 @@ regions:
   hamburger: 'Hamburger'
   highlighted: 'Highlighted'
   help: 'Help'
+  content_right: 'Content right'
+  content_left: 'Content left'
   content: 'Content'
   sidebar_first: 'Primary'
   sidebar_second: 'Secondary'
