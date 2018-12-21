@@ -259,6 +259,11 @@ display:
       menu:
         type: normal
         title: Ressources
+        description: ''
+        expanded: false
+        parent: ''
+        weight: 20
+        context: '0'
         menu_name: hamburger
     cache_metadata:
       max-age: -1

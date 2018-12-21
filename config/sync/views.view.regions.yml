@@ -179,7 +179,7 @@ display:
         description: ''
         expanded: false
         parent: ''
-        weight: 0
+        weight: 5
         context: '0'
         menu_name: hamburger
       fields:
