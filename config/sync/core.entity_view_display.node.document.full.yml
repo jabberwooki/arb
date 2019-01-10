@@ -55,7 +55,7 @@ content:
     region: ds_content
   field_document_category:
     weight: 1
-    label: above
+    label: hidden
     settings:
       link: false
     third_party_settings: {  }
