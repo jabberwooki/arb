@@ -5,11 +5,13 @@ dependencies:
   config:
     - core.entity_view_mode.node.news_block
     - field.field.node.news.body
-    - field.field.node.news.field_news_image
+    - field.field.node.news.field_image
     - field.field.node.news.field_news_type
+    - image.style.news_block
     - node.type.news
   module:
     - ds
+    - image
     - user
 third_party_settings:
   ds:
@@ -29,7 +31,7 @@ third_party_settings:
           layout_class: {  }
     regions:
       ds_content:
-        - field_news_image
+        - field_image
         - node_post_date
         - node_title
     fields:
@@ -48,15 +50,15 @@ targetEntityType: node
 bundle: news
 mode: news_block
 content:
-  field_news_image:
-    type: entity_reference_entity_view
+  field_image:
+    type: image
     weight: 0
-    label: hidden
-    settings:
-      view_mode: news_block
-      link: false
-    third_party_settings: {  }
     region: ds_content
+    label: above
+    settings:
+      image_style: news_block
+      image_link: content
+    third_party_settings: {  }
 hidden:
   body: true
   field_news_type: true

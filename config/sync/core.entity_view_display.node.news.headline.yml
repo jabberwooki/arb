@@ -5,7 +5,6 @@ dependencies:
   config:
     - core.entity_view_mode.node.headline
     - field.field.node.news.body
-    - field.field.node.news.field_news_image
     - field.field.node.news.field_news_type
     - node.type.news
   module:
@@ -57,15 +56,6 @@ content:
     weight: 4
     settings:
       trim_length: 600
-    third_party_settings: {  }
-    region: ds_content
-  field_news_image:
-    type: entity_reference_entity_view
-    weight: 0
-    label: above
-    settings:
-      view_mode: headline
-      link: false
     third_party_settings: {  }
     region: ds_content
   field_news_type:
