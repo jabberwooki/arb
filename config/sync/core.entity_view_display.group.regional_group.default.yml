@@ -4,14 +4,15 @@ status: true
 dependencies:
   config:
     - field.field.group.regional_group.field_code
+    - field.field.group.regional_group.field_image
     - field.field.group.regional_group.field_internet_site
     - field.field.group.regional_group.field_presentation
     - field.field.group.regional_group.field_process_progress
-    - field.field.group.regional_group.field_region_image
     - group.type.regional_group
   module:
     - ds
     - link
+    - responsive_image
     - text
 third_party_settings:
   ds:
@@ -31,7 +32,7 @@ third_party_settings:
           layout_class: {  }
     regions:
       ds_content:
-        - field_region_image
+        - field_image
         - label
         - field_process_progress
         - field_internet_site
@@ -48,6 +49,15 @@ targetEntityType: group
 bundle: regional_group
 mode: default
 content:
+  field_image:
+    weight: 0
+    label: hidden
+    settings:
+      image_link: ''
+      responsive_image_style: ''
+    third_party_settings: {  }
+    type: responsive_image
+    region: ds_content
   field_internet_site:
     weight: 3
     label: hidden
@@ -76,15 +86,6 @@ content:
     third_party_settings: {  }
     type: entity_reference_label
     region: ds_content
-  field_region_image:
-    type: entity_reference_entity_view
-    weight: 0
-    region: ds_content
-    label: hidden
-    settings:
-      view_mode: default
-      link: false
-    third_party_settings: {  }
   label:
     label: hidden
     type: string

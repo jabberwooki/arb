@@ -3,15 +3,15 @@ langcode: fr
 status: true
 dependencies:
   config:
-    - entity_browser.browser.media_browser
     - field.field.group.regional_group.field_code
+    - field.field.group.regional_group.field_image
     - field.field.group.regional_group.field_internet_site
     - field.field.group.regional_group.field_presentation
     - field.field.group.regional_group.field_process_progress
-    - field.field.group.regional_group.field_region_image
     - group.type.regional_group
+    - image.style.thumbnail
   module:
-    - entity_browser
+    - image_widget_crop
     - link
     - path
     - text
@@ -27,6 +27,22 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: string_textfield
+    region: content
+  field_image:
+    weight: 2
+    settings:
+      show_crop_area: true
+      show_default_crop: true
+      warn_multiple_usages: true
+      preview_image_style: thumbnail
+      crop_preview_image_style: crop_thumbnail
+      crop_list:
+        - region_slide
+      crop_types_required:
+        - region_slide
+      progress_indicator: throbber
+    third_party_settings: {  }
+    type: image_widget_crop
     region: content
   field_internet_site:
     weight: 4
@@ -46,26 +62,11 @@ content:
     type: text_textarea_with_summary
     region: content
   field_process_progress:
-    weight: 2
+    weight: 1
     settings: {  }
     third_party_settings: {  }
     type: options_buttons
     region: content
-  field_region_image:
-    type: entity_browser_entity_reference
-    weight: 1
-    region: content
-    settings:
-      entity_browser: media_browser
-      field_widget_display: rendered_entity
-      field_widget_edit: true
-      field_widget_remove: true
-      open: true
-      selection_mode: selection_append
-      field_widget_display_settings:
-        view_mode: region_slideshow
-      field_widget_replace: false
-    third_party_settings: {  }
   label:
     type: string_textfield
     weight: 0
