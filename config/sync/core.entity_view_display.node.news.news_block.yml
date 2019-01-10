@@ -40,6 +40,10 @@ third_party_settings:
         weight: 2
         label: hidden
         formatter: default
+        settings:
+          link: true
+          wrapper: h2
+          class: ''
       node_post_date:
         plugin_id: node_post_date
         weight: 1
@@ -54,7 +58,7 @@ content:
     type: image
     weight: 0
     region: ds_content
-    label: above
+    label: hidden
     settings:
       image_style: news_block
       image_link: content
