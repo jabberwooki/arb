@@ -1,0 +1,27 @@
+uuid: f1193ad1-4be1-4ca8-afe0-331ec7575d49
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_files
+    - node.type.document
+  module:
+    - file
+id: node.document.field_files
+field_name: field_files
+entity_type: node
+bundle: document
+label: Fichier(s)
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: files
+  file_extensions: 'pdf doc docx xsl xlsx jpg jpeg gif odt ods'
+  max_filesize: ''
+  description_field: true
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file
