@@ -4,13 +4,15 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
+    - field.field.node.slide.field_image
     - field.field.node.slide.field_link
-    - field.field.node.slide.field_slide_image
     - field.field.node.slide.field_text
+    - image.style.frontpage_slide
     - node.type.slide
   module:
     - ds
     - field_group
+    - image
     - link
     - user
 third_party_settings:
@@ -31,7 +33,7 @@ third_party_settings:
           layout_class: {  }
     regions:
       ds_content:
-        - field_slide_image
+        - field_image
         - group_slide_infos
         - node_title
         - field_text
@@ -66,6 +68,15 @@ targetEntityType: node
 bundle: slide
 mode: teaser
 content:
+  field_image:
+    type: image
+    weight: 0
+    region: ds_content
+    label: hidden
+    settings:
+      image_style: frontpage_slide
+      image_link: ''
+    third_party_settings: {  }
   field_link:
     type: link_separate
     weight: 4
@@ -77,15 +88,6 @@ content:
       target: ''
       url_only: false
       url_plain: false
-    third_party_settings: {  }
-  field_slide_image:
-    type: entity_reference_entity_view
-    weight: 0
-    region: ds_content
-    label: hidden
-    settings:
-      view_mode: frontpage_slideshow
-      link: false
     third_party_settings: {  }
   field_text:
     type: basic_string

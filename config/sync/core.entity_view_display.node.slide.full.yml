@@ -1,16 +1,17 @@
-uuid: 14b5c6d6-a063-4576-b19f-f90438be645e
+uuid: d8d4c6e6-2c64-4a5d-bf02-c5ab09081034
 langcode: fr
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.node.full
     - field.field.node.slide.field_image
     - field.field.node.slide.field_link
     - field.field.node.slide.field_text
     - node.type.slide
   module:
     - ds
-    - image
     - link
+    - responsive_image
     - user
 third_party_settings:
   ds:
@@ -30,33 +31,26 @@ third_party_settings:
           layout_class: {  }
     regions:
       ds_content:
-        - node_title
+        - field_image
         - field_text
         - field_link
-        - field_image
-    fields:
-      node_title:
-        plugin_id: node_title
-        weight: 1
-        label: hidden
-        formatter: default
-id: node.slide.default
+id: node.slide.full
 targetEntityType: node
 bundle: slide
-mode: default
+mode: full
 content:
   field_image:
-    weight: 4
-    label: above
+    weight: 0
+    label: hidden
     settings:
-      image_style: ''
       image_link: ''
+      responsive_image_style: ''
     third_party_settings: {  }
-    type: image
+    type: responsive_image
     region: ds_content
   field_link:
-    weight: 3
-    label: above
+    weight: 2
+    label: inline
     settings:
       trim_length: 80
       url_only: false
@@ -67,7 +61,7 @@ content:
     type: link
     region: ds_content
   field_text:
-    weight: 2
+    weight: 1
     label: hidden
     settings: {  }
     third_party_settings: {  }

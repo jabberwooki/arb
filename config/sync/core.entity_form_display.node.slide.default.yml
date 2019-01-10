@@ -3,13 +3,13 @@ langcode: fr
 status: true
 dependencies:
   config:
-    - entity_browser.browser.media_browser
+    - field.field.node.slide.field_image
     - field.field.node.slide.field_link
-    - field.field.node.slide.field_slide_image
     - field.field.node.slide.field_text
+    - image.style.thumbnail
     - node.type.slide
   module:
-    - entity_browser
+    - image_widget_crop
     - link
     - path
 id: node.slide.default
@@ -23,6 +23,22 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_image:
+    weight: 1
+    settings:
+      show_crop_area: true
+      show_default_crop: true
+      warn_multiple_usages: true
+      preview_image_style: thumbnail
+      crop_preview_image_style: crop_thumbnail
+      crop_list:
+        - frontpage_slide
+      crop_types_required:
+        - frontpage_slide
+      progress_indicator: throbber
+    third_party_settings: {  }
+    type: image_widget_crop
+    region: content
   field_link:
     weight: 3
     settings:
@@ -30,21 +46,6 @@ content:
       placeholder_title: ''
     third_party_settings: {  }
     type: link_default
-    region: content
-  field_slide_image:
-    weight: 1
-    settings:
-      entity_browser: media_browser
-      field_widget_display: rendered_entity
-      field_widget_edit: true
-      field_widget_remove: true
-      open: true
-      selection_mode: selection_append
-      field_widget_display_settings:
-        view_mode: default
-      field_widget_replace: false
-    third_party_settings: {  }
-    type: entity_browser_entity_reference
     region: content
   field_text:
     weight: 2
