@@ -1,0 +1,16 @@
+uuid: 3f11c0cd-a2cd-4061-95c6-0ec39a3538c8
+langcode: fr
+status: true
+dependencies:
+  config:
+    - group.type.regional_group
+id: regional_group-administrator
+label: 'Administrateur régional'
+weight: 3
+internal: false
+audience: member
+group_type: regional_group
+permissions_ui: true
+permissions:
+  - 'administer group'
+  - 'view group'
