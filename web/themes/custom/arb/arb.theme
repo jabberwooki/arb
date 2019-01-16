@@ -6,3 +6,14 @@
  *
  * Place your custom PHP code in this file.
  */
+use Drupal\user\Entity\User;
+
+function arb_preprocess_menu(&$variables) {
+  if (isset($variables['menu_name']) && $variables['menu_name'] == 'account') {
+    // Passage du nom complet de l'utilisateur courant au template menu.html.twig à l'aide de $variables.
+    $current_user = User::load(\Drupal::currentUser()->id());
+    $variables['user_fullname'] = $current_user->get('field_firstname')->value
+      . ' '
+      . $current_user->get('field_lastname')->value;
+  }
+}
