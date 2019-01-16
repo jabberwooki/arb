@@ -19,7 +19,6 @@
 #}
 
 {% macro menu_links(items, attributes, menu_level, classes, user_fullname) %}
-  {{ dpm(user_fullname) }}
   {% if items %}
     <ul{{ attributes.addClass(menu_level == 0 ? classes : 'dropdown-menu') }}>
     {% for item in items %}
@@ -37,7 +36,6 @@
           <a href="{{ item.url }}" class="dropdown-toggle" data-toggle="dropdown">{{ item.title }} <span class="caret"></span></a>
         {% else %}
           <li{{ item.attributes.addClass(item_classes) }}>
-          {{ dpm(item.title) }}
             {% if item.title.getUntranslatedString() == 'Log in' %}
               {{ link('Connexion', item.url) }}
             {% elseif item.title == 'Mon compte' %}
