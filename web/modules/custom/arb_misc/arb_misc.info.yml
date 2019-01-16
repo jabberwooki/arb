@@ -1,0 +1,6 @@
+name: ARBs Divers
+description: Regroupe diverses fonctionnalités et utilitaires.
+package: ARBs
+
+type: module
+core: 8.x
