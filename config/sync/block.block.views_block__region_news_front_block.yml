@@ -1,0 +1,30 @@
+uuid: 88e36205-f40a-44b4-a6ee-fc6ce52095b9
+langcode: fr
+status: true
+dependencies:
+  config:
+    - views.view.region_news
+  module:
+    - system
+    - views
+  theme:
+    - arb
+id: views_block__region_news_front_block
+theme: arb
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:region_news-front_block'
+settings:
+  id: 'views_block:region_news-front_block'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

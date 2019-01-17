@@ -11,7 +11,7 @@
       });
 
       // Slick carousel les essentiels (Actus)
-      $('#block-views-block-news-block .view-content').slick({
+      $('#block-views-block-region-news-front-block .view-content').slick({
         arrows: true,
         infinite: true,
         slidesToShow: 4,
