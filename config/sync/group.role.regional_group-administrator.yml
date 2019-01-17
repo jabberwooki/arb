@@ -14,3 +14,4 @@ permissions_ui: true
 permissions:
   - 'administer group'
   - 'view group'
+  - 'view group_membership content'
