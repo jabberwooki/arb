@@ -1,0 +1,20 @@
+uuid: b1707961-6ea2-4124-87fb-e677ce7bed06
+langcode: fr
+status: true
+dependencies:
+  module:
+    - arb_regions
+  theme:
+    - arb
+id: region_operations
+theme: arb
+region: hamburger
+weight: 1
+provider: null
+plugin: regions_operations_block
+settings:
+  id: regions_operations_block
+  label: 'Création de contenu dans une région'
+  provider: arb_regions
+  label_display: '0'
+visibility: {  }
