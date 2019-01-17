@@ -12,11 +12,11 @@ audience: outsider
 group_type: regional_group
 permissions_ui: true
 permissions:
-  0: 'view group'
-  1: 'view group_membership content'
-  2: 'view group_node:news entity'
-  3: 'view group_node:news content'
-  8: 'view group_node:slide entity'
-  9: 'view group_node:slide content'
-  10: 'view group_node:document entity'
-  11: 'view group_node:document content'
+  - 'view group'
+  - 'view group_membership content'
+  - 'view group_node:news entity'
+  - 'view group_node:news content'
+  - 'view group_node:slide entity'
+  - 'view group_node:slide content'
+  - 'view group_node:document entity'
+  - 'view group_node:document content'
