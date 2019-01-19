@@ -38,6 +38,7 @@ third_party_settings:
         - field_internet_site
         - 'dynamic_token_field:group-regions_backlink'
         - field_presentation
+        - region_news_entity_view_1
     fields:
       'dynamic_token_field:group-regions_backlink':
         plugin_id: 'dynamic_token_field:group-regions_backlink'
@@ -93,6 +94,11 @@ content:
     region: ds_content
     settings:
       link_to_entity: false
+    third_party_settings: {  }
+  region_news_entity_view_1:
+    weight: 10
+    region: ds_content
+    settings: {  }
     third_party_settings: {  }
 hidden:
   changed: true
