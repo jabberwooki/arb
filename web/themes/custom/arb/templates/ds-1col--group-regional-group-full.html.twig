@@ -1,0 +1,71 @@
+{#
+/**
+ * @file
+ * Display Suite 1 column template.
+ *
+ * Available variables:
+ * - ds_content_wrapper: wrapper around content
+ * - attributes: content region attributes
+ * - ds_content: content region
+ */
+#}
+<{{ ds_content_wrapper }}{{ attributes.addClass('ds-1col', 'clearfix') }}>
+
+  {{ title_suffix.contextual_links }}
+
+<!-- Nav tabs -->
+  <ul class="nav nav-tabs" role="tablist">
+    <li role="presentation" class="active"><a href="#dashboard-content" aria-controls="dashboard" role="tab" data-toggle="tab">Tableau de bord</a></li>
+    <li role="presentation"><a href="#news-content" aria-controls="news" role="tab" data-toggle="tab">Actualités</a></li>
+    <li role="presentation"><a href="#resources-content" aria-controls="resources" role="tab" data-toggle="tab">Ressources</a></li>
+  </ul>
+
+
+<!-- Tab panes -->
+<div class="tab-content">
+  <div role="tabpanel" class="tab-pane active" id="dashboard-content">
+    <div class="region-infos col-md-8">
+      <h2>{{ ds_content.label }}</h2>
+      {{ ds_content.field_process_progress }}
+      {{ ds_content.field_internet_site }}
+    </div>
+    <div class="regions-backlink col-md-4">
+      <a href="/regions">Retour à la liste</a>
+    </div>
+    <div class="region-presentation col-md-12">
+      {{ ds_content.field_presentation }}
+    </div>
+    <div class="region-members col-md-12">
+      <h3>Membres</h3>
+      Liste des membres
+    </div>
+    <div class="region-latest-news col-md-6">
+      <h3>Dernières actus de la région</h3>
+      {{ region_news_eva_dashboard_tab }}
+    </div>
+    <div class="region-latest-resources col-md-6">
+      <h3>Dernières ressources</h3>
+
+    </div>
+  </div>
+  <div role="tabpanel" class="tab-pane" id="news-content">
+    {{ region_news_eva_news_tab }}
+  </div>
+  <div role="tabpanel" class="tab-pane" id="resources-content">
+    Liste des ressources
+  </div>
+</div>
+
+
+
+
+
+{#<ol>#}
+  {#{% for key, value in _context  %}#}
+    {#<li>{{ key }}</li>#}
+  {#{% endfor %}#}
+{#</ol>#}
+
+
+
+</{{ ds_content_wrapper }}>

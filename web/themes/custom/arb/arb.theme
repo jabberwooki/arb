@@ -17,3 +17,15 @@ function arb_preprocess_menu(&$variables) {
       . $current_user->get('field_lastname')->value;
   }
 }
+
+/**
+ * Implements hook_theme_suggestions_page_alter().
+ * Add suggestion template for page.html.twig
+ */
+function arb_theme_suggestions_page_alter(array &$suggestions, array $variables) {
+  // Suggestion de template pour un groupe régional.
+  if ($group = \Drupal::routeMatch()->getParameter('group')) {
+    $bundle = $group->bundle();
+    $suggestions[] = 'page__'. $bundle;
+  }
+}
