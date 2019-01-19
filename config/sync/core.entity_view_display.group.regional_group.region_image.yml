@@ -1,0 +1,60 @@
+uuid: fb32ecab-6a89-4471-8f83-5ca2dda285d6
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.group.region_image
+    - field.field.group.regional_group.field_code
+    - field.field.group.regional_group.field_image
+    - field.field.group.regional_group.field_internet_site
+    - field.field.group.regional_group.field_presentation
+    - field.field.group.regional_group.field_process_progress
+    - group.type.regional_group
+    - image.style.region_slide
+  module:
+    - ds
+    - image
+third_party_settings:
+  ds:
+    layout:
+      id: ds_1col
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        wrappers:
+          ds_content: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        classes:
+          layout_class: {  }
+    regions:
+      ds_content:
+        - field_image
+id: group.regional_group.region_image
+targetEntityType: group
+bundle: regional_group
+mode: region_image
+content:
+  field_image:
+    type: image
+    weight: 0
+    region: ds_content
+    label: hidden
+    settings:
+      image_style: region_slide
+      image_link: ''
+    third_party_settings: {  }
+hidden:
+  changed: true
+  created: true
+  field_code: true
+  field_internet_site: true
+  field_presentation: true
+  field_process_progress: true
+  label: true
+  langcode: true
+  region_news_entity_view_1: true
+  uid: true

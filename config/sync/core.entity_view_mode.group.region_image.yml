@@ -1,0 +1,10 @@
+uuid: 0903bff2-0d32-4bd2-afa2-e2b21d87a5ce
+langcode: fr
+status: true
+dependencies:
+  module:
+    - group
+id: group.region_image
+label: 'Image région'
+targetEntityType: group
+cache: true
