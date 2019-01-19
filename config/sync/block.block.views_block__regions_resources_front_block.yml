@@ -1,0 +1,30 @@
+uuid: 062ef5d3-4e24-4c0b-be61-b8608e0c30c0
+langcode: fr
+status: true
+dependencies:
+  config:
+    - views.view.regions_resources
+  module:
+    - system
+    - views
+  theme:
+    - arb
+id: views_block__regions_resources_front_block
+theme: arb
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:regions_resources-front_block'
+settings:
+  id: 'views_block:regions_resources-front_block'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }
