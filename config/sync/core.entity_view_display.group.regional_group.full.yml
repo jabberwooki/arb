@@ -32,15 +32,15 @@ third_party_settings:
           layout_class: {  }
     regions:
       ds_content:
-        - group_tabs_content
         - label
         - field_process_progress
         - field_internet_site
         - 'dynamic_token_field:group-regions_backlink'
         - field_presentation
-        - region_news_entity_view_1
-        - group_dashboard_content
-        - group_news_content
+        - regions_ressources_eva_dashboard_tab
+        - regions_ressources_eva_resources_tab
+        - region_news_eva_dashboard_tab
+        - region_news_eva_news_tab
     fields:
       'dynamic_token_field:group-regions_backlink':
         plugin_id: 'dynamic_token_field:group-regions_backlink'
@@ -90,6 +90,26 @@ content:
     third_party_settings: {  }
   region_news_entity_view_1:
     weight: 6
+    region: ds_content
+    settings: {  }
+    third_party_settings: {  }
+  region_news_eva_dashboard_tab:
+    weight: 10
+    region: ds_content
+    settings: {  }
+    third_party_settings: {  }
+  region_news_eva_news_tab:
+    weight: 10
+    region: ds_content
+    settings: {  }
+    third_party_settings: {  }
+  regions_ressources_eva_dashboard_tab:
+    weight: 10
+    region: ds_content
+    settings: {  }
+    third_party_settings: {  }
+  regions_ressources_eva_resources_tab:
+    weight: 10
     region: ds_content
     settings: {  }
     third_party_settings: {  }
