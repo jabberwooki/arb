@@ -26,5 +26,12 @@ content:
     third_party_settings: {  }
     label: hidden
 hidden:
+  field_directory: true
+  field_firstname: true
+  field_function: true
+  field_lastname: true
+  field_organisation: true
+  field_quatuor_member: true
+  field_region: true
   langcode: true
   member_for: true
