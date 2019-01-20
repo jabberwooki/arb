@@ -1,6 +1,6 @@
 uuid: e6ecf4a7-26f6-4560-ba28-a4a3bacf5161
 langcode: fr
-status: true
+status: false
 dependencies:
   config:
     - field.storage.user.field_firstname
