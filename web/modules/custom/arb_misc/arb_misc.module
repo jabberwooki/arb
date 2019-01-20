@@ -5,3 +5,22 @@
  * Date: 21/12/18
  * Time: 11:14
  */
+
+/**
+ * Implements hook_user_login().
+ */
+
+use Symfony\Component\HttpFoundation\RedirectResponse;
+
+function arb_misc_user_login($account) {
+  // Si le user est membre d'une région, on le redirige vers sa région
+  if ($region_id = $account->get('field_region')->getString()) {
+    $response = new RedirectResponse('/group/' . $region_id);
+    $response->send();
+  }
+  // sinon vers la page d'accueil.
+  else {
+    $response = new RedirectResponse('/');
+    $response->send();
+  }
+}
