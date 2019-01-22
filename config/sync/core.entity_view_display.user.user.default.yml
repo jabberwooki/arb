@@ -3,7 +3,6 @@ langcode: fr
 status: true
 dependencies:
   config:
-    - field.field.user.user.field_directory
     - field.field.user.user.field_firstname
     - field.field.user.user.field_function
     - field.field.user.user.field_lastname
@@ -72,7 +71,6 @@ content:
     third_party_settings: {  }
     label: hidden
 hidden:
-  field_directory: true
   field_quatuor_member: true
   langcode: true
   member_for: true
