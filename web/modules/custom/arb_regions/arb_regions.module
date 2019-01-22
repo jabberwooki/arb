@@ -10,21 +10,27 @@ use Drupal\Core\Entity\EntityInterface;
 
 
 function arb_regions_user_insert(Drupal\Core\Entity\EntityInterface $entity) {
-  //$region = entity_load('group', $entity->get('field_region')->getString());
-  $region_id = $entity->get('field_region')->getString();
-  $region = \Drupal\group\Entity\Group::load($region_id);
-  $region->addMember($entity);
-
-
   $logger = \Drupal::logger('arb_regions');
-  $logger->info(
-    'User @name (uid: @uid) registered in region @region.',
-    [
-      '@name' => $entity->label(),
-      '@uid' => $entity->id(),
-      '@region' => $region->label(),
-    ]
-  );
+
+  $region_id = $entity->get('field_region')->getString();
+  if ($region_id) {
+    $is_region_selected = 'oui';
+    $region = \Drupal\group\Entity\Group::load($region_id);
+    $region->addMember($entity);
+
+    $logger->info(
+      'User @name (uid: @uid) registered in region @region.',
+      [
+        '@name' => $entity->label(),
+        '@uid' => $entity->id(),
+        '@region' => $region->label(),
+      ]
+    );
+  }
+  else {
+    $is_region_selected = 'non';
+    $logger->info('Pas de région sélectionnée');
+  }
 }
 
 /**
