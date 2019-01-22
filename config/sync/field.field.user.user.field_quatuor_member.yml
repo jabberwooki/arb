@@ -10,7 +10,7 @@ id: user.user.field_quatuor_member
 field_name: field_quatuor_member
 entity_type: user
 bundle: user
-label: 'Je suis membre du quatuor'
+label: 'Membre du quatuor'
 description: ''
 required: false
 translatable: false
