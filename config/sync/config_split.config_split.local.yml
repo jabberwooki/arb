@@ -8,6 +8,7 @@ description: 'Modules activés localement seulement.'
 folder: ../config/envs/local
 module:
   devel: 0
+  devel_generate: 0
   kint: 0
   smtp: 0
 theme: {  }
