@@ -1,0 +1,10 @@
+credential_provider: shield
+credentials:
+  shield:
+    user: recette-arb
+    pass: arb!2019
+print: 'Espace collaboratif des ARB (site de recette BRGM)'
+allow_cli: true
+_core:
+  default_config_hash: c1dcnGFDXTeMq2-Z8e7H6Qxp6TTJe-ZhSA126E3bQJ4
+langcode: fr
