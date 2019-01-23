@@ -3,9 +3,7 @@ langcode: fr
 status: true
 dependencies:
   config:
-    - field.field.media.image.field_height
     - field.field.media.image.field_media_image
-    - field.field.media.image.field_width
     - image.style.thumbnail
     - media.type.image
   module:
@@ -24,13 +22,6 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_height:
-    weight: 102
-    settings:
-      placeholder: ''
-    third_party_settings: {  }
-    type: number
-    region: content
   field_media_image:
     settings:
       show_crop_area: true
@@ -48,13 +39,6 @@ content:
     third_party_settings: {  }
     type: image_widget_crop
     weight: 0
-    region: content
-  field_width:
-    weight: 101
-    settings:
-      placeholder: ''
-    third_party_settings: {  }
-    type: number
     region: content
   langcode:
     type: language_select
