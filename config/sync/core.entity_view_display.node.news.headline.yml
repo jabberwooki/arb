@@ -5,6 +5,7 @@ dependencies:
   config:
     - core.entity_view_mode.node.headline
     - field.field.node.news.body
+    - field.field.node.news.field_image
     - field.field.node.news.field_news_type
     - node.type.news
   module:
@@ -29,7 +30,6 @@ third_party_settings:
           layout_class: {  }
     regions:
       ds_content:
-        - field_news_image
         - field_news_type
         - node_post_date
         - node_title
@@ -67,5 +67,6 @@ content:
     type: entity_reference_label
     region: ds_content
 hidden:
+  field_image: true
   langcode: true
   links: true
