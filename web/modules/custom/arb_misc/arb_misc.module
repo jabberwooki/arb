@@ -40,15 +40,27 @@ function arb_misc_form_user_form_alter(&$form, \Drupal\Core\Form\FormStateInterf
   // ----- Affichage du champ "Membre du quatuor" réservé aux admins drupal ou aux admin de groupe -----
   // 1 - On récupère les roles drupal de l'utilisateur courant
   $current_user = \Drupal::currentUser();
+  // Attention, l'enregistrement d'un utilisateur passe aussi par ce hook.
+  // Donc, il faut vérfier que l'internaute est connecté pour continuer,
+  // sinon WSOD -> "The website encountered an unexpected error. Please try again later."
+  if (!$current_user->id()) {
+    return;
+  }
+
   $current_user_drupal_roles = $current_user->getRoles();
   // 2 - On récupère les roles Group de l'utilisateur courant.
   // Pour cela, on récupère ses adhésions Group (on obtient un tableau d'adhésions).
-  $current_user_memberships = \Drupal::service('group.membership_loader')->loadByUser($current_user);
+  $current_user_memberships = \Drupal::service('group.membership_loader')
+    ->loadByUser($current_user);
   // Dans le cas de ARB, un user ne peut appartenir qu'à un seul groupe donc c'est forcément à l'index 0 du tableau.
   $current_user_group_roles = $current_user_memberships[0]->getRoles();
 
   $current_user_all_roles = array_merge($current_user_drupal_roles, array_keys($current_user_group_roles));
-  $allowed_roles = array('administrator','regional_group-administrator', 'national_group_administrator');
+  $allowed_roles = array(
+    'administrator',
+    'regional_group-administrator',
+    'national_group_administrator'
+  );
 
   if ($current_user->id() != 1 && !array_intersect($allowed_roles, $current_user_all_roles)) {
     unset($form['field_quatuor_member']);
