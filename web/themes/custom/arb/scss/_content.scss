@@ -26,3 +26,95 @@ a .region:hover {
 .path-frontpage .main-container{
     margin-top: -80px;
 }
+
+/*Titers des block de la homepage*/
+.block-arb-regions,
+.block-views-blockeditorial-pages-arb-infos,
+.block-views-blockeditorial-pages-pf-infos,
+.block-views-blockregion-news-front-block,
+.block-views-blockregions-resources-front-block{
+    h2{
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 28px;
+        &:after{
+            @include border-subtitle;
+            padding-top: 5px;
+        }
+        a{
+            text-decoration: none;
+        }
+        a:hover{
+            color:$brand-secondary;
+        }
+    }
+}
+.block-views-blockregion-news-front-block{
+    .slick-list.draggable {
+        padding-top: 30px;
+    }
+    .slick-prev:before, .slick-next:before {
+        font-family: 'fontawesome';
+        font-size: 24px;
+        line-height: 1;
+        opacity: 1;
+        color: $brand-secondary;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+    .slick-prev {
+        left: -10px;
+    }
+    .slick-next {
+        right: -10px;
+    }
+    .slick-prev:before,
+    .slick-next:before {
+        color: $brand-secondary !important;
+    }
+    .slick-next:before {
+        content: '\f054';
+    }
+    .slick-prev:before {
+        content: '\f053';
+    }
+    .slick-slide{
+        padding: 0 15px;
+        position: relative;
+        z-index: 10;
+    }
+    .views-field-label{
+        position: absolute;
+        top: -10px;
+        z-index: 100;
+        width: 90%;
+        text-align: center;
+        .field-content{
+            background: $brand-secondary;
+            border-radius: 20px;
+            text-transform: uppercase;
+            color:white;
+            font-weight: 800;
+            font-size: 12px;
+            padding: 2px 14px;
+        }
+    }
+    .views-field-nothing{
+        background: #F5F6F8;
+        padding: 15px;
+    }
+    p.news-date{
+        font-size: 14px;
+        font-weight: 500;
+        color:$brand-secondary;
+    }
+    h3{
+        font-size: 14px;
+        font-weight: 700;
+        margin-top: 0;
+        a:hover{
+            text-decoration: none;
+            color:$brand-secondary;
+        }
+    }
+}

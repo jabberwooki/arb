@@ -8729,6 +8729,11 @@ p:last-child,
 }
 
 /*HEADER*/
+.vertical-align {
+  display: flex;
+  align-items: center;
+}
+
 .header {
   background: #1D495D;
   color: white;
@@ -8738,9 +8743,84 @@ p:last-child,
   color: white;
 }
 
+.header a.navbar-brand {
+  font-weight: 700;
+  color: #1FAD00;
+  text-transform: uppercase;
+  font-size: 23px;
+  padding-bottom: 0;
+  line-height: 35px;
+  width: 100%;
+  text-align: center;
+}
+
+.header p.navbar-text {
+  text-transform: uppercase;
+  font-size: 13.5px;
+  font-weight: 600;
+  margin-top: 0;
+  clear: left;
+  width: 100%;
+  text-align: center;
+  margin-left: 0;
+}
+
+.header .fas.fa-times,
+.header .fas.fa-bars {
+  font-size: 24px;
+  color: #1D495D;
+  background: #1FAD00;
+  padding: 10px 12px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}
+
+.header .fas.fa-times {
+  padding: 10px 14px;
+}
+
+.header .name-menu {
+  font-weight: 700;
+  color: #1FAD00;
+  text-transform: uppercase;
+}
+
+.header .menu--account li a {
+  background: #1FAD00;
+  color: white;
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 60px;
+  padding: 10px 20px;
+  text-transform: none;
+}
+
+.header .menu--account li a:hover {
+  color: #1D495D;
+}
+
+.header .menu--account li a:before {
+  font-family: 'fontawesome';
+  content: '\f007';
+  padding-right: 10px;
+}
+
 /*BLOCK SEARCH*/
 .search-button {
   cursor: pointer;
+}
+
+.search-button .fa-search {
+  color: #1FAD00;
+  border: 2px solid #1FAD00;
+  padding: 10px 12px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  font-size: 18px;
 }
 
 .search-block-form {
@@ -8767,12 +8847,34 @@ p:last-child,
   float: right;
 }
 
-.search-block-form #searchformclose .glyphicon-remove {
+.search-block-form #searchformclose .fas.fa-times {
   color: #1D495D;
   font-size: 20px;
 }
 
 /*SLIDESHOW*/
+#block-views-block-slides-frontpage-slideshow .field--name-field-image::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #1d495d;
+  background: -moz-linear-gradient(top, #1d495d 5%, rgba(29, 73, 93, 0) 69%);
+  background: -webkit-gradient(left top, left bottom, color-stop(5%, #1d495d), color-stop(69%, rgba(29, 73, 93, 0)));
+  background: -webkit-linear-gradient(top, #1d495d 5%, rgba(29, 73, 93, 0) 69%);
+  background: -o-linear-gradient(top, #1d495d 5%, rgba(29, 73, 93, 0) 69%);
+  background: -ms-linear-gradient(top, #1d495d 5%, rgba(29, 73, 93, 0) 69%);
+  background: linear-gradient(to bottom, #1d495d 5%, rgba(29, 73, 93, 0) 69%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1d495d', endColorstr='#1d495d', GradientType=0 );
+  z-index: 1;
+}
+
+#block-views-block-slides-frontpage-slideshow .field--name-field-image > * {
+  z-index: 100;
+}
+
 #block-views-block-slides-frontpage-slideshow {
   position: relative;
   /* facultatif : résoud un bug non systématique de blur sur IE */
@@ -8781,10 +8883,129 @@ p:last-child,
 
 #block-views-block-slides-frontpage-slideshow .slide-infos {
   position: absolute;
-  top: 50%;
+  top: 35%;
   left: 35%;
   transform: translate(-50%, -35%);
   /* compatibilité : ie9+ */
+  z-index: 1000;
+  color: white;
+  width: 25%;
+  padding: 10px;
+}
+
+#block-views-block-slides-frontpage-slideshow .slide-infos:after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 0;
+  padding-bottom: 100%;
+  border: 3px solid #1FAD00;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}
+
+#block-views-block-slides-frontpage-slideshow .slide-infos .wrapper-infos {
+  float: left;
+  width: 85%;
+  padding-top: 20%;
+  line-height: 1em;
+  margin-top: -0.5em;
+  color: white;
+  padding-left: 20%;
+}
+
+#block-views-block-slides-frontpage-slideshow .slide-infos h2 {
+  color: white;
+  font-size: 28px;
+  font-weight: 800;
+  line-height: 36px;
+  position: relative;
+}
+
+#block-views-block-slides-frontpage-slideshow .slide-infos h2:after {
+  position: absolute;
+  left: 0;
+  content: "";
+  /* This is necessary for the pseudo element to work. */
+  display: block;
+  /* This will put the pseudo element on its own line. */
+  margin: 0 auto;
+  /* This will center the border. */
+  width: 90px;
+  /* Change this to whatever width you want. */
+  /*padding-top: 10px;  This creates some space between the element and the border. */
+  border-bottom: 5px solid #1FAD00;
+  /* This creates the border. Replace black with whatever color you want. */
+}
+
+#block-views-block-slides-frontpage-slideshow .slide-infos .field--name-field-text {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  margin-top: 15px;
+}
+
+#block-views-block-slides-frontpage-slideshow .slide-infos .field--name-field-link {
+  text-align: center;
+  width: auto;
+}
+
+#block-views-block-slides-frontpage-slideshow .slide-infos .field--name-field-link a {
+  background: #1FAD00;
+  color: white;
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 60px;
+  padding: 10px 20px;
+  margin-top: 20px;
+  float: left;
+}
+
+#block-views-block-slides-frontpage-slideshow .slide-infos .field--name-field-link a:hover {
+  color: #1D495D;
+}
+
+#block-views-block-slides-frontpage-slideshow .slick-prev {
+  left: 19%;
+  z-index: 500;
+}
+
+#block-views-block-slides-frontpage-slideshow .slick-next {
+  right: 19%;
+  z-index: 500;
+}
+
+#block-views-block-slides-frontpage-slideshow .slick-prev:before, #block-views-block-slides-frontpage-slideshow .slick-next:before {
+  font-family: 'fontawesome';
+  font-size: 24px;
+  line-height: 1;
+  opacity: 1;
+  color: white;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#block-views-block-slides-frontpage-slideshow .slick-prev:before,
+#block-views-block-slides-frontpage-slideshow .slick-next:before {
+  color: white !important;
+}
+
+#block-views-block-slides-frontpage-slideshow .slick-next:before {
+  content: '\f054';
+}
+
+#block-views-block-slides-frontpage-slideshow .slick-prev:before {
+  content: '\f053';
+}
+
+#block-views-block-slides-frontpage-slideshow .slick-prev:before:hover,
+#block-views-block-slides-frontpage-slideshow .slick-next:before:hover {
+  color: #1FAD00 !important;
+  outline: none;
+  background: transparent;
 }
 
 /*CARTE DE FRANCE*/
@@ -8812,6 +9033,135 @@ a .region:hover {
 
 .path-frontpage .main-container {
   margin-top: -80px;
+}
+
+/*Titers des block de la homepage*/
+.block-arb-regions h2,
+.block-views-blockeditorial-pages-arb-infos h2,
+.block-views-blockeditorial-pages-pf-infos h2,
+.block-views-blockregion-news-front-block h2,
+.block-views-blockregions-resources-front-block h2 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 28px;
+}
+
+.block-arb-regions h2:after,
+.block-views-blockeditorial-pages-arb-infos h2:after,
+.block-views-blockeditorial-pages-pf-infos h2:after,
+.block-views-blockregion-news-front-block h2:after,
+.block-views-blockregions-resources-front-block h2:after {
+  position: absolute;
+  left: 0;
+  content: "";
+  /* This is necessary for the pseudo element to work. */
+  display: block;
+  /* This will put the pseudo element on its own line. */
+  margin: 0 auto;
+  /* This will center the border. */
+  width: 90px;
+  /* Change this to whatever width you want. */
+  /*padding-top: 10px;  This creates some space between the element and the border. */
+  border-bottom: 5px solid #1FAD00;
+  /* This creates the border. Replace black with whatever color you want. */
+  padding-top: 5px;
+}
+
+.block-arb-regions h2 a,
+.block-views-blockeditorial-pages-arb-infos h2 a,
+.block-views-blockeditorial-pages-pf-infos h2 a,
+.block-views-blockregion-news-front-block h2 a,
+.block-views-blockregions-resources-front-block h2 a {
+  text-decoration: none;
+}
+
+.block-arb-regions h2 a:hover,
+.block-views-blockeditorial-pages-arb-infos h2 a:hover,
+.block-views-blockeditorial-pages-pf-infos h2 a:hover,
+.block-views-blockregion-news-front-block h2 a:hover,
+.block-views-blockregions-resources-front-block h2 a:hover {
+  color: #1FAD00;
+}
+
+.block-views-blockregion-news-front-block .slick-list.draggable {
+  padding-top: 30px;
+}
+
+.block-views-blockregion-news-front-block .slick-prev:before, .block-views-blockregion-news-front-block .slick-next:before {
+  font-family: 'fontawesome';
+  font-size: 24px;
+  line-height: 1;
+  opacity: 1;
+  color: #1FAD00;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.block-views-blockregion-news-front-block .slick-prev {
+  left: -10px;
+}
+
+.block-views-blockregion-news-front-block .slick-next {
+  right: -10px;
+}
+
+.block-views-blockregion-news-front-block .slick-prev:before,
+.block-views-blockregion-news-front-block .slick-next:before {
+  color: #1FAD00 !important;
+}
+
+.block-views-blockregion-news-front-block .slick-next:before {
+  content: '\f054';
+}
+
+.block-views-blockregion-news-front-block .slick-prev:before {
+  content: '\f053';
+}
+
+.block-views-blockregion-news-front-block .slick-slide {
+  padding: 0 15px;
+  position: relative;
+  z-index: 10;
+}
+
+.block-views-blockregion-news-front-block .views-field-label {
+  position: absolute;
+  top: -10px;
+  z-index: 100;
+  width: 90%;
+  text-align: center;
+}
+
+.block-views-blockregion-news-front-block .views-field-label .field-content {
+  background: #1FAD00;
+  border-radius: 20px;
+  text-transform: uppercase;
+  color: white;
+  font-weight: 800;
+  font-size: 12px;
+  padding: 2px 14px;
+}
+
+.block-views-blockregion-news-front-block .views-field-nothing {
+  background: #F5F6F8;
+  padding: 15px;
+}
+
+.block-views-blockregion-news-front-block p.news-date {
+  font-size: 14px;
+  font-weight: 500;
+  color: #1FAD00;
+}
+
+.block-views-blockregion-news-front-block h3 {
+  font-size: 14px;
+  font-weight: 700;
+  margin-top: 0;
+}
+
+.block-views-blockregion-news-front-block h3 a:hover {
+  text-decoration: none;
+  color: #1FAD00;
 }
 
 .footer {

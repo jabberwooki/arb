@@ -7,7 +7,7 @@
     attach: function (context, settings) {
       $('.region-highlighted .search-block-form').hide();
 
-      $('span.glyphicon-search').on('click', function(event){
+      $('span.fa-search').on('click', function(event){
         $('.region-highlighted .search-block-form').slideToggle();
         event.stopImmediatePropagation();
         $('.region-highlighted input[type="search"]').focus();

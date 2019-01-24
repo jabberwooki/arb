@@ -23,38 +23,39 @@
 {% if content %}
   <div{{ attributes.addClass(classes) }}>
 
-        <div class="row">
+        <div class="row vertical-align">
             {% if logged_in %}
             <div class="col-xs-1">
-              <div class="hamburger hamburger-open">
-                <button type="button" id="sidebarCollapse" class="btn navbar-btn">
-                  <i class="glyphicon glyphicon-menu-hamburger"></i>
-                  <span class="name-menu"></span>
-                </button>
+              <div class="hamburger hamburger-open" id="sidebarCollapse">
+                <div class="btn navbar-btn">
+                    <i class="fas fa-bars"></i>
+                    <span class="name-menu">Menu</span>
+                </div>
+                  
               </div>
 
-              <div class="hamburger hamburger-close">
-                <button type="button" id="sidebarCollapse" class="btn navbar-btn">
-                  <i class="glyphicon glyphicon-remove"></i>
+              <div class="hamburger hamburger-close" id="sidebarCollapse">
+                <div class="btn navbar-btn">
+                  <i class="fas fa-times"></i>
                   <span class="name-menu">Menu</span>
-                </button>
+                </div>
               </div>
             </div>
             {% endif %}
 
-            <div class="col-xs-8">
+            <div class="col-xs-9">
               {{ content }}
             </div>
 
             <div class="col-xs-1">
             {% if logged_in %}
                 <div class="search-button">
-                    <span class="icon glyphicon glyphicon-search" aria-hidden="true"></span>
+                    <span class="fas fa-search" aria-hidden="true"></span>
                 </div>
             {% endif %}
             </div>
             
-            <div class="col-xs-2">
+            <div class="col-xs-1">
                 {{ drupal_block('system_menu_block:account') }}
             </div>
             
