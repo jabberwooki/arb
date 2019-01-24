@@ -11,4 +11,11 @@ internal: true
 audience: outsider
 group_type: national_group
 permissions_ui: true
-permissions: {  }
+permissions:
+  0: 'view group'
+  1: 'view group_membership content'
+  2: 'view subgroup:regional_group entity'
+  5: 'view group_node:news entity'
+  6: 'view group_node:slide entity'
+  7: 'view group_node:document entity'
+  8: 'view unpublished group_node:footer_logo entity'
