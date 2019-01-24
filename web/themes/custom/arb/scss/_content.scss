@@ -26,3 +26,25 @@ a .region:hover {
 .path-frontpage .main-container{
     margin-top: -80px;
 }
+
+/*Titers des block de la homepage*/
+.block-arb-regions,
+.block-views-blockeditorial-pages-arb-infos,
+.block-views-blockeditorial-pages-pf-infos,
+.block-views-blockregion-news-front-block,
+.block-views-blockregions-resources-front-block{
+    h2{
+    font-size: 28px;
+    font-weight: 700;
+        &:after{
+            @include border-subtitle;
+            padding-top: 5px;
+        }
+        a{
+            text-decoration: none;
+        }
+        a:hover{
+            color:$brand-secondary;
+        }
+    }
+}
