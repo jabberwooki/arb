@@ -3,10 +3,9 @@
     attach: function (context, settings) {
       // Diaporama
       $('#block-views-block-slides-frontpage-slideshow .view-content').slick({
-        dots: true,
+        arrows: true,
         speed: 1500,
         autoplay: true,
-        arrows: false,
         fade: true
       });
 

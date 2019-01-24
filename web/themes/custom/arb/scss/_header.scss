@@ -49,12 +49,8 @@
         text-transform: uppercase;
     }
     .menu--account li a{
-        background: $brand-secondary;
-        color:white;
-        font-weight: 600;
-        font-size: 14px;
-        border-radius: 60px;
-        padding: 10px 20px;
+        @include like-btn-a;
+        text-transform: none;
         &:before{
             font-family: 'fontawesome';
             content: '\f007';
@@ -134,33 +130,87 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1d495d', end
       transform: translate(-50%, -35%); /* compatibilité : ie9+ */
       z-index: 1000;
       color: white;
+      width: 25%;
+      padding: 10px;
+        &:after {
+          content:'';
+          display: block;
+          width: 100%;
+          height: 0;
+          padding-bottom: 100%;
+          border: 3px solid $brand-secondary;
+          -moz-border-radius: 50%;
+          -webkit-border-radius: 50%;
+          border-radius: 50%;
+        }
+        .wrapper-infos {
+          float: left;
+          width: 85%;
+          padding-top: 20%;
+          line-height: 1em;
+          margin-top: -0.5em;
+          color: white;
+          padding-left: 20%
+        }
         h2{
             color: white;
+            font-size: 28px;
+            font-weight: 800;
+            line-height: 36px;
+            position: relative;
+            &:after {
+                @include border-subtitle
+            }
         }
+        .field--name-field-text {
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 24px;
+            margin-top: 15px;
+        }
+        .field--name-field-link {
+            text-align: center;
+            width: auto;
+            a{
+                @include like-btn-a;
+                margin-top: 20px;
+                float: left;
+            }
+        }
+    }
+    .slick-prev {
+        left: 19%;
+        z-index: 500;
+    }
+    .slick-next {
+        right: 19%;
+        z-index: 500;
+    }
+    .slick-prev:before, .slick-next:before {
+        font-family: 'fontawesome';
+        font-size: 24px;
+        line-height: 1;
+        opacity: 1;
+        color: white;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+    .slick-prev:before,
+    .slick-next:before {
+        color: white !important;
+    }
+    .slick-next:before {
+        content: '\f054';
+    }
+    .slick-prev:before {
+        content: '\f053';
+    }
+    .slick-prev:before:hover,
+    .slick-next:before:hover {
+        color: $brand-secondary !important;
+        outline: none;
+        background: transparent;
     }
 }
 
-.slide-infos {
-  width: 25%;
-  padding: 10px;
-}
-.slide-infos:after {
-  content:'';
-  display: block;
-  width: 100%;
-  height: 0;
-  padding-bottom: 100%;
-  border: 3px solid $brand-secondary;
-  -moz-border-radius: 50%;
-  -webkit-border-radius: 50%;
-  border-radius: 50%;
-}
-.slide-infos .wrapper-infos {
-  float: left;
-  width: 85%;
-  padding-top: 25%;
-  line-height: 1em;
-  margin-top: -0.5em;
-  color: white;
-  padding-left: 20%
-}
+
