@@ -25,6 +25,7 @@ a .region:hover {
 }
 .path-frontpage .main-container{
     margin-top: -80px;
+    padding-bottom: 30px;
 }
 
 /*Titers des block de la homepage*/
@@ -49,6 +50,7 @@ a .region:hover {
         }
     }
 }
+/*NEWS HOME*/
 .block-views-blockregion-news-front-block{
     .slick-list.draggable {
         padding-top: 30px;
@@ -116,5 +118,36 @@ a .region:hover {
             text-decoration: none;
             color:$brand-secondary;
         }
+    }
+}
+
+/*RESSOURCES HOME*/
+.block-views-blockregions-resources-front-block{
+    .infos-files{
+        background: #F5F6F8;
+        padding: 15px;
+        border-bottom: 1px solid $brand-secondary;
+    }
+    p.date-files{
+        font-size: 14px;
+        font-weight: 500;
+        color:$brand-secondary;
+    }
+    h3{
+        font-size: 14px;
+        font-weight: 700;
+        margin-top: 0;
+        a:hover{
+            text-decoration: none;
+            color:$brand-secondary;
+        }
+    } 
+    .wrapper-files:before{
+        font-family: 'fontawesome';
+        content:'\f15c';
+        font-size: 40px;
+        color:$brand-secondary;
+        float: left;
+        padding-right: 28px;
     }
 }

@@ -9033,6 +9033,7 @@ a .region:hover {
 
 .path-frontpage .main-container {
   margin-top: -80px;
+  padding-bottom: 30px;
 }
 
 /*Titers des block de la homepage*/
@@ -9083,6 +9084,7 @@ a .region:hover {
   color: #1FAD00;
 }
 
+/*NEWS HOME*/
 .block-views-blockregion-news-front-block .slick-list.draggable {
   padding-top: 30px;
 }
@@ -9162,6 +9164,43 @@ a .region:hover {
 .block-views-blockregion-news-front-block h3 a:hover {
   text-decoration: none;
   color: #1FAD00;
+}
+
+/*RESSOURCES HOME*/
+.block-views-blockregions-resources-front-block .infos-files {
+  background: #F5F6F8;
+  padding: 15px;
+  border-bottom: 1px solid #1FAD00;
+}
+
+.block-views-blockregions-resources-front-block p.date-files {
+  font-size: 14px;
+  font-weight: 500;
+  color: #1FAD00;
+}
+
+.block-views-blockregions-resources-front-block h3 {
+  font-size: 14px;
+  font-weight: 700;
+  margin-top: 0;
+}
+
+.block-views-blockregions-resources-front-block h3 a:hover {
+  text-decoration: none;
+  color: #1FAD00;
+}
+
+.block-views-blockregions-resources-front-block .wrapper-files:before {
+  font-family: 'fontawesome';
+  content: '\f15c';
+  font-size: 40px;
+  color: #1FAD00;
+  float: left;
+  padding-right: 28px;
+}
+
+.prefooter {
+  padding-top: 40px;
 }
 
 .footer {
