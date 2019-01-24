@@ -23,6 +23,7 @@ visibility:
   'entity_bundle:group':
     id: 'entity_bundle:group'
     bundles:
+      national_group: national_group
       regional_group: regional_group
     negate: true
     context_mapping:
