@@ -9043,6 +9043,7 @@ a .region:hover {
 .block-views-blockregions-resources-front-block h2 {
   font-size: 28px;
   font-weight: 700;
+  margin-bottom: 28px;
 }
 
 .block-arb-regions h2:after,
@@ -9079,6 +9080,87 @@ a .region:hover {
 .block-views-blockeditorial-pages-pf-infos h2 a:hover,
 .block-views-blockregion-news-front-block h2 a:hover,
 .block-views-blockregions-resources-front-block h2 a:hover {
+  color: #1FAD00;
+}
+
+.block-views-blockregion-news-front-block .slick-list.draggable {
+  padding-top: 30px;
+}
+
+.block-views-blockregion-news-front-block .slick-prev:before, .block-views-blockregion-news-front-block .slick-next:before {
+  font-family: 'fontawesome';
+  font-size: 24px;
+  line-height: 1;
+  opacity: 1;
+  color: #1FAD00;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.block-views-blockregion-news-front-block .slick-prev {
+  left: -10px;
+}
+
+.block-views-blockregion-news-front-block .slick-next {
+  right: -10px;
+}
+
+.block-views-blockregion-news-front-block .slick-prev:before,
+.block-views-blockregion-news-front-block .slick-next:before {
+  color: #1FAD00 !important;
+}
+
+.block-views-blockregion-news-front-block .slick-next:before {
+  content: '\f054';
+}
+
+.block-views-blockregion-news-front-block .slick-prev:before {
+  content: '\f053';
+}
+
+.block-views-blockregion-news-front-block .slick-slide {
+  padding: 0 15px;
+  position: relative;
+  z-index: 10;
+}
+
+.block-views-blockregion-news-front-block .views-field-label {
+  position: absolute;
+  top: -10px;
+  z-index: 100;
+  width: 90%;
+  text-align: center;
+}
+
+.block-views-blockregion-news-front-block .views-field-label .field-content {
+  background: #1FAD00;
+  border-radius: 20px;
+  text-transform: uppercase;
+  color: white;
+  font-weight: 800;
+  font-size: 12px;
+  padding: 2px 14px;
+}
+
+.block-views-blockregion-news-front-block .views-field-nothing {
+  background: #F5F6F8;
+  padding: 15px;
+}
+
+.block-views-blockregion-news-front-block p.news-date {
+  font-size: 14px;
+  font-weight: 500;
+  color: #1FAD00;
+}
+
+.block-views-blockregion-news-front-block h3 {
+  font-size: 14px;
+  font-weight: 700;
+  margin-top: 0;
+}
+
+.block-views-blockregion-news-front-block h3 a:hover {
+  text-decoration: none;
   color: #1FAD00;
 }
 
