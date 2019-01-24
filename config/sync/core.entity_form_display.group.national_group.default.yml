@@ -9,7 +9,7 @@ dependencies:
     - group.type.national_group
     - image.style.thumbnail
   module:
-    - image
+    - image_widget_crop
     - link
     - path
     - text
@@ -19,15 +19,23 @@ bundle: national_group
 mode: default
 content:
   field_image:
-    weight: 31
+    weight: 1
     settings:
-      progress_indicator: throbber
+      show_crop_area: true
+      show_default_crop: true
+      warn_multiple_usages: true
       preview_image_style: thumbnail
+      crop_preview_image_style: crop_thumbnail
+      crop_list:
+        - region_slide
+      crop_types_required:
+        - region_slide
+      progress_indicator: throbber
     third_party_settings: {  }
-    type: image_image
+    type: image_widget_crop
     region: content
   field_internet_site:
-    weight: 33
+    weight: 2
     settings:
       placeholder_url: ''
       placeholder_title: ''
@@ -35,7 +43,7 @@ content:
     type: link_default
     region: content
   field_presentation:
-    weight: 32
+    weight: 3
     settings:
       rows: 9
       summary_rows: 3
@@ -45,24 +53,18 @@ content:
     region: content
   label:
     type: string_textfield
-    weight: -5
+    weight: 0
     region: content
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-  langcode:
-    type: language_select
-    weight: 2
-    region: content
-    settings:
-      include_locked: true
-    third_party_settings: {  }
   path:
     type: path
-    weight: 30
+    weight: 4
     region: content
     settings: {  }
     third_party_settings: {  }
 hidden:
+  langcode: true
   uid: true
