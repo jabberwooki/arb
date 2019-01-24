@@ -1,17 +1,16 @@
-uuid: 6b0e48b9-b38a-489f-af5c-cd9910c1e5e9
+uuid: 447b27e6-cd9c-48ec-aa38-e2128f0486b1
 langcode: fr
 status: true
 dependencies:
   module:
+    - taxonomy
     - user
 id: user.field_organisation
 field_name: field_organisation
 entity_type: user
-type: string
+type: entity_reference
 settings:
-  max_length: 255
-  is_ascii: false
-  case_sensitive: false
+  target_type: taxonomy_term
 module: core
 locked: false
 cardinality: 1
