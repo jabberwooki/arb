@@ -1,0 +1,14 @@
+uuid: 6af471d9-db6e-4a62-8ccd-14b0a9b833fb
+langcode: fr
+status: true
+dependencies:
+  config:
+    - group.type.national_group
+id: national_group-administrator
+label: 'Administrateur national'
+weight: 4
+internal: false
+audience: member
+group_type: national_group
+permissions_ui: true
+permissions: {  }
