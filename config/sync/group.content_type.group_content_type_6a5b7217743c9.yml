@@ -1,0 +1,19 @@
+uuid: 8607894e-0bbf-48cb-9268-b9d3a431d407
+langcode: fr
+status: true
+dependencies:
+  config:
+    - group.type.national_group
+    - node.type.footer_logo
+  module:
+    - gnode
+    - node
+id: group_content_type_6a5b7217743c9
+label: 'Groupe national: Group node (Logo pied de page)'
+description: 'Adds <em class="placeholder">Logo pied de page</em> content to groups both publicly and privately.'
+group_type: national_group
+content_plugin: 'group_node:footer_logo'
+plugin_config:
+  group_cardinality: 0
+  entity_cardinality: 1
+  use_creation_wizard: false

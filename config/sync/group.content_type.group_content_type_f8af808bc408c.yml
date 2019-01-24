@@ -1,0 +1,19 @@
+uuid: e8b3f72b-7f54-44b5-992a-1f44c7768050
+langcode: fr
+status: true
+dependencies:
+  config:
+    - group.type.national_group
+    - node.type.document
+  module:
+    - gnode
+    - node
+id: group_content_type_f8af808bc408c
+label: 'Groupe national: Group node (Document)'
+description: 'Adds <em class="placeholder">Document</em> content to groups both publicly and privately.'
+group_type: national_group
+content_plugin: 'group_node:document'
+plugin_config:
+  group_cardinality: 0
+  entity_cardinality: 1
+  use_creation_wizard: false
