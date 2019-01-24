@@ -1,15 +1,80 @@
 /*HEADER*/
+.vertical-align {
+    display: flex;
+    align-items: center;
+}
+
 .header{
     background: $brand-primary;
     color: white;
     a{
-        color: white;
+    color: white;
+        &.navbar-brand{
+            font-weight: 700;
+            color: $brand-secondary;
+            text-transform: uppercase;
+            font-size: 23px;
+            padding-bottom: 0;
+            line-height: 35px;
+            width: 100%;
+            text-align: center;
+        }
+    }
+    p.navbar-text{
+        text-transform: uppercase;
+        font-size: 13.5px;
+        font-weight: 600;
+        margin-top: 0;
+        clear: left;
+        width: 100%;
+        text-align: center;
+        margin-left: 0;
+    }
+    .fas.fa-times,
+    .fas.fa-bars{
+        font-size: 24px;
+        color:$brand-primary;
+        background: $brand-secondary;
+        padding: 10px 12px;
+        -moz-border-radius: 50%; 
+       -webkit-border-radius: 50%;  
+       border-radius: 50%; 
+    }
+    .fas.fa-times{
+        padding: 10px 14px;
+    }
+    .name-menu{
+        font-weight: 700;
+        color: $brand-secondary;
+        text-transform: uppercase;
+    }
+    .menu--account li a{
+        background: $brand-secondary;
+        color:white;
+        font-weight: 600;
+        font-size: 14px;
+        border-radius: 60px;
+        padding: 10px 20px;
+        &:before{
+            font-family: 'fontawesome';
+            content: '\f007';
+            padding-right: 10px;
+        }
     }
 }
 
 /*BLOCK SEARCH*/
 .search-button{
     cursor: pointer;
+    .fa-search{
+        color: $brand-secondary;
+        border:2px solid $brand-secondary;
+        padding: 10px 12px;
+        -moz-border-radius: 50%; 
+       -webkit-border-radius: 50%;  
+       border-radius: 50%; 
+        font-size: 18px;
+    }
 }
 .search-block-form{
     position: absolute;
@@ -29,7 +94,7 @@
     }
     #searchformclose{
       float: right;
-      .glyphicon-remove{
+      .fas.fa-times{
         color: $brand-primary;
         font-size: 20px;
       }

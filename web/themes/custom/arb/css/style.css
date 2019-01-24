@@ -8729,6 +8729,11 @@ p:last-child,
 }
 
 /*HEADER*/
+.vertical-align {
+  display: flex;
+  align-items: center;
+}
+
 .header {
   background: #1D495D;
   color: white;
@@ -8738,9 +8743,77 @@ p:last-child,
   color: white;
 }
 
+.header a.navbar-brand {
+  font-weight: 700;
+  color: #1FAD00;
+  text-transform: uppercase;
+  font-size: 23px;
+  padding-bottom: 0;
+  line-height: 35px;
+  width: 100%;
+  text-align: center;
+}
+
+.header p.navbar-text {
+  text-transform: uppercase;
+  font-size: 13.5px;
+  font-weight: 600;
+  margin-top: 0;
+  clear: left;
+  width: 100%;
+  text-align: center;
+  margin-left: 0;
+}
+
+.header .fas.fa-times,
+.header .fas.fa-bars {
+  font-size: 24px;
+  color: #1D495D;
+  background: #1FAD00;
+  padding: 10px 12px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}
+
+.header .fas.fa-times {
+  padding: 10px 14px;
+}
+
+.header .name-menu {
+  font-weight: 700;
+  color: #1FAD00;
+  text-transform: uppercase;
+}
+
+.header .menu--account li a {
+  background: #1FAD00;
+  color: white;
+  font-weight: 600;
+  font-size: 14px;
+  border-radius: 60px;
+  padding: 10px 20px;
+}
+
+.header .menu--account li a:before {
+  font-family: 'fontawesome';
+  content: '\f007';
+  padding-right: 10px;
+}
+
 /*BLOCK SEARCH*/
 .search-button {
   cursor: pointer;
+}
+
+.search-button .fa-search {
+  color: #1FAD00;
+  border: 2px solid #1FAD00;
+  padding: 10px 12px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  font-size: 18px;
 }
 
 .search-block-form {
@@ -8767,7 +8840,7 @@ p:last-child,
   float: right;
 }
 
-.search-block-form #searchformclose .glyphicon-remove {
+.search-block-form #searchformclose .fas.fa-times {
   color: #1D495D;
   font-size: 20px;
 }
