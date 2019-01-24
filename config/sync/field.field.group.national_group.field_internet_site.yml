@@ -1,0 +1,23 @@
+uuid: 31b88ae4-20cc-415b-bcfe-36d53ec8addb
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.group.field_internet_site
+    - group.type.national_group
+  module:
+    - link
+id: group.national_group.field_internet_site
+field_name: field_internet_site
+entity_type: group
+bundle: national_group
+label: 'Site internet'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 16
+  title: 1
+field_type: link

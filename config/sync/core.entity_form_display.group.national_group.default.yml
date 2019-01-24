@@ -1,0 +1,68 @@
+uuid: a54abea1-2ce8-4e78-ba1a-a2553add7ec0
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.group.national_group.field_image
+    - field.field.group.national_group.field_internet_site
+    - field.field.group.national_group.field_presentation
+    - group.type.national_group
+    - image.style.thumbnail
+  module:
+    - image
+    - link
+    - path
+    - text
+id: group.national_group.default
+targetEntityType: group
+bundle: national_group
+mode: default
+content:
+  field_image:
+    weight: 31
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_internet_site:
+    weight: 33
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_presentation:
+    weight: 32
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea_with_summary
+    region: content
+  label:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 30
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  uid: true
