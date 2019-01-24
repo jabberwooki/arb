@@ -8846,6 +8846,28 @@ p:last-child,
 }
 
 /*SLIDESHOW*/
+#block-views-block-slides-frontpage-slideshow .field--name-field-image::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #1d495d;
+  background: -moz-linear-gradient(top, #1d495d 5%, rgba(29, 73, 93, 0) 69%);
+  background: -webkit-gradient(left top, left bottom, color-stop(5%, #1d495d), color-stop(69%, rgba(29, 73, 93, 0)));
+  background: -webkit-linear-gradient(top, #1d495d 5%, rgba(29, 73, 93, 0) 69%);
+  background: -o-linear-gradient(top, #1d495d 5%, rgba(29, 73, 93, 0) 69%);
+  background: -ms-linear-gradient(top, #1d495d 5%, rgba(29, 73, 93, 0) 69%);
+  background: linear-gradient(to bottom, #1d495d 5%, rgba(29, 73, 93, 0) 69%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1d495d', endColorstr='#1d495d', GradientType=0 );
+  z-index: 1;
+}
+
+#block-views-block-slides-frontpage-slideshow .field--name-field-image > * {
+  z-index: 100;
+}
+
 #block-views-block-slides-frontpage-slideshow {
   position: relative;
   /* facultatif : résoud un bug non systématique de blur sur IE */
@@ -8854,10 +8876,43 @@ p:last-child,
 
 #block-views-block-slides-frontpage-slideshow .slide-infos {
   position: absolute;
-  top: 50%;
+  top: 35%;
   left: 35%;
   transform: translate(-50%, -35%);
   /* compatibilité : ie9+ */
+  z-index: 1000;
+  color: white;
+}
+
+#block-views-block-slides-frontpage-slideshow .slide-infos h2 {
+  color: white;
+}
+
+.slide-infos {
+  width: 25%;
+  padding: 10px;
+}
+
+.slide-infos:after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 0;
+  padding-bottom: 100%;
+  border: 3px solid #1FAD00;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}
+
+.slide-infos .wrapper-infos {
+  float: left;
+  width: 85%;
+  padding-top: 25%;
+  line-height: 1em;
+  margin-top: -0.5em;
+  color: white;
+  padding-left: 20%;
 }
 
 /*CARTE DE FRANCE*/

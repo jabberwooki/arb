@@ -88,6 +88,11 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
+  region_members_eva_dashboard_tab:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
   region_news_entity_view_1:
     weight: 6
     region: ds_content
@@ -103,6 +108,16 @@ content:
     region: ds_content
     settings: {  }
     third_party_settings: {  }
+  regions_resources_eva_dashboard_tab:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  regions_resources_eva_resources_tab:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
   regions_ressources_eva_dashboard_tab:
     weight: 10
     region: ds_content

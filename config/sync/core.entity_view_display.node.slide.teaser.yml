@@ -35,21 +35,20 @@ third_party_settings:
       ds_content:
         - field_image
         - group_slide_infos
+        - group_wrapper_infos
         - node_title
         - field_text
         - field_link
     fields:
       node_title:
         plugin_id: node_title
-        weight: 2
+        weight: 21
         label: hidden
         formatter: default
   field_group:
     group_slide_infos:
       children:
-        - node_title
-        - field_text
-        - field_link
+        - group_wrapper_infos
       parent_name: ''
       weight: 1
       format_type: html_element
@@ -63,6 +62,24 @@ third_party_settings:
         effect: none
         speed: fast
       label: 'Infos diapo'
+    group_wrapper_infos:
+      children:
+        - node_title
+        - field_text
+        - field_link
+      parent_name: group_slide_infos
+      weight: 20
+      format_type: html_element
+      format_settings:
+        id: ''
+        classes: wrapper-infos
+        element: div
+        show_label: false
+        label_element: h3
+        attributes: ''
+        effect: none
+        speed: fast
+      label: wrapper-infos
 id: node.slide.teaser
 targetEntityType: node
 bundle: slide
@@ -78,8 +95,8 @@ content:
       image_link: ''
     third_party_settings: {  }
   field_link:
-    type: link_separate
-    weight: 4
+    type: link
+    weight: 23
     region: ds_content
     label: hidden
     settings:
@@ -91,7 +108,7 @@ content:
     third_party_settings: {  }
   field_text:
     type: basic_string
-    weight: 3
+    weight: 22
     region: ds_content
     label: hidden
     settings: {  }
