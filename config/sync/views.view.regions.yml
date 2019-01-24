@@ -8,6 +8,7 @@ dependencies:
     - group.type.regional_group
     - system.menu.hamburger
   module:
+    - ds
     - group
 id: regions
 label: Régions
@@ -184,10 +185,19 @@ display:
         arguments: false
         title: false
       row:
-        type: 'entity:group'
+        type: 'ds_entity:group'
         options:
           relationship: none
           view_mode: region_image
+          alternating_fieldset:
+            alternating: false
+            allpages: false
+          grouping_fieldset:
+            group: false
+            group_field: groups_field_data|label
+            group_field_function: ''
+          advanced_fieldset:
+            advanced: false
       arguments:
         id:
           id: id
