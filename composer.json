@@ -116,6 +116,11 @@
                 ".editorconfig": "../.editorconfig",
                 ".gitattributes": "../.gitattributes"
             }
+        },
+        "patches": {
+            "drupal/group": {
+                "Port Subgroup (ggroup) to the D8 version": "https://www.drupal.org/files/issues/2019-01-11/port-subgroups-2736233-205.patch"
+            }
         }
     }
 }
