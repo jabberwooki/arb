@@ -5,11 +5,13 @@ dependencies:
   config:
     - core.entity_view_mode.node.full
     - field.field.node.news.body
+    - field.field.node.news.field_files
     - field.field.node.news.field_image
     - field.field.node.news.field_news_type
     - node.type.news
   module:
     - ds
+    - file
     - responsive_image
     - text
     - user
@@ -35,6 +37,7 @@ third_party_settings:
         - node_title
         - field_news_type
         - body
+        - field_files
     fields:
       node_title:
         plugin_id: node_title
@@ -53,6 +56,14 @@ content:
     settings: {  }
     third_party_settings: {  }
     region: ds_content
+  field_files:
+    type: file_default
+    weight: 4
+    region: ds_content
+    label: above
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
   field_image:
     type: responsive_image
     weight: 0
