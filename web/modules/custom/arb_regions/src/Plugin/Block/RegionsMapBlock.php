@@ -44,8 +44,8 @@ class RegionsMapBlock extends BlockBase {
       $progress_srb_term_id = $region->get('field_srb_process_progress')->getString();
       $progress_srb_term = \Drupal::entityTypeManager()->getStorage('taxonomy_term')->load($progress_srb_term_id);
 
-      $progres_ten_term_id = $region->get('field_ten_process_progress')->getString();
-      $progress_ten_term = \Drupal::entityTypeManager()->getStorage('taxonomy_term')->load($progres_ten_term_id);
+      $progress_ten_term_id = $region->get('field_ten_process_progress')->getString();
+      $progress_ten_term = \Drupal::entityTypeManager()->getStorage('taxonomy_term')->load($progress_ten_term_id);
 
       $regions_data[$region->get('field_code')->getString()] = array(
         'id' => $region->id(),
