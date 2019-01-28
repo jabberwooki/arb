@@ -1,3 +1,34 @@
+.club-arb-link-wrapper {
+    text-align: right;
+}
+
+/* Légende */
+.arb-legend-wrapper .legend {
+    float: left;
+    width: 24px;
+    height: 24px;
+    border-radius: 12px;
+    margin-right: 10px;
+}
+.arb-legend-title {
+    clear: both;
+    font-size: 12px;
+}
+.legend.color-0 {
+    background: #e4e4e4;
+}
+.legend.color-1 {
+    background: #5bb6e3;
+}
+.legend.color-2 {
+    background: #f08946;
+}
+.legend.color-3 {
+    background: #00c400;
+}
+
+
+/* Régions */
 .block-regions-map-block .region.color-0 {
     fill: #e4e4e4;
 }

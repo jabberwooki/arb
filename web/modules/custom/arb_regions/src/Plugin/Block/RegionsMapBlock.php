@@ -55,7 +55,7 @@ class RegionsMapBlock extends BlockBase {
         'progress_ten' => $progress_ten_term->getWeight(),
       );
     }
-    
+
     return [
       '#theme' => 'regions_map__block',
       '#data' => $regions_data,
