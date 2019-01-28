@@ -94,13 +94,39 @@ set classes = [
 ]
 %}
 <section{{ attributes.addClass(classes) }}>
-    {% if is_front %}
-    <h2{{ title_attributes.addClass('block-title') }}>Carte interactive des ARB</h2>
-    {% endif %}
+    <br/>
+    <ul class="nav nav-tabs" role="tablist">
+        <li role="presentation" class="active"><a href="#interactive-map" aria-controls="arb" role="tab" data-toggle="tab">ARB</a></li>
+        <li role="presentation"><a href="#interactive-map-srb" aria-controls="srb" role="tab" data-toggle="tab">SRB</a></li>
+        <li role="presentation"><a href="#interactive-map-ten" aria-controls="ten" role="tab" data-toggle="tab">TEN</a></li>
+    </ul>
 
-    <div id="interactive-map">
-    {% block content %}
-        {% include '@arb/../images/regions-map.svg' %}
-    {% endblock %}
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+
+        <div id="interactive-map" role="tabpanel" class="tab-pane active">
+            {% if is_front %}
+                <h2{{ title_attributes.addClass('block-title') }}>Carte interactive des ARB</h2>
+            {% endif %}
+            {% include '@arb/../images/regions-map.svg' %}
+        </div>
+
+        <div id="interactive-map-srb" role="tabpanel" class="tab-pane">
+            {% if is_front %}
+                <h2{{ title_attributes.addClass('block-title') }}>Stratégies régionales biodiversité</h2>
+            {% endif %}
+            SRB
+            {% include '@arb/../images/regions-map-srb.svg' %}
+        </div>
+
+        <div id="interactive-map-ten" role="tabpanel" class="tab-pane">
+            {% if is_front %}
+                <h2{{ title_attributes.addClass('block-title') }}>Territoires engagés pour la nature</h2>
+            {% endif %}
+            TEN
+            {% include '@arb/../images/regions-map-ten.svg' %}
+        </div>
+
     </div>
 </section>
