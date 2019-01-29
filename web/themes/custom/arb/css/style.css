@@ -9089,8 +9089,33 @@ a .region:hover {
 .block-arb-register {
   font-size: 28px;
   background: #F5F6F8;
-  min-height: 126px;
-  line-height: 126px;
+  min-height: 125.8px;
+  line-height: 125.8px;
+  font-weight: 600;
+  position: relative;
+}
+
+.block-arb-register .arb-register-text:before {
+  background: url("../images/icon-user-big.png") no-repeat;
+  width: 103px;
+  height: 88px;
+  content: '';
+  float: left;
+  margin: 18px 40px 0 40px;
+}
+
+.block-arb-register .arb-register-text:after {
+  background: url("../images/courbe-register.png") no-repeat;
+  width: 62px;
+  height: 125.8px;
+  content: '';
+  position: absolute;
+  right: 0;
+}
+
+.block-arb-register span.collab {
+  color: #1FAD00;
+  font-weight: 800;
 }
 
 .block-arb-register .arb-register-link a {
@@ -9102,10 +9127,13 @@ a .region:hover {
   text-decoration: none;
   border-radius: 60px;
   padding: 10px 20px;
+  border: 5px double white;
+  outline: 0;
 }
 
 .block-arb-register .arb-register-link a:hover {
   color: white;
+  background: #1FAD00;
 }
 
 /*NEWS HOME*/

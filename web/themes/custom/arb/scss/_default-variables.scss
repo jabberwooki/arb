@@ -63,8 +63,11 @@ transition : all .25s ease-in-out;
     text-decoration: none;
     border-radius: 60px;
     padding: 10px 20px;
+    border: 5px double white;
+    outline: 0;
         &:hover{
             color: white;
+            background: $brand-secondary;
         }
     }
 @mixin border-subtitle{
