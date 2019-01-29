@@ -8,7 +8,7 @@
 
 /**
  * @file
- * Contains Drupal\arb_regions\Form\MapsConfigForm
+ * Contains Drupal\arb_regions\Form\arb_regionsConfigForm
  */
 
 namespace Drupal\arb_regions\Form;
@@ -28,7 +28,7 @@ class MapsConfigForm extends ConfigFormBase {
    */
   protected function getEditableConfigNames() {
     return [
-      'maps.settings',
+      'arb_regions.settings',
     ];
   }
 
@@ -36,7 +36,7 @@ class MapsConfigForm extends ConfigFormBase {
    * {@inheritdoc}
    */
   public function buildForm(array $form, FormStateInterface $form_state) {
-    $config = $this->config('maps.settings');
+    $config = $this->config('arb_regions.settings');
 
     $form['arb_date'] = [
       '#type' => 'textfield',
@@ -66,7 +66,7 @@ class MapsConfigForm extends ConfigFormBase {
   public function submitForm(array &$form, FormStateInterface $form_state) {
     parent::submitForm($form, $form_state);
 
-    $this->config('maps.settings')
+    $this->config('arb_regions.settings')
       ->set('arb_date', $form_state->getValue('arb_date'))
       ->set('srb_date', $form_state->getValue('srb_date'))
       ->set('ten_date', $form_state->getValue('ten_date'))

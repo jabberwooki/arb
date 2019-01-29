@@ -56,7 +56,7 @@ class RegionsMapBlock extends BlockBase {
       );
     }
 
-    $maps_settings = \Drupal::config('maps.settings');
+    $maps_settings = \Drupal::config('arb_regions.settings');
     $update_dates = [
       'arb_date' => $maps_settings->get('arb_date'),
       'srb_date' => $maps_settings->get('srb_date'),
