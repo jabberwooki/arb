@@ -63,6 +63,7 @@ function arb_regions_theme($existing, $type, $theme, $path) {
     'regions_map__block' => [
       'variables' => [
         'data' => NULL,
+        'update_dates' => NULL,
       ],
     ],
     'region_operations__block' => [

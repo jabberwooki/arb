@@ -14,7 +14,8 @@ module:
 theme: {  }
 blacklist:
   - system.mail
-graylist: {  }
+graylist:
+  - maps.settings
 graylist_dependents: true
 graylist_skip_equal: true
 weight: 0

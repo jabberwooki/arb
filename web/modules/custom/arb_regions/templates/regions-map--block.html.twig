@@ -123,6 +123,8 @@ set classes = [
             <div class="arb-legend-title">Légende</div>
 
             {% include '@arb/../images/regions-map.svg' %}
+
+            <div class="update-date">Carte ARB mise à jour le {{ update_dates['arb_date'] }}</div>
         </div>
 
         <div id="interactive-map-srb" role="tabpanel" class="tab-pane">
@@ -139,6 +141,8 @@ set classes = [
             <div class="arb-legend-title">Légende</div>
 
             {% include '@arb/../images/regions-map-srb.svg' %}
+
+            <div class="update-date">Carte SRB mise à jour le {{ update_dates['srb_date'] }}</div>
         </div>
 
         <div id="interactive-map-ten" role="tabpanel" class="tab-pane">
@@ -154,6 +158,8 @@ set classes = [
             <div class="arb-legend-title">Légende</div>
 
             {% include '@arb/../images/regions-map-ten.svg' %}
+
+            <div class="update-date">Carte TEN mise à jour le {{ update_dates['ten_date'] }}</div>
         </div>
 
     </div>
