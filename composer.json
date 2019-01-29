@@ -38,6 +38,7 @@
         "drupal/bootstrap": "^3.13",
         "drupal/bootstrap_barrio": "^4.17",
         "drupal/chosen": "^2.6",
+        "drupal/config_ignore": "^2.1",
         "drupal/config_installer": "^1.8",
         "drupal/config_split": "^1.4",
         "drupal/console": "^1.0.2",
