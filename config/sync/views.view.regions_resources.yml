@@ -5,10 +5,12 @@ dependencies:
   config:
     - group.content_type.group_content_type_1b5b2e3065449
     - group.content_type.group_content_type_f8af808bc408c
+    - user.role.authenticated
   module:
     - eva
     - group
     - node
+    - user
     - views_bootstrap
 id: regions_resources
 label: 'Ressources régions'
@@ -797,6 +799,7 @@ display:
         row: false
         filters: false
         filter_groups: false
+        access: false
       style:
         type: views_bootstrap_grid
         options:
@@ -858,9 +861,15 @@ display:
         operator: AND
         groups:
           1: AND
+      access:
+        type: role
+        options:
+          role:
+            authenticated: authenticated
     cache_metadata:
       max-age: -1
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
+        - user.roles
       tags: {  }
