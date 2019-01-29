@@ -1,0 +1,25 @@
+uuid: 13df6621-cba2-41ca-b83e-51475e64b2ff
+langcode: fr
+status: true
+dependencies:
+  config:
+    - crop.type.editorial_block
+  module:
+    - crop
+name: editorial_block
+label: 'Bloc page éditoriales'
+effects:
+  cc883db6-0722-498e-9ec2-85027c78485b:
+    uuid: cc883db6-0722-498e-9ec2-85027c78485b
+    id: crop_crop
+    weight: 1
+    data:
+      crop_type: editorial_block
+  530e4e64-83f6-4fe4-b2ce-fecd246d8a59:
+    uuid: 530e4e64-83f6-4fe4-b2ce-fecd246d8a59
+    id: image_scale
+    weight: 2
+    data:
+      width: 550
+      height: null
+      upscale: false
