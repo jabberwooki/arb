@@ -5,8 +5,10 @@ dependencies:
   config:
     - field.field.node.editorial_page.body
     - field.field.node.editorial_page.field_editorial_type
+    - field.field.node.editorial_page.field_image
     - node.type.editorial_page
   module:
+    - image
     - text
     - user
 id: node.editorial_page.default
@@ -20,6 +22,15 @@ content:
     weight: 1
     settings: {  }
     third_party_settings: {  }
+    region: content
+  field_image:
+    weight: 2
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
     region: content
   links:
     weight: 0

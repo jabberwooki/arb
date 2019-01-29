@@ -1,0 +1,12 @@
+uuid: 54553bf7-b09a-44e3-b3cd-f1bcd382749f
+langcode: fr
+status: true
+dependencies: {  }
+label: 'Bloc page éditoriales'
+id: editorial_block
+description: ''
+aspect_ratio: '550:220'
+soft_limit_width: null
+soft_limit_height: null
+hard_limit_width: null
+hard_limit_height: null
