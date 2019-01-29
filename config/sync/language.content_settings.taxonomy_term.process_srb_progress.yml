@@ -1,0 +1,11 @@
+uuid: b022e360-b6ba-46af-8557-8ee0f5ee841e
+langcode: fr
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.process_srb_progress
+id: taxonomy_term.process_srb_progress
+target_entity_type_id: taxonomy_term
+target_bundle: process_srb_progress
+default_langcode: site_default
+language_alterable: false

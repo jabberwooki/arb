@@ -37,14 +37,22 @@ class RegionsMapBlock extends BlockBase {
     // Construction du tableau des données régions.
     $regions_data = array();
     foreach($regions as $region) {
-      // Chargement du terme de taxonomie lié a chaque région pour en connaitre son poids
+      // Chargement des termes de taxonomie ARB, SRB et TEN lié a chaque région pour en connaitre le poids
       $progress_term_id = $region->get('field_process_progress')->getString();
       $progress_term = \Drupal::entityTypeManager()->getStorage('taxonomy_term')->load($progress_term_id);
+
+      $progress_srb_term_id = $region->get('field_srb_process_progress')->getString();
+      $progress_srb_term = \Drupal::entityTypeManager()->getStorage('taxonomy_term')->load($progress_srb_term_id);
+
+      $progress_ten_term_id = $region->get('field_ten_process_progress')->getString();
+      $progress_ten_term = \Drupal::entityTypeManager()->getStorage('taxonomy_term')->load($progress_ten_term_id);
 
       $regions_data[$region->get('field_code')->getString()] = array(
         'id' => $region->id(),
         'name' => $region->label(),
-        'progress' => $progress_term->getWeight()
+        'progress' => $progress_term->getWeight(),
+        'progress_srb' => $progress_srb_term->getWeight(),
+        'progress_ten' => $progress_ten_term->getWeight(),
       );
     }
 

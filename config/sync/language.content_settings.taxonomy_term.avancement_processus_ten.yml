@@ -1,0 +1,11 @@
+uuid: de351f5f-c2eb-417c-836b-5ecaada651fa
+langcode: fr
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.avancement_processus_ten
+id: taxonomy_term.avancement_processus_ten
+target_entity_type_id: taxonomy_term
+target_bundle: avancement_processus_ten
+default_langcode: site_default
+language_alterable: false

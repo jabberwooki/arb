@@ -1,0 +1,33 @@
+uuid: 3b69ddd2-a86c-4d58-a5d8-34513628c531
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.group.field_ten_process_progress
+    - group.type.regional_group
+    - taxonomy.vocabulary.avancement_processus_ten
+  content:
+    - 'taxonomy_term:avancement_processus_ten:e6f77430-d2ca-499e-a6c0-262fbfa4fd8f'
+id: group.regional_group.field_ten_process_progress
+field_name: field_ten_process_progress
+entity_type: group
+bundle: regional_group
+label: 'Avancement processus TEN'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    target_uuid: e6f77430-d2ca-499e-a6c0-262fbfa4fd8f
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      avancement_processus_ten: avancement_processus_ten
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

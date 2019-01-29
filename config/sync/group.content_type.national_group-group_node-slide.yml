@@ -1,0 +1,19 @@
+uuid: 1c74f06e-dbab-41ce-bc8c-6f6751ddb31b
+langcode: fr
+status: true
+dependencies:
+  config:
+    - group.type.national_group
+    - node.type.slide
+  module:
+    - gnode
+    - node
+id: national_group-group_node-slide
+label: 'Groupe national: Group node (Diapositive)'
+description: 'Adds <em class="placeholder">Diapositive</em> content to groups both publicly and privately.'
+group_type: national_group
+content_plugin: 'group_node:slide'
+plugin_config:
+  group_cardinality: 0
+  entity_cardinality: 1
+  use_creation_wizard: false

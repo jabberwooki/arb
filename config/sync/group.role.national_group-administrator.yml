@@ -1,0 +1,56 @@
+uuid: 6af471d9-db6e-4a62-8ccd-14b0a9b833fb
+langcode: fr
+status: true
+dependencies:
+  config:
+    - group.type.national_group
+id: national_group-administrator
+label: 'Administrateur national'
+weight: 4
+internal: false
+audience: member
+group_type: national_group
+permissions_ui: true
+permissions:
+  0: 'access content overview'
+  1: 'administer group'
+  2: 'edit group'
+  3: 'view group'
+  4: 'administer members'
+  5: 'view group_membership content'
+  6: 'access group_node overview'
+  7: 'access subgroup overview'
+  8: 'view subgroup:regional_group content'
+  9: 'view subgroup:regional_group entity'
+  17: 'create group_node:news entity'
+  18: 'delete any group_node:news entity'
+  19: 'update any group_node:news entity'
+  20: 'view group_node:news entity'
+  21: 'create group_node:news content'
+  22: 'delete any group_node:news content'
+  23: 'update any group_node:news content'
+  24: 'view group_node:news content'
+  25: 'create group_node:slide entity'
+  26: 'delete any group_node:slide entity'
+  27: 'view group_node:slide entity'
+  28: 'create group_node:slide content'
+  29: 'delete any group_node:slide content'
+  30: 'update any group_node:slide content'
+  31: 'view group_node:slide content'
+  32: 'create group_node:document entity'
+  33: 'delete any group_node:document entity'
+  34: 'update any group_node:document entity'
+  35: 'view group_node:document entity'
+  36: 'create group_node:document content'
+  37: 'delete any group_node:document content'
+  38: 'update any group_node:document content'
+  39: 'view group_node:document content'
+  40: 'create group_node:footer_logo entity'
+  41: 'delete any group_node:footer_logo entity'
+  42: 'update any group_node:footer_logo entity'
+  43: 'view group_node:footer_logo entity'
+  44: 'view unpublished group_node:footer_logo entity'
+  45: 'create group_node:footer_logo content'
+  46: 'delete own group_node:footer_logo content'
+  47: 'update own group_node:footer_logo content'
+  48: 'view group_node:footer_logo content'

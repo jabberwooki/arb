@@ -46,6 +46,14 @@
             // instead of a settings object
           ]
       });
+
+      // Bandeau région
+      $('#block-views-block-regions-banner .view-content').slick({
+        arrows: true,
+        speed: 1500,
+        autoplay: true,
+        fade: true
+      });
     }
   };
 })(jQuery);

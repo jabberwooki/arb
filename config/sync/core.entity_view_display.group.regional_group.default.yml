@@ -8,6 +8,8 @@ dependencies:
     - field.field.group.regional_group.field_internet_site
     - field.field.group.regional_group.field_presentation
     - field.field.group.regional_group.field_process_progress
+    - field.field.group.regional_group.field_srb_process_progress
+    - field.field.group.regional_group.field_ten_process_progress
     - group.type.regional_group
   module:
     - ds
@@ -87,6 +89,22 @@ content:
     third_party_settings: {  }
     type: entity_reference_label
     region: ds_content
+  field_srb_process_progress:
+    weight: 11
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_ten_process_progress:
+    weight: 12
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
   label:
     label: hidden
     type: string

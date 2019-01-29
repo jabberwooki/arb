@@ -1,0 +1,73 @@
+uuid: be221634-c66b-4ff8-a870-2a1886eb1ced
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.group.full
+    - field.field.group.national_group.field_image
+    - field.field.group.national_group.field_internet_site
+    - field.field.group.national_group.field_presentation
+    - group.type.national_group
+  module:
+    - ds
+    - link
+    - text
+third_party_settings:
+  ds:
+    layout:
+      id: ds_1col
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        wrappers:
+          ds_content: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        classes:
+          layout_class: {  }
+    regions:
+      ds_content:
+        - label
+        - field_internet_site
+        - field_presentation
+id: group.national_group.full
+targetEntityType: group
+bundle: national_group
+mode: full
+content:
+  field_internet_site:
+    weight: 1
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: ds_content
+  field_presentation:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: ds_content
+  label:
+    label: hidden
+    type: string
+    weight: 0
+    region: ds_content
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden:
+  changed: true
+  created: true
+  field_image: true
+  langcode: true
+  uid: true

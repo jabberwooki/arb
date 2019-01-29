@@ -11,4 +11,30 @@ internal: true
 audience: member
 group_type: national_group
 permissions_ui: true
-permissions: {  }
+permissions:
+  0: 'view group'
+  1: 'leave group'
+  2: 'view group_membership content'
+  3: 'view subgroup:regional_group entity'
+  7: 'create group_node:news entity'
+  8: 'delete own group_node:news entity'
+  9: 'update own group_node:news entity'
+  10: 'view group_node:news entity'
+  11: 'create group_node:news content'
+  12: 'delete own group_node:news content'
+  13: 'update own group_node:news content'
+  14: 'create group_node:slide entity'
+  15: 'delete own group_node:slide entity'
+  16: 'update own group_node:slide entity'
+  17: 'view group_node:slide entity'
+  18: 'create group_node:slide content'
+  19: 'delete own group_node:slide content'
+  20: 'update own group_node:slide content'
+  21: 'create group_node:document entity'
+  22: 'delete own group_node:document entity'
+  23: 'update own group_node:document entity'
+  24: 'view group_node:document entity'
+  25: 'create group_node:document content'
+  26: 'delete own group_node:document content'
+  27: 'update own group_node:document content'
+  28: 'view unpublished group_node:footer_logo entity'

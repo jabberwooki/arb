@@ -5,13 +5,14 @@ dependencies:
   config:
     - core.entity_view_mode.node.full
     - field.field.node.news.body
+    - field.field.node.news.field_files
     - field.field.node.news.field_image
     - field.field.node.news.field_news_type
     - node.type.news
   module:
     - ds
+    - file
     - responsive_image
-    - taxonomy
     - text
     - user
 third_party_settings:
@@ -33,8 +34,16 @@ third_party_settings:
     regions:
       ds_content:
         - field_image
+        - node_title
         - field_news_type
         - body
+        - field_files
+    fields:
+      node_title:
+        plugin_id: node_title
+        weight: 1
+        label: hidden
+        formatter: default
 id: node.news.full
 targetEntityType: node
 bundle: news
@@ -43,25 +52,34 @@ content:
   body:
     label: hidden
     type: text_default
-    weight: 2
+    weight: 3
     settings: {  }
     third_party_settings: {  }
     region: ds_content
+  field_files:
+    type: file_default
+    weight: 4
+    region: ds_content
+    label: above
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
   field_image:
     type: responsive_image
     weight: 0
     region: ds_content
-    label: above
+    label: hidden
     settings:
       responsive_image_style: ''
       image_link: ''
     third_party_settings: {  }
   field_news_type:
-    weight: 1
+    weight: 2
     label: hidden
-    settings: {  }
+    settings:
+      link: true
     third_party_settings: {  }
-    type: entity_reference_rss_category
+    type: entity_reference_label
     region: ds_content
 hidden:
   langcode: true
