@@ -28,29 +28,40 @@ a .region:hover {
     padding-bottom: 30px;
 }
 
-/*Titers des block de la homepage*/
-.block-arb-regions,
-.block-views-blockeditorial-pages-arb-infos,
-.block-views-blockeditorial-pages-pf-infos,
-.block-views-blockregion-news-front-block,
-.block-views-blockregions-resources-front-block{
-    h2{
+/*BLOC REGISTER*/
+.block-arb-register{
     font-size: 28px;
-    font-weight: 700;
-    margin-bottom: 28px;
-        &:after{
-            @include border-subtitle;
-            padding-top: 5px;
-        }
-        a{
-            text-decoration: none;
-        }
-        a:hover{
-            color:$brand-secondary;
-        }
+    background: #F5F6F8;
+    min-height: 125.8px;
+    line-height: 125.8px;
+    font-weight: 600;
+    position: relative;
+    .arb-register-text:before{
+        background: url('../images/icon-user-big.png')no-repeat;
+        width: 103px;
+        height: 88px;
+        content: '';
+        float: left;
+        margin: 18px 40px 0 40px;
+    }
+    .arb-register-text:after{
+        background: url('../images/courbe-register.png')no-repeat;
+        width: 62px;
+        height: 125.8px;
+        content: '';
+        position: absolute;
+        right: 0;
+    }
+    span.collab{
+        color: $brand-secondary;
+        font-weight: 800;
+    }
+    .arb-register-link a{
+        @include like-btn-a-2;
     }
 }
 /*NEWS HOME*/
+.region-latest-news,
 .block-views-blockregion-news-front-block{
     .slick-list.draggable {
         padding-top: 30px;
@@ -122,6 +133,7 @@ a .region:hover {
 }
 
 /*RESSOURCES HOME*/
+.region-latest-resources,
 .block-views-blockregions-resources-front-block{
     .infos-files{
         background: #F5F6F8;
@@ -151,3 +163,79 @@ a .region:hover {
         padding-right: 28px;
     }
 }
+
+/*Titers des block de la homepage*/
+.region-latest-resources,
+.region-latest-news,
+.block-arb-regions,
+.block-views-blockeditorial-pages-arb-infos,
+.block-views-blockeditorial-pages-pf-infos,
+.block-views-blockregion-news-front-block,
+.block-views-blockregions-resources-front-block{
+    h2,h3{
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 28px;
+    position: relative;
+        &:after{
+            @include border-subtitle;
+            padding-top: 5px;
+        }
+        a{
+            text-decoration: none;
+        }
+        a:hover{
+            color:$brand-secondary;
+        }
+    }
+}
+
+/*REGION*/
+.group--type-regional-group{
+    ul.nav-tabs{
+        background: $brand-primary; 
+        li{
+            &.active{
+                background: $brand-primary; 
+                border-bottom: 4px solid $brand-secondary;
+            }
+            a{
+                color: white;
+                background-color: transparent;
+                text-transform: uppercase;
+                border: none;
+            }
+        }
+    }
+    .field--name-field-process-progress{
+        background: $brand-secondary;
+        border-radius: 20px;
+        text-transform: uppercase;
+        color: white;
+        font-weight: 800;
+        font-size: 12px;
+        padding: 2px 14px;
+        display: inline;
+    }
+    .field--name-field-internet-site a{
+        color: $brand-secondary;
+        font-weight: 600;
+        &:before{
+            font-family: 'fontawesome';
+            content: '\f0c1';
+            color: $brand-primary; 
+            font-size: 14px;
+            padding-right: 5px;
+        }
+        &:hover{
+            color: $brand-primary; 
+            text-decoration: none;
+        }
+    }
+    .regions-backlink a{
+        @include like-btn-a-2;
+        float: left;
+        margin-top: 20px;
+    }
+}
+

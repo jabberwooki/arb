@@ -27,7 +27,7 @@ class ArbRegisterBlock extends BlockBase {
    * {@inheritdoc}
    */
   public function build() {
-      $register_text = 'Vous souhaitez collaborer avec nous';
+      $register_text = 'Vous souhaitez <span class="collab">collaborer</span> avec nous';
       $register_link = 'Inscrivez-vous';
 
     return [
