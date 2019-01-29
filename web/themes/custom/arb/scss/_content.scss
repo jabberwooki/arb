@@ -38,6 +38,7 @@ a .region:hover {
     font-size: 28px;
     font-weight: 700;
     margin-bottom: 28px;
+    position: relative;
         &:after{
             @include border-subtitle;
             padding-top: 5px;
@@ -48,6 +49,17 @@ a .region:hover {
         a:hover{
             color:$brand-secondary;
         }
+    }
+}
+
+/*BLOC REGISTER*/
+.block-arb-register{
+    font-size: 28px;
+    background: #F5F6F8;
+    min-height: 126px;
+    line-height: 126px;
+    .arb-register-link a{
+        @include like-btn-a-2;
     }
 }
 /*NEWS HOME*/

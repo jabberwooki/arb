@@ -54,6 +54,19 @@ transition : all .25s ease-in-out;
             color: $brand-primary;
         }
     }
+@mixin like-btn-a-2{
+    background: $brand-primary;
+    color: white;
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 60px;
+    padding: 10px 20px;
+        &:hover{
+            color: white;
+        }
+    }
 @mixin border-subtitle{
     position: absolute;
     left: 0;

@@ -9045,6 +9045,7 @@ a .region:hover {
   font-size: 28px;
   font-weight: 700;
   margin-bottom: 28px;
+  position: relative;
 }
 
 .block-arb-regions h2:after,
@@ -9082,6 +9083,29 @@ a .region:hover {
 .block-views-blockregion-news-front-block h2 a:hover,
 .block-views-blockregions-resources-front-block h2 a:hover {
   color: #1FAD00;
+}
+
+/*BLOC REGISTER*/
+.block-arb-register {
+  font-size: 28px;
+  background: #F5F6F8;
+  min-height: 126px;
+  line-height: 126px;
+}
+
+.block-arb-register .arb-register-link a {
+  background: #1D495D;
+  color: white;
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 60px;
+  padding: 10px 20px;
+}
+
+.block-arb-register .arb-register-link a:hover {
+  color: white;
 }
 
 /*NEWS HOME*/

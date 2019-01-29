@@ -52,7 +52,7 @@ a, a:hover, a:focus {
 ----------------------------------------------------- */
 #sidebar {
     width: 18%;
-    background: #fff;
+    background: #1D495D;
     position: absolute;
     top: 0;
     left: -18%;
@@ -61,7 +61,6 @@ a, a:hover, a:focus {
     color: #fff;
     transition: all 0.3s;
     overflow-y: hidden; /* scroll; Espiau */
-    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
 }
 
 #sidebar.active {
@@ -119,6 +118,7 @@ a, a:hover, a:focus {
     padding: 10px;
     font-size: 1.1em;
     display: block;
+    color: white;
 }
 #sidebar ul li a:hover {
     color: #7386D5;
