@@ -28,30 +28,6 @@ a .region:hover {
     padding-bottom: 30px;
 }
 
-/*Titers des block de la homepage*/
-.block-arb-regions,
-.block-views-blockeditorial-pages-arb-infos,
-.block-views-blockeditorial-pages-pf-infos,
-.block-views-blockregion-news-front-block,
-.block-views-blockregions-resources-front-block{
-    h2{
-    font-size: 28px;
-    font-weight: 700;
-    margin-bottom: 28px;
-    position: relative;
-        &:after{
-            @include border-subtitle;
-            padding-top: 5px;
-        }
-        a{
-            text-decoration: none;
-        }
-        a:hover{
-            color:$brand-secondary;
-        }
-    }
-}
-
 /*BLOC REGISTER*/
 .block-arb-register{
     font-size: 28px;
@@ -187,3 +163,79 @@ a .region:hover {
         padding-right: 28px;
     }
 }
+
+/*Titers des block de la homepage*/
+.region-latest-resources,
+.region-latest-news,
+.block-arb-regions,
+.block-views-blockeditorial-pages-arb-infos,
+.block-views-blockeditorial-pages-pf-infos,
+.block-views-blockregion-news-front-block,
+.block-views-blockregions-resources-front-block{
+    h2,h3{
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 28px;
+    position: relative;
+        &:after{
+            @include border-subtitle;
+            padding-top: 5px;
+        }
+        a{
+            text-decoration: none;
+        }
+        a:hover{
+            color:$brand-secondary;
+        }
+    }
+}
+
+/*REGION*/
+.group--type-regional-group{
+    ul.nav-tabs{
+        background: $brand-primary; 
+        li{
+            &.active{
+                background: $brand-primary; 
+                border-bottom: 4px solid $brand-secondary;
+            }
+            a{
+                color: white;
+                background-color: transparent;
+                text-transform: uppercase;
+                border: none;
+            }
+        }
+    }
+    .field--name-field-process-progress{
+        background: $brand-secondary;
+        border-radius: 20px;
+        text-transform: uppercase;
+        color: white;
+        font-weight: 800;
+        font-size: 12px;
+        padding: 2px 14px;
+        display: inline;
+    }
+    .field--name-field-internet-site a{
+        color: $brand-secondary;
+        font-weight: 600;
+        &:before{
+            font-family: 'fontawesome';
+            content: '\f0c1';
+            color: $brand-primary; 
+            font-size: 14px;
+            padding-right: 5px;
+        }
+        &:hover{
+            color: $brand-primary; 
+            text-decoration: none;
+        }
+    }
+    .regions-backlink a{
+        @include like-btn-a-2;
+        float: left;
+        margin-top: 20px;
+    }
+}
+

@@ -9036,55 +9036,6 @@ a .region:hover {
   padding-bottom: 30px;
 }
 
-/*Titers des block de la homepage*/
-.block-arb-regions h2,
-.block-views-blockeditorial-pages-arb-infos h2,
-.block-views-blockeditorial-pages-pf-infos h2,
-.block-views-blockregion-news-front-block h2,
-.block-views-blockregions-resources-front-block h2 {
-  font-size: 28px;
-  font-weight: 700;
-  margin-bottom: 28px;
-  position: relative;
-}
-
-.block-arb-regions h2:after,
-.block-views-blockeditorial-pages-arb-infos h2:after,
-.block-views-blockeditorial-pages-pf-infos h2:after,
-.block-views-blockregion-news-front-block h2:after,
-.block-views-blockregions-resources-front-block h2:after {
-  position: absolute;
-  left: 0;
-  content: "";
-  /* This is necessary for the pseudo element to work. */
-  display: block;
-  /* This will put the pseudo element on its own line. */
-  margin: 0 auto;
-  /* This will center the border. */
-  width: 90px;
-  /* Change this to whatever width you want. */
-  /*padding-top: 10px;  This creates some space between the element and the border. */
-  border-bottom: 5px solid #1FAD00;
-  /* This creates the border. Replace black with whatever color you want. */
-  padding-top: 5px;
-}
-
-.block-arb-regions h2 a,
-.block-views-blockeditorial-pages-arb-infos h2 a,
-.block-views-blockeditorial-pages-pf-infos h2 a,
-.block-views-blockregion-news-front-block h2 a,
-.block-views-blockregions-resources-front-block h2 a {
-  text-decoration: none;
-}
-
-.block-arb-regions h2 a:hover,
-.block-views-blockeditorial-pages-arb-infos h2 a:hover,
-.block-views-blockeditorial-pages-pf-infos h2 a:hover,
-.block-views-blockregion-news-front-block h2 a:hover,
-.block-views-blockregions-resources-front-block h2 a:hover {
-  color: #1FAD00;
-}
-
 /*BLOC REGISTER*/
 .block-arb-register {
   font-size: 28px;
@@ -9270,6 +9221,153 @@ a .region:hover {
   color: #1FAD00;
   float: left;
   padding-right: 28px;
+}
+
+/*Titers des block de la homepage*/
+.region-latest-resources h2,
+.region-latest-resources h3,
+.region-latest-news h2,
+.region-latest-news h3,
+.block-arb-regions h2,
+.block-arb-regions h3,
+.block-views-blockeditorial-pages-arb-infos h2,
+.block-views-blockeditorial-pages-arb-infos h3,
+.block-views-blockeditorial-pages-pf-infos h2,
+.block-views-blockeditorial-pages-pf-infos h3,
+.block-views-blockregion-news-front-block h2,
+.block-views-blockregion-news-front-block h3,
+.block-views-blockregions-resources-front-block h2, .block-views-blockregions-resources-front-block h3 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 28px;
+  position: relative;
+}
+
+.region-latest-resources h2:after,
+.region-latest-resources h3:after,
+.region-latest-news h2:after,
+.region-latest-news h3:after,
+.block-arb-regions h2:after,
+.block-arb-regions h3:after,
+.block-views-blockeditorial-pages-arb-infos h2:after,
+.block-views-blockeditorial-pages-arb-infos h3:after,
+.block-views-blockeditorial-pages-pf-infos h2:after,
+.block-views-blockeditorial-pages-pf-infos h3:after,
+.block-views-blockregion-news-front-block h2:after,
+.block-views-blockregion-news-front-block h3:after,
+.block-views-blockregions-resources-front-block h2:after, .block-views-blockregions-resources-front-block h3:after {
+  position: absolute;
+  left: 0;
+  content: "";
+  /* This is necessary for the pseudo element to work. */
+  display: block;
+  /* This will put the pseudo element on its own line. */
+  margin: 0 auto;
+  /* This will center the border. */
+  width: 90px;
+  /* Change this to whatever width you want. */
+  /*padding-top: 10px;  This creates some space between the element and the border. */
+  border-bottom: 5px solid #1FAD00;
+  /* This creates the border. Replace black with whatever color you want. */
+  padding-top: 5px;
+}
+
+.region-latest-resources h2 a,
+.region-latest-resources h3 a,
+.region-latest-news h2 a,
+.region-latest-news h3 a,
+.block-arb-regions h2 a,
+.block-arb-regions h3 a,
+.block-views-blockeditorial-pages-arb-infos h2 a,
+.block-views-blockeditorial-pages-arb-infos h3 a,
+.block-views-blockeditorial-pages-pf-infos h2 a,
+.block-views-blockeditorial-pages-pf-infos h3 a,
+.block-views-blockregion-news-front-block h2 a,
+.block-views-blockregion-news-front-block h3 a,
+.block-views-blockregions-resources-front-block h2 a, .block-views-blockregions-resources-front-block h3 a {
+  text-decoration: none;
+}
+
+.region-latest-resources h2 a:hover,
+.region-latest-resources h3 a:hover,
+.region-latest-news h2 a:hover,
+.region-latest-news h3 a:hover,
+.block-arb-regions h2 a:hover,
+.block-arb-regions h3 a:hover,
+.block-views-blockeditorial-pages-arb-infos h2 a:hover,
+.block-views-blockeditorial-pages-arb-infos h3 a:hover,
+.block-views-blockeditorial-pages-pf-infos h2 a:hover,
+.block-views-blockeditorial-pages-pf-infos h3 a:hover,
+.block-views-blockregion-news-front-block h2 a:hover,
+.block-views-blockregion-news-front-block h3 a:hover,
+.block-views-blockregions-resources-front-block h2 a:hover, .block-views-blockregions-resources-front-block h3 a:hover {
+  color: #1FAD00;
+}
+
+/*REGION*/
+.group--type-regional-group ul.nav-tabs {
+  background: #1D495D;
+}
+
+.group--type-regional-group ul.nav-tabs li.active {
+  background: #1D495D;
+  border-bottom: 4px solid #1FAD00;
+}
+
+.group--type-regional-group ul.nav-tabs li a {
+  color: white;
+  background-color: transparent;
+  text-transform: uppercase;
+  border: none;
+}
+
+.group--type-regional-group .field--name-field-process-progress {
+  background: #1FAD00;
+  border-radius: 20px;
+  text-transform: uppercase;
+  color: white;
+  font-weight: 800;
+  font-size: 12px;
+  padding: 2px 14px;
+  display: inline;
+}
+
+.group--type-regional-group .field--name-field-internet-site a {
+  color: #1FAD00;
+  font-weight: 600;
+}
+
+.group--type-regional-group .field--name-field-internet-site a:before {
+  font-family: 'fontawesome';
+  content: '\f0c1';
+  color: #1D495D;
+  font-size: 14px;
+  padding-right: 5px;
+}
+
+.group--type-regional-group .field--name-field-internet-site a:hover {
+  color: #1D495D;
+  text-decoration: none;
+}
+
+.group--type-regional-group .regions-backlink a {
+  background: #1D495D;
+  color: white;
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 60px;
+  padding: 10px 20px;
+  border: 5px double white;
+  outline: 0;
+  float: left;
+  margin-top: 20px;
+}
+
+.group--type-regional-group .regions-backlink a:hover {
+  color: white;
+  background: #1FAD00;
 }
 
 .prefooter {
