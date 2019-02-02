@@ -54,6 +54,11 @@
         autoplay: true,
         fade: true
       });
+
+      // Gestion de retours depuis node actu ou document vers le bon onglet
+      if ($('#arb-dashboard').length && $(location).attr('hash')) {
+        $($(location).attr('hash')).trigger('click');
+      }
     }
   };
 })(jQuery);

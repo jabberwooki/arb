@@ -75,3 +75,17 @@ function arb_misc_node_access(\Drupal\node\NodeInterface $node, $op, \Drupal\Cor
     return \Drupal\Core\Access\AccessResult::forbidden();
   }
 }
+
+
+/**
+ * Implements hook_theme().
+ */
+function arb_misc_theme($existing, $type, $theme, $path) {
+  return [
+    'backlink__block' => [
+      'variables' => [
+        'backlink' => NULL,
+      ],
+    ],
+  ];
+}
