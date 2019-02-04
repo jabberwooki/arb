@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "1b3d7f10514fdf599813b7ce95964999",
+    "content-hash": "67e8c2f7f7d14b414be9c3e9b648384a",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -3378,6 +3378,57 @@
             "homepage": "https://www.drupal.org/project/inline_entity_form",
             "support": {
                 "source": "http://cgit.drupalcode.org/inline_entity_form"
+            }
+        },
+        {
+            "name": "drupal/legal",
+            "version": "1.0.0-rc1",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/legal",
+                "reference": "8.x-1.0-rc1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/legal-8.x-1.0-rc1.zip",
+                "reference": "8.x-1.0-rc1",
+                "shasum": "3ac33d4c6b1565e85ecb76238ce3191843aca020"
+            },
+            "require": {
+                "drupal/core": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0-rc1",
+                    "datestamp": "1537045980",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "RC releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Robert Castelo",
+                    "homepage": "https://www.drupal.org/user/3555"
+                },
+                {
+                    "name": "vegantriathlete",
+                    "homepage": "https://www.drupal.org/user/491720"
+                }
+            ],
+            "description": "Display Terms and Conditions statement on the registration page.",
+            "homepage": "https://www.drupal.org/project/legal",
+            "support": {
+                "source": "http://cgit.drupalcode.org/legal"
             }
         },
         {
@@ -9419,6 +9470,7 @@
         "drupal/field_image_link": 20,
         "drupal/group": 5,
         "drupal/inline_entity_form": 5,
+        "drupal/legal": 5,
         "drupal/smtp": 10,
         "drupal/twitter_embed": 15
     },
