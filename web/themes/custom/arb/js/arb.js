@@ -48,7 +48,15 @@
       });
 
       // Bandeau région
-      $('#block-views-block-regions-banner .view-content').slick({
+      $('#block-views-block-regions-banner .field--name-field-image').slick({
+        arrows: true,
+        speed: 1500,
+        autoplay: true,
+        fade: true
+      });
+        
+    // Bandeau groupe national
+      $('#block-views-block-regions-banner-national .field--name-field-image').slick({
         arrows: true,
         speed: 1500,
         autoplay: true,
