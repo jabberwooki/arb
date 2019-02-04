@@ -8808,6 +8808,19 @@ p:last-child,
   padding-right: 10px;
 }
 
+.header .menu--account li:last-of-type {
+  display: none;
+}
+
+/*MENU HAMBURGER*/
+.hamburger .menu--account.navbar-right {
+  float: left !important;
+}
+
+.hamburger .menu--account.navbar-nav > li {
+  float: none;
+}
+
 /*BLOCK SEARCH*/
 .search-button {
   cursor: pointer;
@@ -9088,12 +9101,12 @@ a .region:hover {
 }
 
 /*NEWS HOME*/
-.region-latest-news .slick-list.draggable,
+.view-national-news .slick-list.draggable, .region-latest-news .slick-list.draggable,
 .block-views-blockregion-news-front-block .slick-list.draggable {
   padding-top: 30px;
 }
 
-.region-latest-news .slick-prev:before,
+.view-national-news .slick-prev:before, .view-national-news .slick-next:before, .region-latest-news .slick-prev:before,
 .region-latest-news .slick-next:before,
 .block-views-blockregion-news-front-block .slick-prev:before, .block-views-blockregion-news-front-block .slick-next:before {
   font-family: 'fontawesome';
@@ -9105,41 +9118,42 @@ a .region:hover {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.region-latest-news .slick-prev,
+.view-national-news .slick-prev, .region-latest-news .slick-prev,
 .block-views-blockregion-news-front-block .slick-prev {
   left: -10px;
 }
 
-.region-latest-news .slick-next,
+.view-national-news .slick-next, .region-latest-news .slick-next,
 .block-views-blockregion-news-front-block .slick-next {
   right: -10px;
 }
 
-.region-latest-news .slick-prev:before,
+.view-national-news .slick-prev:before,
+.view-national-news .slick-next:before, .region-latest-news .slick-prev:before,
 .region-latest-news .slick-next:before,
 .block-views-blockregion-news-front-block .slick-prev:before,
 .block-views-blockregion-news-front-block .slick-next:before {
   color: #1FAD00 !important;
 }
 
-.region-latest-news .slick-next:before,
+.view-national-news .slick-next:before, .region-latest-news .slick-next:before,
 .block-views-blockregion-news-front-block .slick-next:before {
   content: '\f054';
 }
 
-.region-latest-news .slick-prev:before,
+.view-national-news .slick-prev:before, .region-latest-news .slick-prev:before,
 .block-views-blockregion-news-front-block .slick-prev:before {
   content: '\f053';
 }
 
-.region-latest-news .slick-slide,
+.view-national-news .slick-slide, .region-latest-news .slick-slide,
 .block-views-blockregion-news-front-block .slick-slide {
   padding: 0 15px;
   position: relative;
   z-index: 10;
 }
 
-.region-latest-news .views-field-label,
+.view-national-news .views-field-label, .region-latest-news .views-field-label,
 .block-views-blockregion-news-front-block .views-field-label {
   position: absolute;
   top: -10px;
@@ -9148,7 +9162,7 @@ a .region:hover {
   text-align: center;
 }
 
-.region-latest-news .views-field-label .field-content,
+.view-national-news .views-field-label .field-content, .region-latest-news .views-field-label .field-content,
 .block-views-blockregion-news-front-block .views-field-label .field-content {
   background: #1FAD00;
   border-radius: 20px;
@@ -9159,27 +9173,27 @@ a .region:hover {
   padding: 2px 14px;
 }
 
-.region-latest-news .views-field-nothing,
+.view-national-news .views-field-nothing, .region-latest-news .views-field-nothing,
 .block-views-blockregion-news-front-block .views-field-nothing {
   background: #F5F6F8;
   padding: 15px;
 }
 
-.region-latest-news p.news-date,
+.view-national-news p.news-date, .region-latest-news p.news-date,
 .block-views-blockregion-news-front-block p.news-date {
   font-size: 14px;
   font-weight: 500;
   color: #1FAD00;
 }
 
-.region-latest-news h3,
+.view-national-news h3, .region-latest-news h3,
 .block-views-blockregion-news-front-block h3 {
   font-size: 14px;
   font-weight: 700;
   margin-top: 0;
 }
 
-.region-latest-news h3 a:hover,
+.view-national-news h3 a:hover, .region-latest-news h3 a:hover,
 .block-views-blockregion-news-front-block h3 a:hover {
   text-decoration: none;
   color: #1FAD00;
@@ -9224,6 +9238,7 @@ a .region:hover {
 }
 
 /*Titers des block de la homepage*/
+.view-national-news h2,
 .region-latest-resources h2,
 .region-latest-news h2,
 .block-arb-regions h2,
@@ -9237,6 +9252,7 @@ a .region:hover {
   position: relative;
 }
 
+.view-national-news h2:after,
 .region-latest-resources h2:after,
 .region-latest-news h2:after,
 .block-arb-regions h2:after,
@@ -9260,6 +9276,7 @@ a .region:hover {
   padding-top: 5px;
 }
 
+.view-national-news h2 a,
 .region-latest-resources h2 a,
 .region-latest-news h2 a,
 .block-arb-regions h2 a,
@@ -9270,6 +9287,7 @@ a .region:hover {
   text-decoration: none;
 }
 
+.view-national-news h2 a:hover,
 .region-latest-resources h2 a:hover,
 .region-latest-news h2 a:hover,
 .block-arb-regions h2 a:hover,
@@ -9278,6 +9296,15 @@ a .region:hover {
 .block-views-blockregion-news-front-block h2 a:hover,
 .block-views-blockregions-resources-front-block h2 a:hover {
   color: #1FAD00;
+}
+
+/*NATIONAL*/
+.view-national-news .view-content {
+  margin-top: 60px;
+}
+
+.view-national-news .row {
+  margin-top: 30px;
 }
 
 /*REGION*/
@@ -9306,6 +9333,19 @@ a .region:hover {
   border-bottom: 5px solid #1FAD00;
   /* This creates the border. Replace black with whatever color you want. */
   padding-top: 5px;
+}
+
+.region-latest-resources h4,
+.region-latest-news h4 {
+  font-size: 14px;
+  font-weight: 700;
+  margin-top: 0;
+}
+
+.region-latest-resources h4 a:hover,
+.region-latest-news h4 a:hover {
+  text-decoration: none;
+  color: #1FAD00;
 }
 
 .group--type-regional-group ul.nav-tabs {

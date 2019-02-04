@@ -61,6 +61,7 @@ a .region:hover {
     }
 }
 /*NEWS HOME*/
+.view-national-news,/*news page views*/
 .region-latest-news,
 .block-views-blockregion-news-front-block{
     .slick-list.draggable {
@@ -165,6 +166,7 @@ a .region:hover {
 }
 
 /*Titers des block de la homepage*/
+.view-national-news,
 .region-latest-resources,
 .region-latest-news,
 .block-arb-regions,
@@ -190,6 +192,17 @@ a .region:hover {
     }
 }
 
+/*NATIONAL*/
+.view-national-news{
+    .view-content{
+        margin-top: 60px;
+    }
+    .row{
+        margin-top: 30px;
+    }
+}
+
+
 /*REGION*/
 .region-latest-resources,
 .region-latest-news{
@@ -202,6 +215,18 @@ a .region:hover {
         &:after{
             @include border-subtitle;
             padding-top: 5px;
+        }
+    }
+}
+.region-latest-resources,
+.region-latest-news{
+    h4{
+        font-size: 14px;
+        font-weight: 700;
+        margin-top: 0;
+        a:hover{
+            text-decoration: none;
+            color:$brand-secondary;
         }
     }
 }

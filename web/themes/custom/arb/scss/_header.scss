@@ -57,7 +57,24 @@
             padding-right: 10px;
         }
     }
+    .menu--account li:last-of-type{
+        display: none;
+    }
 }
+
+/*MENU HAMBURGER*/
+.hamburger{
+    .menu--account{
+        &.navbar-right{
+            float: left !important;
+        }
+        &.navbar-nav > li{
+            float: none;
+        }
+    }
+}
+
+
 
 /*BLOCK SEARCH*/
 .search-button{
