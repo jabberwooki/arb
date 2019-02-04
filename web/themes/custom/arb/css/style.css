@@ -9101,12 +9101,12 @@ a .region:hover {
 }
 
 /*NEWS HOME*/
-.view-national-news .slick-list.draggable, .region-latest-news .slick-list.draggable,
+.view-region-news .slick-list.draggable, .view-national-news .slick-list.draggable, .region-latest-news .slick-list.draggable,
 .block-views-blockregion-news-front-block .slick-list.draggable {
   padding-top: 30px;
 }
 
-.view-national-news .slick-prev:before, .view-national-news .slick-next:before, .region-latest-news .slick-prev:before,
+.view-region-news .slick-prev:before, .view-region-news .slick-next:before, .view-national-news .slick-prev:before, .view-national-news .slick-next:before, .region-latest-news .slick-prev:before,
 .region-latest-news .slick-next:before,
 .block-views-blockregion-news-front-block .slick-prev:before, .block-views-blockregion-news-front-block .slick-next:before {
   font-family: 'fontawesome';
@@ -9118,17 +9118,18 @@ a .region:hover {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.view-national-news .slick-prev, .region-latest-news .slick-prev,
+.view-region-news .slick-prev, .view-national-news .slick-prev, .region-latest-news .slick-prev,
 .block-views-blockregion-news-front-block .slick-prev {
   left: -10px;
 }
 
-.view-national-news .slick-next, .region-latest-news .slick-next,
+.view-region-news .slick-next, .view-national-news .slick-next, .region-latest-news .slick-next,
 .block-views-blockregion-news-front-block .slick-next {
   right: -10px;
 }
 
-.view-national-news .slick-prev:before,
+.view-region-news .slick-prev:before,
+.view-region-news .slick-next:before, .view-national-news .slick-prev:before,
 .view-national-news .slick-next:before, .region-latest-news .slick-prev:before,
 .region-latest-news .slick-next:before,
 .block-views-blockregion-news-front-block .slick-prev:before,
@@ -9136,24 +9137,24 @@ a .region:hover {
   color: #1FAD00 !important;
 }
 
-.view-national-news .slick-next:before, .region-latest-news .slick-next:before,
+.view-region-news .slick-next:before, .view-national-news .slick-next:before, .region-latest-news .slick-next:before,
 .block-views-blockregion-news-front-block .slick-next:before {
   content: '\f054';
 }
 
-.view-national-news .slick-prev:before, .region-latest-news .slick-prev:before,
+.view-region-news .slick-prev:before, .view-national-news .slick-prev:before, .region-latest-news .slick-prev:before,
 .block-views-blockregion-news-front-block .slick-prev:before {
   content: '\f053';
 }
 
-.view-national-news .slick-slide, .region-latest-news .slick-slide,
+.view-region-news .slick-slide, .view-national-news .slick-slide, .region-latest-news .slick-slide,
 .block-views-blockregion-news-front-block .slick-slide {
   padding: 0 15px;
   position: relative;
   z-index: 10;
 }
 
-.view-national-news .views-field-label, .region-latest-news .views-field-label,
+.view-region-news .views-field-label, .view-national-news .views-field-label, .region-latest-news .views-field-label,
 .block-views-blockregion-news-front-block .views-field-label {
   position: absolute;
   top: -10px;
@@ -9162,7 +9163,7 @@ a .region:hover {
   text-align: center;
 }
 
-.view-national-news .views-field-label .field-content, .region-latest-news .views-field-label .field-content,
+.view-region-news .views-field-label .field-content, .view-national-news .views-field-label .field-content, .region-latest-news .views-field-label .field-content,
 .block-views-blockregion-news-front-block .views-field-label .field-content {
   background: #1FAD00;
   border-radius: 20px;
@@ -9173,27 +9174,27 @@ a .region:hover {
   padding: 2px 14px;
 }
 
-.view-national-news .views-field-nothing, .region-latest-news .views-field-nothing,
+.view-region-news .views-field-nothing, .view-national-news .views-field-nothing, .region-latest-news .views-field-nothing,
 .block-views-blockregion-news-front-block .views-field-nothing {
   background: #F5F6F8;
   padding: 15px;
 }
 
-.view-national-news p.news-date, .region-latest-news p.news-date,
+.view-region-news p.news-date, .view-national-news p.news-date, .region-latest-news p.news-date,
 .block-views-blockregion-news-front-block p.news-date {
   font-size: 14px;
   font-weight: 500;
   color: #1FAD00;
 }
 
-.view-national-news h3, .region-latest-news h3,
+.view-region-news h3, .view-national-news h3, .region-latest-news h3,
 .block-views-blockregion-news-front-block h3 {
   font-size: 14px;
   font-weight: 700;
   margin-top: 0;
 }
 
-.view-national-news h3 a:hover, .region-latest-news h3 a:hover,
+.view-region-news h3 a:hover, .view-national-news h3 a:hover, .region-latest-news h3 a:hover,
 .block-views-blockregion-news-front-block h3 a:hover {
   text-decoration: none;
   color: #1FAD00;
