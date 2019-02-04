@@ -9033,11 +9033,6 @@ body {
   background: transparent;
 }
 
-/*CARTE DE FRANCE*/
-a .region:hover {
-  fill-opacity: 0.5;
-}
-
 /*SLICK FLECHES*/
 .slick-prev:before,
 .slick-next:before {
@@ -9059,6 +9054,161 @@ a .region:hover {
 .path-frontpage .main-container {
   margin-top: -80px;
   padding-bottom: 30px;
+}
+
+/*Titres des block de la homepage*/
+.view-national-resources h2,
+.view-national-news h2,
+.region-latest-resources h2,
+.region-latest-news h2,
+.block-arb-regions h2,
+.block-views-blockeditorial-pages-arb-infos h2,
+.block-views-blockeditorial-pages-pf-infos h2,
+.block-views-blockregion-news-front-block h2,
+.block-views-blockregions-resources-front-block h2 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 28px;
+  position: relative;
+}
+
+.view-national-resources h2:after,
+.view-national-news h2:after,
+.region-latest-resources h2:after,
+.region-latest-news h2:after,
+.block-arb-regions h2:after,
+.block-views-blockeditorial-pages-arb-infos h2:after,
+.block-views-blockeditorial-pages-pf-infos h2:after,
+.block-views-blockregion-news-front-block h2:after,
+.block-views-blockregions-resources-front-block h2:after {
+  position: absolute;
+  left: 0;
+  content: "";
+  /* This is necessary for the pseudo element to work. */
+  display: block;
+  /* This will put the pseudo element on its own line. */
+  margin: 0 auto;
+  /* This will center the border. */
+  width: 90px;
+  /* Change this to whatever width you want. */
+  /*padding-top: 10px;  This creates some space between the element and the border. */
+  border-bottom: 5px solid #1FAD00;
+  /* This creates the border. Replace black with whatever color you want. */
+  padding-top: 5px;
+}
+
+.view-national-resources h2 a,
+.view-national-news h2 a,
+.region-latest-resources h2 a,
+.region-latest-news h2 a,
+.block-arb-regions h2 a,
+.block-views-blockeditorial-pages-arb-infos h2 a,
+.block-views-blockeditorial-pages-pf-infos h2 a,
+.block-views-blockregion-news-front-block h2 a,
+.block-views-blockregions-resources-front-block h2 a {
+  text-decoration: none;
+}
+
+.view-national-resources h2 a:hover,
+.view-national-news h2 a:hover,
+.region-latest-resources h2 a:hover,
+.region-latest-news h2 a:hover,
+.block-arb-regions h2 a:hover,
+.block-views-blockeditorial-pages-arb-infos h2 a:hover,
+.block-views-blockeditorial-pages-pf-infos h2 a:hover,
+.block-views-blockregion-news-front-block h2 a:hover,
+.block-views-blockregions-resources-front-block h2 a:hover {
+  color: #1FAD00;
+}
+
+/*CARTE DE FRANCE*/
+#block-regionsmapblock2 a .region:hover,
+#block-regionsmapblock a .region:hover {
+  fill-opacity: 0.5;
+}
+
+#block-regionsmapblock2 .club-arb-link-wrapper,
+#block-regionsmapblock .club-arb-link-wrapper {
+  float: right;
+  margin-top: 5px;
+}
+
+#block-regionsmapblock2 .club-arb-link-wrapper a,
+#block-regionsmapblock .club-arb-link-wrapper a {
+  background: #1FAD00;
+  color: white;
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 60px;
+  padding: 10px 20px;
+}
+
+#block-regionsmapblock2 .club-arb-link-wrapper a:hover,
+#block-regionsmapblock .club-arb-link-wrapper a:hover {
+  color: #1D495D;
+}
+
+#block-regionsmapblock2 .club-arb-link-wrapper a:before,
+#block-regionsmapblock .club-arb-link-wrapper a:before {
+  font-family: 'fontawesome';
+  content: '\f024';
+  font-size: 14px;
+  padding-right: 10px;
+}
+
+#block-regionsmapblock2 h2,
+#block-regionsmapblock h2 {
+  margin-bottom: 18px;
+  margin-top: 0;
+  padding-top: 20px;
+}
+
+#block-regionsmapblock2 .nav-tabs,
+#block-regionsmapblock .nav-tabs {
+  border-bottom: 1px solid #ddd;
+}
+
+#block-regionsmapblock2 .nav-tabs > li,
+#block-regionsmapblock .nav-tabs > li {
+  float: left;
+  margin-bottom: -1px;
+}
+
+#block-regionsmapblock2 .nav-tabs > li a,
+#block-regionsmapblock .nav-tabs > li a {
+  font-weight: 700;
+}
+
+#block-regionsmapblock2 .nav-tabs > li.active > a,
+#block-regionsmapblock2 .nav-tabs > li.active > a:hover,
+#block-regionsmapblock2 .nav-tabs > li.active > a:focus,
+#block-regionsmapblock .nav-tabs > li.active > a, #block-regionsmapblock .nav-tabs > li.active > a:hover, #block-regionsmapblock .nav-tabs > li.active > a:focus {
+  color: #1FAD00;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-bottom-color: transparent;
+  cursor: default;
+}
+
+#block-regionsmapblock2 .tab-content,
+#block-regionsmapblock .tab-content {
+  border: 1px solid #ddd;
+  border-top: none;
+  padding: 15px;
+  background: url("../images/topography.png");
+}
+
+#block-regionsmapblock2 .update-date,
+#block-regionsmapblock .update-date {
+  font-size: 12px;
+  font-style: italic;
+}
+
+/*BLOC EDITORIAUX*/
+#block-views-block-editorial-pages-arb-infos {
+  padding-top: 15px;
 }
 
 /*BLOC REGISTER*/
@@ -9259,71 +9409,6 @@ a .region:hover {
   color: #1FAD00;
   float: left;
   padding-right: 28px;
-}
-
-/*Titers des block de la homepage*/
-.view-national-resources h2,
-.view-national-news h2,
-.region-latest-resources h2,
-.region-latest-news h2,
-.block-arb-regions h2,
-.block-views-blockeditorial-pages-arb-infos h2,
-.block-views-blockeditorial-pages-pf-infos h2,
-.block-views-blockregion-news-front-block h2,
-.block-views-blockregions-resources-front-block h2 {
-  font-size: 28px;
-  font-weight: 700;
-  margin-bottom: 28px;
-  position: relative;
-}
-
-.view-national-resources h2:after,
-.view-national-news h2:after,
-.region-latest-resources h2:after,
-.region-latest-news h2:after,
-.block-arb-regions h2:after,
-.block-views-blockeditorial-pages-arb-infos h2:after,
-.block-views-blockeditorial-pages-pf-infos h2:after,
-.block-views-blockregion-news-front-block h2:after,
-.block-views-blockregions-resources-front-block h2:after {
-  position: absolute;
-  left: 0;
-  content: "";
-  /* This is necessary for the pseudo element to work. */
-  display: block;
-  /* This will put the pseudo element on its own line. */
-  margin: 0 auto;
-  /* This will center the border. */
-  width: 90px;
-  /* Change this to whatever width you want. */
-  /*padding-top: 10px;  This creates some space between the element and the border. */
-  border-bottom: 5px solid #1FAD00;
-  /* This creates the border. Replace black with whatever color you want. */
-  padding-top: 5px;
-}
-
-.view-national-resources h2 a,
-.view-national-news h2 a,
-.region-latest-resources h2 a,
-.region-latest-news h2 a,
-.block-arb-regions h2 a,
-.block-views-blockeditorial-pages-arb-infos h2 a,
-.block-views-blockeditorial-pages-pf-infos h2 a,
-.block-views-blockregion-news-front-block h2 a,
-.block-views-blockregions-resources-front-block h2 a {
-  text-decoration: none;
-}
-
-.view-national-resources h2 a:hover,
-.view-national-news h2 a:hover,
-.region-latest-resources h2 a:hover,
-.region-latest-news h2 a:hover,
-.block-arb-regions h2 a:hover,
-.block-views-blockeditorial-pages-arb-infos h2 a:hover,
-.block-views-blockeditorial-pages-pf-infos h2 a:hover,
-.block-views-blockregion-news-front-block h2 a:hover,
-.block-views-blockregions-resources-front-block h2 a:hover {
-  color: #1FAD00;
 }
 
 /*NATIONAL*/
