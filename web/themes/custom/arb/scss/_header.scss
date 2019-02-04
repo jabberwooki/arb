@@ -206,6 +206,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1d495d', end
             }
         }
     }
+}
+
+/*FLECHES SLICK*/
+#block-views-block-regions-banner,
+#block-views-block-slides-frontpage-slideshow{
     .slick-prev {
         left: 19%;
         z-index: 500;
@@ -240,5 +245,4 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1d495d', end
         background: transparent;
     }
 }
-
 

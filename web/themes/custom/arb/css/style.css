@@ -8993,16 +8993,21 @@ body {
   color: #1D495D;
 }
 
+/*FLECHES SLICK*/
+#block-views-block-regions-banner .slick-prev,
 #block-views-block-slides-frontpage-slideshow .slick-prev {
   left: 19%;
   z-index: 500;
 }
 
+#block-views-block-regions-banner .slick-next,
 #block-views-block-slides-frontpage-slideshow .slick-next {
   right: 19%;
   z-index: 500;
 }
 
+#block-views-block-regions-banner .slick-prev:before,
+#block-views-block-regions-banner .slick-next:before,
 #block-views-block-slides-frontpage-slideshow .slick-prev:before, #block-views-block-slides-frontpage-slideshow .slick-next:before {
   font-family: 'fontawesome';
   font-size: 24px;
@@ -9013,19 +9018,25 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+#block-views-block-regions-banner .slick-prev:before,
+#block-views-block-regions-banner .slick-next:before,
 #block-views-block-slides-frontpage-slideshow .slick-prev:before,
 #block-views-block-slides-frontpage-slideshow .slick-next:before {
   color: white !important;
 }
 
+#block-views-block-regions-banner .slick-next:before,
 #block-views-block-slides-frontpage-slideshow .slick-next:before {
   content: '\f054';
 }
 
+#block-views-block-regions-banner .slick-prev:before,
 #block-views-block-slides-frontpage-slideshow .slick-prev:before {
   content: '\f053';
 }
 
+#block-views-block-regions-banner .slick-prev:before:hover,
+#block-views-block-regions-banner .slick-next:before:hover,
 #block-views-block-slides-frontpage-slideshow .slick-prev:before:hover,
 #block-views-block-slides-frontpage-slideshow .slick-next:before:hover {
   color: #1FAD00 !important;
