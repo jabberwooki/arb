@@ -1,0 +1,23 @@
+uuid: 819efda3-e39d-46bb-a57d-fd58ca165adb
+langcode: fr
+status: true
+dependencies:
+  module:
+    - ctools
+    - group
+id: club_arb
+label: 'Club ARB'
+type: 'canonical_entities:group'
+pattern: '[group:title]'
+selection_criteria:
+  ce0a0aa3-bd11-447f-84ec-1c7677852378:
+    id: 'entity_bundle:group'
+    bundles:
+      national_group: national_group
+    negate: false
+    context_mapping:
+      group: group
+    uuid: ce0a0aa3-bd11-447f-84ec-1c7677852378
+selection_logic: and
+weight: -5
+relationships: {  }

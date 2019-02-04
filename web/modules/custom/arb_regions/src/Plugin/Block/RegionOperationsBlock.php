@@ -36,13 +36,29 @@ class RegionOperationsBlock extends BlockBase {
     $current_user_region = $current_user->get('field_region')->getValue();
 
     if (sizeof($current_user_region) != 0) {
-      $contents = ['news' => 'actualité', 'slide' => 'diapositive', 'document' => 'Document'];
+      //$contents = ['news' => 'actualité', 'slide' => 'diapositive', 'document' => 'Document'];
+      $contents = [
+        'news' => [
+          'title' =>'actualité',
+          'class' => 'news',
+        ],
+        'slide' => [
+          'title' =>'diapositive',
+          'class' => 'slides',
+        ],
+        'document' => [
+          'title' => 'Document',
+          'class' => 'documents',
+        ]
+      ];
       $current_user_region_id = reset($current_user_region)['target_id'];
 
-      foreach ($contents as $key=>$text) {
+      foreach ($contents as $key=>$data) {
         $items[$key] = [
-          'title' => 'Créer une ' . $text,
-          'url' => $_SERVER['HTTP_HOST'] . '/group/' . $current_user_region_id .'/content/create/group_node:' . $key];
+          'title' => 'Créer une ' . $data['title'],
+          'url' => $_SERVER['HTTP_HOST'] . '/group/' . $current_user_region_id .'/content/create/group_node:' . $key,
+          'class' => $data['class']
+        ];
       }
     }
 
