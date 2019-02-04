@@ -855,7 +855,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "<p class=\"news-date\">{{ created }}</p>\r\n<p class=\"news-title\">{{ title }}</p>"
+            text: "<p class=\"news-date\">{{ created }}</p>\r\n<h3 class=\"news-title\">{{ title }}</h3>"
             make_link: false
             path: ''
             absolute: false

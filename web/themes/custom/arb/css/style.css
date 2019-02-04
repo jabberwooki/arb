@@ -8728,6 +8728,10 @@ p:last-child,
   margin-top: 0;
 }
 
+body {
+  margin-top: 0;
+}
+
 /*HEADER*/
 .vertical-align {
   display: flex;
@@ -8763,6 +8767,7 @@ p:last-child,
   width: 100%;
   text-align: center;
   margin-left: 0;
+  margin-bottom: 15px;
 }
 
 .header .fas.fa-times,
@@ -8808,9 +8813,29 @@ p:last-child,
   padding-right: 10px;
 }
 
+.header .menu--account {
+  margin-top: -10px;
+  margin-right: 10px;
+}
+
+.header .menu--account li:last-of-type {
+  display: none;
+}
+
+/*MENU HAMBURGER*/
+.hamburger .menu--account.navbar-right {
+  float: left !important;
+}
+
+.hamburger .menu--account.navbar-nav > li {
+  float: none;
+}
+
 /*BLOCK SEARCH*/
 .search-button {
   cursor: pointer;
+  float: left;
+  margin-top: 10px;
 }
 
 .search-button .fa-search {
@@ -8827,7 +8852,7 @@ p:last-child,
   position: absolute;
   padding: 50px;
   width: 100%;
-  z-index: 1000;
+  z-index: 2000;
   background-color: #e9e9e9;
   border-top: 1px solid #aaa;
   border-bottom: 1px solid #aaa;
@@ -9008,11 +9033,6 @@ p:last-child,
   background: transparent;
 }
 
-/*CARTE DE FRANCE*/
-a .region:hover {
-  fill-opacity: 0.5;
-}
-
 /*SLICK FLECHES*/
 .slick-prev:before,
 .slick-next:before {
@@ -9034,6 +9054,161 @@ a .region:hover {
 .path-frontpage .main-container {
   margin-top: -80px;
   padding-bottom: 30px;
+}
+
+/*Titres des block de la homepage*/
+.view-national-resources h2,
+.view-national-news h2,
+.region-latest-resources h2,
+.region-latest-news h2,
+.block-arb-regions h2,
+.block-views-blockeditorial-pages-arb-infos h2,
+.block-views-blockeditorial-pages-pf-infos h2,
+.block-views-blockregion-news-front-block h2,
+.block-views-blockregions-resources-front-block h2 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 28px;
+  position: relative;
+}
+
+.view-national-resources h2:after,
+.view-national-news h2:after,
+.region-latest-resources h2:after,
+.region-latest-news h2:after,
+.block-arb-regions h2:after,
+.block-views-blockeditorial-pages-arb-infos h2:after,
+.block-views-blockeditorial-pages-pf-infos h2:after,
+.block-views-blockregion-news-front-block h2:after,
+.block-views-blockregions-resources-front-block h2:after {
+  position: absolute;
+  left: 0;
+  content: "";
+  /* This is necessary for the pseudo element to work. */
+  display: block;
+  /* This will put the pseudo element on its own line. */
+  margin: 0 auto;
+  /* This will center the border. */
+  width: 90px;
+  /* Change this to whatever width you want. */
+  /*padding-top: 10px;  This creates some space between the element and the border. */
+  border-bottom: 5px solid #1FAD00;
+  /* This creates the border. Replace black with whatever color you want. */
+  padding-top: 5px;
+}
+
+.view-national-resources h2 a,
+.view-national-news h2 a,
+.region-latest-resources h2 a,
+.region-latest-news h2 a,
+.block-arb-regions h2 a,
+.block-views-blockeditorial-pages-arb-infos h2 a,
+.block-views-blockeditorial-pages-pf-infos h2 a,
+.block-views-blockregion-news-front-block h2 a,
+.block-views-blockregions-resources-front-block h2 a {
+  text-decoration: none;
+}
+
+.view-national-resources h2 a:hover,
+.view-national-news h2 a:hover,
+.region-latest-resources h2 a:hover,
+.region-latest-news h2 a:hover,
+.block-arb-regions h2 a:hover,
+.block-views-blockeditorial-pages-arb-infos h2 a:hover,
+.block-views-blockeditorial-pages-pf-infos h2 a:hover,
+.block-views-blockregion-news-front-block h2 a:hover,
+.block-views-blockregions-resources-front-block h2 a:hover {
+  color: #1FAD00;
+}
+
+/*CARTE DE FRANCE*/
+#block-regionsmapblock2 a .region:hover,
+#block-regionsmapblock a .region:hover {
+  fill-opacity: 0.5;
+}
+
+#block-regionsmapblock2 .club-arb-link-wrapper,
+#block-regionsmapblock .club-arb-link-wrapper {
+  float: right;
+  margin-top: 5px;
+}
+
+#block-regionsmapblock2 .club-arb-link-wrapper a,
+#block-regionsmapblock .club-arb-link-wrapper a {
+  background: #1FAD00;
+  color: white;
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 60px;
+  padding: 10px 20px;
+}
+
+#block-regionsmapblock2 .club-arb-link-wrapper a:hover,
+#block-regionsmapblock .club-arb-link-wrapper a:hover {
+  color: #1D495D;
+}
+
+#block-regionsmapblock2 .club-arb-link-wrapper a:before,
+#block-regionsmapblock .club-arb-link-wrapper a:before {
+  font-family: 'fontawesome';
+  content: '\f024';
+  font-size: 14px;
+  padding-right: 10px;
+}
+
+#block-regionsmapblock2 h2,
+#block-regionsmapblock h2 {
+  margin-bottom: 18px;
+  margin-top: 0;
+  padding-top: 20px;
+}
+
+#block-regionsmapblock2 .nav-tabs,
+#block-regionsmapblock .nav-tabs {
+  border-bottom: 1px solid #ddd;
+}
+
+#block-regionsmapblock2 .nav-tabs > li,
+#block-regionsmapblock .nav-tabs > li {
+  float: left;
+  margin-bottom: -1px;
+}
+
+#block-regionsmapblock2 .nav-tabs > li a,
+#block-regionsmapblock .nav-tabs > li a {
+  font-weight: 700;
+}
+
+#block-regionsmapblock2 .nav-tabs > li.active > a,
+#block-regionsmapblock2 .nav-tabs > li.active > a:hover,
+#block-regionsmapblock2 .nav-tabs > li.active > a:focus,
+#block-regionsmapblock .nav-tabs > li.active > a, #block-regionsmapblock .nav-tabs > li.active > a:hover, #block-regionsmapblock .nav-tabs > li.active > a:focus {
+  color: #1FAD00;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-bottom-color: transparent;
+  cursor: default;
+}
+
+#block-regionsmapblock2 .tab-content,
+#block-regionsmapblock .tab-content {
+  border: 1px solid #ddd;
+  border-top: none;
+  padding: 15px;
+  background: url("../images/topography.png");
+}
+
+#block-regionsmapblock2 .update-date,
+#block-regionsmapblock .update-date {
+  font-size: 12px;
+  font-style: italic;
+}
+
+/*BLOC EDITORIAUX*/
+#block-views-block-editorial-pages-arb-infos {
+  padding-top: 15px;
 }
 
 /*BLOC REGISTER*/
@@ -9088,12 +9263,12 @@ a .region:hover {
 }
 
 /*NEWS HOME*/
-.region-latest-news .slick-list.draggable,
+.view-region-news .slick-list.draggable, .view-national-news .slick-list.draggable, .region-latest-news .slick-list.draggable,
 .block-views-blockregion-news-front-block .slick-list.draggable {
   padding-top: 30px;
 }
 
-.region-latest-news .slick-prev:before,
+.view-region-news .slick-prev:before, .view-region-news .slick-next:before, .view-national-news .slick-prev:before, .view-national-news .slick-next:before, .region-latest-news .slick-prev:before,
 .region-latest-news .slick-next:before,
 .block-views-blockregion-news-front-block .slick-prev:before, .block-views-blockregion-news-front-block .slick-next:before {
   font-family: 'fontawesome';
@@ -9105,41 +9280,43 @@ a .region:hover {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.region-latest-news .slick-prev,
+.view-region-news .slick-prev, .view-national-news .slick-prev, .region-latest-news .slick-prev,
 .block-views-blockregion-news-front-block .slick-prev {
   left: -10px;
 }
 
-.region-latest-news .slick-next,
+.view-region-news .slick-next, .view-national-news .slick-next, .region-latest-news .slick-next,
 .block-views-blockregion-news-front-block .slick-next {
   right: -10px;
 }
 
-.region-latest-news .slick-prev:before,
+.view-region-news .slick-prev:before,
+.view-region-news .slick-next:before, .view-national-news .slick-prev:before,
+.view-national-news .slick-next:before, .region-latest-news .slick-prev:before,
 .region-latest-news .slick-next:before,
 .block-views-blockregion-news-front-block .slick-prev:before,
 .block-views-blockregion-news-front-block .slick-next:before {
   color: #1FAD00 !important;
 }
 
-.region-latest-news .slick-next:before,
+.view-region-news .slick-next:before, .view-national-news .slick-next:before, .region-latest-news .slick-next:before,
 .block-views-blockregion-news-front-block .slick-next:before {
   content: '\f054';
 }
 
-.region-latest-news .slick-prev:before,
+.view-region-news .slick-prev:before, .view-national-news .slick-prev:before, .region-latest-news .slick-prev:before,
 .block-views-blockregion-news-front-block .slick-prev:before {
   content: '\f053';
 }
 
-.region-latest-news .slick-slide,
+.view-region-news .slick-slide, .view-national-news .slick-slide, .region-latest-news .slick-slide,
 .block-views-blockregion-news-front-block .slick-slide {
   padding: 0 15px;
   position: relative;
   z-index: 10;
 }
 
-.region-latest-news .views-field-label,
+.view-region-news .views-field-label, .view-national-news .views-field-label, .region-latest-news .views-field-label,
 .block-views-blockregion-news-front-block .views-field-label {
   position: absolute;
   top: -10px;
@@ -9148,7 +9325,7 @@ a .region:hover {
   text-align: center;
 }
 
-.region-latest-news .views-field-label .field-content,
+.view-region-news .views-field-label .field-content, .view-national-news .views-field-label .field-content, .region-latest-news .views-field-label .field-content,
 .block-views-blockregion-news-front-block .views-field-label .field-content {
   background: #1FAD00;
   border-radius: 20px;
@@ -9159,40 +9336,45 @@ a .region:hover {
   padding: 2px 14px;
 }
 
-.region-latest-news .views-field-nothing,
+.view-region-news .views-field-nothing, .view-national-news .views-field-nothing, .region-latest-news .views-field-nothing,
 .block-views-blockregion-news-front-block .views-field-nothing {
   background: #F5F6F8;
   padding: 15px;
 }
 
-.region-latest-news p.news-date,
+.view-region-news p.news-date, .view-national-news p.news-date, .region-latest-news p.news-date,
 .block-views-blockregion-news-front-block p.news-date {
   font-size: 14px;
   font-weight: 500;
   color: #1FAD00;
 }
 
-.region-latest-news h3,
+.view-region-news h3, .view-national-news h3, .region-latest-news h3,
 .block-views-blockregion-news-front-block h3 {
   font-size: 14px;
   font-weight: 700;
   margin-top: 0;
 }
 
-.region-latest-news h3 a:hover,
+.view-region-news h3 a:hover, .view-national-news h3 a:hover, .region-latest-news h3 a:hover,
 .block-views-blockregion-news-front-block h3 a:hover {
   text-decoration: none;
   color: #1FAD00;
 }
 
 /*RESSOURCES HOME*/
+.view-national-resources .infos-files,
+.view-regions-resources .infos-files,
 .region-latest-resources .infos-files,
 .block-views-blockregions-resources-front-block .infos-files {
   background: #F5F6F8;
   padding: 15px;
   border-bottom: 1px solid #1FAD00;
+  margin-bottom: 15px;
 }
 
+.view-national-resources p.date-files,
+.view-regions-resources p.date-files,
 .region-latest-resources p.date-files,
 .block-views-blockregions-resources-front-block p.date-files {
   font-size: 14px;
@@ -9200,6 +9382,8 @@ a .region:hover {
   color: #1FAD00;
 }
 
+.view-national-resources h3,
+.view-regions-resources h3,
 .region-latest-resources h3,
 .block-views-blockregions-resources-front-block h3 {
   font-size: 14px;
@@ -9207,55 +9391,47 @@ a .region:hover {
   margin-top: 0;
 }
 
+.view-national-resources h3 a:hover,
+.view-regions-resources h3 a:hover,
 .region-latest-resources h3 a:hover,
 .block-views-blockregions-resources-front-block h3 a:hover {
   text-decoration: none;
   color: #1FAD00;
 }
 
+.view-national-resources .wrapper-files:before,
+.view-regions-resources .wrapper-files:before,
 .region-latest-resources .wrapper-files:before,
 .block-views-blockregions-resources-front-block .wrapper-files:before {
   font-family: 'fontawesome';
-  content: '\f15c';
+  content: '\f0c5';
   font-size: 40px;
   color: #1FAD00;
   float: left;
   padding-right: 28px;
 }
 
-/*Titers des block de la homepage*/
-.region-latest-resources h2,
+/*NATIONAL*/
+.view-national-news .view-content {
+  margin-top: 60px;
+}
+
+.view-national-news .row {
+  margin-top: 30px;
+}
+
+/*REGION*/
 .region-latest-resources h3,
-.region-latest-news h2,
-.region-latest-news h3,
-.block-arb-regions h2,
-.block-arb-regions h3,
-.block-views-blockeditorial-pages-arb-infos h2,
-.block-views-blockeditorial-pages-arb-infos h3,
-.block-views-blockeditorial-pages-pf-infos h2,
-.block-views-blockeditorial-pages-pf-infos h3,
-.block-views-blockregion-news-front-block h2,
-.block-views-blockregion-news-front-block h3,
-.block-views-blockregions-resources-front-block h2, .block-views-blockregions-resources-front-block h3 {
+.region-latest-news h3 {
   font-size: 28px;
   font-weight: 700;
   margin-bottom: 28px;
   position: relative;
+  color: #1D495D;
 }
 
-.region-latest-resources h2:after,
 .region-latest-resources h3:after,
-.region-latest-news h2:after,
-.region-latest-news h3:after,
-.block-arb-regions h2:after,
-.block-arb-regions h3:after,
-.block-views-blockeditorial-pages-arb-infos h2:after,
-.block-views-blockeditorial-pages-arb-infos h3:after,
-.block-views-blockeditorial-pages-pf-infos h2:after,
-.block-views-blockeditorial-pages-pf-infos h3:after,
-.block-views-blockregion-news-front-block h2:after,
-.block-views-blockregion-news-front-block h3:after,
-.block-views-blockregions-resources-front-block h2:after, .block-views-blockregions-resources-front-block h3:after {
+.region-latest-news h3:after {
   position: absolute;
   left: 0;
   content: "";
@@ -9272,39 +9448,19 @@ a .region:hover {
   padding-top: 5px;
 }
 
-.region-latest-resources h2 a,
-.region-latest-resources h3 a,
-.region-latest-news h2 a,
-.region-latest-news h3 a,
-.block-arb-regions h2 a,
-.block-arb-regions h3 a,
-.block-views-blockeditorial-pages-arb-infos h2 a,
-.block-views-blockeditorial-pages-arb-infos h3 a,
-.block-views-blockeditorial-pages-pf-infos h2 a,
-.block-views-blockeditorial-pages-pf-infos h3 a,
-.block-views-blockregion-news-front-block h2 a,
-.block-views-blockregion-news-front-block h3 a,
-.block-views-blockregions-resources-front-block h2 a, .block-views-blockregions-resources-front-block h3 a {
-  text-decoration: none;
+.region-latest-resources h4,
+.region-latest-news h4 {
+  font-size: 14px;
+  font-weight: 700;
+  margin-top: 0;
 }
 
-.region-latest-resources h2 a:hover,
-.region-latest-resources h3 a:hover,
-.region-latest-news h2 a:hover,
-.region-latest-news h3 a:hover,
-.block-arb-regions h2 a:hover,
-.block-arb-regions h3 a:hover,
-.block-views-blockeditorial-pages-arb-infos h2 a:hover,
-.block-views-blockeditorial-pages-arb-infos h3 a:hover,
-.block-views-blockeditorial-pages-pf-infos h2 a:hover,
-.block-views-blockeditorial-pages-pf-infos h3 a:hover,
-.block-views-blockregion-news-front-block h2 a:hover,
-.block-views-blockregion-news-front-block h3 a:hover,
-.block-views-blockregions-resources-front-block h2 a:hover, .block-views-blockregions-resources-front-block h3 a:hover {
+.region-latest-resources h4 a:hover,
+.region-latest-news h4 a:hover {
+  text-decoration: none;
   color: #1FAD00;
 }
 
-/*REGION*/
 .group--type-regional-group ul.nav-tabs {
   background: #1D495D;
 }
