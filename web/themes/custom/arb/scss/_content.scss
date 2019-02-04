@@ -172,7 +172,7 @@ a .region:hover {
 .block-views-blockeditorial-pages-pf-infos,
 .block-views-blockregion-news-front-block,
 .block-views-blockregions-resources-front-block{
-    h2,h3{
+    h2{
     font-size: 28px;
     font-weight: 700;
     margin-bottom: 28px;
@@ -191,6 +191,20 @@ a .region:hover {
 }
 
 /*REGION*/
+.region-latest-resources,
+.region-latest-news{
+    h3{
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 28px;
+    position: relative;
+    color: $brand-primary;
+        &:after{
+            @include border-subtitle;
+            padding-top: 5px;
+        }
+    }
+}
 .group--type-regional-group{
     ul.nav-tabs{
         background: $brand-primary; 
