@@ -58,7 +58,7 @@ set classes = [
 <div id="regions-operations">
     <ul class="regions-operations-links">
         {% for item in items %}
-            <li><a href="http://{{ item.url }}">{{ item.title }}</a></li>
+            <li><a class="{{ item.class }}" href="http://{{ item.url }}">{{ item.title }}</a></li>
         {% endfor %}
     </ul>
 </div>
