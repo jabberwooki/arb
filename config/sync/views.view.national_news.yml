@@ -660,8 +660,8 @@ display:
           alter:
             alter_text: false
             text: ''
-            make_link: true
-            path: '/node/{{ nid }}?tab=news-tab'
+            make_link: false
+            path: ''
             absolute: false
             external: false
             replace_spaces: false
@@ -700,7 +700,7 @@ display:
           type: image
           settings:
             image_style: news_block
-            image_link: ''
+            image_link: content
           group_column: ''
           group_columns: {  }
           group_rows: true
