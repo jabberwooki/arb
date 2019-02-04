@@ -9482,15 +9482,18 @@ body {
   color: #1FAD00;
 }
 
+.group--type-national-group ul.nav-tabs,
 .group--type-regional-group ul.nav-tabs {
   background: #1D495D;
 }
 
+.group--type-national-group ul.nav-tabs li.active,
 .group--type-regional-group ul.nav-tabs li.active {
   background: #1D495D;
   border-bottom: 4px solid #1FAD00;
 }
 
+.group--type-national-group ul.nav-tabs li a,
 .group--type-regional-group ul.nav-tabs li a {
   color: white;
   background-color: transparent;
@@ -9498,6 +9501,7 @@ body {
   border: none;
 }
 
+.group--type-national-group .field--name-field-process-progress,
 .group--type-regional-group .field--name-field-process-progress {
   background: #1FAD00;
   border-radius: 20px;
@@ -9509,11 +9513,13 @@ body {
   display: inline;
 }
 
+.group--type-national-group .field--name-field-internet-site a,
 .group--type-regional-group .field--name-field-internet-site a {
   color: #1FAD00;
   font-weight: 600;
 }
 
+.group--type-national-group .field--name-field-internet-site a:before,
 .group--type-regional-group .field--name-field-internet-site a:before {
   font-family: 'fontawesome';
   content: '\f0c1';
@@ -9522,11 +9528,13 @@ body {
   padding-right: 5px;
 }
 
+.group--type-national-group .field--name-field-internet-site a:hover,
 .group--type-regional-group .field--name-field-internet-site a:hover {
   color: #1D495D;
   text-decoration: none;
 }
 
+.group--type-national-group .regions-backlink a,
 .group--type-regional-group .regions-backlink a {
   background: #1D495D;
   color: white;
@@ -9542,6 +9550,7 @@ body {
   margin-top: 20px;
 }
 
+.group--type-national-group .regions-backlink a:hover,
 .group--type-regional-group .regions-backlink a:hover {
   color: white;
   background: #1FAD00;
