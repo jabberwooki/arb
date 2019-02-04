@@ -54,6 +54,14 @@
         autoplay: true,
         fade: true
       });
+        
+    // Bandeau groupe national
+      $('#block-views-block-regions-banner-national .field--name-field-image').slick({
+        arrows: true,
+        speed: 1500,
+        autoplay: true,
+        fade: true
+      });
 
       // Gestion de retours depuis node actu ou document vers le bon onglet
       if ($('#arb-dashboard').length && $(location).attr('hash')) {
