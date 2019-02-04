@@ -8,10 +8,11 @@ dependencies:
     - field.field.node.news.field_files
     - field.field.node.news.field_image
     - field.field.node.news.field_news_type
+    - image.style.news_block
     - node.type.news
   module:
     - file
-    - responsive_image
+    - image
     - text
     - user
 id: node.news.full
@@ -35,12 +36,12 @@ content:
       use_description_as_link_text: true
     third_party_settings: {  }
   field_image:
-    type: responsive_image
+    type: image
     weight: 0
     region: content
     label: hidden
     settings:
-      responsive_image_style: ''
+      image_style: news_block
       image_link: ''
     third_party_settings: {  }
   field_news_type:
