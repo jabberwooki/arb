@@ -93,74 +93,80 @@ set classes = [
 'clearfix',
 ]
 %}
-<section{{ attributes.addClass(classes) }}>
-    <br/>
-    <div class="club-arb-link-wrapper">
-        <a class="club-arb-link" href="/group/1">Le Club ARB</a>
-    </div>
-
-    <ul class="nav nav-tabs" role="tablist">
-        <li role="presentation" class="active"><a href="#interactive-map" aria-controls="arb" role="tab" data-toggle="tab">ARB</a></li>
-        <li role="presentation"><a href="#interactive-map-srb" aria-controls="srb" role="tab" data-toggle="tab">SRB</a></li>
-        <li role="presentation"><a href="#interactive-map-ten" aria-controls="ten" role="tab" data-toggle="tab">TEN</a></li>
-    </ul>
-
-
-    <!-- Tab panes -->
-    <div class="tab-content">
-
-        <div id="interactive-map" role="tabpanel" class="tab-pane active">
-            {% if is_front %}
-                <h2{{ title_attributes.addClass('block-title') }}>Carte interactive des ARB</h2>
-            {% endif %}
-            <br/>
-            <div class="arb-legend-wrapper">
-                <div class="legend color-0" data-toggle="tooltip" data-placement="top" title="Pas de processus engagé"></div>
-                <div class="legend color-1" data-toggle="tooltip" data-placement="top" title="Réflexion en cours"></div>
-                <div class="legend color-2" data-toggle="tooltip" data-placement="top" title="Processus partenarial engagé"></div>
-                <div class="legend color-3" data-toggle="tooltip" data-placement="top" title="ARB créée"></div>
-            </div>
-            <div class="arb-legend-title">Légende</div>
-
-            {% include '@arb/../images/regions-map.svg' %}
-
-            <div class="update-date">Carte ARB mise à jour le {{ update_dates['arb_date'] }}</div>
+{% if not is_front %}
+<div class="col-md-8 col-md-offset-2">
+{% endif %}
+    <section{{ attributes.addClass(classes) }}>
+        <br/>
+        <div class="club-arb-link-wrapper">
+            <a class="club-arb-link" href="/group/1">Le Club ARB</a>
         </div>
 
-        <div id="interactive-map-srb" role="tabpanel" class="tab-pane">
-            {% if is_front %}
-                <h2{{ title_attributes.addClass('block-title') }}>Stratégies régionales biodiversité</h2>
-            {% endif %}
-            <br/>
-            <div class="arb-legend-wrapper">
-                <div class="legend color-0" data-toggle="tooltip" data-placement="top" title="SRB non lancée"></div>
-                <div class="legend color-1" data-toggle="tooltip" data-placement="top" title="SRB en projet"></div>
-                <div class="legend color-2" data-toggle="tooltip" data-placement="top" title="SRB engagée"></div>
-                <div class="legend color-3" data-toggle="tooltip" data-placement="top" title="SRB finie"></div>
+        <ul class="nav nav-tabs" role="tablist">
+            <li role="presentation" class="active"><a href="#interactive-map" aria-controls="arb" role="tab" data-toggle="tab">ARB</a></li>
+            <li role="presentation"><a href="#interactive-map-srb" aria-controls="srb" role="tab" data-toggle="tab">SRB</a></li>
+            <li role="presentation"><a href="#interactive-map-ten" aria-controls="ten" role="tab" data-toggle="tab">TEN</a></li>
+        </ul>
+
+
+        <!-- Tab panes -->
+        <div class="tab-content">
+
+            <div id="interactive-map" role="tabpanel" class="tab-pane active">
+                
+                    <h2{{ title_attributes.addClass('block-title') }}>Carte interactive des ARB</h2>
+                    <div class="update-date">Carte ARB mise à jour le {{ update_dates['arb_date'] }}</div>
+                
+                <br/>
+                <div class="arb-legend-wrapper">
+                    <div class="legend color-0" data-toggle="tooltip" data-placement="top" title="Pas de processus engagé"></div>
+                    <div class="legend color-1" data-toggle="tooltip" data-placement="top" title="Réflexion en cours"></div>
+                    <div class="legend color-2" data-toggle="tooltip" data-placement="top" title="Processus partenarial engagé"></div>
+                    <div class="legend color-3" data-toggle="tooltip" data-placement="top" title="ARB créée"></div>
+                </div>
+                <div class="arb-legend-title">Légende</div>
+
+                {% include '@arb/../images/regions-map.svg' %}
+                
             </div>
-            <div class="arb-legend-title">Légende</div>
 
-            {% include '@arb/../images/regions-map-srb.svg' %}
+            <div id="interactive-map-srb" role="tabpanel" class="tab-pane">
+                
+                    <h2{{ title_attributes.addClass('block-title') }}>Stratégies régionales biodiversité</h2>
+                    <div class="update-date">Carte SRB mise à jour le {{ update_dates['srb_date'] }}</div>
+                
+                <br/>
+                <div class="arb-legend-wrapper">
+                    <div class="legend color-0" data-toggle="tooltip" data-placement="top" title="SRB non lancée"></div>
+                    <div class="legend color-1" data-toggle="tooltip" data-placement="top" title="SRB en projet"></div>
+                    <div class="legend color-2" data-toggle="tooltip" data-placement="top" title="SRB engagée"></div>
+                    <div class="legend color-3" data-toggle="tooltip" data-placement="top" title="SRB finie"></div>
+                </div>
+                <div class="arb-legend-title">Légende</div>
 
-            <div class="update-date">Carte SRB mise à jour le {{ update_dates['srb_date'] }}</div>
-        </div>
+                {% include '@arb/../images/regions-map-srb.svg' %}
 
-        <div id="interactive-map-ten" role="tabpanel" class="tab-pane">
-            {% if is_front %}
-                <h2{{ title_attributes.addClass('block-title') }}>Territoires engagés pour la nature</h2>
-            {% endif %}
-            <br/>
-            <div class="arb-legend-wrapper">
-                <div class="legend color-0" data-toggle="tooltip" data-placement="top" title="TEN non lancé"></div>
-                <div class="legend color-1" data-toggle="tooltip" data-placement="top" title="TEN lancé"></div>
-                <div class="legend color-2" data-toggle="tooltip" data-placement="top" title="TEN opérationnel"></div>
             </div>
-            <div class="arb-legend-title">Légende</div>
 
-            {% include '@arb/../images/regions-map-ten.svg' %}
+            <div id="interactive-map-ten" role="tabpanel" class="tab-pane">
+                
+                    <h2{{ title_attributes.addClass('block-title') }}>Territoires engagés pour la nature</h2>
+                    <div class="update-date">Carte TEN mise à jour le {{ update_dates['ten_date'] }}</div>
+                
+                <br/>
+                <div class="arb-legend-wrapper">
+                    <div class="legend color-0" data-toggle="tooltip" data-placement="top" title="TEN non lancé"></div>
+                    <div class="legend color-1" data-toggle="tooltip" data-placement="top" title="TEN lancé"></div>
+                    <div class="legend color-2" data-toggle="tooltip" data-placement="top" title="TEN opérationnel"></div>
+                </div>
+                <div class="arb-legend-title">Légende</div>
 
-            <div class="update-date">Carte TEN mise à jour le {{ update_dates['ten_date'] }}</div>
+                {% include '@arb/../images/regions-map-ten.svg' %}
+
+            </div>
+
         </div>
-
-    </div>
-</section>
+    </section>
+{% if not is_front %}
+</div>
+{% endif %}
