@@ -43,7 +43,8 @@
             {% elseif item.title.getUntranslatedString() == 'Log out' %}
               {{ link('Déconnexion', item.url) }}
             {% else %} {# when there is no match with the previous conditions #}
-              {{ link(item.title, item.url) }}
+              {{ dpm(item.url) }}
+              {{ link(item.title, item.url, item.attributes.addClass(item.title|clean_class|transliterate())) }}
             {% endif %}
         {% endif %}
         {% if item.below %}
