@@ -9201,13 +9201,16 @@ a .region:hover {
 }
 
 /*RESSOURCES HOME*/
+.view-regions-resources .infos-files,
 .region-latest-resources .infos-files,
 .block-views-blockregions-resources-front-block .infos-files {
   background: #F5F6F8;
   padding: 15px;
   border-bottom: 1px solid #1FAD00;
+  margin-bottom: 15px;
 }
 
+.view-regions-resources p.date-files,
 .region-latest-resources p.date-files,
 .block-views-blockregions-resources-front-block p.date-files {
   font-size: 14px;
@@ -9215,6 +9218,7 @@ a .region:hover {
   color: #1FAD00;
 }
 
+.view-regions-resources h3,
 .region-latest-resources h3,
 .block-views-blockregions-resources-front-block h3 {
   font-size: 14px;
@@ -9222,12 +9226,14 @@ a .region:hover {
   margin-top: 0;
 }
 
+.view-regions-resources h3 a:hover,
 .region-latest-resources h3 a:hover,
 .block-views-blockregions-resources-front-block h3 a:hover {
   text-decoration: none;
   color: #1FAD00;
 }
 
+.view-regions-resources .wrapper-files:before,
 .region-latest-resources .wrapper-files:before,
 .block-views-blockregions-resources-front-block .wrapper-files:before {
   font-family: 'fontawesome';

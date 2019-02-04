@@ -135,12 +135,14 @@ a .region:hover {
 }
 
 /*RESSOURCES HOME*/
+.view-regions-resources,
 .region-latest-resources,
 .block-views-blockregions-resources-front-block{
     .infos-files{
         background: #F5F6F8;
         padding: 15px;
         border-bottom: 1px solid $brand-secondary;
+        margin-bottom: 15px;
     }
     p.date-files{
         font-size: 14px;
