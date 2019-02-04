@@ -1,0 +1,6 @@
+arb_regions.admin_settings_form:
+  title: 'Cartes interactives'
+  route_name: arb_regions.admin_settings_form
+  description: 'Paramétrages des cartes interactives'
+  parent: system.admin_config
+  weight: -100

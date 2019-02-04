@@ -66,3 +66,26 @@ function arb_misc_form_user_form_alter(&$form, \Drupal\Core\Form\FormStateInterf
     unset($form['field_quatuor_member']);
   }
 }
+
+/**
+ * Implements hook_node_access().
+ */
+function arb_misc_node_access(\Drupal\node\NodeInterface $node, $op, \Drupal\Core\Session\AccountInterface $account) {
+  if ('news' == $node->getType() && !$account->id()) {
+    return \Drupal\Core\Access\AccessResult::forbidden();
+  }
+}
+
+
+/**
+ * Implements hook_theme().
+ */
+function arb_misc_theme($existing, $type, $theme, $path) {
+  return [
+    'backlink__block' => [
+      'variables' => [
+        'backlink' => NULL,
+      ],
+    ],
+  ];
+}
