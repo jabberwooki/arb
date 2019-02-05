@@ -440,7 +440,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: Status
+          label: Statut
           exclude: false
           alter:
             alter_text: false
@@ -485,8 +485,8 @@ display:
           type: boolean
           settings:
             format: custom
-            format_custom_true: Published
-            format_custom_false: Unpublished
+            format_custom_true: Publié
+            format_custom_false: 'Non publié'
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -507,7 +507,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: Updated
+          label: 'Mis à jour'
           exclude: false
           alter:
             alter_text: false
@@ -574,7 +574,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: Operations
+          label: Opérations
           exclude: false
           alter:
             alter_text: false
@@ -725,7 +725,7 @@ display:
               authenticated: authenticated
           is_grouped: true
           group_info:
-            label: 'Published status'
+            label: 'Statut de publication'
             description: ''
             identifier: status
             optional: true
@@ -736,11 +736,11 @@ display:
             default_group_multiple: {  }
             group_items:
               1:
-                title: Published
+                title: Publié
                 operator: '='
                 value: '1'
               2:
-                title: Unpublished
+                title: 'Non publié'
                 operator: '='
                 value: '0'
           plugin_id: boolean

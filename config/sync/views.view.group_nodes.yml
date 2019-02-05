@@ -41,7 +41,7 @@ display:
       exposed_form:
         type: basic
         options:
-          submit_button: Apply
+          submit_button: Appliquer
           reset_button: false
           reset_button_label: Reset
           exposed_sorts_label: 'Sort by'
@@ -179,7 +179,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: Title
+          label: Titre
           exclude: false
           alter:
             alter_text: false
@@ -244,7 +244,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: 'Content type'
+          label: 'Type de contenu'
           exclude: false
           alter:
             alter_text: false
@@ -309,7 +309,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: Status
+          label: Statut
           exclude: false
           alter:
             alter_text: false
@@ -354,8 +354,8 @@ display:
           type: boolean
           settings:
             format: custom
-            format_custom_true: Published
-            format_custom_false: Unpublished
+            format_custom_true: Publié
+            format_custom_false: 'Non publié'
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -376,7 +376,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: Updated
+          label: 'Mis à jour'
           exclude: false
           alter:
             alter_text: false
@@ -484,7 +484,7 @@ display:
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
-          text: 'View relation'
+          text: 'Voir la relation'
           entity_type: group_content
           plugin_id: entity_link
           output_url_as_text: false
@@ -537,7 +537,7 @@ display:
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
-          text: 'Edit relation'
+          text: 'Modifier la relation'
           entity_type: group_content
           plugin_id: entity_link_edit
         delete_group_content:
@@ -588,7 +588,7 @@ display:
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
-          text: 'Delete relation'
+          text: 'Supprimer la relation'
           entity_type: group_content
           plugin_id: entity_link_delete
         edit_node:
@@ -639,7 +639,7 @@ display:
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
-          text: 'Edit node'
+          text: 'Modifier le nœud'
           entity_type: node
           plugin_id: entity_link_edit
         delete_node:
@@ -690,7 +690,7 @@ display:
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
-          text: 'Delete node'
+          text: 'Supprimer le nœud'
           entity_type: node
           plugin_id: entity_link_delete
         dropbutton:
@@ -700,7 +700,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: Operations
+          label: Opérations
           exclude: false
           alter:
             alter_text: false
@@ -767,7 +767,7 @@ display:
           exposed: true
           expose:
             operator_id: ''
-            label: 'Published status'
+            label: 'Statut de publication'
             description: ''
             use_operator: false
             operator: status_op
@@ -782,7 +782,7 @@ display:
               group_admin: '0'
           is_grouped: true
           group_info:
-            label: 'Published status'
+            label: 'Statut de publication'
             description: ''
             identifier: status
             optional: true
@@ -793,11 +793,11 @@ display:
             default_group_multiple: {  }
             group_items:
               1:
-                title: Published
+                title: Publié
                 operator: '='
                 value: '1'
               2:
-                title: Unpublished
+                title: 'Non publié'
                 operator: '='
                 value: '0'
           entity_type: node

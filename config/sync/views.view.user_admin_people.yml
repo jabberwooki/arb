@@ -251,7 +251,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: Status
+          label: Statut
           exclude: false
           alter:
             alter_text: false
@@ -307,7 +307,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: Roles
+          label: Rôles
           exclude: false
           alter:
             alter_text: false
@@ -470,7 +470,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: Operations
+          label: Opérations
           exclude: false
           alter:
             alter_text: false
@@ -647,7 +647,7 @@ display:
               administrator: '0'
           is_grouped: true
           group_info:
-            label: Status
+            label: Statut
             description: ''
             identifier: status
             optional: true

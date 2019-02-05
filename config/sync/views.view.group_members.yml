@@ -40,7 +40,7 @@ display:
       exposed_form:
         type: basic
         options:
-          submit_button: Apply
+          submit_button: Appliquer
           reset_button: false
           reset_button_label: Reset
           exposed_sorts_label: 'Sort by'
@@ -160,7 +160,7 @@ display:
           relationship: gc__user
           group_type: group
           admin_label: ''
-          label: User
+          label: Utilisateur
           exclude: false
           alter:
             alter_text: false
@@ -225,7 +225,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: Roles
+          label: Rôles
           exclude: false
           alter:
             alter_text: false
@@ -288,7 +288,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: Updated
+          label: 'Mis à jour'
           exclude: false
           alter:
             alter_text: false
@@ -463,7 +463,7 @@ display:
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
-          text: 'View member'
+          text: 'Voir le membre'
           entity_type: group_content
           plugin_id: entity_link
           output_url_as_text: false
@@ -516,7 +516,7 @@ display:
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
-          text: 'Edit member'
+          text: 'Modifier le membre'
           entity_type: group_content
           plugin_id: entity_link_edit
         delete_group_content:
@@ -567,7 +567,7 @@ display:
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
-          text: 'Remove member'
+          text: 'Supprimer le membre'
           entity_type: group_content
           plugin_id: entity_link_delete
         dropbutton:
@@ -577,7 +577,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: Operations
+          label: Opérations
           exclude: false
           alter:
             alter_text: false

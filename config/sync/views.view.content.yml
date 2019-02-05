@@ -161,7 +161,7 @@ display:
           id: title
           table: node_field_data
           field: title
-          label: Title
+          label: Titre
           exclude: false
           alter:
             alter_text: false
@@ -184,7 +184,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: 'Content type'
+          label: 'Type de contenu'
           exclude: false
           alter:
             alter_text: false
@@ -265,7 +265,7 @@ display:
           id: status
           table: node_field_data
           field: status
-          label: Status
+          label: Statut
           exclude: false
           alter:
             alter_text: false
@@ -278,8 +278,8 @@ display:
           type: boolean
           settings:
             format: custom
-            format_custom_true: Published
-            format_custom_false: Unpublished
+            format_custom_true: Publié
+            format_custom_false: 'Non publié'
           plugin_id: field
           entity_type: node
           entity_field: status
@@ -287,7 +287,7 @@ display:
           id: changed
           table: node_field_data
           field: changed
-          label: Updated
+          label: 'Mis à jour'
           exclude: false
           alter:
             alter_text: false
@@ -312,7 +312,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: Operations
+          label: Opérations
           exclude: false
           alter:
             alter_text: false
@@ -369,7 +369,7 @@ display:
           exposed: true
           expose:
             operator_id: title_op
-            label: Title
+            label: Titre
             description: ''
             use_operator: false
             operator: title_op
@@ -409,7 +409,7 @@ display:
           exposed: true
           expose:
             operator_id: type_op
-            label: 'Content type'
+            label: 'Type de contenu'
             description: ''
             use_operator: false
             operator: type_op
@@ -450,7 +450,7 @@ display:
           exposed: true
           expose:
             operator_id: ''
-            label: Status
+            label: Statut
             description: ''
             use_operator: false
             operator: status_op
@@ -462,7 +462,7 @@ display:
               authenticated: authenticated
           is_grouped: true
           group_info:
-            label: 'Published status'
+            label: 'Statut de publication'
             description: ''
             identifier: status
             optional: true
@@ -473,11 +473,11 @@ display:
             default_group_multiple: {  }
             group_items:
               1:
-                title: Published
+                title: Publié
                 operator: '='
                 value: '1'
               2:
-                title: Unpublished
+                title: 'Non publié'
                 operator: '='
                 value: '0'
           plugin_id: boolean
