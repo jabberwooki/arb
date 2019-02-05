@@ -28,4 +28,9 @@ function arb_theme_suggestions_page_alter(array &$suggestions, array $variables)
     $bundle = $group->bundle();
     $suggestions[] = 'page__'. $bundle;
   }
+  if ($node = \Drupal::routeMatch()->getParameter('node')) {
+    $content_type = $node->bundle();
+    $suggestions[] = 'page__type__'.$content_type;
+    $suggestions[] = 'page__node__' . $node->id();
+  }
 }
