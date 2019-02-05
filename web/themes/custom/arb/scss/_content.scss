@@ -331,6 +331,25 @@
         @include like-btn-a-2;
         float: left;
         margin-top: 20px;
+        &:before{
+            font-family: 'fontawesome';
+            content: '\f053';
+            font-size: 14px;
+            padding-right: 10px;
+        }
+    }
+}
+
+/*BACK LINK NODE*/
+.backlink-wrapper a{
+    @include like-btn-a-2;
+    float: left;
+    margin-top: 20px;
+    &:before{
+        font-family: 'fontawesome';
+        content: '\f053';
+        font-size: 14px;
+        padding-right: 10px;
     }
 }
 
