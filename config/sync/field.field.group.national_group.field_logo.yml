@@ -1,0 +1,38 @@
+uuid: a4462b87-06f7-4448-8c95-ac0c71869409
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.group.field_logo
+    - group.type.national_group
+  module:
+    - image
+id: group.national_group.field_logo
+field_name: field_logo
+entity_type: group
+bundle: national_group
+label: Logo
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: images_logos
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: false
+  title_field: true
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

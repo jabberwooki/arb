@@ -6,6 +6,7 @@ dependencies:
     - field.field.group.regional_group.field_code
     - field.field.group.regional_group.field_image
     - field.field.group.regional_group.field_internet_site
+    - field.field.group.regional_group.field_logo
     - field.field.group.regional_group.field_presentation
     - field.field.group.regional_group.field_process_progress
     - field.field.group.regional_group.field_srb_process_progress
@@ -13,6 +14,7 @@ dependencies:
     - group.type.regional_group
     - image.style.thumbnail
   module:
+    - image
     - image_widget_crop
     - link
     - path
@@ -23,7 +25,7 @@ bundle: regional_group
 mode: default
 content:
   field_code:
-    weight: 7
+    weight: 8
     settings:
       size: 60
       placeholder: ''
@@ -31,7 +33,7 @@ content:
     type: string_textfield
     region: content
   field_image:
-    weight: 4
+    weight: 5
     settings:
       show_crop_area: true
       show_default_crop: true
@@ -47,15 +49,23 @@ content:
     type: image_widget_crop
     region: content
   field_internet_site:
-    weight: 6
+    weight: 7
     settings:
       placeholder_url: ''
       placeholder_title: ''
     third_party_settings: {  }
     type: link_default
     region: content
+  field_logo:
+    weight: 4
+    settings:
+      preview_image_style: thumbnail
+      progress_indicator: throbber
+    third_party_settings: {  }
+    type: image_image
+    region: content
   field_presentation:
-    weight: 5
+    weight: 6
     settings:
       rows: 9
       summary_rows: 3
@@ -91,7 +101,7 @@ content:
     third_party_settings: {  }
   path:
     type: path
-    weight: 8
+    weight: 9
     region: content
     settings: {  }
     third_party_settings: {  }
