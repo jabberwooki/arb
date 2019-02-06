@@ -6,10 +6,13 @@ dependencies:
     - core.entity_view_mode.group.full
     - field.field.group.national_group.field_image
     - field.field.group.national_group.field_internet_site
+    - field.field.group.national_group.field_logo
     - field.field.group.national_group.field_presentation
     - group.type.national_group
+    - image.style.region_logo
   module:
     - ds
+    - image
     - link
     - text
 third_party_settings:
@@ -30,6 +33,7 @@ third_party_settings:
           layout_class: {  }
     regions:
       ds_content:
+        - field_logo
         - label
         - field_internet_site
         - field_presentation
@@ -44,7 +48,7 @@ bundle: national_group
 mode: full
 content:
   field_internet_site:
-    weight: 1
+    weight: 2
     label: hidden
     settings:
       trim_length: 80
@@ -55,8 +59,17 @@ content:
     third_party_settings: {  }
     type: link
     region: ds_content
+  field_logo:
+    type: image
+    weight: 0
+    region: ds_content
+    label: hidden
+    settings:
+      image_style: region_logo
+      image_link: ''
+    third_party_settings: {  }
   field_presentation:
-    weight: 2
+    weight: 3
     label: hidden
     settings: {  }
     third_party_settings: {  }
@@ -65,33 +78,33 @@ content:
   label:
     label: hidden
     type: string
-    weight: 0
+    weight: 1
     region: ds_content
     settings:
       link_to_entity: false
     third_party_settings: {  }
   national_news_eva_dashboard_tab:
-    weight: 10
+    weight: 4
     region: ds_content
     settings: {  }
     third_party_settings: {  }
   national_news_eva_news_tab:
-    weight: 10
+    weight: 5
     region: ds_content
     settings: {  }
     third_party_settings: {  }
   national_resources_eva_dashboard_tab:
-    weight: 10
+    weight: 6
     region: ds_content
     settings: {  }
     third_party_settings: {  }
   national_resources_eva_resources_tab:
-    weight: 10
+    weight: 7
     region: ds_content
     settings: {  }
     third_party_settings: {  }
   region_members_eva_dashboard_tab:
-    weight: 10
+    weight: 8
     region: ds_content
     settings: {  }
     third_party_settings: {  }

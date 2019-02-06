@@ -1,0 +1,15 @@
+uuid: 370b7574-1374-40bd-8885-b114b27a044b
+langcode: fr
+status: true
+dependencies: {  }
+name: region_logo
+label: 'Logo région'
+effects:
+  1b92c21a-4d81-4113-b1e6-ce72afb31c2f:
+    uuid: 1b92c21a-4d81-4113-b1e6-ce72afb31c2f
+    id: image_scale
+    weight: 1
+    data:
+      width: null
+      height: 120
+      upscale: false

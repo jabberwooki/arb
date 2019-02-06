@@ -5,10 +5,12 @@ dependencies:
   config:
     - field.field.group.national_group.field_image
     - field.field.group.national_group.field_internet_site
+    - field.field.group.national_group.field_logo
     - field.field.group.national_group.field_presentation
     - group.type.national_group
     - image.style.thumbnail
   module:
+    - image
     - image_widget_crop
     - link
     - path
@@ -19,7 +21,7 @@ bundle: national_group
 mode: default
 content:
   field_image:
-    weight: 1
+    weight: 2
     settings:
       show_crop_area: true
       show_default_crop: true
@@ -35,15 +37,23 @@ content:
     type: image_widget_crop
     region: content
   field_internet_site:
-    weight: 2
+    weight: 3
     settings:
       placeholder_url: ''
       placeholder_title: ''
     third_party_settings: {  }
     type: link_default
     region: content
+  field_logo:
+    weight: 1
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
   field_presentation:
-    weight: 3
+    weight: 4
     settings:
       rows: 9
       summary_rows: 3
@@ -61,7 +71,7 @@ content:
     third_party_settings: {  }
   path:
     type: path
-    weight: 4
+    weight: 5
     region: content
     settings: {  }
     third_party_settings: {  }
