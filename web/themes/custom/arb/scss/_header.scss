@@ -1,6 +1,9 @@
 body {
     margin-top: 0;
 }
+body.toolbar-fixed .toolbar-oriented .toolbar-bar {
+    z-index: 10000;
+}
 
 .col-center {
     float: none;
@@ -79,6 +82,9 @@ body {
 
 /*MENU HAMBURGER*/
 .hamburger{
+    #sidebar{
+        z-index: 9999;
+    }
     #sidebar ul li a {
         padding: 15px 20px;
         line-height: 30px;
