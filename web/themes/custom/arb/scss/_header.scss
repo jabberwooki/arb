@@ -76,13 +76,14 @@ body.toolbar-fixed .toolbar-oriented .toolbar-bar {
         margin-right: 10px;
     }
 }
-.user-logged-in .menu--account{
+.user-logged-in .region-header .menu--account{
         margin-top: -10px;
         margin-right: 10px;
         li:last-of-type{
             display: none;
         }
     }
+
 
 /*MENU HAMBURGER*/
 .hamburger{

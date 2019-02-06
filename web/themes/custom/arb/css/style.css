@@ -8828,12 +8828,12 @@ body.toolbar-fixed .toolbar-oriented .toolbar-bar {
   margin-right: 10px;
 }
 
-.user-logged-in .menu--account {
+.user-logged-in .region-header .menu--account {
   margin-top: -10px;
   margin-right: 10px;
 }
 
-.user-logged-in .menu--account li:last-of-type {
+.user-logged-in .region-header .menu--account li:last-of-type {
   display: none;
 }
 
@@ -9771,10 +9771,24 @@ body.toolbar-fixed .toolbar-oriented .toolbar-bar {
   background: #1D495D;
 }
 
-.footer a {
+.footer .menu--footer li {
+  display: inline-block;
+}
+
+.footer .menu--footer a {
   color: #1FAD00;
 }
 
-.footer a:hover {
+.footer .menu--footer a:focus,
+.footer .menu--footer a:hover {
+  color: white;
+  background-color: transparent;
+}
+
+.footer #block-socialmedialinks a {
+  color: #1FAD00;
+}
+
+.footer #block-socialmedialinks a:hover {
   color: white;
 }

@@ -8,11 +8,23 @@
     padding-bottom: 36px;
     border-top: none;
     background: $brand-primary;
-    a{
+    .menu--footer li{
+        display: inline-block;
+    }
+    .menu--footer a{
        color: $brand-secondary;
+        &:focus,
         &:hover{
             color: white;
+            background-color: transparent;
         }
     }
-    
+    #block-socialmedialinks{
+        a{
+            color: $brand-secondary;
+            &:hover{
+                color: white;
+            }
+        }
+    }
 }
