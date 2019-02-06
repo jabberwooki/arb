@@ -247,3 +247,36 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1d495d', end
     }
 }
 
+/*HIGHLIGHT*/
+.page-node-type-news,
+.path-ressources,
+.path-actualites,
+.path-regions{
+    .highlighted {
+        background-image: url('../images/topography.png');
+        min-height: 200px;
+        position: relative;
+        display: block;
+        h2{
+            position: absolute;
+            top: 30%;
+            left: 50%;
+            -webkit-transform: translate(-50%,-50%);
+            -ms-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
+            text-align: center;
+            margin: 0;
+            &:after{
+                position: absolute;
+                left: 0;
+                content: "";
+                display: block;
+                margin: 0 auto;
+                width: 90px;
+                border-bottom: 5px solid #1FAD00;
+                padding-top: 5px;
+            }
+        }
+    }
+}
+
