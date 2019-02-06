@@ -9759,7 +9759,13 @@ body.toolbar-fixed .toolbar-oriented .toolbar-bar {
   padding-right: 10px;
 }
 
-.prefooter {
+.pre-footer {
+  background: url("../images/topography.png");
+  padding-top: 80px;
+  margin-top: -80px;
+}
+
+.pre-footer .prefooter {
   padding-top: 40px;
 }
 
