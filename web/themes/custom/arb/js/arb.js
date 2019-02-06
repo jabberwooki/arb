@@ -46,6 +46,9 @@
             // instead of a settings object
           ]
       });
+        
+      /*Presentation texte regions*/
+      $('.region-presentation .field--name-field-presentation p').append("<div class='fade'></div>");
 
       // Bandeau région
       $('#block-views-block-regions-banner .field--name-field-image').slick({
@@ -67,7 +70,7 @@
       $('.view-region-members').slick({
         arrows: true,
         infinite: true,
-        slidesToShow: 4,
+        slidesToShow: 5,
         slidesToScroll: 1,
         responsive: [
           {

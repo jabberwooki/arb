@@ -9668,8 +9668,45 @@ body.toolbar-fixed .toolbar-oriented .toolbar-bar {
   border: none;
 }
 
-.group--type-national-group .field--name-field-process-progress,
-.group--type-regional-group .field--name-field-process-progress {
+.group--type-national-group ul.nav-tabs li a:hover,
+.group--type-regional-group ul.nav-tabs li a:hover {
+  color: #1FAD00;
+  border-bottom: 4px solid #1FAD00;
+}
+
+.group--type-national-group .nav-tabs > li.active > a,
+.group--type-national-group .nav-tabs > li.active > a:hover,
+.group--type-national-group .nav-tabs > li.active > a:focus,
+.group--type-regional-group .nav-tabs > li.active > a,
+.group--type-regional-group .nav-tabs > li.active > a:hover,
+.group--type-regional-group .nav-tabs > li.active > a:focus {
+  color: #fff;
+  background-color: #1D495D;
+  border: none;
+  cursor: default;
+}
+
+.group--type-national-group .nav-tabs > li.active > a:hover,
+.group--type-national-group .nav-tabs > li.active > a:focus,
+.group--type-regional-group .nav-tabs > li.active > a:hover,
+.group--type-regional-group .nav-tabs > li.active > a:focus {
+  color: #1FAD00;
+}
+
+.group--type-national-group .header-region,
+.group--type-regional-group .header-region {
+  background: #F5F6F8;
+  min-height: 126px;
+  padding: 30px 0;
+}
+
+.group--type-national-group .header-region h2,
+.group--type-regional-group .header-region h2 {
+  margin-top: 10px;
+}
+
+.group--type-national-group .header-region .field--name-field-process-progress,
+.group--type-regional-group .header-region .field--name-field-process-progress {
   background: #1FAD00;
   border-radius: 20px;
   text-transform: uppercase;
@@ -9678,16 +9715,17 @@ body.toolbar-fixed .toolbar-oriented .toolbar-bar {
   font-size: 12px;
   padding: 2px 14px;
   display: inline;
+  line-height: 40px;
 }
 
-.group--type-national-group .field--name-field-internet-site a,
-.group--type-regional-group .field--name-field-internet-site a {
+.group--type-national-group .header-region .field--name-field-internet-site a,
+.group--type-regional-group .header-region .field--name-field-internet-site a {
   color: #1FAD00;
   font-weight: 600;
 }
 
-.group--type-national-group .field--name-field-internet-site a:before,
-.group--type-regional-group .field--name-field-internet-site a:before {
+.group--type-national-group .header-region .field--name-field-internet-site a:before,
+.group--type-regional-group .header-region .field--name-field-internet-site a:before {
   font-family: 'fontawesome';
   content: '\f0c1';
   color: #1D495D;
@@ -9695,14 +9733,14 @@ body.toolbar-fixed .toolbar-oriented .toolbar-bar {
   padding-right: 5px;
 }
 
-.group--type-national-group .field--name-field-internet-site a:hover,
-.group--type-regional-group .field--name-field-internet-site a:hover {
+.group--type-national-group .header-region .field--name-field-internet-site a:hover,
+.group--type-regional-group .header-region .field--name-field-internet-site a:hover {
   color: #1D495D;
   text-decoration: none;
 }
 
-.group--type-national-group .regions-backlink a,
-.group--type-regional-group .regions-backlink a {
+.group--type-national-group .header-region .regions-backlink a,
+.group--type-regional-group .header-region .regions-backlink a {
   background: #1D495D;
   color: white;
   font-weight: 700;
@@ -9713,22 +9751,79 @@ body.toolbar-fixed .toolbar-oriented .toolbar-bar {
   padding: 10px 20px;
   border: 5px double white;
   outline: 0;
-  float: left;
+  float: right;
   margin-top: 20px;
 }
 
-.group--type-national-group .regions-backlink a:hover,
-.group--type-regional-group .regions-backlink a:hover {
+.group--type-national-group .header-region .regions-backlink a:hover,
+.group--type-regional-group .header-region .regions-backlink a:hover {
   color: white;
   background: #1FAD00;
 }
 
-.group--type-national-group .regions-backlink a:before,
-.group--type-regional-group .regions-backlink a:before {
+.group--type-national-group .header-region .regions-backlink a:before,
+.group--type-regional-group .header-region .regions-backlink a:before {
   font-family: 'fontawesome';
   content: '\f053';
   font-size: 14px;
   padding-right: 10px;
+}
+
+.group--type-national-group .header-region .regions-backlink:before,
+.group--type-regional-group .header-region .regions-backlink:before {
+  background: url("../images/courbe-register.png") no-repeat;
+  width: 62px;
+  height: 125.8px;
+  content: '';
+  position: absolute;
+  left: 0;
+}
+
+.group--type-national-group .field--name-field-presentation,
+.group--type-regional-group .field--name-field-presentation {
+  margin: 40px 0;
+}
+
+.group--type-national-group .field--name-field-presentation .fade,
+.group--type-regional-group .field--name-field-presentation .fade {
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: -20px;
+  right: -20px;
+  background: url(../images/article-fade.png) repeat-x left bottom;
+  z-index: 1;
+  margin: 0 20px;
+}
+
+.group--type-national-group .members,
+.group--type-regional-group .members {
+  background: #F5F6F8;
+  margin-bottom: 30px;
+}
+
+.group--type-national-group .members .views-row.slick-slide,
+.group--type-regional-group .members .views-row.slick-slide {
+  background: #fff;
+  border: 2px solid #1FAD00;
+  padding: 10px;
+  margin: 0 15px;
+}
+
+.group--type-national-group .members .views-row.slick-slide .views-field-field-firstname,
+.group--type-national-group .members .views-row.slick-slide .views-field-field-lastname,
+.group--type-regional-group .members .views-row.slick-slide .views-field-field-firstname,
+.group--type-regional-group .members .views-row.slick-slide .views-field-field-lastname {
+  font-weight: 600;
+}
+
+.group--type-national-group .members .views-row.slick-slide .views-field-field-organisation,
+.group--type-national-group .members .views-row.slick-slide .views-field-field-function,
+.group--type-national-group .members .views-row.slick-slide .views-field-mail,
+.group--type-regional-group .members .views-row.slick-slide .views-field-field-organisation,
+.group--type-regional-group .members .views-row.slick-slide .views-field-field-function,
+.group--type-regional-group .members .views-row.slick-slide .views-field-mail {
+  font-size: 12px;
 }
 
 /*BACK LINK NODE*/

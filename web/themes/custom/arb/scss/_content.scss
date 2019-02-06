@@ -300,43 +300,108 @@
                 background-color: transparent;
                 text-transform: uppercase;
                 border: none;
+                &:hover{
+                    color: $brand-secondary; 
+                    border-bottom: 4px solid $brand-secondary; 
+                }
             }
         }
     }
-    .field--name-field-process-progress{
-        background: $brand-secondary;
-        border-radius: 20px;
-        text-transform: uppercase;
-        color: white;
-        font-weight: 800;
-        font-size: 12px;
-        padding: 2px 14px;
-        display: inline;
+    .nav-tabs > li.active > a,
+    .nav-tabs > li.active > a:hover,
+    .nav-tabs > li.active > a:focus {
+        color: #fff;
+        background-color: $brand-primary; 
+        border: none;
+        cursor: default;
     }
-    .field--name-field-internet-site a{
+    .nav-tabs > li.active > a:hover,
+    .nav-tabs > li.active > a:focus{
         color: $brand-secondary;
-        font-weight: 600;
-        &:before{
-            font-family: 'fontawesome';
-            content: '\f0c1';
-            color: $brand-primary; 
-            font-size: 14px;
-            padding-right: 5px;
+    }
+    .header-region{
+        background: #F5F6F8;
+        min-height: 126px;
+        padding: 30px 0;
+        h2{
+            margin-top: 10px;
         }
-        &:hover{
-            color: $brand-primary; 
-            text-decoration: none;
+        .field--name-field-process-progress{
+            background: $brand-secondary;
+            border-radius: 20px;
+            text-transform: uppercase;
+            color: white;
+            font-weight: 800;
+            font-size: 12px;
+            padding: 2px 14px;
+            display: inline;
+            line-height: 40px;
+        }
+        .field--name-field-internet-site a{
+            color: $brand-secondary;
+            font-weight: 600;
+            &:before{
+                font-family: 'fontawesome';
+                content: '\f0c1';
+                color: $brand-primary; 
+                font-size: 14px;
+                padding-right: 5px;
+            }
+            &:hover{
+                color: $brand-primary; 
+                text-decoration: none;
+            }
+        }
+        .regions-backlink a{
+            @include like-btn-a-2;
+            float: right;
+            margin-top: 20px;
+            &:before{
+                font-family: 'fontawesome';
+                content: '\f053';
+                font-size: 14px;
+                padding-right: 10px;
+            }
+        }
+        .regions-backlink:before{
+            background: url("../images/courbe-register.png") no-repeat;
+            width: 62px;
+            height: 125.8px;
+            content: '';
+            position: absolute;
+            left: 0;
         }
     }
-    .regions-backlink a{
-        @include like-btn-a-2;
-        float: left;
-        margin-top: 20px;
-        &:before{
-            font-family: 'fontawesome';
-            content: '\f053';
-            font-size: 14px;
-            padding-right: 10px;
+    .field--name-field-presentation{
+        margin: 40px 0;
+    }
+    .field--name-field-presentation .fade {
+        position: absolute;
+        bottom: 0;
+        top: 0;
+        left: -20px;
+        right: -20px;
+        background: url(../images/article-fade.png) repeat-x left bottom;
+        z-index: 1;
+        margin: 0 20px;
+    }
+    .members{
+        background: #F5F6F8;
+        margin-bottom: 30px;
+        .views-row.slick-slide{
+            background: #fff;
+            border: 2px solid $brand-secondary; 
+            padding: 10px;
+            margin: 0 15px;
+            .views-field-field-firstname,
+            .views-field-field-lastname{
+                font-weight: 600;
+            }
+            .views-field-field-organisation,
+            .views-field-field-function,
+            .views-field-mail{
+                font-size: 12px;
+            }
         }
     }
 }
