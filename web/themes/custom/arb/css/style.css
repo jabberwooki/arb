@@ -8732,6 +8732,12 @@ body {
   margin-top: 0;
 }
 
+.col-center {
+  float: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /*HEADER*/
 .vertical-align {
   display: flex;
@@ -8823,8 +8829,115 @@ body {
 }
 
 /*MENU HAMBURGER*/
+.hamburger #sidebar ul li a {
+  padding: 15px 20px;
+  line-height: 30px;
+}
+
+.hamburger #sidebar ul li a:hover {
+  color: #1FAD00;
+  background: #235870;
+}
+
+.hamburger .menu--hamburger a {
+  text-transform: uppercase;
+}
+
+.hamburger .menu--hamburger a:before {
+  font-family: 'fontawesome';
+  color: #1FAD00;
+  content: '\f054';
+  font-size: 21.3px;
+  width: 50px;
+  float: left;
+}
+
+.hamburger .menu--hamburger a.front:before {
+  content: '\f015';
+}
+
+.hamburger .menu--hamburger a.entitygroupcanonical:before {
+  content: '\f024';
+}
+
+.hamburger .menu--hamburger a.viewregionspage:before {
+  content: '\f041';
+}
+
+.hamburger .menu--hamburger a.viewnational-newsall-news:before {
+  content: '\f1ea';
+}
+
+.hamburger .menu--hamburger a.viewnational-resourcesall-resources:before {
+  content: '\f0c5';
+}
+
+.hamburger #regions-operations {
+  background: #235870;
+}
+
+.hamburger #regions-operations ul {
+  padding-left: 0;
+}
+
+.hamburger #regions-operations ul li {
+  list-style: none;
+}
+
+.hamburger #regions-operations ul li a {
+  text-transform: uppercase;
+}
+
+.hamburger #regions-operations ul li a:hover {
+  text-decoration: none;
+}
+
+.hamburger #regions-operations ul li a:after {
+  font-family: 'fontawesome';
+  color: #1FAD00;
+  font-size: 21.3px;
+  width: 50px;
+  float: none;
+  padding-left: 20px;
+}
+
+.hamburger #regions-operations ul li a.news:after {
+  content: '\f15b';
+}
+
+.hamburger #regions-operations ul li a.slides:after {
+  content: '\f03e';
+}
+
+.hamburger #regions-operations ul li a.documents:after {
+  content: '\f0c5';
+}
+
+.hamburger .menu--account a {
+  text-transform: uppercase;
+}
+
+.hamburger .menu--account a:before {
+  font-family: 'fontawesome';
+  color: #1FAD00;
+  font-size: 21.3px;
+  width: 50px;
+  float: left;
+}
+
+.hamburger .menu--account a:fisrt-of-type:before {
+  content: '\f007';
+}
+
+.hamburger .menu--account a:last-of-type:before {
+  content: '\f023';
+}
+
 .hamburger .menu--account.navbar-right {
   float: left !important;
+  width: 100%;
+  border-top: 1px solid #1FAD00;
+  border-bottom: 1px solid #1FAD00;
 }
 
 .hamburger .menu--account.navbar-nav > li {

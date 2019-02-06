@@ -2,6 +2,12 @@ body {
     margin-top: 0;
 }
 
+.col-center {
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 /*HEADER*/
 .vertical-align {
     display: flex;
@@ -73,9 +79,96 @@ body {
 
 /*MENU HAMBURGER*/
 .hamburger{
+    #sidebar ul li a {
+        padding: 15px 20px;
+        line-height: 30px;
+    }
+    #sidebar ul li a:hover {
+        color: $brand-secondary;
+        background: lighten($brand-primary, 5%);
+    }
+    .menu--hamburger{
+        a{
+            text-transform: uppercase;
+        }
+        a:before{
+            font-family: 'fontawesome';
+            color: $brand-secondary;
+            content: '\f054';
+            font-size: 21.3px;
+            width: 50px;
+            float: left;
+        }
+        a.front:before{
+            content: '\f015';
+        }
+        a.entitygroupcanonical:before{
+            content: '\f024';
+        }
+        a.viewregionspage:before{
+            content: '\f041';
+        }
+        a.viewnational-newsall-news:before{
+            content: '\f1ea';
+        }
+        a.viewnational-resourcesall-resources:before{
+            content: '\f0c5';
+        }
+    }
+    #regions-operations{
+        background: lighten($brand-primary, 5%);
+        ul{
+            padding-left: 0;
+            li{
+                list-style: none;
+                a{
+                    text-transform: uppercase;
+                    &:hover{
+                        text-decoration: none;
+                    }
+                }
+                a:after{
+                    font-family: 'fontawesome';
+                    color: $brand-secondary;
+                    font-size: 21.3px;
+                    width: 50px;
+                    float: none;
+                    padding-left: 20px;
+                }
+                a.news:after{
+                    content: '\f15b';
+                }
+                a.slides:after{
+                    content: '\f03e';
+                }
+                a.documents:after{
+                    content: '\f0c5';
+                }
+            }
+        }
+    }
     .menu--account{
+        a{
+            text-transform: uppercase;
+        }
+        a:before{
+            font-family: 'fontawesome';
+            color: $brand-secondary;
+            font-size: 21.3px;
+            width: 50px;
+            float: left;
+        }
+        a:fisrt-of-type:before{
+            content: '\f007';
+        }
+        a:last-of-type:before{
+            content: '\f023';
+        }
         &.navbar-right{
             float: left !important;
+            width: 100%;
+            border-top: 1px solid $brand-secondary;
+            border-bottom: 1px solid $brand-secondary;
         }
         &.navbar-nav > li{
             float: none;
