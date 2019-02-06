@@ -74,11 +74,15 @@ body.toolbar-fixed .toolbar-oriented .toolbar-bar {
     .menu--account{
         margin-top: -10px;
         margin-right: 10px;
+    }
+}
+.user-logged-in .menu--account{
+        margin-top: -10px;
+        margin-right: 10px;
         li:last-of-type{
             display: none;
         }
     }
-}
 
 /*MENU HAMBURGER*/
 .hamburger{

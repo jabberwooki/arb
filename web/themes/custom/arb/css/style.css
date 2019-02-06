@@ -8828,7 +8828,12 @@ body.toolbar-fixed .toolbar-oriented .toolbar-bar {
   margin-right: 10px;
 }
 
-.header .menu--account li:last-of-type {
+.user-logged-in .menu--account {
+  margin-top: -10px;
+  margin-right: 10px;
+}
+
+.user-logged-in .menu--account li:last-of-type {
   display: none;
 }
 
