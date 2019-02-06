@@ -33,6 +33,11 @@ third_party_settings:
         - label
         - field_internet_site
         - field_presentation
+        - national_news_eva_dashboard_tab
+        - national_news_eva_news_tab
+        - national_resources_eva_dashboard_tab
+        - national_resources_eva_resources_tab
+        - region_members_eva_dashboard_tab
 id: group.national_group.full
 targetEntityType: group
 bundle: national_group
@@ -64,6 +69,31 @@ content:
     region: ds_content
     settings:
       link_to_entity: false
+    third_party_settings: {  }
+  national_news_eva_dashboard_tab:
+    weight: 10
+    region: ds_content
+    settings: {  }
+    third_party_settings: {  }
+  national_news_eva_news_tab:
+    weight: 10
+    region: ds_content
+    settings: {  }
+    third_party_settings: {  }
+  national_resources_eva_dashboard_tab:
+    weight: 10
+    region: ds_content
+    settings: {  }
+    third_party_settings: {  }
+  national_resources_eva_resources_tab:
+    weight: 10
+    region: ds_content
+    settings: {  }
+    third_party_settings: {  }
+  region_members_eva_dashboard_tab:
+    weight: 10
+    region: ds_content
+    settings: {  }
     third_party_settings: {  }
 hidden:
   changed: true

@@ -346,12 +346,59 @@ display:
           entity_type: group_content
           entity_field: type
           plugin_id: bundle
+        id:
+          id: id
+          table: groups_field_data
+          field: id
+          relationship: gid
+          group_type: group
+          admin_label: ''
+          operator: '='
+          value:
+            min: ''
+            max: ''
+            value: ''
+          group: 1
+          exposed: true
+          expose:
+            operator_id: id_op
+            label: Région
+            description: ''
+            use_operator: false
+            operator: id_op
+            identifier: group_id
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+            placeholder: ''
+            min_placeholder: ''
+            max_placeholder: ''
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          entity_type: group
+          entity_field: id
+          plugin_id: numeric
       defaults:
         filters: false
         filter_groups: false
         title: false
         pager: false
         fields: false
+        relationships: false
       filter_groups:
         operator: AND
         groups:
@@ -569,11 +616,42 @@ display:
           empty_zero: false
           hide_alter_empty: false
           plugin_id: custom
+      relationships:
+        gc__node:
+          id: gc__node
+          table: group_content_field_data
+          field: gc__node
+          relationship: none
+          group_type: group
+          admin_label: 'Group content Contenu'
+          required: false
+          group_content_plugins:
+            'group_node:document': 'group_node:document'
+            'group_node:article': '0'
+            'group_node:editorial_page': '0'
+            'group_node:footer_logo': '0'
+            'group_node:news': '0'
+            'group_node:page': '0'
+            'group_node:slide': '0'
+          entity_type: group_content
+          plugin_id: group_content_to_entity
+        gid:
+          id: gid
+          table: group_content_field_data
+          field: gid
+          relationship: none
+          group_type: group
+          admin_label: Groupe
+          required: false
+          entity_type: group_content
+          entity_field: gid
+          plugin_id: standard
     cache_metadata:
       max-age: -1
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
+        - url
         - url.query_args
       tags: {  }
   eva_dashboard_tab:
@@ -625,6 +703,8 @@ display:
         pager: false
         style: false
         row: false
+        filters: false
+        filter_groups: false
       arguments:
         gid:
           id: gid
@@ -865,6 +945,51 @@ display:
       row:
         type: fields
         options: {  }
+      filters:
+        type:
+          id: type
+          table: group_content_field_data
+          field: type
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: in
+          value:
+            group_content_type_f8af808bc408c: group_content_type_f8af808bc408c
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          entity_type: group_content
+          entity_field: type
+          plugin_id: bundle
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
     cache_metadata:
       max-age: -1
       contexts:

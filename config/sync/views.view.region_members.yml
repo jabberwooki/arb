@@ -7,12 +7,12 @@ dependencies:
     - field.storage.user.field_function
     - field.storage.user.field_lastname
     - field.storage.user.field_organisation
+    - group.content_type.national_group-group_membership
     - group.content_type.regional_group-group_membership
   module:
     - eva
     - group
     - user
-    - views_bootstrap
 id: region_members
 label: 'Membres régions'
 module: views
@@ -57,17 +57,11 @@ display:
         options:
           offset: 0
       style:
-        type: views_bootstrap_grid
+        type: default
         options:
           grouping: {  }
           row_class: ''
           default_row_class: true
-          alignment: horizontal
-          columns: '4'
-          col_xs: col-xs-12
-          col_sm: col-sm-6
-          col_md: col-md-3
-          col_lg: col-lg-3
       row:
         type: fields
         options:
@@ -399,8 +393,40 @@ display:
           id: type
           table: group_content_field_data
           field: type
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: in
           value:
+            national_group-group_membership: national_group-group_membership
             regional_group-group_membership: regional_group-group_membership
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
           entity_type: group_content
           entity_field: type
           plugin_id: bundle
@@ -560,6 +586,7 @@ display:
       display_extenders: {  }
       entity_type: group
       bundles:
+        - national_group
         - regional_group
     cache_metadata:
       max-age: -1

@@ -451,7 +451,7 @@ display:
           relationship: uid
           group_type: group
           admin_label: ''
-          label: User
+          label: Utilisateur
           exclude: false
           alter:
             alter_text: false
@@ -516,7 +516,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: Operations
+          label: Opérations
           exclude: false
           alter:
             alter_text: false
