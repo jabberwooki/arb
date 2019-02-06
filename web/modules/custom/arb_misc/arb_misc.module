@@ -89,3 +89,36 @@ function arb_misc_theme($existing, $type, $theme, $path) {
     ],
   ];
 }
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ */
+function arb_misc_form_views_exposed_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
+  // Transformation du filtre exposé Région.
+  // Par defaut, c'est un champ texte vide. On le transformer en champ select.
+  if ($form['#id'] == 'views-exposed-form-national-news-all-news'
+    || $form['#id'] == 'views-exposed-form-national-resources-all-resources') {
+
+    // Query groupes
+    $storage = Drupal::getContainer()->get('entity_type.manager')->getStorage('group');
+    $query = $storage->getQuery();
+    $ids = $query->sort('id')->execute();
+    if (!$ids) {
+      return FALSE;
+    }
+
+    $options = [];
+    $groups = $storage->loadMultiple($ids);
+    foreach ($groups as $group) {
+      $options[$group->id()] = $group->label();
+    }
+
+
+    $form['group_id']['#type'] = 'select';
+    $form['group_id']['#multiple'] = FALSE;
+
+    $form['group_id']['#empty_option'] = 'Toutes les régions';
+    $form['group_id']['#options'] = $options;
+    unset($form['group_id']['#size']);
+  }
+}
