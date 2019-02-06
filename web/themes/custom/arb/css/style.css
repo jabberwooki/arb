@@ -9054,6 +9054,45 @@ body {
   background: transparent;
 }
 
+/*HIGHLIGHT*/
+.page-node-type-news .highlighted,
+.path-ressources .highlighted,
+.path-actualites .highlighted,
+.path-regions .highlighted {
+  background-image: url("../images/topography.png");
+  min-height: 200px;
+  position: relative;
+  display: block;
+}
+
+.page-node-type-news .highlighted h2,
+.path-ressources .highlighted h2,
+.path-actualites .highlighted h2,
+.path-regions .highlighted h2 {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  margin: 0;
+}
+
+.page-node-type-news .highlighted h2:after,
+.path-ressources .highlighted h2:after,
+.path-actualites .highlighted h2:after,
+.path-regions .highlighted h2:after {
+  position: absolute;
+  left: 0;
+  content: "";
+  display: block;
+  margin: 0 auto;
+  width: 90px;
+  border-bottom: 5px solid #1FAD00;
+  padding-top: 5px;
+}
+
 /*SLICK FLECHES*/
 .slick-prev:before,
 .slick-next:before {
@@ -9072,7 +9111,8 @@ body {
   background: #fff;
 }
 
-.path-frontpage .main-container {
+/*.path-frontpage*/
+.main-container {
   margin-top: -80px;
   padding-bottom: 30px;
 }
