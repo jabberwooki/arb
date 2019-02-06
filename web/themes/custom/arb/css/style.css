@@ -9406,6 +9406,7 @@ body.toolbar-fixed .toolbar-oriented .toolbar-bar {
   line-height: 125.8px;
   font-weight: 600;
   position: relative;
+  margin-top: 15px;
 }
 
 .block-arb-register .arb-register-text:before {
