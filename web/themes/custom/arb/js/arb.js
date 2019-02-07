@@ -48,7 +48,13 @@
       });
         
       /*Presentation texte regions*/
-      $('.region-presentation .field--name-field-presentation p').append("<div class='fade'></div>");
+      if (typeof flag === 'undefined') {
+        flag = true;
+      }
+      if (flag) {
+        $('.region-presentation .field--name-field-presentation p').append("<div class='fade'></div>");
+        flag = false;
+      }
 
       // Bandeau région
       $('#block-views-block-regions-banner .field--name-field-image').slick({
