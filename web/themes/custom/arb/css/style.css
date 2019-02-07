@@ -9886,10 +9886,14 @@ body.toolbar-fixed .toolbar-oriented .toolbar-bar {
   background-color: transparent;
 }
 
-.footer #block-socialmedialinks a {
+.footer #block-socialmedialinks-2 {
+  float: right;
+}
+
+.footer #block-socialmedialinks-2 a {
   color: #1FAD00;
 }
 
-.footer #block-socialmedialinks a:hover {
+.footer #block-socialmedialinks-2 a:hover {
   color: white;
 }

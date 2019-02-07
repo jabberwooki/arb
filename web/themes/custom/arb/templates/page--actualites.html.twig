@@ -203,10 +203,20 @@
       {% endif %}
 </section>
 
-{% if page.footer %}
-  {% block footer %}
-    <footer class="footer container-fluid" role="contentinfo">
-      {{ page.footer }}
-    </footer>
-  {% endblock %}
+<footer class="footer container-fluid" role="contentinfo">
+{% if page.footer_left %}
+    {% block footer_left %}
+        <div class="col-sm-8">
+            {{ page.footer_left }}
+        </div>
+    {% endblock %}
 {% endif %}
+    
+{% if page.footer_right %}
+    {% block footer_right %}
+        <div class="col-sm-4">
+            {{ page.footer_right }}
+        </div>
+    {% endblock %}
+{% endif %}
+</footer>

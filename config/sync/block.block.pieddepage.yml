@@ -1,6 +1,6 @@
-uuid: 4cc171f5-c2a5-4481-af20-79a6470d03a4
+uuid: f7e1ff24-9ca4-4c41-9e0b-08784cfe7e7a
 langcode: fr
-status: false
+status: true
 dependencies:
   config:
     - system.menu.footer
@@ -8,10 +8,10 @@ dependencies:
     - system
   theme:
     - arb
-id: footer
+id: pieddepage
 theme: arb
-region: navigation
-weight: -5
+region: footer_left
+weight: 0
 provider: null
 plugin: 'system_menu_block:footer'
 settings:
