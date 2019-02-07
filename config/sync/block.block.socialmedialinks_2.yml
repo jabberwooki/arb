@@ -1,14 +1,14 @@
-uuid: bae09554-34a6-4a21-b399-178a7c749f62
+uuid: 54a21ba7-4204-4f35-840f-1288d1188fe5
 langcode: fr
-status: false
+status: true
 dependencies:
   module:
     - social_media_links
   theme:
     - arb
-id: socialmedialinks
+id: socialmedialinks_2
 theme: arb
-region: navigation
+region: footer_right
 weight: 0
 provider: null
 plugin: social_media_links_block
@@ -18,91 +18,91 @@ settings:
   provider: social_media_links
   label_display: '0'
   platforms:
-    twitter:
-      value: afbiodiversite
-      description: ''
-      weight: '-30'
-    linkedin:
-      value: agence-fran%C3%A7aise-pour-la-biodiversit%C3%A9
-      description: ''
-      weight: '-29'
-    facebook:
-      value: Agence.francaise.biodiversite
-      description: ''
-      weight: '-28'
-    youtube:
-      value: channel/UCx865nT9i8fh-9-tQbTRY6w
-      description: ''
-      weight: '-27'
-    drupal:
-      value: ''
-      description: ''
-      weight: '-26'
-    github:
-      value: ''
-      description: ''
-      weight: '-25'
-    email:
-      value: ''
-      description: ''
-      weight: '-24'
-    googleplus:
-      value: ''
-      description: ''
-      weight: '-23'
-    vimeo:
-      value: ''
-      description: ''
-      weight: '-22'
-    slideshare:
-      value: ''
-      description: ''
-      weight: '-21'
-    rss:
-      value: ''
-      description: ''
-      weight: '-20'
-    instagram:
-      value: ''
-      description: ''
-      weight: '-19'
-    youtube_channel:
-      value: ''
-      description: ''
-      weight: '-18'
-    bitbucket:
-      value: ''
-      description: ''
-      weight: '-17'
-    pinterest:
-      value: ''
-      description: ''
-      weight: '-16'
-    flickr:
-      value: ''
-      description: ''
-      weight: '-15'
-    vkontakte:
-      value: ''
-      description: ''
-      weight: '-14'
     behance:
       value: ''
       description: ''
-      weight: '-13'
+      weight: '-10'
+    bitbucket:
+      value: ''
+      description: ''
+      weight: '-9'
     contact:
       value: ''
       description: ''
-      weight: '-12'
+      weight: '-8'
+    drupal:
+      value: ''
+      description: ''
+      weight: '-7'
+    email:
+      value: ''
+      description: ''
+      weight: '-6'
+    facebook:
+      value: Agence.francaise.biodiversite
+      description: ''
+      weight: '-5'
+    flickr:
+      value: ''
+      description: ''
+      weight: '-4'
+    github:
+      value: ''
+      description: ''
+      weight: '-3'
+    googleplus:
+      value: ''
+      description: ''
+      weight: '-2'
+    instagram:
+      value: afbiodiversite
+      description: ''
+      weight: '-1'
+    linkedin:
+      value: company/agence-française-pour-la-biodiversité
+      description: ''
+      weight: '0'
+    pinterest:
+      value: ''
+      description: ''
+      weight: '1'
+    rss:
+      value: ''
+      description: ''
+      weight: '2'
+    slideshare:
+      value: ''
+      description: ''
+      weight: '3'
     tumblr:
       value: ''
       description: ''
-      weight: '-11'
+      weight: '4'
+    twitter:
+      value: afbiodiversite
+      description: ''
+      weight: '5'
+    vimeo:
+      value: ''
+      description: ''
+      weight: '6'
+    vkontakte:
+      value: ''
+      description: ''
+      weight: '7'
+    youtube:
+      value: channel/UCx865nT9i8fh-9-tQbTRY6w
+      description: ''
+      weight: '8'
+    youtube_channel:
+      value: ''
+      description: ''
+      weight: '9'
   appearance:
     orientation: h
     show_name: 0
   link_attributes:
-    target: _blank
+    target: '<none>'
     rel: '<none>'
   iconset:
     style: 'fontawesome:2x'
