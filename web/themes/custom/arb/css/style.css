@@ -9250,6 +9250,7 @@ body.toolbar-fixed .toolbar-oriented .toolbar-bar {
 }
 
 /*Titres des block de la homepage*/
+.page-node-type-news .content h2,
 .view-national-resources h2,
 .view-national-news h2,
 .region-latest-resources h2,
@@ -9265,6 +9266,7 @@ body.toolbar-fixed .toolbar-oriented .toolbar-bar {
   position: relative;
 }
 
+.page-node-type-news .content h2:after,
 .view-national-resources h2:after,
 .view-national-news h2:after,
 .region-latest-resources h2:after,
@@ -9290,6 +9292,7 @@ body.toolbar-fixed .toolbar-oriented .toolbar-bar {
   padding-top: 5px;
 }
 
+.page-node-type-news .content h2 a,
 .view-national-resources h2 a,
 .view-national-news h2 a,
 .region-latest-resources h2 a,
@@ -9302,6 +9305,7 @@ body.toolbar-fixed .toolbar-oriented .toolbar-bar {
   text-decoration: none;
 }
 
+.page-node-type-news .content h2 a:hover,
 .view-national-resources h2 a:hover,
 .view-national-news h2 a:hover,
 .region-latest-resources h2 a:hover,
@@ -9845,7 +9849,7 @@ body.toolbar-fixed .toolbar-oriented .toolbar-bar {
   border: 5px double white;
   outline: 0;
   float: left;
-  margin-top: 20px;
+  margin-top: 35px;
 }
 
 .backlink-wrapper a:hover {
@@ -9858,6 +9862,17 @@ body.toolbar-fixed .toolbar-oriented .toolbar-bar {
   content: '\f053';
   font-size: 14px;
   padding-right: 10px;
+}
+
+/*NEWS*/
+.page-node-type-news .field--name-field-news-type {
+  color: #1FAD00;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.page-node-type-news .field--name-body {
+  padding-top: 10px;
 }
 
 .pre-footer {

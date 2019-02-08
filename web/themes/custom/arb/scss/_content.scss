@@ -21,6 +21,7 @@
 }
 
 /*Titres des block de la homepage*/
+.page-node-type-news .content,
 .view-national-resources,
 .view-national-news,
 .region-latest-resources,
@@ -410,7 +411,7 @@
 .backlink-wrapper a{
     @include like-btn-a-2;
     float: left;
-    margin-top: 20px;
+    margin-top: 35px;
     &:before{
         font-family: 'fontawesome';
         content: '\f053';
@@ -419,3 +420,14 @@
     }
 }
 
+/*NEWS*/
+.page-node-type-news{
+    .field--name-field-news-type{
+        color: $brand-secondary; 
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+    .field--name-body{
+        padding-top: 10px;
+    }
+}
