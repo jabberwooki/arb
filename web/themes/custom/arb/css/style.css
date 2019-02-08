@@ -8728,8 +8728,14 @@ p:last-child,
   margin-top: 0;
 }
 
+html {
+  position: relative;
+  min-height: 100%;
+}
+
 body {
   margin-top: 0;
+  overflow-x: hidden;
 }
 
 body.toolbar-fixed .toolbar-oriented .toolbar-bar {
