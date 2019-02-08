@@ -8853,6 +8853,7 @@ body.toolbar-fixed .toolbar-oriented .toolbar-bar {
   line-height: 30px;
 }
 
+.hamburger #sidebar ul li.active > a,
 .hamburger #sidebar ul li a:hover {
   color: #1FAD00;
   background: #235870;
