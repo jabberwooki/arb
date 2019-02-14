@@ -7,6 +7,8 @@ label: Local
 description: 'Modules activés localement seulement.'
 folder: ../config/envs/local
 module:
+  chosen: 0
+  chosen_lib: 0
   devel: 0
   devel_generate: 0
   kint: 0
