@@ -9876,6 +9876,14 @@ body.toolbar-fixed .toolbar-oriented .toolbar-bar {
   padding-top: 10px;
 }
 
+.page-node-type-news .content {
+  margin-top: 30px;
+}
+
+.page-node-type-news .content h2 {
+  margin-top: 0;
+}
+
 .pre-footer {
   background: url("../images/topography.png");
   padding-top: 80px;
