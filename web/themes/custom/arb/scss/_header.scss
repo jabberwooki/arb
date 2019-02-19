@@ -1,11 +1,12 @@
 html {
-  position: relative;
+  /*position: relative;*/
   min-height: 100%;
 }
 
 body {
     margin-top: 0;
     overflow-x: hidden;
+    position: initial;
 }
 body.toolbar-fixed .toolbar-oriented .toolbar-bar {
     z-index: 10000;
