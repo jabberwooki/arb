@@ -21,6 +21,7 @@
 }
 
 /*Titres des block de la homepage*/
+.page-node-type-document .content,
 .page-node-type-news .content,
 .view-national-resources,
 .view-national-news,
@@ -437,3 +438,58 @@
         }
     }
 }
+
+/*RESSOURCES*/
+.page-node-type-document{
+    .field--name-field-files{
+        .field--label{
+            margin-bottom: 15px;
+        }
+        .field--item{
+            background: #F5F6F8;
+            padding: 15px;
+            border-bottom: 1px solid #1FAD00;
+            margin-bottom: 15px;
+        }
+        .file-icon,
+        .file-link,
+        .file-size{
+            border: none;
+            background: transparent;
+        }
+        .file-icon{
+            .glyphicon-file:before {
+                font-family: 'fontawesome';
+                content: '\f0c5';
+                font-size: 40px;
+                color: #1FAD00;
+                float: left;
+                padding-right: 10px;
+            }
+        }
+        .file-link a{
+            font-size: 14px;
+            font-weight: 700;
+            &:hover{
+                text-decoration: none;
+                color: $brand-secondary; 
+            }
+        }
+    } 
+    .field--name-field-document-category{
+        color: $brand-secondary; 
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+    .field--name-body{
+        padding-top: 10px;
+    }
+    .content{
+        margin-top: 30px;
+        h2{
+            margin-top: 0;
+        }
+    }
+}
+
+
