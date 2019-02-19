@@ -9189,6 +9189,7 @@ body.toolbar-fixed .toolbar-oriented .toolbar-bar {
 }
 
 /*HIGHLIGHT*/
+.path-user .highlighted,
 .page-node-type-document .highlighted,
 .page-node-type-news .highlighted,
 .path-ressources .highlighted,
@@ -9200,6 +9201,7 @@ body.toolbar-fixed .toolbar-oriented .toolbar-bar {
   display: block;
 }
 
+.path-user .highlighted h2,
 .page-node-type-document .highlighted h2,
 .page-node-type-news .highlighted h2,
 .path-ressources .highlighted h2,
@@ -9215,6 +9217,7 @@ body.toolbar-fixed .toolbar-oriented .toolbar-bar {
   margin: 0;
 }
 
+.path-user .highlighted h2:after,
 .page-node-type-document .highlighted h2:after,
 .page-node-type-news .highlighted h2:after,
 .path-ressources .highlighted h2:after,
@@ -9252,6 +9255,7 @@ body.toolbar-fixed .toolbar-oriented .toolbar-bar {
 .main-container {
   margin-top: -80px;
   padding-bottom: 30px;
+  min-height: 500px;
 }
 
 /*Titres des block de la homepage*/
