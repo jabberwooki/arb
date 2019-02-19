@@ -95,18 +95,16 @@
     {#</footer>#}
   {#{% endif %}#}
 
-  {{ drupal_block('backlink_block') }}
+  <div{{ content_attributes.addClass('row content') }}>
+      <div class="col-sm-4 col-sm-offset-1">{{ content.field_files }}</div>
+      <div class="col-sm-6">
+        <h2>{{ label }}</h2>
 
-  <div{{ content_attributes.addClass('content') }}>
-    {{ content.field_image }}
+        {{ content.field_document_category }}
 
-    <h2>{{ label }}</h2>
-
-    {{ content.field_document_category }}
-
-    {{ content.body }}
-
-    {{ content.field_files }}
+        {{ content.body }}
+        </div>
+    
   </div>
 
 </article>

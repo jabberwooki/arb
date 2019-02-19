@@ -18,9 +18,11 @@
 /*.path-frontpage*/ .main-container{
     margin-top: -80px;
     padding-bottom: 30px;
+    min-height: 500px;
 }
 
 /*Titres des block de la homepage*/
+.page-node-type-document .content,
 .page-node-type-news .content,
 .view-national-resources,
 .view-national-news,
@@ -223,12 +225,24 @@
         background: #F5F6F8;
         padding: 15px;
         border-bottom: 1px solid $brand-secondary;
-        margin-bottom: 15px;
+        margin-bottom: 25px;
     }
     p.date-files{
         font-size: 14px;
         font-weight: 500;
         color:$brand-secondary;
+        span{
+            background: $brand-secondary;
+            border-radius: 20px;
+            text-transform: uppercase;
+            color:white;
+            font-weight: 800;
+            font-size: 12px;
+            padding: 2px 14px;
+            position: absolute;
+            top: -10px;
+            right: 5%;
+        }
     }
     h3{
         font-size: 14px;
@@ -437,3 +451,58 @@
         }
     }
 }
+
+/*RESSOURCES*/
+.page-node-type-document{
+    .field--name-field-files{
+        .field--label{
+            margin-bottom: 15px;
+        }
+        .field--item{
+            background: #F5F6F8;
+            padding: 15px;
+            border-bottom: 1px solid #1FAD00;
+            margin-bottom: 15px;
+        }
+        .file-icon,
+        .file-link,
+        .file-size{
+            border: none;
+            background: transparent;
+        }
+        .file-icon{
+            .glyphicon-file:before {
+                font-family: 'fontawesome';
+                content: '\f0c5';
+                font-size: 40px;
+                color: #1FAD00;
+                float: left;
+                padding-right: 10px;
+            }
+        }
+        .file-link a{
+            font-size: 14px;
+            font-weight: 700;
+            &:hover{
+                text-decoration: none;
+                color: $brand-secondary; 
+            }
+        }
+    } 
+    .field--name-field-document-category{
+        color: $brand-secondary; 
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+    .field--name-body{
+        padding-top: 10px;
+    }
+    .content{
+        margin-top: 30px;
+        h2{
+            margin-top: 0;
+        }
+    }
+}
+
+

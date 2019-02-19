@@ -8729,13 +8729,14 @@ p:last-child,
 }
 
 html {
-  position: relative;
+  /*position: relative;*/
   min-height: 100%;
 }
 
 body {
   margin-top: 0;
   overflow-x: hidden;
+  position: initial;
 }
 
 body.toolbar-fixed .toolbar-oriented .toolbar-bar {
@@ -9188,6 +9189,8 @@ body.toolbar-fixed .toolbar-oriented .toolbar-bar {
 }
 
 /*HIGHLIGHT*/
+.path-user .highlighted,
+.page-node-type-document .highlighted,
 .page-node-type-news .highlighted,
 .path-ressources .highlighted,
 .path-actualites .highlighted,
@@ -9198,6 +9201,8 @@ body.toolbar-fixed .toolbar-oriented .toolbar-bar {
   display: block;
 }
 
+.path-user .highlighted h2,
+.page-node-type-document .highlighted h2,
 .page-node-type-news .highlighted h2,
 .path-ressources .highlighted h2,
 .path-actualites .highlighted h2,
@@ -9212,6 +9217,8 @@ body.toolbar-fixed .toolbar-oriented .toolbar-bar {
   margin: 0;
 }
 
+.path-user .highlighted h2:after,
+.page-node-type-document .highlighted h2:after,
 .page-node-type-news .highlighted h2:after,
 .path-ressources .highlighted h2:after,
 .path-actualites .highlighted h2:after,
@@ -9248,9 +9255,11 @@ body.toolbar-fixed .toolbar-oriented .toolbar-bar {
 .main-container {
   margin-top: -80px;
   padding-bottom: 30px;
+  min-height: 500px;
 }
 
 /*Titres des block de la homepage*/
+.page-node-type-document .content h2,
 .page-node-type-news .content h2,
 .view-national-resources h2,
 .view-national-news h2,
@@ -9267,6 +9276,7 @@ body.toolbar-fixed .toolbar-oriented .toolbar-bar {
   position: relative;
 }
 
+.page-node-type-document .content h2:after,
 .page-node-type-news .content h2:after,
 .view-national-resources h2:after,
 .view-national-news h2:after,
@@ -9293,6 +9303,7 @@ body.toolbar-fixed .toolbar-oriented .toolbar-bar {
   padding-top: 5px;
 }
 
+.page-node-type-document .content h2 a,
 .page-node-type-news .content h2 a,
 .view-national-resources h2 a,
 .view-national-news h2 a,
@@ -9306,6 +9317,7 @@ body.toolbar-fixed .toolbar-oriented .toolbar-bar {
   text-decoration: none;
 }
 
+.page-node-type-document .content h2 a:hover,
 .page-node-type-news .content h2 a:hover,
 .view-national-resources h2 a:hover,
 .view-national-news h2 a:hover,
@@ -9569,7 +9581,7 @@ body.toolbar-fixed .toolbar-oriented .toolbar-bar {
   background: #F5F6F8;
   padding: 15px;
   border-bottom: 1px solid #1FAD00;
-  margin-bottom: 15px;
+  margin-bottom: 25px;
 }
 
 .view-national-resources p.date-files,
@@ -9579,6 +9591,22 @@ body.toolbar-fixed .toolbar-oriented .toolbar-bar {
   font-size: 14px;
   font-weight: 500;
   color: #1FAD00;
+}
+
+.view-national-resources p.date-files span,
+.view-regions-resources p.date-files span,
+.region-latest-resources p.date-files span,
+.block-views-blockregions-resources-front-block p.date-files span {
+  background: #1FAD00;
+  border-radius: 20px;
+  text-transform: uppercase;
+  color: white;
+  font-weight: 800;
+  font-size: 12px;
+  padding: 2px 14px;
+  position: absolute;
+  top: -10px;
+  right: 5%;
 }
 
 .view-national-resources h3,
@@ -9881,6 +9909,62 @@ body.toolbar-fixed .toolbar-oriented .toolbar-bar {
 }
 
 .page-node-type-news .content h2 {
+  margin-top: 0;
+}
+
+/*RESSOURCES*/
+.page-node-type-document .field--name-field-files .field--label {
+  margin-bottom: 15px;
+}
+
+.page-node-type-document .field--name-field-files .field--item {
+  background: #F5F6F8;
+  padding: 15px;
+  border-bottom: 1px solid #1FAD00;
+  margin-bottom: 15px;
+}
+
+.page-node-type-document .field--name-field-files .file-icon,
+.page-node-type-document .field--name-field-files .file-link,
+.page-node-type-document .field--name-field-files .file-size {
+  border: none;
+  background: transparent;
+}
+
+.page-node-type-document .field--name-field-files .file-icon .glyphicon-file:before {
+  font-family: 'fontawesome';
+  content: '\f0c5';
+  font-size: 40px;
+  color: #1FAD00;
+  float: left;
+  padding-right: 10px;
+}
+
+.page-node-type-document .field--name-field-files .file-link a {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.page-node-type-document .field--name-field-files .file-link a:hover {
+  text-decoration: none;
+  color: #1FAD00;
+}
+
+.page-node-type-document .field--name-field-document-category {
+  color: #1FAD00;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.page-node-type-document .field--name-body {
+  padding-top: 10px;
+}
+
+.page-node-type-document .content {
+  margin-top: 30px;
+}
+
+.page-node-type-document .content h2 {
   margin-top: 0;
 }
 
