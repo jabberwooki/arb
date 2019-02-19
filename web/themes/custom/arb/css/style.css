@@ -9581,7 +9581,7 @@ body.toolbar-fixed .toolbar-oriented .toolbar-bar {
   background: #F5F6F8;
   padding: 15px;
   border-bottom: 1px solid #1FAD00;
-  margin-bottom: 15px;
+  margin-bottom: 25px;
 }
 
 .view-national-resources p.date-files,
@@ -9591,6 +9591,22 @@ body.toolbar-fixed .toolbar-oriented .toolbar-bar {
   font-size: 14px;
   font-weight: 500;
   color: #1FAD00;
+}
+
+.view-national-resources p.date-files span,
+.view-regions-resources p.date-files span,
+.region-latest-resources p.date-files span,
+.block-views-blockregions-resources-front-block p.date-files span {
+  background: #1FAD00;
+  border-radius: 20px;
+  text-transform: uppercase;
+  color: white;
+  font-weight: 800;
+  font-size: 12px;
+  padding: 2px 14px;
+  position: absolute;
+  top: -10px;
+  right: 5%;
 }
 
 .view-national-resources h3,
