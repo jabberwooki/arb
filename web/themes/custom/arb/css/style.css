@@ -9334,8 +9334,11 @@ body.toolbar-fixed .toolbar-oriented .toolbar-bar {
 
 /*CARTE DE FRANCE*/
 #block-regionsmapblock2 a .region:hover,
-#block-regionsmapblock a .region:hover {
+#block-regionsmapblock2 a:hover,
+#block-regionsmapblock a .region:hover,
+#block-regionsmapblock a:hover {
   fill-opacity: 0.5;
+  text-decoration: none;
 }
 
 #block-regionsmapblock2 .club-arb-link-wrapper,

@@ -54,8 +54,10 @@
 /*CARTE DE FRANCE*/
 #block-regionsmapblock2,
 #block-regionsmapblock{
-    a .region:hover {
+    a .region:hover,
+    a:hover{
         fill-opacity: 0.5;
+        text-decoration: none;
     }
     .club-arb-link-wrapper{
         float: right;
