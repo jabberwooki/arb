@@ -434,6 +434,18 @@
     }
 }
 
+
+/*News et ressources*/
+.path-ressources,
+.path-actualites{
+    .region-content{
+        margin-top: 30px;
+    }
+    .btn-info{
+        @include like-btn-a;
+    }
+}
+
 /*NEWS*/
 .page-node-type-news{
     .field--name-field-news-type{

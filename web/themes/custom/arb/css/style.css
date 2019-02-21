@@ -8855,7 +8855,8 @@ body.toolbar-fixed .toolbar-oriented .toolbar-bar {
 }
 
 .hamburger #sidebar ul li.active > a,
-.hamburger #sidebar ul li a:hover {
+.hamburger #sidebar ul li a:hover,
+.hamburger #sidebar ul li a:focus {
   color: #1FAD00;
   background: #235870;
 }
@@ -9891,6 +9892,29 @@ body.toolbar-fixed .toolbar-oriented .toolbar-bar {
   content: '\f053';
   font-size: 14px;
   padding-right: 10px;
+}
+
+/*News et ressources*/
+.path-ressources .region-content,
+.path-actualites .region-content {
+  margin-top: 30px;
+}
+
+.path-ressources .btn-info,
+.path-actualites .btn-info {
+  background: #1FAD00;
+  color: white;
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 60px;
+  padding: 10px 20px;
+}
+
+.path-ressources .btn-info:hover,
+.path-actualites .btn-info:hover {
+  color: #1D495D;
 }
 
 /*NEWS*/
