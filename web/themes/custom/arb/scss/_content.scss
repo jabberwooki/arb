@@ -304,6 +304,15 @@
         }
     }
 }
+.path-group{
+    .region-highlighted{
+        .slick-slide img{
+            border-bottom-right-radius: 80% 10%;
+            border-bottom-left-radius: 80% 10%;
+        }
+    }
+}
+
 .group--type-national-group,
 .group--type-regional-group{
     ul.nav-tabs{
@@ -340,9 +349,13 @@
     .header-region{
         background: #F5F6F8;
         min-height: 126px;
-        padding: 30px 0;
+        /*padding: 30px 0;*/
+        .region-logo{
+            padding-top: 10px;
+        }
         h2{
-            margin-top: 10px;
+            margin-top: 20px;
+            margin-bottom: 0;
         }
         .field--name-field-process-progress{
             background: $brand-secondary;
@@ -406,6 +419,9 @@
     .members{
         background: #F5F6F8;
         margin-bottom: 30px;
+        /*.slick-list {
+            margin: 0 -15px;
+        }*/
         .views-row.slick-slide{
             background: #fff;
             border: 2px solid $brand-secondary; 
