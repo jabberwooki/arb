@@ -9041,6 +9041,11 @@ body.toolbar-fixed .toolbar-oriented .toolbar-bar {
   transform-style: preserve-3d;
 }
 
+#block-views-block-slides-frontpage-slideshow .field--name-field-image img {
+  border-bottom-right-radius: 80% 10%;
+  border-bottom-left-radius: 80% 10%;
+}
+
 #block-views-block-slides-frontpage-slideshow .slide-infos {
   position: absolute;
   top: 35%;
@@ -9196,10 +9201,20 @@ body.toolbar-fixed .toolbar-oriented .toolbar-bar {
 .path-ressources .highlighted,
 .path-actualites .highlighted,
 .path-regions .highlighted {
-  background-image: url("../images/topography.png");
   min-height: 200px;
   position: relative;
   display: block;
+  border-bottom-right-radius: 50% 10%;
+  border-bottom-left-radius: 50% 10%;
+  /* The image used */
+  background-image: url("../images/topography.png");
+  /* Set a specific height */
+  /*height: 200px; */
+  /* Create the parallax scrolling effect */
+  /*background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;*/
 }
 
 .path-user .highlighted h2,
