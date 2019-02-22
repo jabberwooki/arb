@@ -22,6 +22,7 @@
 }
 
 /*Titres des block de la homepage*/
+.page-node-type-editorial-page .content,
 .page-node-type-document .content,
 .page-node-type-news .content,
 .view-national-resources,
@@ -508,6 +509,19 @@
         text-transform: uppercase;
         font-weight: 700;
     }
+    .field--name-body{
+        padding-top: 10px;
+    }
+    .content{
+        margin-top: 30px;
+        h2{
+            margin-top: 0;
+        }
+    }
+}
+
+/*NODE EDITORIAL*/
+.page-node-type-editorial-page{
     .field--name-body{
         padding-top: 10px;
     }

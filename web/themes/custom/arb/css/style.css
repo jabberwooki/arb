@@ -9195,6 +9195,7 @@ body.toolbar-fixed .toolbar-oriented .toolbar-bar {
 }
 
 /*HIGHLIGHT*/
+.page-node-type-editorial-page .highlighted,
 .path-user .highlighted,
 .page-node-type-document .highlighted,
 .page-node-type-news .highlighted,
@@ -9217,6 +9218,7 @@ body.toolbar-fixed .toolbar-oriented .toolbar-bar {
         background-size: cover;*/
 }
 
+.page-node-type-editorial-page .highlighted h2,
 .path-user .highlighted h2,
 .page-node-type-document .highlighted h2,
 .page-node-type-news .highlighted h2,
@@ -9233,6 +9235,7 @@ body.toolbar-fixed .toolbar-oriented .toolbar-bar {
   margin: 0;
 }
 
+.page-node-type-editorial-page .highlighted h2:after,
 .path-user .highlighted h2:after,
 .page-node-type-document .highlighted h2:after,
 .page-node-type-news .highlighted h2:after,
@@ -9275,6 +9278,7 @@ body.toolbar-fixed .toolbar-oriented .toolbar-bar {
 }
 
 /*Titres des block de la homepage*/
+.page-node-type-editorial-page .content h2,
 .page-node-type-document .content h2,
 .page-node-type-news .content h2,
 .view-national-resources h2,
@@ -9292,6 +9296,7 @@ body.toolbar-fixed .toolbar-oriented .toolbar-bar {
   position: relative;
 }
 
+.page-node-type-editorial-page .content h2:after,
 .page-node-type-document .content h2:after,
 .page-node-type-news .content h2:after,
 .view-national-resources h2:after,
@@ -9319,6 +9324,7 @@ body.toolbar-fixed .toolbar-oriented .toolbar-bar {
   padding-top: 5px;
 }
 
+.page-node-type-editorial-page .content h2 a,
 .page-node-type-document .content h2 a,
 .page-node-type-news .content h2 a,
 .view-national-resources h2 a,
@@ -9333,6 +9339,7 @@ body.toolbar-fixed .toolbar-oriented .toolbar-bar {
   text-decoration: none;
 }
 
+.page-node-type-editorial-page .content h2 a:hover,
 .page-node-type-document .content h2 a:hover,
 .page-node-type-news .content h2 a:hover,
 .view-national-resources h2 a:hover,
@@ -10007,6 +10014,19 @@ body.toolbar-fixed .toolbar-oriented .toolbar-bar {
 }
 
 .page-node-type-document .content h2 {
+  margin-top: 0;
+}
+
+/*NODE EDITORIAL*/
+.page-node-type-editorial-page .field--name-body {
+  padding-top: 10px;
+}
+
+.page-node-type-editorial-page .content {
+  margin-top: 30px;
+}
+
+.page-node-type-editorial-page .content h2 {
   margin-top: 0;
 }
 
