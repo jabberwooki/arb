@@ -10087,3 +10087,60 @@ body.toolbar-fixed .toolbar-oriented .toolbar-bar {
 .footer #block-socialmedialinks-2 a:hover {
   color: white;
 }
+
+/*==========  Non-Mobile First Method  ==========*/
+/* Large Devices, Wide Screens */
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 1024px) {
+  #block-views-block-slides-frontpage-slideshow .slide-infos h2 {
+    font-size: 14px;
+    line-height: initial;
+  }
+  #block-views-block-slides-frontpage-slideshow .slide-infos .field--name-field-text {
+    display: none;
+  }
+  #block-views-block-slides-frontpage-slideshow .slide-infos .field--name-field-link a {
+    font-size: 10px;
+  }
+  #block-views-block-slides-frontpage-slideshow .slide-infos h2:after {
+    margin-top: 10px;
+  }
+  #block-views-block-slides-frontpage-slideshow .slick-prev {
+    left: 10%;
+  }
+  #block-views-block-slides-frontpage-slideshow .slick-next {
+    right: 10%;
+  }
+  #block-views-block-slides-frontpage-slideshow .slide-infos {
+    top: 27%;
+    width: 27%;
+  }
+  #block-regionsmapblock .club-arb-link-wrapper {
+    float: right;
+    margin-top: 5px;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .block-arb-register .arb-register-text:before {
+    display: none;
+  }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+  .block-arb-register {
+    font-size: 20px;
+  }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+  .header a.navbar-brand {
+    font-size: 15px;
+  }
+  .header p.navbar-text {
+    font-size: 11px;
+  }
+}
+
+/* Custom, iPhone Retina */
