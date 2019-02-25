@@ -10115,6 +10115,7 @@ body.toolbar-fixed .toolbar-oriented .toolbar-bar {
     top: 27%;
     width: 27%;
   }
+  #block-regionsmapblock2 .club-arb-link-wrapper,
   #block-regionsmapblock .club-arb-link-wrapper {
     float: right;
     margin-top: 5px;
@@ -10173,6 +10174,13 @@ body.toolbar-fixed .toolbar-oriented .toolbar-bar {
     margin-top: 10px;
     float: left;
   }
+  .search-block-form .wrapper {
+    width: 80%;
+  }
+  .page-node-type-news .content img,
+  #views-bootstrap-national-news-eva-news-tab img,
+  #views-bootstrap-national-news-all-news img,
+  #views-bootstrap-region-news-eva-news-tab img,
   .region-latest-news img,
   #block-views-block-region-news-front-block .slick-slide img {
     width: 100%;
