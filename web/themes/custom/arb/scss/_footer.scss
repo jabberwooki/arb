@@ -77,6 +77,9 @@
     .block-arb-register .arb-register-text:before{
         display: none;
     }
+    #sidebar.active {
+        width: 28% !important;
+    }
 }
 
 /* Small Devices, Tablets */
@@ -84,10 +87,25 @@
     .block-arb-register {
         font-size: 20px;
     }
+    #sidebar.active {
+        width: 28% !important;
+    }
+    .user-logged-in .region-header .menu--account{
+        display: none;
+    }
 }
 
 /* Extra Small Devices, Phones */ 
 @media only screen and (max-width : 480px) {
+    .header .fas.fa-times, .header .fas.fa-bars {
+        font-size: 14px;
+    }
+    .header .name-menu{
+        display: none;
+    }
+    #sidebar.active {
+        width: 98% !important;
+    }
     .header a.navbar-brand{
         font-size: 15px;
     }
