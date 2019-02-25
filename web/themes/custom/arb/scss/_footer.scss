@@ -97,7 +97,9 @@
 
 /* Extra Small Devices, Phones */ 
 @media only screen and (max-width : 480px) {
-    .header .fas.fa-times, .header .fas.fa-bars {
+    .search-button .fa-search,
+    .header .fas.fa-times,
+    .header .fas.fa-bars {
         font-size: 14px;
     }
     .header .name-menu{
