@@ -10141,6 +10141,21 @@ body.toolbar-fixed .toolbar-oriented .toolbar-bar {
   .header p.navbar-text {
     font-size: 11px;
   }
+  .block-arb-register {
+    font-size: 20px;
+    line-height: initial;
+    padding: 15px 0;
+  }
+  .block-arb-register .arb-register-text:after {
+    display: none;
+  }
+  .block-arb-register .arb-register-link a {
+    margin-top: 10px;
+    float: left;
+  }
+  #block-views-block-region-news-front-block .slick-slide img {
+    width: 100%;
+  }
 }
 
 /* Custom, iPhone Retina */
