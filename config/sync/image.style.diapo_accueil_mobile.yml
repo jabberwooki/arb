@@ -1,0 +1,15 @@
+uuid: 44c45466-e9f7-444a-9d48-aea66208957e
+langcode: fr
+status: true
+dependencies: {  }
+name: diapo_accueil_mobile
+label: 'Diapo accueil mobile'
+effects:
+  1491f2e5-0b14-4bbf-b595-2cb7dae8c198:
+    uuid: 1491f2e5-0b14-4bbf-b595-2cb7dae8c198
+    id: image_scale
+    weight: 1
+    data:
+      width: 760
+      height: 490
+      upscale: false

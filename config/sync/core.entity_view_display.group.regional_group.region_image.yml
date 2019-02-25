@@ -7,13 +7,16 @@ dependencies:
     - field.field.group.regional_group.field_code
     - field.field.group.regional_group.field_image
     - field.field.group.regional_group.field_internet_site
+    - field.field.group.regional_group.field_logo
     - field.field.group.regional_group.field_presentation
     - field.field.group.regional_group.field_process_progress
+    - field.field.group.regional_group.field_srb_process_progress
+    - field.field.group.regional_group.field_ten_process_progress
     - group.type.regional_group
-    - image.style.region_slide
+    - responsive_image.styles.arb_bandeau_region
   module:
     - ds
-    - image
+    - responsive_image
 third_party_settings:
   ds:
     layout:
@@ -39,22 +42,32 @@ bundle: regional_group
 mode: region_image
 content:
   field_image:
-    type: image
+    type: responsive_image
     weight: 0
     region: ds_content
     label: hidden
     settings:
-      image_style: region_slide
+      responsive_image_style: arb_bandeau_region
       image_link: ''
-    third_party_settings: {  }
+    third_party_settings:
+      ds:
+        ds_limit: ''
 hidden:
   changed: true
   created: true
   field_code: true
   field_internet_site: true
+  field_logo: true
   field_presentation: true
   field_process_progress: true
+  field_srb_process_progress: true
+  field_ten_process_progress: true
   label: true
   langcode: true
+  region_members_eva_dashboard_tab: true
   region_news_entity_view_1: true
+  region_news_eva_dashboard_tab: true
+  region_news_eva_news_tab: true
+  regions_resources_eva_dashboard_tab: true
+  regions_resources_eva_resources_tab: true
   uid: true
