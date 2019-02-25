@@ -10173,6 +10173,7 @@ body.toolbar-fixed .toolbar-oriented .toolbar-bar {
     margin-top: 10px;
     float: left;
   }
+  .region-latest-news img,
   #block-views-block-region-news-front-block .slick-slide img {
     width: 100%;
   }
