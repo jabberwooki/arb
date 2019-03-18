@@ -26,6 +26,7 @@
 	l-0.1-0.3l0.5,0.6l0.1,0l-1.3,1.6l1.8,0.6l1.2,1.9l7.3-0.7l1.4,0.3l-0.7,0.6l0.1,1.4l0.4,0.3l0.7-0.1l1.1-1.1l0.7,0.8h2.2l2.6-1.3
 	l3.9-1.5l0.1-3.8l0.9-0.5l2.5-1.3l8.3-0.4l0.6-1.6l1.3-1.2l3-0.4l0.1-1.4l1.7,0.2l1.2,1.6l2.9,0.7l0.6-1.3l0.7-2.4l1.7-4.2l0.8-0.5
 	l2.4,0.3v-3.9l-0.9-0.9v-3.8l-0.4-1.4v-2L98.4,107.1z "/>
+	<text transform="matrix(1 0 0 1 34.3305 113.7384)"><tspan x="0" y="0" class="text-region st4 st5 st6">Bretagne</tspan></text>
 </a>
 <path class="st1" d="M51.2,132.9l1.2,1.4l-0.5,0.8l-1.6-0.5l-2-1l2-0.3l-0.3-0.8L51.2,132.9z M98.4,107.1v-2.9l-0.7-0.5l0.1-3.8
 	l-1.2-0.6l-1.6,0l-1.4-1.2l-1.5,1.8l-1.2,0.1l-1,1.4l-0.9-0.2l-2.2-1.9L86,96.9l-0.4-1.8h-6.7l-2.2-1.3l1.7-2.3l-3.7-0.1L73.4,93v0
@@ -57,6 +58,8 @@
 	130.4,139.5 129.8,138.7 130.2,137.9 131,136.3 133.5,138.1 135.3,138.1 134.6,135.7 135.9,136.6 136.9,135.1 140.9,134 
 	140.2,132.3 141,131.3 143,130.5 145,128 145,125.6 146.3,125.6 146.8,123.5 147,120.6 145.7,119.4 146.7,117.7 148.4,115.5 
 	146.4,114.1 144.6,113.8 142.7,111 141.9,111 141.9,111.4 139.2,111.4 137.8,109.4 135.6,108.6 135,103.9 133.8,102.3 130,102.4 "/>
+	<text transform="matrix(1 0 0 1 81.713 140.4924)"><tspan x="0" y="0" class="st4 st5 st6">Pays de</tspan></text>
+	<text transform="matrix(1 0 0 1 81.713 148.4924)"><tspan x="0" y="0" class="st4 st5 st6">la Loire</tspan></text>
 </a>
 
 <polygon class="st1" points="126.4,105.8 124.6,105.6 124.4,105.6 123.7,103.3 122,102.6 121.5,99.7 120.2,98.5 118.6,98.7 
@@ -96,6 +99,7 @@
 	318.8,292.1 319.8,290.9 321.2,291.2 321.4,287 324.3,286.7 327,284.3 329.5,284.3 329.6,282.7 332.1,281.3 330.7,278.1 
 	332.7,276.4 332.3,274.5 335.2,273.6 336,270.5 335.6,268.4 334.9,267.2 334.4,265.3 332.2,265.5 325.9,267.7 324,267.7 320.6,265 
 	317.1,264 315.2,264 315.2,261.7 312.4,259.9 312.4,257.5 "/>
+	<text transform="matrix(1 0 0 1 277.5321 285.4204)"><tspan x="0" y="0" class="st4 st5 st6">PACA</tspan></text>
 </a>
 
 <polygon class="st1" points="314.6,257.2 313.2,256 311.8,255.6 311.2,254 311.7,252.9 314.2,250.3 313.8,248.5 314,248.2 
@@ -129,6 +133,7 @@
 	c0,0.5-0.6,1.8-0.9,2.2l-0.1,0.1l1.4,1.6l2.5,1.5l4.6,1.2l1.3,0.5l1,0.4l-0.9,1.6l2.4-0.1l0.4,0.9h2.4l0.6-2.9l-1.2-0.2l1.8-1.9
 	l-0.7-0.8l0.1-1l2.4-1.3l0.2-1.8l-1.9-0.2l-0.8,0.7v-0.7l2.1-0.1l0.7-1.7l0.5-4.7l0,0l-0.4-2l0-1.8l0,0l-0.1-4l3.2-4.5L336.9,352.2
 	L336.9,352.2L336.9,352.2L336.9,352.2L336.9,352.2z"/>
+	<text transform="matrix(1 0 0 1 310.6331 354.6604)"><tspan x="0" y="0" class="st4 st5 st6">Corse</tspan></text>
 </a>
 
 <path class="st1" d="M336.9,352.2L336.9,352.2l-0.1-0.1l-1.3-2.5l-0.4-8l-1-1.5l0,0l-1.7-1.3l-0.3-4.8l0.8-2.3L332,328l-0.7-2.9
@@ -155,6 +160,7 @@
 	160.1,92.1 161,91.1 161,89.1 163.6,87.8 163.6,85.6 164.4,85 164.3,84.4 165.2,83.5 163.8,83.2 163.8,82.2 163.1,81.2 163.5,80.7 
 	167.3,79.7 168.3,78 169.1,75 170.1,73.8 170.3,72.5 171.3,73 172.6,72.7 171.8,71.4 171.4,68.3 170.2,67.3 170.5,66.2 171.5,64.5 
 	172.2,63.2 170.7,63.2 170.7,61.1 169.9,59.8 170.4,57.2 171.1,55.6 170,55.6 170.4,54.6 "/>
+	<text transform="matrix(1 0 0 1 99.1441 85.1764)"><tspan x="0" y="0" class="st4 st5 st6">Normandie</tspan></text>
 </a>
 
 <polygon class="st1" points="171.8,52.9 170.4,50.4 170,48 164.1,42.2 163.4,40.8 161.9,40.9 160.6,40.4 159.7,41.5 154,45.9 
@@ -186,6 +192,8 @@
 	224.5,67.3 225.8,66.7 228.1,68.2 229.2,67.9 229.1,63.2 229.5,61.6 230.1,59.6 228.4,58.7 228.7,57.9 231.2,57.3 231.2,55.6 
 	233.2,54.5 233.8,52.7 233.1,51.6 233.2,49.8 234.5,48.7 233.3,46.3 233.6,43.8 231.4,43.8 231.4,43.8 230.7,43.8 230.6,42.7 
 	233.2,41.1 232.8,38.3 230.5,37.7 230.9,37.2 230.9,35.4 "/>
+	<text transform="matrix(1 0 0 1 176.4081 48.1924)"><tspan x="0" y="0" class="st4 st5 st6">Hauts de -</tspan></text>
+	<text transform="matrix(1 0 0 1 176.4081 56.1924)"><tspan x="0" y="0" class="st4 st5 st6">France</tspan></text>
 </a>
 
 <polygon class="st1" points="233,33.9 232.4,32.6 228,29.2 220.4,29.6 219.6,30.9 219,30.9 219.1,26.4 216.8,23.7 215.2,24 
@@ -221,6 +229,7 @@
 	l-0.7,1.2l0.3,1.9l1.9-0.3l0.4,1.3l0.7,3l1.5-0.2l-0.2,1.3l1.1,0.9l5.1-0.1l2.7-2.1l0.1-3l1.4-1.8l-1.8-2.1l-0.9-2l1-1.4v-3.4
 	l0.6-1.6l0-2.7l1.2-1.8l-1.4-1.9l-0.1-3.5l0,0l0-0.3l0-0.1l0,0l0-0.2l3.5-6.8l0-0.1l-0.4-3.9l1.6-5.2l0.4-4.5l3.5-2.5v-1.6l1.2-1.6
 	h1.1l1.3-1.3l-0.3-2.3l1.1-3.1L336.8,78.8z"/>
+	<text transform="matrix(1 0 0 1 246.7151 96.1624)"><tspan x="0" y="0" class="st4 st5 st6">Grand-Est</tspan></text>
 </a>
 
 <path class="st1" d="M336.8,78.8l-2.2-1.8l-3.4-0.4l-3-1.5l-2,1.2l-1-1.1h-1.5l-2.1,0.6l0,0l-0.5,0.1l-0.1,0l0,0l0,0l-0.8-1.2
@@ -264,6 +273,7 @@
 	240.5,297.9 241.7,295 246.2,292.3 245.2,290.9 246.2,288.1 250.2,288.7 251.2,281.4 256.5,278.4 256.5,276.5 252.5,272.5 
 	252.5,269.5 250.2,265.6 245.2,262.8 244.8,265 243.2,265.2 242.7,263.1 240.4,263.5 240.1,266.1 238.8,265.6 235.5,263.5 
 	234.2,264.1 234.2,260.6 "/>
+	<text transform="matrix(1 0 0 1 163.3671 289.4134)"><tspan x="0" y="0" class="st4 st5 st6">Occitanie</tspan></text>
 </a>
 
 <polygon class="st1" points="232,259.2 231.4,258.9 231.8,256.1 229.5,253.6 228.6,248.7 225.1,244.2 222.6,244.8 222.1,243 
@@ -310,6 +320,8 @@
 	l1.7-2l-1.6-1.3l0.1-1.5l0.8-2.4l2.7-0.3l2.4-1l0.2-0.5l0,0l0-0.1l0.1-0.3h0l0.1-0.3l-1.1-0.6v-1.3h3.2l1.2-1.2l-0.7-1.2l1.5-1.2
 	l1.2,0.5l1.7-1.5l3.1,0.5l1.1-1.2l2.7,0.1v-3.3l-1.1-0.6l-0.6-1.8l-2.8-0.3l-0.3-0.5l0.5-2.7l0.8-0.7l2.3-0.2l0.7,0.7l0.4,2l2.7-0.3
 	l0.3-2.1l1-0.5l2.9,0.1l-0.1-0.2l3.7-1.5l1.4,0.9h1.7l0.1-1.7l1.6-0.9l0.7-0.8l3.5-1.4l0.4-2.5l-0.7-1L318.3,218.7z"/>
+	<text transform="matrix(1 0 0 1 216.7921 215.7424)"><tspan x="0" y="0" class="st4 st5 st6">Auvergne -</tspan></text>
+	<text transform="matrix(1 0 0 1 216.7921 223.7424)"><tspan x="0" y="0" class="st4 st5 st6">Rhône-Alpes</tspan></text>
 </a>
 
 <path class="st1" d="M318.3,218.7l-1.9-0.7l-0.5-1.9l-3.6-2.1c0-0.8,0.2-4-0.2-4.8l0.3-0.2h-0.6c-0.4,0.1-2,0.2-2.4,0.3l-1.9-2.2
@@ -353,6 +365,8 @@
 	201.9,136.9 201.5,134.8 199.8,132.4 199.4,131.2 201.9,131.2 203.9,129.7 204.2,127.6 203.1,126.3 206.5,123.4 206.5,120.9 
 	204.7,119 204,116.8 201.5,114.4 198.2,116.2 198,115.3 196.2,115.1 195.8,116.2 194.7,116.4 191,116.3 189.6,117.2 188.7,116.4 
 	190.7,115 "/>
+	<text transform="matrix(1 0 0 1 143.7381 142.6894)"><tspan x="0" y="0" class="st4 st5 st6">Centre-</tspan></text>
+	<text transform="matrix(1 0 0 1 143.7381 150.6894)"><tspan x="0" y="0" class="st4 st5 st6">Val de Loire</tspan></text>
 </a>
 
 <polygon class="st1" points="190.6,112.5 188.9,111.7 187.5,109.6 183.9,109.4 182.4,108.1 180.6,109.8 177.1,110.1 177.1,110.1 
@@ -397,6 +411,8 @@
 	l1.3-2.3l-1.2-1.4v-1.3l1-0.8l0,0l0.1,0l2.8-1.3l3.3,1.5l2.7,3.8l1.7-0.2l2.1-2.1l0.7,1.3l1.6-1.6l1.8,0.5l0.1,0.6l2.1-1.5l-0.6-1.5
 	l-0.7-0.8l0.9-1.1h1.1l0.7-2.3l0.6-1.1l-0.4-2.4l1.7-2.3l2.5-1.5l0.1-3.5l0.9,0.5l1.4,1.5h1.5l1-1.1l-0.7-1.7l0.7-2.4l-0.4-2.4
 	l-0.8-0.9v-1.8l1.2-2l-0.3-2l-0.2-0.2l0,0l-2.9-2.9l-0.2-1l2.4-1.4l1.6-0.8l0.4-1.9l1.6-1.2L193,198z"/>
+	<text transform="matrix(1 0 0 1 119.1821 215.7424)"><tspan x="0" y="0" class="st4 st5 st6">Nouvelle -</tspan></text>
+	<text transform="matrix(1 0 0 1 119.1821 223.7424)"><tspan x="0" y="0" class="st4 st5 st6">Aquitaine</tspan></text>
 </a>
 
 <path class="st1" d="M89.4,204.9l-0.2-0.8l1.2-1.6l0.1,1.9l0.2,0.4H89.4z M193,198l-1.1-1.4l-0.3-4.1l-1.5-3.6l-1.5-0.5l-1.2-2.1
@@ -443,6 +459,8 @@
 	288.4,175.7 287,175.1 287.1,174.4 287.1,174.4 295.3,166.7 295.4,166.7 295.1,160.3 297.9,158.9 299.9,157.9 301.9,156.1 
 	302,153.6 303.8,152.7 308.2,147.6 307.6,146.1 308.9,145.5 310.8,143.2 309.6,142 306.5,142.7 306.5,142.4 309.5,138.9 
 	309.5,138.9 309.8,138.6 311.7,138.3 311,135.2 310.5,133.5 308.7,133.8 308.5,132.5 309.1,131.3 309.2,129.6 308.8,128.6 "/>
+	<text transform="matrix(1 0 0 1 216.7921 150.6474)"><tspan x="0" y="0" class="st4 st5 st6">Bourgogne-</tspan></text>
+	<text transform="matrix(1 0 0 1 216.7921 158.6474)"><tspan x="0" y="0" class="st4 st5 st6">Franche-Comté</tspan></text>
 </a>
 
 <polygon class="st1" points="306.3,126.6 304.2,126.5 303.8,125.6 303.7,125.5 299.4,123.2 298.3,121.9 296.9,121 295.7,121.6 
@@ -478,6 +496,8 @@
 	197.7,115.7 198,116.8 201.5,114.8 204.5,111.3 203.4,110.1 204.3,108.3 206.5,107.1 211.8,107.4 212.9,106.5 213.2,106.8 
 	213.5,104.1 214,101.5 215,100.3 215.1,98.7 217,97.9 217,96.5 214.9,96.7 214.6,95.9 215.3,94.8 214.7,92.6 213.7,92 213.9,90.3 
 	215,89.6 214.9,88.8 215.4,88.1 212.9,87.6 212.2,86 211,85.6 207.5,82.2 "/>
+	<text transform="matrix(1 0 0 1 176.4081 93.6424)"><tspan x="0" y="0" class="st4 st5 st6">Ile-de</text>
+	<text transform="matrix(1 0 0 1 176.4081 101.6424)"><tspan x="0" y="0" class="st4 st5 st6">France</tspan></text>
 </a>
 
 <polygon class="st1" points="207.1,79.2 205.5,78 204.5,78.5 203.3,79.5 202,79.1 199.7,80.1 197.8,79 196.9,80.1 195.9,80.2 
@@ -496,6 +516,7 @@
 	l-1.8-1l-3.2-1.7h-3.5l-1.6,2.5l0.1,3.6l0.4,1.5l0.1,0.3l0.2,2.8l1.1,5.1l1,2.7c0,0,0.7,0.7,0.9,1c0.2,0.3,1,1.5,1,1.5l1.6,0.2
 	l0.5-0.9l0.1,0.1h1.6l2.5-2.1l1.6-2.1l-0.1-5l-0.9-2.6l0.3-2.2l1.7-0.3h0l0.5,0.6l1.4,0.3l1.1,0.4l0.1-0.1l0.1,0.4l2.2,0.1l3.7-0.7
 	l2.1-1.5l3.7-0.1l3.1-1.1l-1.9-1.1l-0.2-1.1l-2.5-1.6l-4.7-0.1l-1.4-2.4v-2.7l-1-2.1L389.5,15.8z"/>
+	<text transform="matrix(1 0 0 1 357.9951 56.9804)"><tspan x="0" y="0" class="st4 st5 st6">Guadeloupe</tspan></text>
 </a>
 
 <a href="/group/{{ data['FR-MQ'].id }}">
@@ -506,6 +527,7 @@
 	c0,0-1.8-1.8-1.8-2.2c0-0.4-1.7-1.3-1.7-1.3l-0.2-1.6c0,0,0.4-0.5,1-0.7c0.5-0.2-0.3-1.1-0.3-1.1l-1,0.2l-1.6,0.4l-0.4-0.5l-0.6-0.7
 	l0.1-0.9l1.2,0.2l1-1.1l-1.4-1.1l-1.1-0.3l-0.3-0.6v-0.7l1.2-0.5l0.8,0.7l1.5,0.6l0.7-0.9v-1l0.6-0.8l-0.5-0.6l-1.2-0.5l-0.7,0.7
 	l-2.9,0.3l-1,0.7l-1.3-0.4l-1.5-2.4l-3.4-3.4l-1.9-0.8L380.6,71.6z"/>
+	<text transform="matrix(1 0 0 1 361.0161 117.9574)"><tspan x="0" y="0" class="st4 st5 st6">Martinique</tspan></text>
 </a>
 
 <a href="/group/{{ data['FR-GF'].id }}">
@@ -513,6 +535,7 @@
 	l-1.4,1.9l-1.7,5l0.2,7l-2.1,4l-3.3,3l1,1.2l2.5,1.7l2.3,1.5l3.3-1.1l3.5-2.3l7.2-0.2l2.7,2.1l2.9,0.2l2.9,0.7l4.1-3.6l4.8-9
 	l3.5-7.8l3.5-5.7l3.7-5.2l2.1-4l-1.6-3.6l-1.2-5.1l-2.7-1.1l-3.1-2.3l-2.5-2.5l-3.3-2.3l-2.3-0.8l-6.6-5l-4.3-1.7l-4.1-0.6
 	c0,0-1.9-0.8-2.9-1.3C378.9,129.4,375.7,128.5,374.7,128.6z"/>
+	<text transform="matrix(1 0 0 1 370.7181 208.0364)"><tspan x="0" y="0" class="st4 st5 st6">Guyane</tspan></text>
 </a>
 
 <a href="/group/{{ data['FR-RE'].id }}">
@@ -521,6 +544,7 @@
 	l0.2-0.1l-0.3,0.2l3.7,2.3l2.9,1l3.1,0.5l2.5,0.9l1.6,0.3c0,0,2.4-0.5,2.7-0.5c0.3,0,2.8-0.5,2.8-0.5l2.6-0.8l1.7-1.6l-0.2-2.8
 	l0.3-1.8l0.7-1l1.1-1.5l0.6-1.9l-0.2-1.9l-1.2-0.7l-1.6-0.7l-0.7-0.1l-1.2-1.7c-0.3-0.2-1.7-1.8-1.8-2c-0.1-0.2-1-2.4-1-2.4
 	l-0.3-3.3L399,299l-2.1-1.2c0,0-1.7-1-2-1c-0.3,0-3.1-0.6-3.3-0.6c-0.2,0-2.3,0.1-2.3,0.2l-0.3-0.1L387,295.3z"/>
+	<text transform="matrix(1 0 0 1 370.7181 338.9292)"><tspan x="0" y="0" class="st4 st5 st6">La Réunion</tspan></text>
 </a>
 
 <a href="/group/{{ data['FR-YT'].id }}">
@@ -558,31 +582,7 @@
 	c-0.7-0.3-1,0-1.3,0.5c-0.2,0.3-0.6,0.3-0.9,0.5c-0.3,0.2-0.1,0.9,0,1.2c0.3,0.5,0.1,0.6-0.5,0.6c-0.5,0-0.7,0.8-0.5,1.2
 	c0.2,0.5,0.7,0.6,0.7,1.1c0,0.5,0.5,0.7,0.9,0.9c0.3,0.1,0.5,0.2,0.7,0.4c0.2,0.1,0.3,0.3,0.5,0.3c0.2,0,0.5-0.1,0.7,0.1
 	C394.4,265.6,394.1,265.7,394.1,266.1"/>
+	<text transform="matrix(1 0 0 1 370.7181 282.8924)"><tspan x="0" y="0" class="st4 st5 st6">Mayotte</tspan></text>
 </a>
 
-<text transform="matrix(1 0 0 1 99.1441 85.1764)"><tspan x="0" y="0" class="st4 st5 st6">No</tspan><tspan x="11.6" y="0" class="st4 st5 st6">r</tspan><tspan x="14.8" y="0" class="st4 st5 st6">ma</tspan><tspan x="28" y="0" class="st4 st5 st6">n</tspan><tspan x="33.5" y="0" class="st4 st5 st6">die</tspan></text>
-<text transform="matrix(1 0 0 1 34.3305 113.7384)"><tspan x="0" y="0" class="st4 st5 st6">B</tspan><tspan x="6.1" y="0" class="st4 st5 st6">r</tspan><tspan x="9.2" y="0" class="st4 st5 st6">et</tspan><tspan x="17.5" y="0" class="st4 st5 st6">a</tspan><tspan x="22.3" y="0" class="st4 st5 st6">g</tspan><tspan x="27.8" y="0" class="st4 st5 st6">n</tspan><tspan x="33.3" y="0" class="st4 st5 st6">e</tspan></text>
-<text transform="matrix(1 0 0 1 176.4081 48.1924)"><tspan x="0" y="0" class="st4 st5 st6">Hauts</tspan><tspan x="24" y="0" class="st4 st5 st6">-</tspan><tspan x="27.2" y="0" class="st4 st5 st6">d</tspan><tspan x="32.6" y="0" class="st4 st5 st6">e</tspan><tspan x="37.6" y="0" class="st4 st5 st6">-</tspan></text>
-<text transform="matrix(1 0 0 1 176.4081 56.1924)"><tspan x="0" y="0" class="st4 st5 st6">F</tspan><tspan x="5" y="0" class="st4 st5 st6">r</tspan><tspan x="8.2" y="0" class="st4 st5 st6">a</tspan><tspan x="13" y="0" class="st4 st5 st6">n</tspan><tspan x="18.5" y="0" class="st4 st5 st6">c</tspan><tspan x="23" y="0" class="st4 st5 st6">e</tspan></text>
-<text transform="matrix(1 0 0 1 176.4081 93.6424)"><tspan x="0" y="0" class="st4 st5 st6">Il</tspan><tspan x="4.7" y="0" class="st4 st5 st6">e-</tspan><tspan x="12.8" y="0" class="st4 st5 st6">d</tspan><tspan x="18.3" y="0" class="st4 st5 st6">e</tspan><tspan x="23.2" y="0" class="st4 st5 st6">-</tspan></text>
-<text transform="matrix(1 0 0 1 176.4081 101.6424)"><tspan x="0" y="0" class="st4 st5 st6">F</tspan><tspan x="5" y="0" class="st4 st5 st6">r</tspan><tspan x="8.2" y="0" class="st4 st5 st6">a</tspan><tspan x="13" y="0" class="st4 st5 st6">n</tspan><tspan x="18.5" y="0" class="st4 st5 st6">c</tspan><tspan x="23" y="0" class="st4 st5 st6">e</tspan></text>
-<text transform="matrix(1 0 0 1 246.7151 96.1624)"><tspan x="0" y="0" class="st4 st5 st6">G</tspan><tspan x="6.2" y="0" class="st4 st5 st6">r</tspan><tspan x="9.4" y="0" class="st4 st5 st6">a</tspan><tspan x="14.2" y="0" class="st4 st5 st6">n</tspan><tspan x="19.7" y="0" class="st4 st5 st6">d-</tspan><tspan x="28.2" y="0" class="st4 st5 st6">E</tspan><tspan x="33.5" y="0" class="st4 st5 st6">st</tspan></text>
-<text transform="matrix(1 0 0 1 216.7921 150.6474)"><tspan x="0" y="0" class="st4 st5 st6">Bou</tspan><tspan x="16.6" y="0" class="st4 st5 st6">r</tspan><tspan x="19.7" y="0" class="st4 st5 st6">gog</tspan><tspan x="35.9" y="0" class="st4 st5 st6">n</tspan><tspan x="41.3" y="0" class="st4 st5 st6">e</tspan><tspan x="46.3" y="0" class="st4 st5 st6">-</tspan></text>
-<text transform="matrix(1 0 0 1 216.7921 158.6474)"><tspan x="0" y="0" class="st4 st5 st6">F</tspan><tspan x="5" y="0" class="st4 st5 st6">r</tspan><tspan x="8.2" y="0" class="st4 st5 st6">a</tspan><tspan x="13" y="0" class="st4 st5 st6">n</tspan><tspan x="18.5" y="0" class="st4 st5 st6">c</tspan><tspan x="23" y="0" class="st4 st5 st6">h</tspan><tspan x="28.5" y="0" class="st4 st5 st6">e</tspan><tspan x="33.4" y="0" class="st4 st5 st6">-</tspan><tspan x="36.6" y="0" class="st4 st5 st6">C</tspan><tspan x="42.2" y="0" class="st4 st5 st6">om</tspan><tspan x="55.7" y="0" class="st4 st5 st6">t</tspan><tspan x="58.9" y="0" class="st4 st5 st6">é</tspan></text>
-<text transform="matrix(1 0 0 1 143.7381 142.6894)"><tspan x="0" y="0" class="st4 st5 st6">C</tspan><tspan x="5.6" y="0" class="st4 st5 st6">ent</tspan><tspan x="19.3" y="0" class="st4 st5 st6">r</tspan><tspan x="22.5" y="0" class="st4 st5 st6">e</tspan><tspan x="27.4" y="0" class="st4 st5 st6">-</tspan></text>
-<text transform="matrix(1 0 0 1 143.7381 150.6894)"><tspan x="0" y="0" class="st4 st5 st6">V</tspan><tspan x="5.3" y="0" class="st4 st5 st6">a</tspan><tspan x="10" y="0" class="st4 st5 st6 st7">l</tspan><tspan x="14.4" y="0" class="st4 st5 st6">d</tspan><tspan x="19.9" y="0" class="st4 st5 st6 st7">e</tspan><tspan x="26.9" y="0" class="st4 st5 st6">L</tspan><tspan x="31.6" y="0" class="st4 st5 st6">oi</tspan><tspan x="38.9" y="0" class="st4 st5 st6">r</tspan><tspan x="42.1" y="0" class="st4 st5 st6">e</tspan></text>
-<text transform="matrix(1 0 0 1 81.713 140.4924)"><tspan x="0" y="0" class="st4 st5 st6">P</tspan><tspan x="5.7" y="0" class="st4 st5 st6">a</tspan><tspan x="10.4" y="0" class="st4 st5 st6">y</tspan><tspan x="14.8" y="0" class="st4 st5 st6 st7">s</tspan><tspan x="21" y="0" class="st4 st5 st6">de</tspan></text>
-<text transform="matrix(1 0 0 1 81.713 148.4924)"><tspan x="0" y="0" class="st4 st5 st6">l</tspan><tspan x="2.2" y="0" class="st4 st5 st6 st7">a</tspan><tspan x="9.2" y="0" class="st4 st5 st6">L</tspan><tspan x="13.9" y="0" class="st4 st5 st6">oi</tspan><tspan x="21.2" y="0" class="st4 st5 st6">r</tspan><tspan x="24.4" y="0" class="st4 st5 st6">e</tspan></text>
-<text transform="matrix(1 0 0 1 119.1821 215.7424)"><tspan x="0" y="0" class="st4 st5 st6">Nou</tspan><tspan x="17" y="0" class="st4 st5 st6">v</tspan><tspan x="21.4" y="0" class="st4 st5 st6">ell</tspan><tspan x="30.7" y="0" class="st4 st5 st6">e</tspan><tspan x="35.7" y="0" class="st4 st5 st6">-</tspan></text>
-<text transform="matrix(1 0 0 1 119.1821 223.7424)"><tspan x="0" y="0" class="st4 st5 st6">A</tspan><tspan x="5.8" y="0" class="st4 st5 st6">quitai</tspan><tspan x="29.2" y="0" class="st4 st5 st6">n</tspan><tspan x="34.7" y="0" class="st4 st5 st6">e</tspan></text>
-<text transform="matrix(1 0 0 1 216.7921 215.7424)"><tspan x="0" y="0" class="st4 st5 st6">A</tspan><tspan x="5.8" y="0" class="st4 st5 st6">u</tspan><tspan x="11.2" y="0" class="st4 st5 st6">v</tspan><tspan x="15.6" y="0" class="st4 st5 st6">e</tspan><tspan x="20.5" y="0" class="st4 st5 st6">r</tspan><tspan x="23.6" y="0" class="st4 st5 st6">g</tspan><tspan x="29.2" y="0" class="st4 st5 st6">n</tspan><tspan x="34.6" y="0" class="st4 st5 st6">e</tspan><tspan x="39.6" y="0" class="st4 st5 st6">-</tspan></text>
-<text transform="matrix(1 0 0 1 216.7921 223.7424)"><tspan x="0" y="0" class="st4 st5 st6">R</tspan><tspan x="5.8" y="0" class="st4 st5 st6">h</tspan><tspan x="11.3" y="0" class="st4 st5 st6">ô</tspan><tspan x="16.4" y="0" class="st4 st5 st6">n</tspan><tspan x="21.8" y="0" class="st4 st5 st6">e</tspan><tspan x="26.8" y="0" class="st4 st5 st6">-</tspan><tspan x="29.7" y="0" class="st4 st5 st6">Alpes</tspan></text>
-<text transform="matrix(1 0 0 1 163.3671 289.4134)"><tspan x="0" y="0" class="st4 st5 st6">O</tspan><tspan x="6.7" y="0" class="st4 st5 st6">c</tspan><tspan x="11.2" y="0" class="st4 st5 st6">citanie</tspan></text>
-<text transform="matrix(1 0 0 1 277.5321 285.4204)"><tspan x="0" y="0" class="st4 st5 st6">P</tspan><tspan x="5.4" y="0" class="st4 st5 st6">A</tspan><tspan x="11.2" y="0" class="st4 st5 st6">C</tspan><tspan x="16.9" y="0" class="st4 st5 st6">A</tspan></text>
-<text transform="matrix(1 0 0 1 310.6331 354.6604)"><tspan x="0" y="0" class="st4 st5 st6">C</tspan><tspan x="5.6" y="0" class="st4 st5 st6">o</tspan><tspan x="10.7" y="0" class="st4 st5 st6">r</tspan><tspan x="14" y="0" class="st4 st5 st6">se</tspan></text>
-<text transform="matrix(1 0 0 1 357.9951 56.9804)"><tspan x="0" y="0" class="st4 st5 st6">Gu</tspan><tspan x="11.6" y="0" class="st4 st5 st6">a</tspan><tspan x="16.4" y="0" class="st4 st5 st6">deloupe</tspan></text>
-<text transform="matrix(1 0 0 1 361.0161 117.9574)"><tspan x="0" y="0" class="st4 st5 st6">Ma</tspan><tspan x="12.4" y="0" class="st4 st5 st6">r</tspan><tspan x="15.8" y="0" class="st4 st5 st6">tinique</tspan></text>
-<text transform="matrix(1 0 0 1 370.7181 208.0364)"><tspan x="0" y="0" class="st4 st5 st6">Gu</tspan><tspan x="11.6" y="0" class="st4 st5 st6">y</tspan><tspan x="15.9" y="0" class="st4 st5 st6">a</tspan><tspan x="20.7" y="0" class="st4 st5 st6">n</tspan><tspan x="26.2" y="0" class="st4 st5 st6">e</tspan></text>
-<text transform="matrix(1 0 0 1 370.7181 282.8924)"><tspan x="0" y="0" class="st4 st5 st6">M</tspan><tspan x="7.6" y="0" class="st4 st5 st6">a</tspan><tspan x="12.4" y="0" class="st4 st5 st6">y</tspan><tspan x="16.7" y="0" class="st4 st5 st6">o</tspan><tspan x="21.8" y="0" class="st4 st5 st6">t</tspan><tspan x="25" y="0" class="st4 st5 st6">t</tspan><tspan x="28.2" y="0" class="st4 st5 st6">e</tspan></text>
-<text transform="matrix(1 0 0 1 370.7181 338.9292)"><tspan x="0" y="0" class="st4 st5 st6">L</tspan><tspan x="4.8" y="0" class="st4 st5 st6 st7">a</tspan><tspan x="11.7" y="0" class="st4 st5 st6">Réunion</tspan></text>
 </svg>

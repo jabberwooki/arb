@@ -7,13 +7,13 @@ dependencies:
     - field.field.node.slide.field_image
     - field.field.node.slide.field_link
     - field.field.node.slide.field_text
-    - image.style.frontpage_slide
     - node.type.slide
+    - responsive_image.styles.arb_responsive
   module:
     - ds
     - field_group
-    - image
     - link
+    - responsive_image
     - user
 third_party_settings:
   ds:
@@ -86,12 +86,12 @@ bundle: slide
 mode: teaser
 content:
   field_image:
-    type: image
+    type: responsive_image
     weight: 0
     region: ds_content
     label: hidden
     settings:
-      image_style: frontpage_slide
+      responsive_image_style: arb_responsive
       image_link: ''
     third_party_settings: {  }
   field_link:

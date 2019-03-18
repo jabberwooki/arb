@@ -22,6 +22,7 @@
 }
 
 /*Titres des block de la homepage*/
+.page-node-type-editorial-page .content,
 .page-node-type-document .content,
 .page-node-type-news .content,
 .view-national-resources,
@@ -54,8 +55,10 @@
 /*CARTE DE FRANCE*/
 #block-regionsmapblock2,
 #block-regionsmapblock{
-    a .region:hover {
+    a .region:hover,
+    a:hover{
         fill-opacity: 0.5;
+        text-decoration: none;
     }
     .club-arb-link-wrapper{
         float: right;
@@ -301,6 +304,15 @@
         }
     }
 }
+.path-group{
+    .region-highlighted{
+        .slick-slide img{
+            border-bottom-right-radius: 80% 10%;
+            border-bottom-left-radius: 80% 10%;
+        }
+    }
+}
+
 .group--type-national-group,
 .group--type-regional-group{
     ul.nav-tabs{
@@ -337,9 +349,13 @@
     .header-region{
         background: #F5F6F8;
         min-height: 126px;
-        padding: 30px 0;
+        /*padding: 30px 0;*/
+        .region-logo{
+            padding-top: 10px;
+        }
         h2{
-            margin-top: 10px;
+            margin-top: 20px;
+            margin-bottom: 0;
         }
         .field--name-field-process-progress{
             background: $brand-secondary;
@@ -403,6 +419,9 @@
     .members{
         background: #F5F6F8;
         margin-bottom: 30px;
+        /*.slick-list {
+            margin: 0 -15px;
+        }*/
         .views-row.slick-slide{
             background: #fff;
             border: 2px solid $brand-secondary; 
@@ -431,6 +450,18 @@
         content: '\f053';
         font-size: 14px;
         padding-right: 10px;
+    }
+}
+
+
+/*News et ressources*/
+.path-ressources,
+.path-actualites{
+    .region-content{
+        margin-top: 30px;
+    }
+    .btn-info{
+        @include like-btn-a;
     }
 }
 
@@ -494,6 +525,19 @@
         text-transform: uppercase;
         font-weight: 700;
     }
+    .field--name-body{
+        padding-top: 10px;
+    }
+    .content{
+        margin-top: 30px;
+        h2{
+            margin-top: 0;
+        }
+    }
+}
+
+/*NODE EDITORIAL*/
+.page-node-type-editorial-page{
     .field--name-body{
         padding-top: 10px;
     }

@@ -6,12 +6,13 @@ dependencies:
     - core.entity_view_mode.group.region_image
     - field.field.group.national_group.field_image
     - field.field.group.national_group.field_internet_site
+    - field.field.group.national_group.field_logo
     - field.field.group.national_group.field_presentation
     - group.type.national_group
-    - image.style.region_slide
+    - responsive_image.styles.arb_bandeau_region
   module:
     - ds
-    - image
+    - responsive_image
 third_party_settings:
   ds:
     layout:
@@ -40,18 +41,24 @@ content:
     weight: 0
     label: hidden
     settings:
-      image_style: region_slide
+      responsive_image_style: arb_bandeau_region
       image_link: ''
     third_party_settings:
       ds:
         ds_limit: ''
-    type: image
+    type: responsive_image
     region: ds_content
 hidden:
   changed: true
   created: true
   field_internet_site: true
+  field_logo: true
   field_presentation: true
   label: true
   langcode: true
+  national_news_eva_dashboard_tab: true
+  national_news_eva_news_tab: true
+  national_resources_eva_dashboard_tab: true
+  national_resources_eva_resources_tab: true
+  region_members_eva_dashboard_tab: true
   uid: true

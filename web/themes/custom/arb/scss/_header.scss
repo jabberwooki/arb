@@ -102,7 +102,8 @@ body.toolbar-fixed .toolbar-oriented .toolbar-bar {
         line-height: 30px;
     }
     #sidebar ul li.active > a,
-    #sidebar ul li a:hover {
+    #sidebar ul li a:hover,
+    #sidebar ul li a:focus {
         color: $brand-secondary;
         background: lighten($brand-primary, 5%);
     }
@@ -259,10 +260,17 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1d495d', end
 #block-views-block-slides-frontpage-slideshow .field--name-field-image > * {
     z-index: 100;
 }
+
 #block-views-block-slides-frontpage-slideshow{
     position: relative;
     /* facultatif : résoud un bug non systématique de blur sur IE */
     transform-style: preserve-3d;
+    .field--name-field-image{
+        img{
+            border-bottom-right-radius: 80% 10%;
+            border-bottom-left-radius: 80% 10%;
+        }
+    }
     .slide-infos{
       position: absolute;
       top: 35%;
@@ -360,6 +368,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1d495d', end
 }
 
 /*HIGHLIGHT*/
+.page-node-type-editorial-page,
 .path-user,
 .page-node-type-document,
 .page-node-type-news,
@@ -367,10 +376,20 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1d495d', end
 .path-actualites,
 .path-regions{
     .highlighted {
-        background-image: url('../images/topography.png');
         min-height: 200px;
         position: relative;
         display: block;
+        border-bottom-right-radius: 50% 10%;
+        border-bottom-left-radius: 50% 10%;
+         /* The image used */
+         background-image: url('../images/topography.png');
+        /* Set a specific height */
+        /*height: 200px; */
+        /* Create the parallax scrolling effect */
+        /*background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;*/
         h2{
             position: absolute;
             top: 30%;

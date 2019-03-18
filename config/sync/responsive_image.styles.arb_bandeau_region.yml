@@ -1,0 +1,35 @@
+uuid: 49a0a9d9-05f5-4967-a9bc-49152490faef
+langcode: fr
+status: true
+dependencies:
+  config:
+    - image.style.diapo_accueil_medium
+    - image.style.diapo_accueil_mobile
+    - image.style.region_slide
+  theme:
+    - bootstrap
+id: arb_bandeau_region
+label: 'ARB bandeau region'
+image_style_mappings:
+  -
+    breakpoint_id: bootstrap.screen-lg-min
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: region_slide
+  -
+    breakpoint_id: bootstrap.screen-md-min
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: diapo_accueil_medium
+  -
+    breakpoint_id: bootstrap.screen-sm-min
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: diapo_accueil_mobile
+  -
+    breakpoint_id: bootstrap.screen-xs-max
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: diapo_accueil_mobile
+breakpoint_group: bootstrap
+fallback_image_style: region_slide

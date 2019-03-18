@@ -8855,7 +8855,8 @@ body.toolbar-fixed .toolbar-oriented .toolbar-bar {
 }
 
 .hamburger #sidebar ul li.active > a,
-.hamburger #sidebar ul li a:hover {
+.hamburger #sidebar ul li a:hover,
+.hamburger #sidebar ul li a:focus {
   color: #1FAD00;
   background: #235870;
 }
@@ -9040,6 +9041,11 @@ body.toolbar-fixed .toolbar-oriented .toolbar-bar {
   transform-style: preserve-3d;
 }
 
+#block-views-block-slides-frontpage-slideshow .field--name-field-image img {
+  border-bottom-right-radius: 80% 10%;
+  border-bottom-left-radius: 80% 10%;
+}
+
 #block-views-block-slides-frontpage-slideshow .slide-infos {
   position: absolute;
   top: 35%;
@@ -9189,18 +9195,30 @@ body.toolbar-fixed .toolbar-oriented .toolbar-bar {
 }
 
 /*HIGHLIGHT*/
+.page-node-type-editorial-page .highlighted,
 .path-user .highlighted,
 .page-node-type-document .highlighted,
 .page-node-type-news .highlighted,
 .path-ressources .highlighted,
 .path-actualites .highlighted,
 .path-regions .highlighted {
-  background-image: url("../images/topography.png");
   min-height: 200px;
   position: relative;
   display: block;
+  border-bottom-right-radius: 50% 10%;
+  border-bottom-left-radius: 50% 10%;
+  /* The image used */
+  background-image: url("../images/topography.png");
+  /* Set a specific height */
+  /*height: 200px; */
+  /* Create the parallax scrolling effect */
+  /*background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;*/
 }
 
+.page-node-type-editorial-page .highlighted h2,
 .path-user .highlighted h2,
 .page-node-type-document .highlighted h2,
 .page-node-type-news .highlighted h2,
@@ -9217,6 +9235,7 @@ body.toolbar-fixed .toolbar-oriented .toolbar-bar {
   margin: 0;
 }
 
+.page-node-type-editorial-page .highlighted h2:after,
 .path-user .highlighted h2:after,
 .page-node-type-document .highlighted h2:after,
 .page-node-type-news .highlighted h2:after,
@@ -9259,6 +9278,7 @@ body.toolbar-fixed .toolbar-oriented .toolbar-bar {
 }
 
 /*Titres des block de la homepage*/
+.page-node-type-editorial-page .content h2,
 .page-node-type-document .content h2,
 .page-node-type-news .content h2,
 .view-national-resources h2,
@@ -9276,6 +9296,7 @@ body.toolbar-fixed .toolbar-oriented .toolbar-bar {
   position: relative;
 }
 
+.page-node-type-editorial-page .content h2:after,
 .page-node-type-document .content h2:after,
 .page-node-type-news .content h2:after,
 .view-national-resources h2:after,
@@ -9303,6 +9324,7 @@ body.toolbar-fixed .toolbar-oriented .toolbar-bar {
   padding-top: 5px;
 }
 
+.page-node-type-editorial-page .content h2 a,
 .page-node-type-document .content h2 a,
 .page-node-type-news .content h2 a,
 .view-national-resources h2 a,
@@ -9317,6 +9339,7 @@ body.toolbar-fixed .toolbar-oriented .toolbar-bar {
   text-decoration: none;
 }
 
+.page-node-type-editorial-page .content h2 a:hover,
 .page-node-type-document .content h2 a:hover,
 .page-node-type-news .content h2 a:hover,
 .view-national-resources h2 a:hover,
@@ -9333,8 +9356,11 @@ body.toolbar-fixed .toolbar-oriented .toolbar-bar {
 
 /*CARTE DE FRANCE*/
 #block-regionsmapblock2 a .region:hover,
-#block-regionsmapblock a .region:hover {
+#block-regionsmapblock2 a:hover,
+#block-regionsmapblock a .region:hover,
+#block-regionsmapblock a:hover {
   fill-opacity: 0.5;
+  text-decoration: none;
 }
 
 #block-regionsmapblock2 .club-arb-link-wrapper,
@@ -9688,6 +9714,11 @@ body.toolbar-fixed .toolbar-oriented .toolbar-bar {
   color: #1FAD00;
 }
 
+.path-group .region-highlighted .slick-slide img {
+  border-bottom-right-radius: 80% 10%;
+  border-bottom-left-radius: 80% 10%;
+}
+
 .group--type-national-group ul.nav-tabs,
 .group--type-regional-group ul.nav-tabs {
   background: #1D495D;
@@ -9736,12 +9767,18 @@ body.toolbar-fixed .toolbar-oriented .toolbar-bar {
 .group--type-regional-group .header-region {
   background: #F5F6F8;
   min-height: 126px;
-  padding: 30px 0;
+  /*padding: 30px 0;*/
+}
+
+.group--type-national-group .header-region .region-logo,
+.group--type-regional-group .header-region .region-logo {
+  padding-top: 10px;
 }
 
 .group--type-national-group .header-region h2,
 .group--type-regional-group .header-region h2 {
-  margin-top: 10px;
+  margin-top: 20px;
+  margin-bottom: 0;
 }
 
 .group--type-national-group .header-region .field--name-field-process-progress,
@@ -9839,6 +9876,9 @@ body.toolbar-fixed .toolbar-oriented .toolbar-bar {
 .group--type-regional-group .members {
   background: #F5F6F8;
   margin-bottom: 30px;
+  /*.slick-list {
+            margin: 0 -15px;
+        }*/
 }
 
 .group--type-national-group .members .views-row.slick-slide,
@@ -9891,6 +9931,29 @@ body.toolbar-fixed .toolbar-oriented .toolbar-bar {
   content: '\f053';
   font-size: 14px;
   padding-right: 10px;
+}
+
+/*News et ressources*/
+.path-ressources .region-content,
+.path-actualites .region-content {
+  margin-top: 30px;
+}
+
+.path-ressources .btn-info,
+.path-actualites .btn-info {
+  background: #1FAD00;
+  color: white;
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 60px;
+  padding: 10px 20px;
+}
+
+.path-ressources .btn-info:hover,
+.path-actualites .btn-info:hover {
+  color: #1D495D;
 }
 
 /*NEWS*/
@@ -9968,6 +10031,19 @@ body.toolbar-fixed .toolbar-oriented .toolbar-bar {
   margin-top: 0;
 }
 
+/*NODE EDITORIAL*/
+.page-node-type-editorial-page .field--name-body {
+  padding-top: 10px;
+}
+
+.page-node-type-editorial-page .content {
+  margin-top: 30px;
+}
+
+.page-node-type-editorial-page .content h2 {
+  margin-top: 0;
+}
+
 .pre-footer {
   background: url("../images/topography.png");
   padding-top: 80px;
@@ -10011,3 +10087,104 @@ body.toolbar-fixed .toolbar-oriented .toolbar-bar {
 .footer #block-socialmedialinks-2 a:hover {
   color: white;
 }
+
+/*==========  Non-Mobile First Method  ==========*/
+/* Large Devices, Wide Screens */
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 1024px) {
+  #block-views-block-slides-frontpage-slideshow .slide-infos h2 {
+    font-size: 14px;
+    line-height: initial;
+  }
+  #block-views-block-slides-frontpage-slideshow .slide-infos .field--name-field-text {
+    display: none;
+  }
+  #block-views-block-slides-frontpage-slideshow .slide-infos .field--name-field-link a {
+    font-size: 10px;
+  }
+  #block-views-block-slides-frontpage-slideshow .slide-infos h2:after {
+    margin-top: 10px;
+  }
+  #block-views-block-slides-frontpage-slideshow .slick-prev {
+    left: 10%;
+  }
+  #block-views-block-slides-frontpage-slideshow .slick-next {
+    right: 10%;
+  }
+  #block-views-block-slides-frontpage-slideshow .slide-infos {
+    top: 27%;
+    width: 27%;
+  }
+  #block-regionsmapblock2 .club-arb-link-wrapper,
+  #block-regionsmapblock .club-arb-link-wrapper {
+    float: right;
+    margin-top: 5px;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .block-arb-register .arb-register-text:before {
+    display: none;
+  }
+  #sidebar.active {
+    width: 28% !important;
+  }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+  .block-arb-register {
+    font-size: 20px;
+  }
+  #sidebar.active {
+    width: 28% !important;
+  }
+  .user-logged-in .region-header .menu--account {
+    display: none;
+  }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+  .search-button .fa-search,
+  .header .fas.fa-times,
+  .header .fas.fa-bars {
+    font-size: 14px;
+  }
+  .header .name-menu {
+    display: none;
+  }
+  #sidebar.active {
+    width: 98% !important;
+  }
+  .header a.navbar-brand {
+    font-size: 15px;
+  }
+  .header p.navbar-text {
+    font-size: 11px;
+  }
+  .block-arb-register {
+    font-size: 20px;
+    line-height: initial;
+    padding: 15px 0;
+  }
+  .block-arb-register .arb-register-text:after {
+    display: none;
+  }
+  .block-arb-register .arb-register-link a {
+    margin-top: 10px;
+    float: left;
+  }
+  .search-block-form .wrapper {
+    width: 80%;
+  }
+  .page-node-type-news .content img,
+  #views-bootstrap-national-news-eva-news-tab img,
+  #views-bootstrap-national-news-all-news img,
+  #views-bootstrap-region-news-eva-news-tab img,
+  .region-latest-news img,
+  #block-views-block-region-news-front-block .slick-slide img {
+    width: 100%;
+  }
+}
+
+/* Custom, iPhone Retina */
