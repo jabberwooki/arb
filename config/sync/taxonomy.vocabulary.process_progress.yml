@@ -5,5 +5,4 @@ dependencies: {  }
 name: 'Avancement processus ARB'
 vid: process_progress
 description: ''
-hierarchy: 0
 weight: 0

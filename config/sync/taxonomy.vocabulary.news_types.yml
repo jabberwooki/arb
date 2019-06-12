@@ -5,5 +5,4 @@ dependencies: {  }
 name: 'Types d''actualité'
 vid: news_types
 description: ''
-hierarchy: 0
 weight: 0

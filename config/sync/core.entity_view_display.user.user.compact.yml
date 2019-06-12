@@ -4,6 +4,12 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.user.compact
+    - field.field.user.user.field_firstname
+    - field.field.user.user.field_function
+    - field.field.user.user.field_lastname
+    - field.field.user.user.field_organisation
+    - field.field.user.user.field_quatuor_member
+    - field.field.user.user.field_region
     - field.field.user.user.user_picture
     - image.style.thumbnail
   module:

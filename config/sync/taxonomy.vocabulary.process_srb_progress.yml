@@ -5,5 +5,4 @@ dependencies: {  }
 name: 'Avancement processus SRB'
 vid: process_srb_progress
 description: ''
-hierarchy: 0
 weight: 0
