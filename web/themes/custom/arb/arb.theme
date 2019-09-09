@@ -7,6 +7,7 @@
  * Place your custom PHP code in this file.
  */
 use Drupal\user\Entity\User;
+use Drupal\Core\Datetime\DateFormatter;
 
 function arb_preprocess_menu(&$variables) {
   if (isset($variables['menu_name']) && $variables['menu_name'] == 'account') {
@@ -32,5 +33,38 @@ function arb_theme_suggestions_page_alter(array &$suggestions, array $variables)
     $content_type = $node->bundle();
     $suggestions[] = 'page__type__'.$content_type;
     $suggestions[] = 'page__node__' . $node->id();
+  }
+}
+
+function arb_preprocess_page(&$variables) {
+  $uri_parts = explode('/',\Drupal::request()->getRequestUri());
+
+  // Gestion de la navigation dans la page Agenda.
+  if ($uri_parts[1] == 'agenda') {
+    $calendar_navigation_data = array();
+
+    // Récupération du mois à afficher d'après l'url demandée
+    $requested_year = substr($uri_parts[2], 0,4);
+    $requested_month = substr($uri_parts[2], 4);
+    $first_timestamp_in_requested_month = strtotime($requested_year . '-' . $requested_month . '-01');
+    $requested_month = \Drupal::service('date.formatter')->format($first_timestamp_in_requested_month, $type='custom', $format = 'F Y');
+    $calendar_navigation_data['calendar_subtitle'] = $requested_month;
+
+    // Calcul du mois précédent
+    $first_timestamp_of_previous_month = strtotime('-1 month', $first_timestamp_in_requested_month);
+    $previous_month_text = \Drupal::service('date.formatter')->format($first_timestamp_of_previous_month, $type='custom', $format = 'F Y');
+    $previous_month_link = '/agenda/' . date('Y', $first_timestamp_of_previous_month) . date('m', $first_timestamp_of_previous_month);
+    $calendar_navigation_data['previous_month_text'] = $previous_month_text;
+    $calendar_navigation_data['previous_month_link'] = $previous_month_link;
+
+    // Calcul du mois suivant
+    $first_timestamp_of_next_month = strtotime('+1 month', $first_timestamp_in_requested_month);
+    $next_month_text = \Drupal::service('date.formatter')->format($first_timestamp_of_next_month, $type='custom', $format = 'F Y');
+    $next_month_link = '/agenda/' . date('Y', $first_timestamp_of_next_month) . date('m', $first_timestamp_of_next_month);
+    $calendar_navigation_data['next_month_text'] = $next_month_text;
+    $calendar_navigation_data['next_month_link'] = $next_month_link;
+
+    // Envoi des données de navigation au template page_agenda.html.twig
+    $variables['calendar_navigation_data'] = $calendar_navigation_data;
   }
 }

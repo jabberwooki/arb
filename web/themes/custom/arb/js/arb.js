@@ -114,6 +114,23 @@
       if ($('#arb-dashboard').length && $(location).attr('hash')) {
         $($(location).attr('hash')).trigger('click');
       }
+
+      // Agenda - Appel par défaut du mois en cours pour le lien "Agenda" du menu Hamburger.
+      if ($('.menu--hamburger .vieweventsevents-list').length) {
+        var agendaUrl = $('.menu--hamburger .vieweventsevents-list').attr('href');
+        if (agendaUrl == '/agenda') {
+          var currentDate = new Date();
+          var month = currentDate.getMonth() + 1;
+          var year = currentDate.getFullYear();
+
+          if (month < 10) {
+            month = '0' + month;
+          }
+          console.log(month);
+          console.log(year);
+          $('.menu--hamburger .vieweventsevents-list').attr('href', '/agenda/' + year + month );
+        }
+      }
     }
   };
 })(jQuery);
