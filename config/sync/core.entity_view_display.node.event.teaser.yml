@@ -5,10 +5,40 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.event.body
+    - field.field.node.event.field_event_dates
     - node.type.event
   module:
+    - datetime_range
+    - ds
     - text
     - user
+third_party_settings:
+  ds:
+    layout:
+      id: ds_1col
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        wrappers:
+          ds_content: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        classes:
+          layout_class: {  }
+    regions:
+      ds_content:
+        - node_title
+        - field_event_dates
+        - body
+    fields:
+      node_title:
+        plugin_id: node_title
+        weight: 0
+        label: hidden
+        formatter: default
 id: node.event.teaser
 targetEntityType: node
 bundle: event
@@ -17,15 +47,23 @@ content:
   body:
     label: hidden
     type: text_summary_or_trimmed
-    weight: 101
+    weight: 2
     settings:
-      trim_length: 600
+      trim_length: 100
     third_party_settings: {  }
-    region: content
-  links:
-    weight: 100
-    settings: {  }
-    third_party_settings: {  }
-    region: content
+    region: ds_content
+  field_event_dates:
+    type: daterange_default
+    weight: 1
+    region: ds_content
+    label: hidden
+    settings:
+      timezone_override: ''
+      format_type: short
+      separator: ' > '
+    third_party_settings:
+      ds:
+        ds_limit: ''
 hidden:
   langcode: true
+  links: true

@@ -1,8 +1,9 @@
-uuid: 4cf911d8-9e59-422f-b36d-86397b8651e5
+uuid: f45be7f0-6ed1-42f0-9d5a-8d16c36e86a4
 langcode: fr
-status: true
+status: false
 dependencies:
   config:
+    - core.entity_view_mode.node.full
     - field.field.node.event.body
     - field.field.node.event.field_event_dates
     - node.type.event
@@ -11,10 +12,10 @@ dependencies:
     - ds
     - text
     - user
-id: node.event.default
+id: node.event.full
 targetEntityType: node
 bundle: event
-mode: default
+mode: full
 content:
   body:
     label: hidden
@@ -35,18 +36,10 @@ content:
         ds_limit: ''
     type: daterange_default
     region: content
-  langcode:
-    type: language
-    weight: 0
-    region: content
-    label: above
-    settings:
-      link_to_entity: false
-      native_language: false
-    third_party_settings: {  }
   links:
     weight: 2
     region: content
     settings: {  }
     third_party_settings: {  }
-hidden: {  }
+hidden:
+  langcode: true
