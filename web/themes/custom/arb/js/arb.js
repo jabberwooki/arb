@@ -128,7 +128,7 @@
           }
           console.log(month);
           console.log(year);
-          $('.menu--hamburger .vieweventsevents-list').attr('href', '/agenda/' + year + month );
+          $('.menu--hamburger .vieweventsevents-list').attr('href', '/agenda/' + year + month + '/');
         }
       }
     }

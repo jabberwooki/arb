@@ -97,7 +97,8 @@ function arb_misc_form_views_exposed_form_alter(&$form, \Drupal\Core\Form\FormSt
   // Transformation du filtre exposé Région.
   // Par defaut, c'est un champ texte vide. On le transformer en champ select.
   if ($form['#id'] == 'views-exposed-form-national-news-all-news'
-    || $form['#id'] == 'views-exposed-form-national-resources-all-resources') {
+    || $form['#id'] == 'views-exposed-form-national-resources-all-resources'
+    || $form['#id'] == 'views-exposed-form-events-events-list') {
 
     // Query groupes
     $storage = Drupal::getContainer()->get('entity_type.manager')->getStorage('group');
@@ -120,5 +121,9 @@ function arb_misc_form_views_exposed_form_alter(&$form, \Drupal\Core\Form\FormSt
     $form['group_id']['#empty_option'] = 'Toutes les régions';
     $form['group_id']['#options'] = $options;
     unset($form['group_id']['#size']);
+
+    if ($form['#id'] == 'views-exposed-form-events-events-list') {
+      $form['#action'] = $form['#action'] . '/';
+    }
   }
 }
