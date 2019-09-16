@@ -1,0 +1,11 @@
+uuid: b5308ea9-5fa0-450a-b5fe-9c6a74366e17
+langcode: fr
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.thematics
+id: taxonomy_term.thematics
+target_entity_type_id: taxonomy_term
+target_bundle: thematics
+default_langcode: site_default
+language_alterable: false
