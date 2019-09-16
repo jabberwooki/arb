@@ -118,7 +118,7 @@ function arb_misc_form_views_exposed_form_alter(&$form, \Drupal\Core\Form\FormSt
     $form['group_id']['#type'] = 'select';
     $form['group_id']['#multiple'] = FALSE;
 
-    $form['group_id']['#empty_option'] = 'Toutes les régions';
+    $form['group_id']['#empty_option'] = '- Tout -';
     $form['group_id']['#options'] = $options;
     unset($form['group_id']['#size']);
 

@@ -4,15 +4,18 @@ status: true
 dependencies:
   config:
     - field.storage.node.field_image
+    - field.storage.node.field_thematics
     - group.content_type.national_group-group_node-news
     - group.content_type.regional_group-group_node-news
     - image.style.news_block
     - system.menu.hamburger
+    - taxonomy.vocabulary.thematics
   module:
     - eva
     - group
     - image
     - node
+    - taxonomy
     - views_bootstrap
 id: national_news
 label: 'Actualités nationales'
@@ -625,6 +628,51 @@ display:
           entity_type: group
           entity_field: id
           plugin_id: numeric
+        field_thematics_target_id:
+          id: field_thematics_target_id
+          table: node__field_thematics
+          field: field_thematics_target_id
+          relationship: gc__node
+          group_type: group
+          admin_label: ''
+          operator: or
+          value: {  }
+          group: 1
+          exposed: true
+          expose:
+            operator_id: field_thematics_target_id_op
+            label: Thématique
+            description: ''
+            use_operator: false
+            operator: field_thematics_target_id_op
+            identifier: thematics
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          type: select
+          limit: true
+          vid: thematics
+          hierarchy: true
+          error_message: true
+          plugin_id: taxonomy_index_tid
       filter_groups:
         operator: AND
         groups:
@@ -749,6 +797,69 @@ display:
             image_style: news_block
             image_link: content
           group_column: ''
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          plugin_id: field
+        field_thematics:
+          id: field_thematics
+          table: node__field_thematics
+          field: field_thematics
+          relationship: gc__node
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: target_id
+          type: entity_reference_label
+          settings:
+            link: false
+          group_column: target_id
           group_columns: {  }
           group_rows: true
           delta_limit: 0
@@ -902,7 +1013,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "<p class=\"news-date\">{{ created }}</p>\r\n<h3 class=\"news-title\">{{ title }}</h3>"
+            text: "<p class=\"news-thematics\">{{ field_thematics }}</p>\r\n<p class=\"news-date\">{{ created }}</p>\r\n<h3 class=\"news-title\">{{ title }}</h3>"
             make_link: false
             path: ''
             absolute: false
@@ -944,8 +1055,8 @@ display:
         type: basic
         options:
           submit_button: Appliquer
-          reset_button: false
-          reset_button_label: Reset
+          reset_button: true
+          reset_button_label: Réinitialiser
           exposed_sorts_label: 'Sort by'
           expose_sort_order: true
           sort_asc_label: Asc
@@ -957,8 +1068,10 @@ display:
         - 'languages:language_interface'
         - url
         - url.query_args
+        - user
       tags:
         - 'config:field.storage.node.field_image'
+        - 'config:field.storage.node.field_thematics'
   eva_dashboard_tab:
     display_plugin: entity_view
     id: eva_dashboard_tab
@@ -1101,6 +1214,69 @@ display:
           separator: ', '
           field_api_classes: false
           plugin_id: field
+        field_thematics:
+          id: field_thematics
+          table: node__field_thematics
+          field: field_thematics
+          relationship: gc__node
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: target_id
+          type: entity_reference_label
+          settings:
+            link: false
+          group_column: target_id
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          plugin_id: field
         created:
           id: created
           table: node_field_data
@@ -1244,7 +1420,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "<p class=\"news-date\">{{ created }}</p>\r\n<h4 class=\"news-title\">{{ title }}</h4>"
+            text: "<p class=\"news-thematics\">{{ field_thematics }}</p>\r\n<p class=\"news-date\">{{ created }}</p>\r\n<h4 class=\"news-title\">{{ title }}</h4>"
             make_link: false
             path: ''
             absolute: false
@@ -1290,6 +1466,7 @@ display:
         - url
       tags:
         - 'config:field.storage.node.field_image'
+        - 'config:field.storage.node.field_thematics'
   eva_news_tab:
     display_plugin: entity_view
     id: eva_news_tab
@@ -1514,6 +1691,69 @@ display:
           separator: ', '
           field_api_classes: false
           plugin_id: field
+        field_thematics:
+          id: field_thematics
+          table: node__field_thematics
+          field: field_thematics
+          relationship: gc__node
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: target_id
+          type: entity_reference_label
+          settings:
+            link: false
+          group_column: target_id
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          plugin_id: field
         created:
           id: created
           table: node_field_data
@@ -1657,7 +1897,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "<p class=\"news-date\">{{ created }}</p>\r\n<h3 class=\"news-title\">{{ title }}</h3>"
+            text: "<p class=\"news-thematics\">{{ field_thematics }}</p>\r\n<p class=\"news-date\">{{ created }}</p>\r\n<h3 class=\"news-title\">{{ title }}</h3>"
             make_link: false
             path: ''
             absolute: false
@@ -1704,3 +1944,4 @@ display:
         - url.query_args
       tags:
         - 'config:field.storage.node.field_image'
+        - 'config:field.storage.node.field_thematics'

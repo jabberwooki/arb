@@ -7,6 +7,7 @@ dependencies:
     - field.field.node.news.field_files
     - field.field.node.news.field_image
     - field.field.node.news.field_news_type
+    - field.field.node.news.field_thematics
     - node.type.news
   module:
     - file
@@ -44,6 +45,14 @@ content:
     region: content
   field_news_type:
     weight: 103
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_thematics:
+    weight: 106
     label: above
     settings:
       link: true
