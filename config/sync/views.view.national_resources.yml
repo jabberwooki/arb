@@ -3,6 +3,7 @@ langcode: fr
 status: true
 dependencies:
   config:
+    - field.storage.node.field_thematics
     - group.content_type.group_content_type_1b5b2e3065449
     - group.content_type.group_content_type_f8af808bc408c
     - system.menu.hamburger
@@ -500,6 +501,69 @@ display:
           entity_type: group
           entity_field: label
           plugin_id: field
+        field_thematics:
+          id: field_thematics
+          table: node__field_thematics
+          field: field_thematics
+          relationship: gc__node
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: target_id
+          type: entity_reference_label
+          settings:
+            link: false
+          group_column: target_id
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          plugin_id: field
         created:
           id: created
           table: node_field_data
@@ -643,7 +707,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "<div class=\"infos-files\">\r\n<div class=\"wrapper-files\">\r\n<p class=\"date-files\">{{ created }} <span>{{ label }}</span></p>\r\n<h3 class=\"title-files\">{{ title }}<h3>\r\n</div>\r\n</div>"
+            text: "<div class=\"infos-files\">\r\n<div class=\"wrapper-files\">\r\n<p class=\"date-files\">{{ created }} <span>{{ label }}</span></p>\r\n<p class=\"thematics-files\">{{ field_thematics }}</p>\r\n<h3 class=\"title-files\">{{ title }}<h3>\r\n</div>\r\n</div>"
             make_link: false
             path: ''
             absolute: false
@@ -718,7 +782,8 @@ display:
         - 'languages:language_interface'
         - url
         - url.query_args
-      tags: {  }
+      tags:
+        - 'config:field.storage.node.field_thematics'
   eva_dashboard_tab:
     display_plugin: entity_view
     id: eva_dashboard_tab
@@ -809,6 +874,69 @@ display:
           entity_field: gid
           plugin_id: group_id
       fields:
+        field_thematics:
+          id: field_thematics
+          table: node__field_thematics
+          field: field_thematics
+          relationship: gc__node
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: target_id
+          type: entity_reference_label
+          settings:
+            link: false
+          group_column: target_id
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          plugin_id: field
         created:
           id: created
           table: node_field_data
@@ -952,7 +1080,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "<div class=\"infos-files\">\r\n<div class=\"wrapper-files\">\r\n<p class=\"date-files\">{{ created }}</p>\r\n<h4 class=\"title-files\">{{ title }}<h4>\r\n</div>\r\n</div>"
+            text: "<div class=\"infos-files\">\r\n<div class=\"wrapper-files\">\r\n<p class=\"thematics-files\">{{ field_thematics }}</p>\r\n<p class=\"date-files\">{{ created }}</p>\r\n<h4 class=\"title-files\">{{ title }}<h4>\r\n</div>\r\n</div>"
             make_link: false
             path: ''
             absolute: false
@@ -1061,7 +1189,8 @@ display:
         - 'languages:language_content'
         - 'languages:language_interface'
         - url
-      tags: {  }
+      tags:
+        - 'config:field.storage.node.field_thematics'
   eva_resources_tab:
     display_plugin: entity_view
     id: eva_resources_tab
@@ -1216,6 +1345,69 @@ display:
           entity_type: node
           entity_field: nid
           plugin_id: field
+        field_thematics:
+          id: field_thematics
+          table: node__field_thematics
+          field: field_thematics
+          relationship: gc__node
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: target_id
+          type: entity_reference_label
+          settings:
+            link: false
+          group_column: target_id
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          plugin_id: field
         created:
           id: created
           table: node_field_data
@@ -1359,7 +1551,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "<div class=\"infos-files\">\r\n<div class=\"wrapper-files\">\r\n<p class=\"date-files\">{{ created }}</p>\r\n<h3 class=\"title-files\">{{ title }}<h3>\r\n</div>\r\n</div>"
+            text: "<div class=\"infos-files\">\r\n<div class=\"wrapper-files\">\r\n<p class=\"thematics-files\">{{ field_thematics }}</p>\r\n<p class=\"date-files\">{{ created }}</p>\r\n<h3 class=\"title-files\">{{ title }}<h3>\r\n</div>\r\n</div>"
             make_link: false
             path: ''
             absolute: false
@@ -1423,4 +1615,5 @@ display:
         - 'languages:language_content'
         - 'languages:language_interface'
         - url
-      tags: {  }
+      tags:
+        - 'config:field.storage.node.field_thematics'
