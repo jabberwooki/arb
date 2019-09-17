@@ -67,4 +67,34 @@ function arb_preprocess_page(&$variables) {
     // Envoi des données de navigation au template page_agenda.html.twig
     $variables['calendar_navigation_data'] = $calendar_navigation_data;
   }
+  elseif ($uri_parts[1] == 'thematiques') {
+    $thematics_data = array();
+    $thematics_data['current_term_name'] = '';
+    $thematics_data['breadcrumbs'] = '';
+
+    if (isset($uri_parts[2]) && $uri_parts[2] != '') {
+      $crumbs = '<a href="/thematiques/">Thématiques</a>';
+
+      $parents = \Drupal::entityTypeManager()->getStorage('taxonomy_term')->loadAllParents($uri_parts['2']);
+
+      // Récupération du nom de la thématique courante.
+      $current_term  = array_shift($parents);
+      $current_term_name = $current_term->getName();
+      $thematics_data['current_term_name'] = $current_term_name;
+
+      // Récupération des thématiques parentes pour construire le fil d'Ariane.
+      $parents = array_reverse($parents, TRUE);
+      foreach ($parents as $parent) {
+        $crumbs .= ' > ' . '<a href="/thematiques/' . $parent->id() . '" class="linked-term">' . $parent->getName() . '</a>';
+      }
+      // On rajoute le nom du terme courant, non cliquable, à la fin du fil d'Ariane.
+      $thematics_data['breadcrumbs'] = $crumbs . ' > ' . '<span class="no-linked-term">' . $current_term_name . '</span>';
+    }
+
+    $variables['thematics_data'] = $thematics_data;
+  }
+}
+
+function arb_preprocess_views_view(&$variables) {
+
 }
