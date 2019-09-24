@@ -15,7 +15,9 @@ module:
   kint: 0
 theme: {  }
 blacklist: {  }
-graylist: {  }
+graylist:
+  - smtp.settings
+  - system.mail
 graylist_dependents: true
 graylist_skip_equal: true
 weight: 0
