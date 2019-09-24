@@ -11,6 +11,7 @@ module:
   chosen_lib: 0
   devel: 0
   devel_generate: 0
+  devel_php: 0
   kint: 0
   smtp: 0
 theme: {  }
