@@ -2093,7 +2093,7 @@ display:
           empty: true
           tokenize: false
           content:
-            value: 'Aucun contenu n''est classé dans cette thématique.'
+            value: 'Aucune actualité n''est classée dans cette thématique.'
             format: full_html
           plugin_id: text
       header:

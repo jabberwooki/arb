@@ -1637,6 +1637,7 @@ display:
         header: false
         filters: false
         filter_groups: false
+        empty: false
       pager:
         type: mini
         options:
@@ -2029,6 +2030,20 @@ display:
         operator: AND
         groups:
           1: AND
+      empty:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: true
+          tokenize: false
+          content:
+            value: 'Aucun document n''est classé dans cette thématique.'
+            format: full_html
+          plugin_id: text
     cache_metadata:
       max-age: -1
       contexts:
