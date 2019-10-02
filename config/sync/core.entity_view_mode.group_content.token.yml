@@ -1,0 +1,10 @@
+uuid: b84577e1-704f-4b16-a8b2-afce71951a75
+langcode: fr
+status: true
+dependencies:
+  module:
+    - group
+id: group_content.token
+label: 'Jeton (token)'
+targetEntityType: group_content
+cache: true

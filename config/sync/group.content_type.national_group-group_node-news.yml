@@ -1,0 +1,19 @@
+uuid: 8e886e58-5950-44ba-a2b1-45788dbe31fe
+langcode: fr
+status: true
+dependencies:
+  config:
+    - group.type.national_group
+    - node.type.news
+  module:
+    - gnode
+    - node
+id: national_group-group_node-news
+label: 'Groupe national: Group node (Actualité)'
+description: 'Adds <em class="placeholder">Actualité</em> content to groups both publicly and privately.'
+group_type: national_group
+content_plugin: 'group_node:news'
+plugin_config:
+  group_cardinality: 0
+  entity_cardinality: 1
+  use_creation_wizard: false

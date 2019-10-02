@@ -1,0 +1,32 @@
+uuid: 4fd0c802-1c6b-42eb-abfb-7799b92fa142
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_region
+    - group.type.national_group
+    - group.type.regional_group
+  module:
+    - user
+id: user.user.field_region
+field_name: field_region
+entity_type: user
+bundle: user
+label: Région
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:group'
+  handler_settings:
+    target_bundles:
+      national_group: national_group
+      regional_group: regional_group
+    sort:
+      field: id
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: national_group
+field_type: entity_reference

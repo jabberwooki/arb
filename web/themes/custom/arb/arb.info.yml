@@ -1,0 +1,36 @@
+core: 8.x
+type: theme
+base theme: bootstrap
+
+name: 'ARB'
+description: 'Thème basé sur Bootstrap 3 SASS.'
+package: 'Bootstrap'
+
+regions:
+  navigation: 'Navigation'
+  navigation_collapsible: 'Navigation (Collapsible)'
+  header: 'Top Bar'
+  hamburger: 'Hamburger'
+  highlighted: 'Highlighted'
+  help: 'Help'
+  content_right: 'Content right'
+  content_left: 'Content left'
+  content: 'Content'
+  sidebar_first: 'Primary'
+  sidebar_second: 'Secondary'
+  prefooter: 'Pre-Footer'
+  footer_left: 'Footer left'
+  footer_right: 'Footer right'
+  page_top: 'Page top'
+  page_bottom: 'Page bottom'
+
+libraries:
+  - 'arb/sliding-menu'
+  - 'arb/hamburger'
+  - 'arb/slick'
+  - 'arb/searchbar'
+  - 'arb/fonts'
+
+libraries-extend:
+  bootstrap/framework:
+    - arb/framework

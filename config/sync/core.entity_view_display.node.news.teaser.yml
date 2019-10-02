@@ -1,0 +1,74 @@
+uuid: 9ad4f8c4-6f09-4f0c-ac78-ff66d1c1e8af
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.news.body
+    - field.field.node.news.field_files
+    - field.field.node.news.field_image
+    - field.field.node.news.field_news_type
+    - field.field.node.news.field_thematics
+    - node.type.news
+  module:
+    - ds
+    - taxonomy
+    - text
+    - user
+third_party_settings:
+  ds:
+    layout:
+      id: ds_1col
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        wrappers:
+          ds_content: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        classes:
+          layout_class: {  }
+    regions:
+      ds_content:
+        - node_title
+        - field_news_type
+        - body
+    fields:
+      node_title:
+        plugin_id: node_title
+        weight: 0
+        label: hidden
+        formatter: default
+        settings:
+          link: true
+          wrapper: h3
+          class: ''
+id: node.news.teaser
+targetEntityType: node
+bundle: news
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 2
+    settings:
+      trim_length: 150
+    third_party_settings: {  }
+    region: ds_content
+  field_news_type:
+    type: entity_reference_rss_category
+    weight: 1
+    region: ds_content
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_files: true
+  field_image: true
+  field_thematics: true
+  langcode: true
+  links: true

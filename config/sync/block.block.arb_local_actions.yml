@@ -1,0 +1,20 @@
+uuid: 91042561-f8e4-43a7-8f7b-df92b0f5ef43
+langcode: fr
+status: true
+dependencies:
+  theme:
+    - arb
+_core:
+  default_config_hash: 13GQpeITIJsp1kyPniXtWZfyFH87vb1xxJCHifL4UeE
+id: arb_local_actions
+theme: arb
+region: content
+weight: -6
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Actions d''administration principales'
+  provider: core
+  label_display: '0'
+visibility: {  }

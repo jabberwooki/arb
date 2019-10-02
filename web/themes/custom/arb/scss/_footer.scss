@@ -1,0 +1,146 @@
+.pre-footer{
+    background: url('../images/topography.png');
+    padding-top: 80px;
+    margin-top: -80px;
+    .prefooter{
+        padding-top: 40px;
+    }
+}
+
+
+.footer {
+    margin-top: 0;
+    padding-top: 35px;
+    padding-bottom: 36px;
+    border-top: none;
+    background: $brand-primary;
+    .menu--footer li{
+        display: inline-block;
+    }
+    .menu--footer a{
+       color: $brand-secondary;
+        &:focus,
+        &:hover{
+            color: white;
+            background-color: transparent;
+        }
+    }
+    #block-socialmedialinks-2{
+        float: right;
+        a{
+            color: $brand-secondary;
+            &:hover{
+                color: white;
+            }
+        }
+    }
+}
+
+/*==========  Non-Mobile First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 1024px) {
+    #block-views-block-slides-frontpage-slideshow .slide-infos h2{
+        font-size: 14px;
+        line-height: initial;
+    }
+    #block-views-block-slides-frontpage-slideshow .slide-infos .field--name-field-text{
+        display: none;
+    }
+    #block-views-block-slides-frontpage-slideshow .slide-infos .field--name-field-link a{
+        font-size: 10px;
+    }
+    #block-views-block-slides-frontpage-slideshow .slide-infos h2:after{
+        margin-top: 10px;
+    }
+    #block-views-block-slides-frontpage-slideshow .slick-prev{
+        left: 10%;
+    }
+    #block-views-block-slides-frontpage-slideshow .slick-next{
+        right: 10%;
+    }
+    #block-views-block-slides-frontpage-slideshow .slide-infos{
+        top: 27%;
+        width: 27%;
+    }
+    #block-regionsmapblock2 .club-arb-link-wrapper,
+    #block-regionsmapblock .club-arb-link-wrapper {
+        float: right;
+        margin-top: 5px;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .block-arb-register .arb-register-text:before{
+        display: none;
+    }
+    #sidebar.active {
+        width: 28% !important;
+    }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+    .block-arb-register {
+        font-size: 20px;
+    }
+    #sidebar.active {
+        width: 28% !important;
+    }
+    .user-logged-in .region-header .menu--account{
+        display: none;
+    }
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (max-width : 480px) {
+    .search-button .fa-search,
+    .header .fas.fa-times,
+    .header .fas.fa-bars {
+        font-size: 14px;
+    }
+    .header .name-menu{
+        display: none;
+    }
+    #sidebar.active {
+        width: 98% !important;
+    }
+    .header a.navbar-brand{
+        font-size: 15px;
+    }
+    .header p.navbar-text{
+        font-size: 11px;
+    }
+    .block-arb-register {
+        font-size: 20px;
+        line-height: initial;
+        padding: 15px 0;
+    }
+    .block-arb-register .arb-register-text:after{
+        display: none;
+    }
+    .block-arb-register .arb-register-link a{
+        margin-top: 10px;
+        float: left;
+    }
+    .search-block-form .wrapper {
+        width: 80%;
+    }
+    .page-node-type-news .content img,
+    #views-bootstrap-national-news-eva-news-tab img,
+    #views-bootstrap-national-news-all-news img,
+    #views-bootstrap-region-news-eva-news-tab img,
+    .region-latest-news img,
+    #block-views-block-region-news-front-block .slick-slide img{
+        width: 100%;
+    }
+}
+
+/* Custom, iPhone Retina */ 
+@media only screen and (max-width : 320px) {
+
+}

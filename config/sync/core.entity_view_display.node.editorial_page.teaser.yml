@@ -1,0 +1,35 @@
+uuid: 111efccb-fd52-4009-9589-cffb718f55ce
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.editorial_page.body
+    - field.field.node.editorial_page.field_editorial_type
+    - field.field.node.editorial_page.field_image
+    - node.type.editorial_page
+  module:
+    - text
+    - user
+id: node.editorial_page.teaser
+targetEntityType: node
+bundle: editorial_page
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_editorial_type: true
+  field_image: true
+  langcode: true

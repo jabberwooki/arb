@@ -1,0 +1,33 @@
+uuid: dbb61389-b6d5-4ac7-ace5-7fc558dc87ef
+langcode: fr
+status: true
+dependencies:
+  config:
+    - views.view.regions
+  module:
+    - ctools
+    - views
+  theme:
+    - arb
+id: views_block__regions_banner
+theme: arb
+region: highlighted
+weight: 0
+provider: null
+plugin: 'views_block:regions-banner'
+settings:
+  id: 'views_block:regions-banner'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+  context_mapping: {  }
+visibility:
+  'entity_bundle:group':
+    id: 'entity_bundle:group'
+    bundles:
+      regional_group: regional_group
+    negate: false
+    context_mapping:
+      group: '@group.group_route_context:group'

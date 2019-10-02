@@ -1,0 +1,22 @@
+uuid: 094cdd4c-a492-45e3-af97-c5e5e1c35005
+langcode: fr
+status: true
+dependencies:
+  theme:
+    - arb
+_core:
+  default_config_hash: X9I1OB0W3WlWtrK-CNcg6hNWwa8wficanpH8pYnDZDE
+id: arb_local_tasks
+theme: arb
+region: content
+weight: -7
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Onglets
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

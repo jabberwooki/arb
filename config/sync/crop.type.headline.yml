@@ -1,0 +1,12 @@
+uuid: c1f4b408-2326-4bcf-9604-f7464b62744b
+langcode: fr
+status: true
+dependencies: {  }
+label: 'A la une'
+id: headline
+description: ''
+aspect_ratio: '485:235'
+soft_limit_width: null
+soft_limit_height: null
+hard_limit_width: null
+hard_limit_height: null

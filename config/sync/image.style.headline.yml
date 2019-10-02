@@ -1,0 +1,25 @@
+uuid: e759df97-b694-4790-bf40-406731b18089
+langcode: fr
+status: true
+dependencies:
+  config:
+    - crop.type.headline
+  module:
+    - crop
+name: headline
+label: 'A la une'
+effects:
+  f099393b-6c10-4d17-b55f-0aa4593a5bab:
+    uuid: f099393b-6c10-4d17-b55f-0aa4593a5bab
+    id: crop_crop
+    weight: 1
+    data:
+      crop_type: headline
+  a815a935-831c-41bc-8a9c-f33c31336a18:
+    uuid: a815a935-831c-41bc-8a9c-f33c31336a18
+    id: image_scale
+    weight: 2
+    data:
+      width: 500
+      height: null
+      upscale: false

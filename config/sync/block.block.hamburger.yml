@@ -1,0 +1,25 @@
+uuid: 97c9c4ee-2bb7-42aa-b98f-1191fa6fdf90
+langcode: fr
+status: true
+dependencies:
+  config:
+    - system.menu.hamburger
+  module:
+    - system
+  theme:
+    - arb
+id: hamburger
+theme: arb
+region: hamburger
+weight: 0
+provider: null
+plugin: 'system_menu_block:hamburger'
+settings:
+  id: 'system_menu_block:hamburger'
+  label: 'Menu Hamburger'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

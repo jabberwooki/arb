@@ -1,0 +1,22 @@
+uuid: d4691ccb-bdc9-4454-8f64-83700ce2f161
+langcode: fr
+status: true
+dependencies:
+  module:
+    - node
+id: editorial_page
+label: 'Page editoriale'
+type: 'canonical_entities:node'
+pattern: '[node:title]'
+selection_criteria:
+  098c855e-46a8-48e8-aa55-aacdfdd9d59d:
+    id: node_type
+    bundles:
+      editorial_page: editorial_page
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 098c855e-46a8-48e8-aa55-aacdfdd9d59d
+selection_logic: and
+weight: -5
+relationships: {  }

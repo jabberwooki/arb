@@ -1,0 +1,20 @@
+uuid: 8d3ceddc-1b97-44e9-aa9b-bba4af3b3a5b
+langcode: fr
+status: true
+dependencies:
+  module:
+    - group
+    - taxonomy
+id: group.field_process_progress
+field_name: field_process_progress
+entity_type: group
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

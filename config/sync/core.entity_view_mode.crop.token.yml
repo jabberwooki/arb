@@ -1,0 +1,10 @@
+uuid: 2b6592a1-33e5-44a7-9088-1ed5de052e40
+langcode: fr
+status: true
+dependencies:
+  module:
+    - crop
+id: crop.token
+label: 'Jeton (token)'
+targetEntityType: crop
+cache: true

@@ -1,0 +1,82 @@
+/**
+ * Default Variables.
+ *
+ * Modify this file to provide default Bootstrap Framework variables. The
+ * Bootstrap Framework will not override any variables defined here because it
+ * uses the `!default` flag which will only set their default if not already
+ * defined here.
+ *
+ * You can copy existing variables directly from the following file:
+ * ./THEMENAME/bootstrap/assets/stylesheets/bootstrap/_variables.scss
+ */
+
+// Set the proper directory for the Bootstrap Glyphicon font.
+$icon-font-path: '../bootstrap/assets/fonts/bootstrap/';
+
+//## Font, line-height, and color for body text, headings, and more.
+$font-family-sans-serif:  Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$font-family-title:      Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+
+
+//Colors
+$brand-primary:         #1D495D !default;
+$brand-secondary:       #1FAD00 !default;
+
+//** Global text color on `<body>`.
+$text-color:            $brand-primary !default;
+
+//** By default, this inherits from the `<body>`.
+$headings-font-family:    inherit !default;
+$headings-font-weight:    700 !default;
+$headings-line-height:    1.1 !default;
+$headings-color:          #1D495D !default;
+
+//Link transition
+a{
+transition : all .25s ease-in-out;
+-moz-transition : all .25s ease-in-out;
+-webkit-transition : all .25s ease-in-out;
+	&:hover{
+		text-decoration: none;
+	}
+}
+
+@mixin like-btn-a{
+    background: $brand-secondary;
+    color: white;
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 60px;
+    padding: 10px 20px;
+        &:hover{
+            color: $brand-primary;
+        }
+    }
+@mixin like-btn-a-2{
+    background: $brand-primary;
+    color: white;
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 60px;
+    padding: 10px 20px;
+    border: 5px double white;
+    outline: 0;
+        &:hover{
+            color: white;
+            background: $brand-secondary;
+        }
+    }
+@mixin border-subtitle{
+    position: absolute;
+    left: 0;
+    content: ""; /* This is necessary for the pseudo element to work. */ 
+    display: block; /* This will put the pseudo element on its own line. */
+    margin: 0 auto; /* This will center the border. */
+    width: 90px; /* Change this to whatever width you want. */
+    /*padding-top: 10px;  This creates some space between the element and the border. */
+    border-bottom: 5px solid $brand-secondary; /* This creates the border. Replace black with whatever color you want. */
+}

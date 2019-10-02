@@ -1,0 +1,30 @@
+uuid: 07c45d72-f313-4e1c-b4e9-8b89d437d684
+langcode: fr
+status: true
+dependencies:
+  config:
+    - views.view.slides
+  module:
+    - system
+    - views
+  theme:
+    - arb
+id: views_block__slides_frontpage_slideshow
+theme: arb
+region: highlighted
+weight: 0
+provider: null
+plugin: 'views_block:slides-frontpage_slideshow'
+settings:
+  id: 'views_block:slides-frontpage_slideshow'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

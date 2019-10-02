@@ -1,0 +1,100 @@
+<?php
+
+/**
+ * @file
+ * Bootstrap sub-theme.
+ *
+ * Place your custom PHP code in this file.
+ */
+use Drupal\user\Entity\User;
+use Drupal\Core\Datetime\DateFormatter;
+
+function arb_preprocess_menu(&$variables) {
+  if (isset($variables['menu_name']) && $variables['menu_name'] == 'account') {
+    // Passage du nom complet de l'utilisateur courant au template menu.html.twig à l'aide de $variables.
+    $current_user = User::load(\Drupal::currentUser()->id());
+    $variables['user_fullname'] = $current_user->get('field_firstname')->value
+      . ' '
+      . $current_user->get('field_lastname')->value;
+  }
+}
+
+/**
+ * Implements hook_theme_suggestions_page_alter().
+ * Add suggestion template for page.html.twig
+ */
+function arb_theme_suggestions_page_alter(array &$suggestions, array $variables) {
+  // Suggestion de template pour un groupe régional.
+  if ($group = \Drupal::routeMatch()->getParameter('group')) {
+    $bundle = $group->bundle();
+    $suggestions[] = 'page__'. $bundle;
+  }
+  if ($node = \Drupal::routeMatch()->getParameter('node')) {
+    $content_type = $node->bundle();
+    $suggestions[] = 'page__type__'.$content_type;
+    $suggestions[] = 'page__node__' . $node->id();
+  }
+}
+
+function arb_preprocess_page(&$variables) {
+  $uri_parts = explode('/',\Drupal::request()->getRequestUri());
+
+  // Gestion de la navigation dans la page Agenda.
+  if ($uri_parts[1] == 'agenda') {
+    $calendar_navigation_data = array();
+
+    // Récupération du mois à afficher d'après l'url demandée
+    $requested_year = substr($uri_parts[2], 0,4);
+    $requested_month = substr($uri_parts[2], 4);
+    $first_timestamp_in_requested_month = strtotime($requested_year . '-' . $requested_month . '-01');
+    $requested_month = \Drupal::service('date.formatter')->format($first_timestamp_in_requested_month, $type='custom', $format = 'F Y');
+    $calendar_navigation_data['calendar_subtitle'] = $requested_month;
+
+    // Calcul du mois précédent
+    $first_timestamp_of_previous_month = strtotime('-1 month', $first_timestamp_in_requested_month);
+    $previous_month_text = \Drupal::service('date.formatter')->format($first_timestamp_of_previous_month, $type='custom', $format = 'F Y');
+    $previous_month_link = '/agenda/' . date('Y', $first_timestamp_of_previous_month) . date('m', $first_timestamp_of_previous_month) . '/' . $uri_parts[3];
+    $calendar_navigation_data['previous_month_text'] = $previous_month_text;
+    $calendar_navigation_data['previous_month_link'] = $previous_month_link;
+
+    // Calcul du mois suivant
+    $first_timestamp_of_next_month = strtotime('+1 month', $first_timestamp_in_requested_month);
+    $next_month_text = \Drupal::service('date.formatter')->format($first_timestamp_of_next_month, $type='custom', $format = 'F Y');
+    $next_month_link = '/agenda/' . date('Y', $first_timestamp_of_next_month) . date('m', $first_timestamp_of_next_month) . '/' . $uri_parts[3];
+    $calendar_navigation_data['next_month_text'] = $next_month_text;
+    $calendar_navigation_data['next_month_link'] = $next_month_link;
+
+    // Envoi des données de navigation au template page_agenda.html.twig
+    $variables['calendar_navigation_data'] = $calendar_navigation_data;
+  }
+  elseif ($uri_parts[1] == 'thematiques') {
+    $thematics_data = array();
+    $thematics_data['current_term_name'] = '';
+    $thematics_data['breadcrumbs'] = '';
+
+    if (isset($uri_parts[2]) && $uri_parts[2] != '') {
+      $crumbs = '<a href="/thematiques/">Thématiques</a>';
+
+      $parents = \Drupal::entityTypeManager()->getStorage('taxonomy_term')->loadAllParents($uri_parts['2']);
+
+      // Récupération du nom de la thématique courante.
+      $current_term  = array_shift($parents);
+      $current_term_name = $current_term->getName();
+      $thematics_data['current_term_name'] = $current_term_name;
+
+      // Récupération des thématiques parentes pour construire le fil d'Ariane.
+      $parents = array_reverse($parents, TRUE);
+      foreach ($parents as $parent) {
+        $crumbs .= ' > ' . '<a href="/thematiques/' . $parent->id() . '" class="linked-term">' . $parent->getName() . '</a>';
+      }
+      // On rajoute le nom du terme courant, non cliquable, à la fin du fil d'Ariane.
+      $thematics_data['breadcrumbs'] = $crumbs . ' > ' . '<span class="no-linked-term">' . $current_term_name . '</span>';
+    }
+
+    $variables['thematics_data'] = $thematics_data;
+  }
+}
+
+function arb_preprocess_views_view(&$variables) {
+
+}

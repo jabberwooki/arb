@@ -1,0 +1,17 @@
+uuid: b03a8d02-d437-47d4-ab8b-6ed994b6a5fc
+langcode: fr
+status: true
+dependencies:
+  config:
+    - group.type.national_group
+  module:
+    - user
+id: national_group-group_membership
+label: 'Groupe national: Adhésion au groupe'
+description: 'Adds users to groups as members.'
+group_type: national_group
+content_plugin: group_membership
+plugin_config:
+  group_cardinality: 0
+  entity_cardinality: 1
+  use_creation_wizard: true

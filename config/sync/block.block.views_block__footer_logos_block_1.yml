@@ -1,0 +1,24 @@
+uuid: 2673a64a-ee0f-4502-8070-cc819cc6aca4
+langcode: fr
+status: true
+dependencies:
+  config:
+    - views.view.footer_logos
+  module:
+    - views
+  theme:
+    - arb
+id: views_block__footer_logos_block_1
+theme: arb
+region: prefooter
+weight: 0
+provider: null
+plugin: 'views_block:footer_logos-block_1'
+settings:
+  id: 'views_block:footer_logos-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility: {  }

@@ -1,0 +1,18 @@
+uuid: 4e2f8936-7e82-44e1-98f0-a248d0c92cdf
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.footer_logo
+id: node.footer_logo.title
+field_name: title
+entity_type: node
+bundle: footer_logo
+label: Titre
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

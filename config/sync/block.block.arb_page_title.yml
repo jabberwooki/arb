@@ -1,0 +1,30 @@
+uuid: cba1d4fc-2e43-4c36-b155-c85fbc16da88
+langcode: fr
+status: true
+dependencies:
+  module:
+    - ctools
+  theme:
+    - arb
+_core:
+  default_config_hash: 7rR9chwXvdM2H8OYMAYx9Zj3GGlPMrZp_M3ZA4thYTk
+id: arb_page_title
+theme: arb
+region: content
+weight: -8
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Titre de page'
+  provider: core
+  label_display: '0'
+visibility:
+  'entity_bundle:group':
+    id: 'entity_bundle:group'
+    bundles:
+      national_group: national_group
+      regional_group: regional_group
+    negate: true
+    context_mapping:
+      group: '@group.group_route_context:group'

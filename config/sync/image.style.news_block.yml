@@ -1,0 +1,25 @@
+uuid: 73f77118-f64d-4afa-b212-55f5649e19a6
+langcode: fr
+status: true
+dependencies:
+  config:
+    - crop.type.news_block
+  module:
+    - crop
+name: news_block
+label: 'Bloc actus'
+effects:
+  6fd50e1b-9aab-442b-9372-54fee06b7654:
+    uuid: 6fd50e1b-9aab-442b-9372-54fee06b7654
+    id: crop_crop
+    weight: 1
+    data:
+      crop_type: news_block
+  3043fa87-a297-48d2-b64c-034fcbd4dba2:
+    uuid: 3043fa87-a297-48d2-b64c-034fcbd4dba2
+    id: image_scale
+    weight: 2
+    data:
+      width: 260
+      height: null
+      upscale: false

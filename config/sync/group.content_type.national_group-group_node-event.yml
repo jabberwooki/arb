@@ -1,0 +1,19 @@
+uuid: 67d14235-008f-4eb5-88ff-5ce4104c4f52
+langcode: fr
+status: true
+dependencies:
+  config:
+    - group.type.national_group
+    - node.type.event
+  module:
+    - gnode
+    - node
+id: national_group-group_node-event
+label: 'Groupe national: Group node (Evénement)'
+description: 'Adds <em class="placeholder">Evénement</em> content to groups both publicly and privately.'
+group_type: national_group
+content_plugin: 'group_node:event'
+plugin_config:
+  group_cardinality: 0
+  entity_cardinality: 1
+  use_creation_wizard: false

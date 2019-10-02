@@ -1,0 +1,112 @@
+uuid: 54a21ba7-4204-4f35-840f-1288d1188fe5
+langcode: fr
+status: true
+dependencies:
+  module:
+    - social_media_links
+  theme:
+    - arb
+id: socialmedialinks_2
+theme: arb
+region: footer_right
+weight: 0
+provider: null
+plugin: social_media_links_block
+settings:
+  id: social_media_links_block
+  label: 'Social Media Links'
+  provider: social_media_links
+  label_display: '0'
+  platforms:
+    behance:
+      value: ''
+      description: ''
+      weight: '-10'
+    bitbucket:
+      value: ''
+      description: ''
+      weight: '-9'
+    contact:
+      value: ''
+      description: ''
+      weight: '-8'
+    drupal:
+      value: ''
+      description: ''
+      weight: '-7'
+    email:
+      value: ''
+      description: ''
+      weight: '-6'
+    facebook:
+      value: Agence.francaise.biodiversite
+      description: ''
+      weight: '-5'
+    flickr:
+      value: ''
+      description: ''
+      weight: '-4'
+    github:
+      value: ''
+      description: ''
+      weight: '-3'
+    googleplus:
+      value: ''
+      description: ''
+      weight: '-2'
+    instagram:
+      value: afbiodiversite
+      description: ''
+      weight: '-1'
+    linkedin:
+      value: company/agence-française-pour-la-biodiversité
+      description: ''
+      weight: '0'
+    pinterest:
+      value: ''
+      description: ''
+      weight: '1'
+    rss:
+      value: ''
+      description: ''
+      weight: '2'
+    slideshare:
+      value: ''
+      description: ''
+      weight: '3'
+    tumblr:
+      value: ''
+      description: ''
+      weight: '4'
+    twitter:
+      value: afbiodiversite
+      description: ''
+      weight: '5'
+    vimeo:
+      value: ''
+      description: ''
+      weight: '6'
+    vkontakte:
+      value: ''
+      description: ''
+      weight: '7'
+    youtube:
+      value: channel/UCx865nT9i8fh-9-tQbTRY6w
+      description: ''
+      weight: '8'
+    youtube_channel:
+      value: ''
+      description: ''
+      weight: '9'
+  appearance:
+    orientation: h
+    show_name: 0
+  link_attributes:
+    target: '<none>'
+    rel: '<none>'
+  iconset:
+    style: 'fontawesome:2x'
+    installed_iconsets:
+      fontawesome:
+        examples: ''
+visibility: {  }

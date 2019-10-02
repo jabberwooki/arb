@@ -1,0 +1,61 @@
+uuid: c5112f42-e5a2-4903-9c4e-884da7f43010
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.teaser
+    - field.field.media.file.field_description_file
+    - field.field.media.file.field_document_categories
+    - field.field.media.file.field_media_file
+    - media.type.file
+  module:
+    - ds
+    - file
+    - text
+_core:
+  default_config_hash: 9s0lWIanCnW5Xrrkmedxohs9F0yk4LO8ZcmVQ9xyuu4
+id: media.file.teaser
+targetEntityType: media
+bundle: file
+mode: teaser
+content:
+  field_description_file:
+    weight: 3
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    type: text_summary_or_trimmed
+    region: content
+  field_document_categories:
+    weight: 1
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings:
+      ds:
+        ds_limit: ''
+    type: entity_reference_entity_view
+    region: content
+  field_media_file:
+    label: hidden
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    type: file_default
+    weight: 2
+    region: content
+  name:
+    type: string
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden:
+  created: true
+  langcode: true
+  thumbnail: true
+  uid: true

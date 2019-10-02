@@ -1,0 +1,15 @@
+uuid: 339f9504-7c41-4233-9c9f-22f385cc3726
+langcode: fr
+status: true
+dependencies: {  }
+name: diapo_accueil_medium
+label: 'Diapo accueil medium'
+effects:
+  a8583c2c-a88a-404f-b5e2-f8739d4fc0dd:
+    uuid: a8583c2c-a88a-404f-b5e2-f8739d4fc0dd
+    id: image_scale
+    weight: 1
+    data:
+      width: 1024
+      height: 470
+      upscale: false

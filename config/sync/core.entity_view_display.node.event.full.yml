@@ -1,0 +1,45 @@
+uuid: f45be7f0-6ed1-42f0-9d5a-8d16c36e86a4
+langcode: fr
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.node.full
+    - field.field.node.event.body
+    - field.field.node.event.field_event_dates
+    - node.type.event
+  module:
+    - datetime_range
+    - ds
+    - text
+    - user
+id: node.event.full
+targetEntityType: node
+bundle: event
+mode: full
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_event_dates:
+    weight: 0
+    label: hidden
+    settings:
+      timezone_override: ''
+      format_type: long
+      separator: '-'
+    third_party_settings:
+      ds:
+        ds_limit: ''
+    type: daterange_default
+    region: content
+  links:
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true

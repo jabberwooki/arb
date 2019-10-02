@@ -1,0 +1,12 @@
+uuid: 78e3bed6-54f0-4924-88bf-174c6b75dc67
+langcode: fr
+status: true
+dependencies: {  }
+label: 'Diapo page d''accueil'
+id: frontpage_slide
+description: 'Diapo visible dans le diaporama de la page d''accueil du site.'
+aspect_ratio: '1920:700'
+soft_limit_width: null
+soft_limit_height: null
+hard_limit_width: null
+hard_limit_height: null

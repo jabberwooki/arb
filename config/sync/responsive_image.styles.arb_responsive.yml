@@ -1,0 +1,35 @@
+uuid: e622dcda-fe49-4855-acce-d1451a3d2223
+langcode: fr
+status: true
+dependencies:
+  config:
+    - image.style.diapo_accueil_medium
+    - image.style.diapo_accueil_mobile
+    - image.style.frontpage_slide
+  theme:
+    - bootstrap
+id: arb_responsive
+label: 'ARB bandeau home'
+image_style_mappings:
+  -
+    breakpoint_id: bootstrap.screen-lg-min
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: frontpage_slide
+  -
+    breakpoint_id: bootstrap.screen-md-min
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: diapo_accueil_medium
+  -
+    breakpoint_id: bootstrap.screen-sm-min
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: diapo_accueil_mobile
+  -
+    breakpoint_id: bootstrap.screen-xs-max
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: diapo_accueil_mobile
+breakpoint_group: bootstrap
+fallback_image_style: frontpage_slide

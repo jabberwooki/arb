@@ -1,0 +1,162 @@
+uuid: a42726db-4b74-4b34-847e-7f4e1f1dc827
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.group.regional_group.field_code
+    - field.field.group.regional_group.field_image
+    - field.field.group.regional_group.field_internet_site
+    - field.field.group.regional_group.field_logo
+    - field.field.group.regional_group.field_presentation
+    - field.field.group.regional_group.field_process_progress
+    - field.field.group.regional_group.field_srb_process_progress
+    - field.field.group.regional_group.field_ten_process_progress
+    - group.type.regional_group
+  module:
+    - ds
+    - image
+    - link
+    - responsive_image
+    - text
+third_party_settings:
+  ds:
+    layout:
+      id: ds_1col
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        wrappers:
+          ds_content: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        classes:
+          layout_class: {  }
+    regions:
+      ds_content:
+        - field_image
+        - label
+        - field_process_progress
+        - field_internet_site
+        - 'dynamic_token_field:group-regions_backlink'
+        - field_presentation
+        - region_news_entity_view_1
+    fields:
+      'dynamic_token_field:group-regions_backlink':
+        plugin_id: 'dynamic_token_field:group-regions_backlink'
+        weight: 4
+        label: hidden
+        formatter: default
+id: group.regional_group.default
+targetEntityType: group
+bundle: regional_group
+mode: default
+content:
+  field_image:
+    weight: 0
+    label: hidden
+    settings:
+      image_link: ''
+      responsive_image_style: ''
+    third_party_settings: {  }
+    type: responsive_image
+    region: ds_content
+  field_internet_site:
+    weight: 3
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: ds_content
+  field_logo:
+    weight: 13
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_presentation:
+    weight: 5
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    type: text_trimmed
+    region: ds_content
+  field_process_progress:
+    weight: 2
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: ds_content
+  field_srb_process_progress:
+    weight: 11
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_ten_process_progress:
+    weight: 12
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  label:
+    label: hidden
+    type: string
+    weight: 1
+    region: ds_content
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  region_members_eva_dashboard_tab:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  region_news_entity_view_1:
+    weight: 10
+    region: ds_content
+    settings: {  }
+    third_party_settings: {  }
+  region_news_eva_dashboard_tab:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  region_news_eva_news_tab:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  regions_resources_eva_dashboard_tab:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  regions_resources_eva_resources_tab:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  changed: true
+  created: true
+  field_code: true
+  langcode: true
+  uid: true

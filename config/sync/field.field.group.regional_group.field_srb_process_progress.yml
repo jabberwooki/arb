@@ -1,0 +1,33 @@
+uuid: ba060a4d-f1d6-49bd-b9e4-1e27eec6169e
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.group.field_srb_process_progress
+    - group.type.regional_group
+    - taxonomy.vocabulary.process_srb_progress
+  content:
+    - 'taxonomy_term:process_srb_progress:814e01ec-fe30-4c76-acb6-55d853404e6a'
+id: group.regional_group.field_srb_process_progress
+field_name: field_srb_process_progress
+entity_type: group
+bundle: regional_group
+label: 'Avancement processus SRB'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    target_uuid: 814e01ec-fe30-4c76-acb6-55d853404e6a
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      process_srb_progress: process_srb_progress
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

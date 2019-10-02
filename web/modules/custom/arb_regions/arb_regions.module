@@ -1,0 +1,75 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: ubuntu
+ * Date: 18/12/18
+ * Time: 08:47
+ */
+
+use Drupal\Core\Entity\EntityInterface;
+
+
+function arb_regions_user_insert(Drupal\Core\Entity\EntityInterface $entity) {
+  $logger = \Drupal::logger('arb_regions');
+
+  $region_id = $entity->get('field_region')->getString();
+  if ($region_id) {
+    $is_region_selected = 'oui';
+    $region = \Drupal\group\Entity\Group::load($region_id);
+    $region->addMember($entity);
+
+    $logger->info(
+      'User @name (uid: @uid) registered in region @region.',
+      [
+        '@name' => $entity->label(),
+        '@uid' => $entity->id(),
+        '@region' => $region->label(),
+      ]
+    );
+  }
+  else {
+    $is_region_selected = 'non';
+    $logger->info('Pas de région sélectionnée');
+  }
+}
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ */
+function arb_regions_form_user_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
+  // Modification d'un compte utilisateur
+  if ($form_id == 'user_form'  && Drupal::currentUser()->id() != 1) {
+    $edited_user_roles = $form['account']['roles']['#default_value'];
+    // Si le compte modifié n'est pas un administrateur technique, le champ Région est obligatoire
+    if (!in_array('administrator', $edited_user_roles)) {
+      $form['field_region']['widget']['#required'] = TRUE;
+    }
+  }
+  // Création d'un compte utilisateur
+  elseif ($form_id == 'user_register_form' && Drupal::currentUser()->id() != 1) {
+    $current_user_roles = \Drupal::currentUser()->getRoles();
+    // Si l'utilisateur connecté n'est pas un administrateur technique, le champ Région est obligatoire
+    if (!in_array('administrator', $current_user_roles)) {
+      $form['field_region']['widget']['#required'] = TRUE;
+    }
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function arb_regions_theme($existing, $type, $theme, $path) {
+  return [
+    'regions_map__block' => [
+      'variables' => [
+        'data' => NULL,
+        'update_dates' => NULL,
+      ],
+    ],
+    'region_operations__block' => [
+      'variables' => [
+        'items' => NULL,
+      ],
+    ],
+  ];
+}

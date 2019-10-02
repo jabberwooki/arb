@@ -1,0 +1,26 @@
+uuid: 7eb9a1ec-688f-48c8-bebb-b657231cc958
+langcode: fr
+status: true
+dependencies:
+  module:
+    - arb_regions
+    - system
+  theme:
+    - arb
+id: regionsmapblock2
+theme: arb
+region: content
+weight: -2
+provider: null
+plugin: regions_map_block
+settings:
+  id: regions_map_block
+  label: 'Carte régions'
+  provider: arb_regions
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: /regions
+    negate: false
+    context_mapping: {  }

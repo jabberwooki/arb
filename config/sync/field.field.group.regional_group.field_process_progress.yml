@@ -1,0 +1,29 @@
+uuid: 236d5ce0-1e3f-4ab4-bbb9-ab09e700b830
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.group.field_process_progress
+    - group.type.regional_group
+    - taxonomy.vocabulary.process_progress
+id: group.regional_group.field_process_progress
+field_name: field_process_progress
+entity_type: group
+bundle: regional_group
+label: 'Avancement processus'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      process_progress: process_progress
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

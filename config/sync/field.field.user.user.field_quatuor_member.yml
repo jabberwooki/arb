@@ -1,0 +1,24 @@
+uuid: c3fd7d3a-daa1-4809-a70c-e4ac43241229
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_quatuor_member
+  module:
+    - user
+id: user.user.field_quatuor_member
+field_name: field_quatuor_member
+entity_type: user
+bundle: user
+label: 'Personne référente'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Activé
+  off_label: Désactivé
+field_type: boolean

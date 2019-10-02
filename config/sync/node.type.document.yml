@@ -1,0 +1,17 @@
+uuid: 155803ef-d8c8-4141-99df-faad1adf4e04
+langcode: fr
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Document
+type: document
+description: ''
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

@@ -1,0 +1,22 @@
+uuid: ce4886a7-80c1-4078-aa6b-671317bb1bc8
+langcode: fr
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - arb
+_core:
+  default_config_hash: KHQIJ7Vfl25lTjzIc7qIvnuistt-Mw2O0kG4jCofmkI
+id: arb_messages
+theme: arb
+region: content
+weight: -9
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

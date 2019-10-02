@@ -1,0 +1,10 @@
+uuid: 3dfdfaee-9f9f-414d-a40c-dfbe5b7bb21a
+langcode: fr
+status: true
+dependencies:
+  module:
+    - media
+id: media.frontpage_slideshow
+label: 'Diaporama accueil'
+targetEntityType: media
+cache: true

@@ -1,0 +1,8 @@
+uuid: d06f882c-399c-4822-b96f-0bc55172d9a8
+langcode: fr
+status: true
+dependencies: {  }
+name: 'Avancement processus SRB'
+vid: process_srb_progress
+description: ''
+weight: 0

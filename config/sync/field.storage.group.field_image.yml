@@ -1,0 +1,30 @@
+uuid: f0e6f935-5bf2-43a4-8832-801cf7b6a992
+langcode: fr
+status: true
+dependencies:
+  module:
+    - file
+    - group
+    - image
+id: group.field_image
+field_name: field_image
+entity_type: group
+type: image
+settings:
+  uri_scheme: public
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  target_type: file
+  display_field: false
+  display_default: false
+module: image
+locked: false
+cardinality: 5
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

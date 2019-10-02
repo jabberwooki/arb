@@ -1,0 +1,18 @@
+smtp_on: true
+smtp_host: in-v3.mailjet.com
+smtp_hostbackup: ''
+smtp_port: '587'
+smtp_protocol: tls
+smtp_username: fa5ec791df1fe6889db3c83c7eac4143
+smtp_password: 4a5e393a311f55303df958ff2aeb8ff5
+smtp_from: christophe.espiau@korora.fr
+smtp_fromname: 'Christophe Espiau'
+smtp_client_hostname: ''
+smtp_client_helo: ''
+smtp_allowhtml: '1'
+smtp_test_address: ''
+smtp_debugging: false
+prev_mail_system: php_mail
+_core:
+  default_config_hash: WEa5Ex_IeAcm6Bm0hmQ4vU_nDwJDB8hW-vxT1qpGIbM
+langcode: fr

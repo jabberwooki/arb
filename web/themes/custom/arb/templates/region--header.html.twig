@@ -1,0 +1,63 @@
+{#
+/**
+ * @file
+ * Theme override to display a region.
+ *
+ * Available variables:
+ * - content: The content for this region, typically blocks.
+ * - attributes: HTML attributes for the region div.
+ * - region: The name of the region variable as defined in the theme's
+ *   .info.yml file.
+ *
+ * @ingroup templates
+ *
+ * @see template_preprocess_region()
+ */
+#}
+{%
+  set classes = [
+    'region',
+    'region-' ~ region|clean_class,
+  ]
+%}
+{% if content %}
+  <div{{ attributes.addClass(classes) }}>
+
+        <div class="row vertical-align">
+            {% if logged_in %}
+            <div class="col-xs-2 col-sm-2 col-md-2">
+              <div class="hamburger hamburger-open" id="sidebarCollapse">
+                <div class="btn navbar-btn">
+                    <i class="fas fa-bars"></i>
+                    <span class="name-menu">Menu</span>
+                </div>
+                  
+              </div>
+
+              <div class="hamburger hamburger-close" id="sidebarCollapse">
+                <div class="btn navbar-btn">
+                  <i class="fas fa-times"></i>
+                  <span class="name-menu">Menu</span>
+                </div>
+              </div>
+            </div>
+            {% endif %}
+
+            <div class="col-xs-8 col-sm-8 col-md-7 col-center">
+              {{ content }}
+            </div>
+            
+            <div class="col-xs-2 col-sm-2 col-md-3 col-lg-2">
+                {% if logged_in %}
+                    <div class="search-button">
+                        <span class="fas fa-search" aria-hidden="true"></span>
+                    </div>
+                {% endif %}
+                {{ drupal_block('system_menu_block:account') }}
+            </div>
+            
+        </div>
+
+
+  </div>
+{% endif %}

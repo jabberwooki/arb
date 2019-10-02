@@ -1,0 +1,18 @@
+uuid: ee780c09-2ec3-449a-bfde-273e47e561bb
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.editorial_page
+id: node.editorial_page.title
+field_name: title
+entity_type: node
+bundle: editorial_page
+label: Titre
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

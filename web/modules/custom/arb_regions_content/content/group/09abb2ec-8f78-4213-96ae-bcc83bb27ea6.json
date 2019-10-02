@@ -1,0 +1,148 @@
+{
+    "_links": {
+        "self": {
+            "href": "http:\/\/default\/regions\/bretagne?_format=hal_json"
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/group\/regional_group"
+        },
+        "http:\/\/drupal.org\/rest\/relation\/group\/regional_group\/uid": [
+            {
+                "href": "http:\/\/default\/user\/1?_format=hal_json",
+                "lang": "fr"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/group\/regional_group\/field_process_progress": [
+            {
+                "href": "http:\/\/default\/taxonomy\/term\/5?_format=hal_json"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/group\/regional_group\/field_region_image": [
+            {
+                "href": "http:\/\/default\/media\/19?_format=hal_json"
+            }
+        ]
+    },
+    "id": [
+        {
+            "value": 6
+        }
+    ],
+    "uuid": [
+        {
+            "value": "09abb2ec-8f78-4213-96ae-bcc83bb27ea6"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "fr",
+            "lang": "fr"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "regional_group"
+        }
+    ],
+    "label": [
+        {
+            "value": "Bretagne",
+            "lang": "fr"
+        }
+    ],
+    "_embedded": {
+        "http:\/\/drupal.org\/rest\/relation\/group\/regional_group\/uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "f356a791-9cd0-4449-beaa-c76e683147e4"
+                    }
+                ],
+                "lang": "fr"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/group\/regional_group\/field_process_progress": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/taxonomy\/term\/5?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/taxonomy_term\/process_progress"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "e4125dba-b5f1-4aa4-b3a2-8f8c907a21f7"
+                    }
+                ]
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/group\/regional_group\/field_region_image": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/media\/19?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/media\/image"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "ea654a80-a4cc-4a95-8365-f15bcdd4fbc7"
+                    }
+                ]
+            }
+        ]
+    },
+    "created": [
+        {
+            "value": "2018-12-19T16:35:32+00:00",
+            "lang": "fr",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "changed": [
+        {
+            "value": "2018-12-19T16:38:53+00:00",
+            "lang": "fr",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "path": [
+        {
+            "alias": "\/regions\/bretagne",
+            "pid": 14,
+            "langcode": "fr",
+            "lang": "fr"
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true,
+            "lang": "fr"
+        }
+    ],
+    "field_code": [
+        {
+            "value": "FR-BRE"
+        }
+    ],
+    "field_presentation": [
+        {
+            "value": "<p>Lorem ipsum dolor sit amet,sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, &nbsp;At vero eos et accusam et justo duo dolores et ea rebum. &nbsp;Lorem ipsum dolor sit amet, &nbsp;no sea takimata sanctus est Lorem ipsum dolor sit amet. &nbsp;Stet clita kasd gubergren, &nbsp;no sea takimata sanctus est Lorem ipsum dolor sit amet. &nbsp;no sea takimata sanctus est Lorem ipsum dolor sit amet. &nbsp;no sea takimata sanctus est Lorem ipsum dolor sit amet. &nbsp;sed diam voluptua. &nbsp;<\/p>\r\n",
+            "format": "full_html",
+            "processed": "<p>Lorem ipsum dolor sit amet,sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, \u00a0At vero eos et accusam et justo duo dolores et ea rebum. \u00a0Lorem ipsum dolor sit amet, \u00a0no sea takimata sanctus est Lorem ipsum dolor sit amet. \u00a0Stet clita kasd gubergren, \u00a0no sea takimata sanctus est Lorem ipsum dolor sit amet. \u00a0no sea takimata sanctus est Lorem ipsum dolor sit amet. \u00a0no sea takimata sanctus est Lorem ipsum dolor sit amet. \u00a0sed diam voluptua. \u00a0<\/p>\n",
+            "summary": ""
+        }
+    ]
+}

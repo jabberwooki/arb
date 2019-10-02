@@ -1,0 +1,8 @@
+uuid: 68768100-e877-4b82-b090-35bc2ea61dd2
+langcode: fr
+status: true
+dependencies: {  }
+id: content-creation
+label: 'Création de contenu'
+description: 'Contient les liens de création des contenus du site'
+locked: false

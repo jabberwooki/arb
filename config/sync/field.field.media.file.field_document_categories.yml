@@ -1,0 +1,29 @@
+uuid: ab171c01-4b0c-43a0-8484-14dd8f9185c4
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_document_categories
+    - media.type.file
+    - taxonomy.vocabulary.document_categories
+id: media.file.field_document_categories
+field_name: field_document_categories
+entity_type: media
+bundle: file
+label: 'Catégories de document'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      document_categories: document_categories
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

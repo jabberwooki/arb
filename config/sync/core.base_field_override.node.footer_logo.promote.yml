@@ -1,0 +1,22 @@
+uuid: ceadd92d-777e-4407-b39d-93b3f7e6d1a5
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.footer_logo
+id: node.footer_logo.promote
+field_name: promote
+entity_type: node
+bundle: footer_logo
+label: 'Promu en page d''accueil'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Activé
+  off_label: Désactivé
+field_type: boolean

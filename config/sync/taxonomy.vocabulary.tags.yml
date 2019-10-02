@@ -1,0 +1,10 @@
+uuid: bebe8c32-1322-466e-947e-b2e4f52597bc
+langcode: fr
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: lO5ziR5dVI1PpEeHZsSOfQ-Y7NWihSDKW8-MMf6uoms
+name: Étiquettes
+vid: tags
+description: 'Use tags to group articles on similar topics into categories.'
+weight: 0

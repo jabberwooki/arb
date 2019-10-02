@@ -1,0 +1,8 @@
+uuid: a78ca85c-d7db-44e5-bbb9-3b9cb46b9239
+langcode: fr
+status: true
+dependencies: {  }
+name: 'Types d''actualité'
+vid: news_types
+description: ''
+weight: 0

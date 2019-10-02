@@ -1,0 +1,10 @@
+uuid: 7a6a395f-c7a6-4c19-9a97-fd02af5f2f0b
+langcode: fr
+status: true
+dependencies: {  }
+id: regional_group
+label: 'Groupe régional'
+description: 'Permet de créer un groupe pour chaque région administrative.'
+creator_membership: true
+creator_wizard: true
+creator_roles: {  }

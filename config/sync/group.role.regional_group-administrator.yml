@@ -1,0 +1,45 @@
+uuid: 3f11c0cd-a2cd-4061-95c6-0ec39a3538c8
+langcode: fr
+status: true
+dependencies:
+  config:
+    - group.type.regional_group
+id: regional_group-administrator
+label: 'Administrateur régional'
+weight: 3
+internal: false
+audience: member
+group_type: regional_group
+permissions_ui: true
+permissions:
+  - 'administer group'
+  - 'view group'
+  - 'view group_membership content'
+  - 'access content overview'
+  - 'edit group'
+  - 'administer members'
+  - 'access group_node overview'
+  - 'create group_node:news entity'
+  - 'delete any group_node:news entity'
+  - 'update any group_node:news entity'
+  - 'view group_node:news entity'
+  - 'create group_node:news content'
+  - 'delete any group_node:news content'
+  - 'update any group_node:news content'
+  - 'view group_node:news content'
+  - 'create group_node:slide entity'
+  - 'delete any group_node:slide entity'
+  - 'update any group_node:slide entity'
+  - 'view group_node:slide entity'
+  - 'create group_node:slide content'
+  - 'delete any group_node:slide content'
+  - 'update any group_node:slide content'
+  - 'view group_node:slide content'
+  - 'create group_node:document entity'
+  - 'delete any group_node:document entity'
+  - 'update any group_node:document entity'
+  - 'view group_node:document entity'
+  - 'create group_node:document content'
+  - 'delete any group_node:document content'
+  - 'update any group_node:document content'
+  - 'view group_node:document content'

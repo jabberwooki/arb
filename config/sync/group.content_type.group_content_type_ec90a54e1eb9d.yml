@@ -1,0 +1,28 @@
+uuid: 7f9dde30-8a86-44a2-98ae-9df65fdd6127
+langcode: fr
+status: true
+dependencies:
+  config:
+    - group.type.national_group
+    - group.type.regional_group
+id: group_content_type_ec90a54e1eb9d
+label: 'Groupe national: Subgroup (Groupe régional)'
+description: 'Adds <em class="placeholder">Groupe régional</em> groups to groups both publicly and privately.'
+group_type: national_group
+content_plugin: 'subgroup:regional_group'
+plugin_config:
+  group_cardinality: 0
+  entity_cardinality: 1
+  use_creation_wizard: true
+  parent_role_mapping:
+    national_group-a416e6833: regional_group-a416e6833
+    national_group-administrator: ''
+    national_group-anonymous: regional_group-anonymous
+    national_group-member: ''
+    national_group-outsider: ''
+  child_role_mapping:
+    regional_group-a416e6833: national_group-a416e6833
+    regional_group-administrator: national_group-administrator
+    regional_group-anonymous: national_group-anonymous
+    regional_group-member: national_group-member
+    regional_group-outsider: national_group-outsider

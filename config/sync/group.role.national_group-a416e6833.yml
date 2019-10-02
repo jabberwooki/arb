@@ -1,0 +1,17 @@
+uuid: e85cb380-bdc7-4f82-a43e-f1f20e70ef63
+langcode: fr
+status: true
+dependencies:
+  config:
+    - group.type.national_group
+  enforced:
+    config:
+      - user.role.administrator
+id: national_group-a416e6833
+label: Administrator
+weight: 2
+internal: true
+audience: outsider
+group_type: national_group
+permissions_ui: false
+permissions: {  }

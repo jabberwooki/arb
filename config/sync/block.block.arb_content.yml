@@ -1,0 +1,22 @@
+uuid: f4152b6f-dae4-431a-9a51-0b3849828339
+langcode: fr
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - arb
+_core:
+  default_config_hash: 9EoWV2Lot6FVSr50t4hoKgiz1LIXYWNG-IIPYsWxBqo
+id: arb_content
+theme: arb
+region: content
+weight: -3
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Contenu de la page principale'
+  provider: system
+  label_display: '0'
+visibility: {  }

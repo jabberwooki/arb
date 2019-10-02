@@ -1,0 +1,300 @@
+Plate-forme ARB v1.0 - 2019-10-02
+---------------------------------
+  * Suppression (provisoire) de la fonctionnalité Vidéos dans Ckeditor. Raison : erreur de déploiement des plugins ckeditor en recette.
+  * Activation et paramétrage du module contrib ckeditor_media_embed pour pouvoir ajouter des vidéos directement dans CKEditor.
+  * Modif des vues Actus par thématique et Ressources par thématique : ajout d'une info 'Pas de contenu dans cette thématique'.
+  * Réactivation du module SMTP dans le config split local seulement.
+  * Désactivation du module SMTP dans la config générale.
+  * Activation du module devel_php pour le config split local seulement.
+  * Création de la vue Thématiques, avec lien dans le menu Hamburger, fil d'Ariane et blocs Actualités et Ressources correspondants à la thématique affichée.
+  * Ajout du champ Thématique au mode Contenu complet de Document.
+  * Ajout du champ Thématique dans mode Contenu complet du type Actualité.
+  * Ajout du champ Thématiques aux vues Ressources régions.
+  * Ajout du champ Thématique au type de contenu Document. Affichage de ce champ dans les vues Ressources nationales.
+  * Ajout du champ Thématique aux vues Actualités régions.
+  * Ajout du champ Thématique au type Actualité. Affichage de ce champ dans les vues Actualités nationales.
+  * Création du vocabulaire Thématiques.
+  * Modification Agenda : Ajout du lien 'Créer un évenement' dans le menu Hamburger.
+  * Modification Agenda : Ajout du nom de la région dans chaque événement.
+  * Amélioration du filtre Régions dans l'agenda : la navigation mois précédent/mois suivent conserve maintenant la région sélectionnée.
+  * Modification Agenda : Activation du contenu Evénement pour les groupes régionaux et national, ajout du filtre Régions dans la vue /agenda.
+  * Création de la navigation mois par mois de l'agenda.
+  * Création de la vue Agenda.
+  * Modification du type de contenu Evénement.
+  * Install et activation du module date_range_formatter.
+  * Modif de la config du module Devel.
+  * Création du type de contenu Evénement.
+  * Mise à jour du module Display Suite (3.1 -> 3.3) pour supprimer le bug 'Illegal offset type in isset or empty in _ds_field_ui_table_layouts' (voir ttps://www.drupal.org/project/ds/issues/2875412).
+  * Export de config suite à la mise à jour du noyau Drupal (8.9.13 -> 8.7.3).
+  * Mise à jour de sécurité : Drupal Core 8.6.13 -> 8.7.3
+  * Mise à jour de sécurité du noyau : passage de la version 8.6.12 à la version 8.6.13
+  * Mise à jour de sécurité du noyau : passage de la version 8.6.2 à la version 8.6.12
+  * CSS responsive mobile img actu et bouton club ARB au dessus de cartes
+  * Css pour les images d'actualités des regions sur le tableau de bord en mobile
+  * Modif template header pour ecran large
+  * Bouton recharche en mobile css
+  * Création de styles d'images et créationd es styles d'images adpatatifs pour les bandeaxu home et regions
+  * Template region header et css sidebar hamburger
+  * css responsive mobile pour le bloc d'inscription et les images d'actualités
+  * Ajout de css pour le responsive page d'accueil (breakpoint bootstrap)
+  * Modif template front page pour les blocs cartes et pages editoriales pour le responsive
+  * Modif des templates des blocks de la region prefooter pour le responsive
+  * Modif du template du module arb register pour responsive
+  * Tableau de brod region bandeau image arrondi et css header
+  * Mise en page tempalte et css des nodes éditoriaux
+  * Courbe sous les images
+  * Modif carte ARB pour inclur ele texte dans la forme et le lien
+  * Menu focus style et style bouton appliquer
+  * Nom du groupe retiré des affichages Tableau de bord et Onglet ressources pour les groupe régionaux et le groupe national (parce que inutile).
+  * etiquette region sur les ressources css
+  * Traduction du bouton de filtre exposé Apply en Appliquer dans la vue des Ressources nationales.
+  * Ajout du nom du groupe à côté de la date dans toutes les listes de documents.
+  * ajout du bandeau illustratif sur la page user et min-height sur le main-container
+  * Suppression de la marge blan,che sous le footer
+  * Mise en page ressource full node et page template et css
+  * Suppression du lien sur le champ Type d'actualité dans le display suite Full content.
+  * Node actualité modif template et css
+  * Titre de bloc 'Membres' remplacé par 'Personnes référentes'.
+  * Bouton 'Le club ARB' renommé 'Collectif national' dans le template des cartes interactives.
+  * Ajout des modules chosen et chosen_library au config split local pour qu'ils ne soient pas activés en recette.
+  * menu hamburger active a CSS
+  * Mise en page du node news full et de la page et CSS
+  * Suppression de la scrollbar horizontale en CSS
+  * Modif du script arb.js : ajout d'un test if(flag) pour n'exécuter qu'une seule fois append() sur le <p> du texte de présentation d'une région.
+  * Modification de la structure du footer, modif des templates de pages, placement des blocs dans les régions et CSS
+  * Modification des templates group region et national + CSS et js
+  * Ajout d'une class pour la zone pre-footer dans tous le stemplates page afin d'y mettre le background image en css
+  * Création du template de la region footer - bug le bloc des media sociaux ne s'affiche pas
+  * Css menus footer et modif header bouton de connexion
+  * Margin-top pour le bloc d'inscription de la homepage
+  * Cacher en css le bouton connexion uniquement en version logguée et il apparaît en user-logged-out
+  * Z-index pour le menu hamburger
+  * CSS menu hamburger et ajout d'une class .col-center poour le header
+  * Ajout de l'appel du champ logo dans les templates de groupe régional et national.
+  * Ajout du champ Logo pour les 2 types de groupe (régional et national).
+  * Template et CSS pour les titres de page (hightlighted) regions, actualités, ressources et node actu
+  * Modif des vues Actualités nationales et Ressources nationales : Ajout d'un filtre exposé Région sous forme de champ Select.
+  * Install et activation du module contrib better_exposed_filters.
+  * Modif de plusieur fichiers yml de config suite à la traduction en français.
+  * Modif du champ Image pour Diapositive, Groupe régional et Groupe national : résolution mini passée à 2000x450.
+  * Mise en place du slide carousel sur le bloc Membres.
+  * Modification de la vue Membres régions : modif de paramétrage pour prendre en compte aussi les membres qui appartiennent à un groupe national.
+  * Suggestion de template de page dans arb.theme
+  * css et twig du lien backlink
+  * Modif du type de contenu Actualité : application du même format d'image sur le full mode que sur la page d'accueil (bloc actus).
+  * css group national
+  * Slideshow groupe national js et css des fleches
+  * Slideshow du champ image des regions et positionnement fleches
+  * Correction d'une erreur dans la vue /actualites : suppression de la réécriture du lien (inutile).
+  * CSS cartes interactives bloc homepage et page regions
+  * Modif de la génération des classe des items du menu Hamburger : on utilite les routeName qui ne changeront jamais plutôt que les title qui risquent d'être changés par l'utilisateur.
+  * Install du module transliteration (= filtre Twig) et ajout d'un nom de classe pour les items du menu Hamburger.
+  * Modif du module custom arb_regions : Ajout d'un nom de classe aux items du bloc RegionOperations.
+  * Ajout d'un motif pathauto pour groupe national.
+  * Modif de la config du module Legal.
+  * Modification du picto des ressources
+  * Modification du template twig cartes interactives
+  * Modifications template twig et css header
+  * Modification template de vue ressources national et css
+  * Modif de template dans la vue ressources regions et CSS
+  * Css page actualités d'une region
+  * Css menu account et actualités
+  * Modification views page actualités nationales p.news-title devient h3.news-title
+  * Install et paramétrage du module contrib Legal.
+  * css titre de bloc
+  * Création du lien retour vers l'endroit exact d'ou l'on vient (accueil, liste actus, liste, documents, onglet actus, onglet document) dans la page d'une actu ou d'un document.
+  * Création des templates twig pour les pages Actualités et Ressources (du menu Hamburger) pour forcer l'affichage du titre (voir détails dans le commentaire du template).
+  * Codage d'un controle d'accès custom pour actus : les permissions Group n'interdisent pas au user anonymous de voir les actus (sinon il ne peut pas voir le bloc actus de l'accueil) donc interdiction codée avec le hook_node_access dans le module custom arb_misc.
+  * Install et activation du module config_ignore et ajout de la config de arb_regions à config_ignore.
+  * Modif du module custom arb_regions : config du module exporté dans arb_regions.settings au lieu de maps.settings sinon Drush croit à l'import que maps est une extension (module) manquante.
+  * Modif de la vue Ressources régions : accès au bloc Ressources de la page d'accueil autorisé seulement aux gens identifiés.
+  * Modif du module custom arb_regions : Ajout d'une interface d'admin des dates de mise à jour des cartes.
+  * début de CSS de la page tableau de bord d'une région
+  * Css et template du bloc inscription visible en homepage non connecté
+  * css background hamburger menu et block register front
+  * Ajout d'un champ Image au type de contenu Page éditoriale.
+  * css region latest news
+  * Ajout d'un champ Fichier(s) au type de contenu Actualité.
+  * Actus Club ARB et documents Club ARB rajoutés dans les blocs Actus et Ressources de la page d'accueil.
+  * Correction de bug dans l'affichage des cartes interactive (faute d'orthographe dans les noms de variable).
+  * Création des légendes des 3 cartes interactives, avec tooltips.
+  * Création des 2 cartes supplémentaires SRB et TEN. Affichage des 3 cartes dans des onglets sur la page d'accueil.
+  * Création des 2 nouveaux vocabulaires Avancement processus SRB et Avancement processus TEN. Création des champs correspondants dans le type de groupe 'Groupe régional'.
+  * Désactivation du cron Drupal, réglé par défaut à 3 heures.
+  * Modif du type de groupe 'Groupe régional' : Suppression de la double étape lors de la création d'un contenu actu, document ou diapo.
+  * Modif manuelle du fichier composer.json : suppression de la déclaration de patch (Subroup) faite dans le commit précédent.
+  * Modif manuelle du fichier composer.json pour déclarer le patch 'Port Subgroup (ggroup) to the D8 version'.
+  * Modif de la vue Membres régions : Le nouveau champ Organisation (taxo) remplace l'ancien (texte). L'affichage n'est plus limité à 4.
+  * Modif de User : Création du vocabulaire Organisations et modification des champs (organisation, fonction, quatuor.
+  * Application du javascript slick sur le bandeau image d'une région.
+  * Création des templates twig pour le type de groupe national.
+  * Création des vues Actualités nationales et Ressources nationales. Modif de la vue Régions.
+  * Chargement de l'ancienne fontawesome pour le module social media qui l'utilise
+  * CSS du bloc ressources accueil et modification de l'affichage des champs de toutes les vues ressources
+  * CSS bloc des dernières actualités des ARB sur la homepage
+  * Désactivation de l'affichage du bloc Titre de page pour le groupe national.
+  * Modif de la vue Régions : ajout du bloc Bandeau national et placement de ce bloc dans la région Mis en évidence.
+  * Modif du type de groupe 'Group national' : paramétrage du formulaire et de l'affichage.
+  * CSS des titres de block de la home page
+  * Modif du type de group 'Groupe national' : Création des champs Image, Présentation et Site internet (ré-utilisation des champs créés pour le type régional).
+  * CSS et JS des fleches du diaporama accueil bandeau et des titres, bouton...
+  * Modif de paramétrage du champ Image utilisé dans les 2 types de groupe (régional, national) : cardinalité du champ passé de 1 à 5.
+  * Modif du contenu Actualité : Suppression de l'étiquette 'Image' et ajout du champ Titre dans le ds mode Full content.
+  * CSS diaporama et modif du teaser du diaporama
+  * Css, js, et template pour le theming du header
+  * Modif du type de groupe 'Group régional' : Réglage des droits du rôle 'administrateur régional'.
+  * Modif du type de groupe 'Groupe national' : réglage général de tous les droits.
+  * Modif du type de groupe 'Groupe national' : activation des plugins de contenus nécessaires.
+  * Modif du type de groupe 'Groupe national' : création du rôle 'administrateur national'.
+  * Modif du type de groupe 'Groupe national' : activation du plugin Subgroup (Groupe régional) permettant d'ajouter les groupes régionaux au groupe national.
+  * Activation du module Subgroup.
+  * Modif du module arb_misc : correction d'un bug WSOD lorsqu'un internaute veut s'inscrire.
+  * Devel generate ajouté au config split local.
+  * Export de la config du module shied dans le config split staging (recette).
+  * Re-export de la config des display modes Accroche (teaser) et A la une (headline), bien qu'ils ne soient pas utilisés actuellement, pour supprimer un blocage de la synchronisation de config sur la recette brgm.
+  * Modif de l'entité media image : suppression des champs field_height et field_width (pour cause de synchronisation bloquée avec la recette brgm).
+  * Modif du formulaire utilisateur : Le champ 'Je suis membre du quatuor' devient 'Membre du quatuor'.
+  * Modif du formulaire utilisateur : Suppression du champ 'J'apparais dans l'annuaire de la région' (field_directory).
+  * Modif du module arb_misc : Gestion de l'affichage du champ 'Membre du quatuor' (formulaire compte utilisateur) en fonction des rôles de l'utilisateur connecté.
+  * Modif dans le module arb_regions : correction du bug dans le hook arb_regions_user_insert : un admin peut maintenant enregistrer un utilisateur (par ex. pour créer un autre admin) sans avoir à lui attribuer de région.
+  * Installation et activation du module Redirect 403 to User Login.
+  * Modification du slogan du site.
+  * Modif du config split staging : ajout du module shield dans le split complet.
+  * Création d'un fichier test.txt pour vérifier le bon déploiemen (provisoire) sur Korora.
+  * Modif de la vue Ressources régions : h4 remplacé par h3 sur le titre d'un document dan l'onglet Ressources.
+  * Modification de la vue Actualités régions : Application des balises h3 ou h4 sur le titre d'une actu en fonction de l'endroit.
+  * Modification de la vue Membres régions : suppression du champ email en double.
+  * Activation du module custom arb_misc et création du code de redirection après login (page d'accueil ou région selon les users).
+  * Mise à jour des droits classiques drupal et des droits Group.
+  * Modif des vues Actualités regions et Ressources régions : filtre contextuel Group (Group id) remplacé par Groupe content (Group parent).
+  * Création d'une nouvelle vue Membres régions (region_members, avec region au singulier) avec bloc eva_dashboard_tab et affichage de ce bloc dans l'onglet tableau de bord d'une région.
+  * Désactivation de la vue initiale Membres régions (impossible à supprimer pour cause d'erreur EVA). Cette vue de type User ne permet pas aux membres d'une région de voir les autres membres.
+  * Modification de la vue Actualités régions : suppression du nom de la région lorsque l'acctualité est vue dans sa région et pas sur l'accueil.
+  * Mise à jour du display mode Compact d'un compte utilisateur.
+  * Modification de la vue Pages éditoriales : Titre des 2 textes passé en h2.
+  * Correction du template erroné arb-register--block.html.twig.
+  * Création de la vue Membres régions avec un bloc eva Onglet tableau de bord et placement de ce bloc sur la page d'une région.
+  * Ajout des champs EVA ressources au display mode Contenu complet d'une région. Modification du template de contenu d'une région pour afficher ces 2 champs, l'un dans l'onglet Tableau de bord et l'autre dans l'onglet Ressources.
+  * Création de la nouvelle vue Ressources régions (regions_resources, avec 1 seul s à resources) et placement du bloc Dernières ressources accueil sur la page d'accueil.
+  * Création de la vue Ressources régions (regions_ressources, avec 2 s à ressources) par clonage et adaptation de la vue Actualités régions. Mais elle ne fonctionne pas. Impossible de la supprimer (Error: Call to undefined function _eva_clear_detached()) donc conservée mais désactivée.
+  * Désactivation des vues Actualités et Ressources (on les garde, on sait jamais).
+  * Ajout d'un tri desc sur la date de création pour les documents du bloc Dernières ressouces de la vue Ressources (actuellement plus utilisée).
+  * Bloc Dernières ressources de la vue Ressources retiré de la page d'accueil.
+  * Désactivation de l'affichage du bloc Titre de page pour les pages de type regional_group.
+  * Création de la vue Actualités régions avec un bloc classique, Actus régions accueil (front_block), et 2 blocs EVA, Onglet tableau de bord (eva_dashboard_tab) et Onglet actualités (eva_news_tab). Placement du premier bloc sur la page d'accueil et utilisation des blocs eva en tant que champs dans le display Contenu complet d'une région.
+  * Création du bloc de vue Bandeau région (regions/banner) et placement de ce bloc dans la région Highlighted, visible seulement lorsqu'on est dans une page regional_group.
+  * 1) Création d'une suggestion de template pour une page de région et création du template page--regional-group.html.twig. 2) Création du template DS ds-1col--group-regional-group-full.html.twig pour customiser la région content d'une page de région.
+  * Bloc actus d'une région retiré de la région contenu dans l'affichage des blocs.
+  * Installation et activation du module EVA.
+  * Modification des permissions groupe pour que les anonymes puissent voir les actus de la page d'accueil.
+  * Création de la vue 'Actualités régions' contenant les blocs 'Actus régions accueil' et 'Bloc actus d'une région'. Positionnement de ces blocs sur l'accueil et sur la page d'une région. Mise en place du carousel sur le bloc de la page d'accueil.
+  * Bloc actus accueil initial retiré de la page d'accueil.
+  * Réglage des droits membre et outsider concernant l'accès aux régions et aux contenus actus, documents, diapos.
+  * Création du bloc custom 'Création de contenu dans une région' (nom machine : regions_operations_block) et placement de ce bloc dans la région Hamburger.
+  * Le bloc du menu custom content-creation est retiré de l'affichage dans la region Hamburger.
+  * Suppression des dpm() dans le template menu.html.twig.
+  * Activation du Diaporama de la page d'accueil dans arb.js.
+  * Création d'un module custom arb_misc pour y coder toutes les petites fonctionnalités nécessaires à la plate-forme.
+  * Modification du titre des liens du menu utilisateur : 'Se connecter' devient 'Connexion', 'Se déconnecter' devient 'Déconnexion' et 'Mon compte' est remplacé par le nom complet de l'utilisateur.
+  * Modification du display mode 'Bloc actus' et du display mode 'Accroche' (pour Document) : h2 remplacé par h3 sur le titre.
+  * Création du 'group role' administrator.
+  * Correction de la pagination (4 items au lieu de 16) dans le bloc Dernières ressources.
+  * Activation du plugin Group node pour Documents.
+  * Désactivation de la vue de media 'Ressources' (nom machine : ressources, avec 2 s). Création d'une autre vue Ressources (nom machine : resources, avec 1 seul s) pour afficher les documents (pour l'instant).
+  * Création du type de contenu Document.
+  * Correction du display mode 'Bloc actus' : suppression du label 'Image' et ajout du lien sur le titre.
+  * Modification du type de contenu Actualité : re-paramétrage du champ Type d'actualité (autocomplétion avec ajout des termes non encore existants).
+  * Modification du crop type Diapo page d'accueil : suppression des hard limits.
+  * Modification du type de groupe Région : champ image media remplacé par champ image standard.
+  * Modification du type de contenu Diapositive : champ image media remplacé par champ image standard.
+  * Modification du type de contenu Actualité : champ image média remplacé par champ image standard.
+  * Création d'un second bloc carte pour la page Régions.
+  * Modifs css main-container frontpage
+  * Positionnement du slideshow et du main container
+  * Création du menu 'Création de contenu' et ajout de ce menu dans la région Hamburger.
+  * Repositionnement des liens du menu Hamburger dans l'ordre de la maquette : Accueil, Régions, Actualités, [Agenda absent pour l'instant], Ressources.
+  * Paramétrage Group : Activation des plugins Group node pour Actualités et Diapositives.
+  * Hover sur les régions de la carte svg
+  * Installation du module shield (non activé) et du config split de la recette.
+  * Modification des paramètres du thème : Désactivation du logo du site, suppression du mot 'Menu' à côté du picto hamburger."
+  * Fin du commit précédent (export de la config)
+  * Positionnement des block sur la homepage (carte et blocs éditoriaux), création de 2 nouvelles régions content right et content left
+  * Typo dans le svg modifiée
+  * Class bootstrap block views editorial pages arb infos
+  * Installation du module contrib 'default_content' en prévision de l'export de contenu.
+  * Création du bloc 'Carte interactive des ARB' dans le module arb_regions. Affichage de ce bloc sur la page d'accueil et sur la page Régions.
+  * Création d'un view mode full (pour Group) et utilisation de ce view mode pour la page d'une région.
+  * Création d'un view mode region_header et utilisation de ce view mode dans l'affichage de l'image d'une region.
+  * Modification templates pour le menu hamburger et region hamburger visibles que pour les "logged in users"
+  * Création d'un champ ds 'Retour à la liste' pour la page d'une région.
+  * Ressources : modification du media file (ajout de champs), création du vocabulaire Catégorie de document, création de la page vue et du bloc vue pour l'accueil
+  * Création du motif pathauto pour une région.
+  * Ajout du champ Image dans la page d'une région.
+  * Création des template des blocs logos pied de page et Twitter embed pour positionnement avec les class bootstrap dans la region prefooter
+  * Création de la vue Régions et du template twig pour le titre d'une région.
+  * Création du type de contenu Logo pied de page + création du bloc views Logos pied de page et mise en place dans la region prefooter
+  * Twitter embed module installer et activer, ajout du bloc et paramétrage dans la région prefooter
+  * Création de la region prefooter
+  * Modification de la vue Pages éditoriales : Champ body 'coupé' au lieu de 'résumé ou coupé'.
+  * Réglage de conflit pour la valeur content-hash dans composer.lok.
+  * Création du type de contenu Page éditoriale et des 2 blocs de la page d'accueil vers ces pages.
+  * Grille bootstrap sur la page actualités
+  * Mise en forme de slick sur actualités page d'accueil et activation devel generate
+  * Install et activation du module pathauto (+ token).
+  * Activation du module arb_register, oublié dans le commit précédent.
+  * Modif du module arb_register. Le template page--front.html.twig est refait à partir du template page.htm.twig déjà présent dans le thème et <section> remplacé par <div> dans arb-register--block.html.twig.
+  * Création du module arb_register qui génère le bloc Inscrivez-vous en page d'accueil.
+  * Modification du slogan du site.
+  * Modification du champ Région du compte utilisateur : le champ n'est plus obligatoire. Il est rendu obligatoire en fonction de qui fait quoi dans arb_regions_form_user_form_alter() (voir arb_regions.module).
+  * Modification de paramétrage du module devel, activation du module kint et ajout de ce module au config split local.
+  * footer link hover
+  * Couleurs footer
+  * Bloc de recherche js et css, couleurs, typographies dans variables, template pour le header
+  * Modif de paramétrage du module smtp : utilisation de l'adresse korora au lieu de l'adresse gmail comme adresse d'envoi.
+  * Création de tous les champs du compte utilisateur. Paramétrage des champs du formulaire de création/modif d'un compte utilisateur. Création du module custom arb_regions pour coder toutes les fonctionnalités liées aux régions. Première fonctionnalité : ajout automatique d'un utilisateur à la région choisie au moment de la création du compte.
+  * Fichier oublié dans l'avant dernier commit : Fichier énéré lors de la modif de paramétrage des comptes utilisateurs : L'adresse email qui doit recevoir les alertes de création de compte est par défaut égale à 'chaine vide'.
+  * Modification de config dans Group : Modification de paramétrage du plugin Adhésion au groupe : Un utilisateur ne peut être ajouté qu'à un seul groupe (région).
+  * Modification de paramétrage des comptes utilisateurs : Un internaute peut créer un compte (soumis à validation admin) sans vérification de son adresse email. Il peut ainsi choisir son mot de passe à l'inscription.
+  * Install et paramétrage du module smtp pour que le site de dev local puisse envoyer des mails avec un serveur smtp externe (pas besoin de paramétrage d'un serveur de mail sur le poste de travail).
+  * Ajout du menu utilisateur dans le template region-hamburger.html.twig .
+  * Déplacement de l'appel du menu utilisateur du template block--system-branding-block.html.twig vers le template region--header.html.twig et ajout du picto loupe si le user est connecté.
+  * Création des champs Nom et Prénom d'un utilisateur.
+  * menu hamburger librairie region template twig js css
+  * Ajout du menu utilisateur (connexion/mon compte) dans la région header mais en le codant dans le template block--system-branding-block.html.twig.
+  * Install et activation du module twig_tweak.
+  * Suppression des formulaires Diaporama, A la une et Bloc actus du media Image (parce que inaccessibles depuis le formateur de champ Entity Browser). Construction de la vue Media browser et de l'entity browser Navigateur de media. Utilisation de cet entity browser comme formateur du champ Image des types de contenu Actualité et Diapositive ainsi que du champ Image du type de groupe Groupe régional.
+  * Install et activation du module entity_browser (+ ctools).
+  * Création des formulaires Diaporama, A la une et Bloc actus pour le media Image.
+  * Déparamétrages du champ Image dans les formulaires Diapo et Actu, puis désinstallation du module expérimental media_library.
+  * Install et activation du module inline_entity_form.
+  * activation du debug twig local avec le fichier local.services.yml.
+  * Modifications de paramétrage des champs du type de group 'Groupe regional'.
+  * Création du crop type et du style d'image 'Diapo région'. Création du DS mode 'Diaporama région'.
+  * Modification du champ Présentation dans le type de groupe Groupe national : champ de saisie du résumé coché.
+  * Création du type de contenu Actualité et de la vue Actualités (page + bloc).
+  * Modification des réglages pour le media image.
+  * Paramétrage des formats de texte : Full HTML en haut de liste et autorisé aussi à tout utilisateur connecté.
+  * Install et activation du module social_media_links. Création du bloc de bas de page.
+  * Modification du menu 'Pied de page' : désactivation du lien Contact, ajout du lien 'Plan du site'.
+  * Modification du template page.html.twig pour rendrer la région 'Pied de page' fluide.
+  * Installation et activation du module sitemap.
+  * Création du template page.html.twig, création de la région Hamburger, création du menu Hamburger et placement du block de menu Hamburger dans la région Hamburger.
+  * Modification de la vue 'Page d'accueil' pour afficher une page vide par defaut.
+  * Placement du bloc 'Diaporama accueil' dans la région 'Mis en évidence'.
+  * Réorganisation initiale de la mise en page des blocs.
+  * Activation du sous-thème arb.
+  * Installation du base theme Bootstrap et création du sous-thème arb.
+  * Installation du base theme Bootstrap Barrio et création du sous-thème ARB Bootstrap Barrio.
+  * Création du crop style 'Diapo page d'accueil (frontpage_slide)' et du style d'image 'Diapo page d'accueil (frontpage_slide)' utilisant ce crop style. Création du DS mode media 'Diaporama accueil (frontpage_slideshow)'. Attribution du style d'image 'Diapo page d'accueil' à ce DS mode. Attribution de l'entité rendue 'Diaporama accueil' au DS mode Accroche du type de contenu Diapositive.
+  * Activation du module responsive_image.
+  * Activation du module admin_toolbar_tools.
+  * Installation et activation du module image_widget_crop.
+  * Création du type de contenu Diapositive et du diaporama accueil site.
+  * Installation et activation du module chosen et sa librairie.
+  * Ajout du profil d'install config_installer.
+  * Création des types de groupe national_group et regional_group. Création des champs de regional_group.
+  * Installation des modules ds et field_group. Activation des modules field_group, gnode, layout_discovery, media, ds et ds_extra.
+  * Installation et activation du module group.
+  * Création des dossiers de split et du split local puis premier export de la config.
+  * Commit initial. Drupal 8.6 avec les modules contrib admin_toolbar, devel et config_split.
+  * Initial commit

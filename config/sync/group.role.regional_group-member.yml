@@ -1,0 +1,40 @@
+uuid: 3d2c1864-2328-4d45-8b4b-be8235f486bc
+langcode: fr
+status: true
+dependencies:
+  config:
+    - group.type.regional_group
+id: regional_group-member
+label: Membre
+weight: -100
+internal: true
+audience: member
+group_type: regional_group
+permissions_ui: true
+permissions:
+  - 'view group'
+  - 'create group_node:news entity'
+  - 'delete own group_node:news entity'
+  - 'update own group_node:news entity'
+  - 'create group_node:news content'
+  - 'delete own group_node:news content'
+  - 'update own group_node:news content'
+  - 'view group_node:news content'
+  - 'create group_node:slide entity'
+  - 'delete own group_node:slide entity'
+  - 'update own group_node:slide entity'
+  - 'view group_node:slide entity'
+  - 'create group_node:slide content'
+  - 'delete own group_node:slide content'
+  - 'update own group_node:slide content'
+  - 'view group_node:slide content'
+  - 'create group_node:document entity'
+  - 'delete own group_node:document entity'
+  - 'update own group_node:document entity'
+  - 'view group_node:document entity'
+  - 'create group_node:document content'
+  - 'delete own group_node:document content'
+  - 'update own group_node:document content'
+  - 'view group_node:document content'
+  - 'view group_node:news entity'
+  - 'view group_membership content'

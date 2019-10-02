@@ -1,0 +1,6 @@
+name: ARBs regions
+description: Fonctionnalités concernant les régions créées à l'aide du module group.
+package: ARBs
+
+type: module
+core: 8.x

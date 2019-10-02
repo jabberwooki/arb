@@ -1,0 +1,11 @@
+id: regions_backlink
+label: 'Retour à la liste'
+ui_limit: ''
+properties:
+  content:
+    value: "<div class=\"backlink\"><a href=\"/regions\">Retour à la liste</a></div>\r\n"
+    format: full_html
+type: token
+type_label: 'Token field'
+entities:
+  group: group

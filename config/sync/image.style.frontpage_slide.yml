@@ -1,0 +1,25 @@
+uuid: e299f7e1-9360-4793-98d7-c32c05c14690
+langcode: fr
+status: true
+dependencies:
+  config:
+    - crop.type.frontpage_slide
+  module:
+    - crop
+name: frontpage_slide
+label: 'Diapo page d''accueil'
+effects:
+  ead563d0-e854-47b8-aa7f-ece9f1957dc3:
+    uuid: ead563d0-e854-47b8-aa7f-ece9f1957dc3
+    id: crop_crop
+    weight: 1
+    data:
+      crop_type: frontpage_slide
+  904a02e0-15b0-4211-a7bc-666ab3ecb4b2:
+    uuid: 904a02e0-15b0-4211-a7bc-666ab3ecb4b2
+    id: image_scale
+    weight: 2
+    data:
+      width: 2560
+      height: null
+      upscale: false

@@ -1,0 +1,19 @@
+uuid: 43ed3d27-28f2-467a-b1d5-c3a92bf210c9
+langcode: fr
+status: true
+dependencies:
+  config:
+    - group.type.regional_group
+    - node.type.slide
+  module:
+    - gnode
+    - node
+id: regional_group-group_node-slide
+label: 'Groupe régional: Group node (Diapositive)'
+description: 'Adds <em class="placeholder">Diapositive</em> content to groups both publicly and privately.'
+group_type: regional_group
+content_plugin: 'group_node:slide'
+plugin_config:
+  group_cardinality: 0
+  entity_cardinality: 1
+  use_creation_wizard: false

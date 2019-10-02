@@ -1,0 +1,6 @@
+name: ARB Register
+description: Bloc Inscrivez-vous.
+package: ARBs
+
+type: module
+core: 8.x

@@ -1,0 +1,116 @@
+uuid: be221634-c66b-4ff8-a870-2a1886eb1ced
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.group.full
+    - field.field.group.national_group.field_image
+    - field.field.group.national_group.field_internet_site
+    - field.field.group.national_group.field_logo
+    - field.field.group.national_group.field_presentation
+    - group.type.national_group
+    - image.style.region_logo
+  module:
+    - ds
+    - image
+    - link
+    - text
+third_party_settings:
+  ds:
+    layout:
+      id: ds_1col
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        wrappers:
+          ds_content: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        classes:
+          layout_class: {  }
+    regions:
+      ds_content:
+        - field_logo
+        - label
+        - field_internet_site
+        - field_presentation
+        - national_news_eva_dashboard_tab
+        - national_news_eva_news_tab
+        - national_resources_eva_dashboard_tab
+        - national_resources_eva_resources_tab
+        - region_members_eva_dashboard_tab
+id: group.national_group.full
+targetEntityType: group
+bundle: national_group
+mode: full
+content:
+  field_internet_site:
+    weight: 2
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: ds_content
+  field_logo:
+    type: image
+    weight: 0
+    region: ds_content
+    label: hidden
+    settings:
+      image_style: region_logo
+      image_link: ''
+    third_party_settings: {  }
+  field_presentation:
+    weight: 3
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: ds_content
+  label:
+    label: hidden
+    type: string
+    weight: 1
+    region: ds_content
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  national_news_eva_dashboard_tab:
+    weight: 4
+    region: ds_content
+    settings: {  }
+    third_party_settings: {  }
+  national_news_eva_news_tab:
+    weight: 5
+    region: ds_content
+    settings: {  }
+    third_party_settings: {  }
+  national_resources_eva_dashboard_tab:
+    weight: 6
+    region: ds_content
+    settings: {  }
+    third_party_settings: {  }
+  national_resources_eva_resources_tab:
+    weight: 7
+    region: ds_content
+    settings: {  }
+    third_party_settings: {  }
+  region_members_eva_dashboard_tab:
+    weight: 8
+    region: ds_content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  changed: true
+  created: true
+  field_image: true
+  langcode: true
+  uid: true

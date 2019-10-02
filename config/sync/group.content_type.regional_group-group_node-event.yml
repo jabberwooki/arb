@@ -1,0 +1,19 @@
+uuid: b84ea276-7bb5-447c-85b1-e9cc44010fb8
+langcode: fr
+status: true
+dependencies:
+  config:
+    - group.type.regional_group
+    - node.type.event
+  module:
+    - gnode
+    - node
+id: regional_group-group_node-event
+label: 'Groupe régional: Group node (Evénement)'
+description: 'Adds <em class="placeholder">Evénement</em> content to groups both publicly and privately.'
+group_type: regional_group
+content_plugin: 'group_node:event'
+plugin_config:
+  group_cardinality: 0
+  entity_cardinality: 1
+  use_creation_wizard: false

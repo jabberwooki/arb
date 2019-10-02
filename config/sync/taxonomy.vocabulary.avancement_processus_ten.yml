@@ -1,0 +1,8 @@
+uuid: e2ba2924-6e47-4917-b2f9-3059ce36aa45
+langcode: fr
+status: true
+dependencies: {  }
+name: 'Avancement processus TEN'
+vid: avancement_processus_ten
+description: ''
+weight: 0
