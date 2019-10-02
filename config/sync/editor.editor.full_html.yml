@@ -39,7 +39,6 @@ settings:
           items:
             - Blockquote
             - DrupalImage
-            - Embed
             - Table
             - HorizontalRule
         -
@@ -57,7 +56,7 @@ settings:
     stylescombo:
       styles: ''
     autoembed:
-      status: embed
+      status: ''
 image_upload:
   status: true
   scheme: public
