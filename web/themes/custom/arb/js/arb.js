@@ -134,15 +134,19 @@
 
       // Insertion d'une légende d'image sur l'image d'un node actualité.
       if ($('article.news.full').length) {
-        var newsLegend = $('article.news.full img').attr('title');
-        $('article.news.full .field--name-field-image .image-caption').remove(); // pour éviter la répétition de la légende
-        $('article.news.full .field--name-field-image').append('<div class="image-caption">' + newsLegend + '</div>');
+        if ($('article.news.full img').attr('title')) {
+          var newsLegend = $('article.news.full img').attr('title');
+          $('article.news.full .field--name-field-image .image-caption').remove(); // pour éviter la répétition de la légende
+          $('article.news.full .field--name-field-image').append('<div class="image-caption">' + newsLegend + '</div>');
+        }
       }
       // Insertion d'une légende sur l'image d'un node page éditoriale.
       if ($('article.editorial-page.full').length) {
-        var editorialPageLegend = $('article.editorial-page.full img').attr('title');
-        $('article.editorial-page.full .image-caption').remove(); // pour éviter la répétition de la légende
-        $('article.editorial-page.full img').after('<div class="image-caption">' + editorialPageLegend + '</div>');
+        if ($('article.editorial-page.full img').attr('title')) {
+          var editorialPageLegend = $('article.editorial-page.full img').attr('title');
+          $('article.editorial-page.full .image-caption').remove(); // pour éviter la répétition de la légende
+          $('article.editorial-page.full img').after('<div class="image-caption">' + editorialPageLegend + '</div>');
+        }
       }
     }
   };
