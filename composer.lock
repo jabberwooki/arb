@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "c0d59abb02a1cce4725f8c3e0b860c7e",
+    "content-hash": "130c32ca63921438e782c84a4249848b",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -202,6 +202,94 @@
             ],
             "description": "Drupal code generator",
             "time": "2018-10-11T08:05:59+00:00"
+        },
+        {
+            "name": "ckeditor-plugin/autoembed",
+            "version": "4.13.0",
+            "dist": {
+                "type": "zip",
+                "url": "https://download.ckeditor.com/autoembed/releases/autoembed_4.13.0.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "type": "drupal-library"
+        },
+        {
+            "name": "ckeditor-plugin/autolink",
+            "version": "4.13.0",
+            "dist": {
+                "type": "zip",
+                "url": "https://download.ckeditor.com/autolink/releases/autolink_4.13.0.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "type": "drupal-library"
+        },
+        {
+            "name": "ckeditor-plugin/embed",
+            "version": "4.13.0",
+            "dist": {
+                "type": "zip",
+                "url": "https://download.ckeditor.com/embed/releases/embed_4.13.0.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "type": "drupal-library"
+        },
+        {
+            "name": "ckeditor-plugin/embedbase",
+            "version": "4.13.0",
+            "dist": {
+                "type": "zip",
+                "url": "https://download.ckeditor.com/embedbase/releases/embedbase_4.13.0.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "type": "drupal-library"
+        },
+        {
+            "name": "ckeditor-plugin/embedsemantic",
+            "version": "4.13.0",
+            "dist": {
+                "type": "zip",
+                "url": "https://download.ckeditor.com/embedsemantic/releases/embedsemantic_4.13.0.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "type": "drupal-library"
+        },
+        {
+            "name": "ckeditor-plugin/notification",
+            "version": "4.13.0",
+            "dist": {
+                "type": "zip",
+                "url": "https://download.ckeditor.com/notification/releases/notification_4.13.0.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "type": "drupal-library"
+        },
+        {
+            "name": "ckeditor-plugin/notificationaggregator",
+            "version": "4.13.0",
+            "dist": {
+                "type": "zip",
+                "url": "https://download.ckeditor.com/notificationaggregator/releases/notificationaggregator_4.13.0.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "type": "drupal-library"
+        },
+        {
+            "name": "ckeditor-plugin/textmatch",
+            "version": "4.13.0",
+            "dist": {
+                "type": "zip",
+                "url": "https://download.ckeditor.com/textmatch/releases/textmatch_4.13.0.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "type": "drupal-library"
         },
         {
             "name": "composer/installers",
@@ -8152,94 +8240,6 @@
                 "webdriver"
             ],
             "time": "2018-10-10 12:39:06"
-        },
-        {
-            "name": "ckeditor-plugin/autoembed",
-            "version": "4.13.0",
-            "dist": {
-                "type": "zip",
-                "url": "https://download.ckeditor.com/autoembed/releases/autoembed_4.13.0.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "type": "drupal-library"
-        },
-        {
-            "name": "ckeditor-plugin/autolink",
-            "version": "4.13.0",
-            "dist": {
-                "type": "zip",
-                "url": "https://download.ckeditor.com/autolink/releases/autolink_4.13.0.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "type": "drupal-library"
-        },
-        {
-            "name": "ckeditor-plugin/embed",
-            "version": "4.13.0",
-            "dist": {
-                "type": "zip",
-                "url": "https://download.ckeditor.com/embed/releases/embed_4.13.0.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "type": "drupal-library"
-        },
-        {
-            "name": "ckeditor-plugin/embedbase",
-            "version": "4.13.0",
-            "dist": {
-                "type": "zip",
-                "url": "https://download.ckeditor.com/embedbase/releases/embedbase_4.13.0.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "type": "drupal-library"
-        },
-        {
-            "name": "ckeditor-plugin/embedsemantic",
-            "version": "4.13.0",
-            "dist": {
-                "type": "zip",
-                "url": "https://download.ckeditor.com/embedsemantic/releases/embedsemantic_4.13.0.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "type": "drupal-library"
-        },
-        {
-            "name": "ckeditor-plugin/notification",
-            "version": "4.13.0",
-            "dist": {
-                "type": "zip",
-                "url": "https://download.ckeditor.com/notification/releases/notification_4.13.0.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "type": "drupal-library"
-        },
-        {
-            "name": "ckeditor-plugin/notificationaggregator",
-            "version": "4.13.0",
-            "dist": {
-                "type": "zip",
-                "url": "https://download.ckeditor.com/notificationaggregator/releases/notificationaggregator_4.13.0.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "type": "drupal-library"
-        },
-        {
-            "name": "ckeditor-plugin/textmatch",
-            "version": "4.13.0",
-            "dist": {
-                "type": "zip",
-                "url": "https://download.ckeditor.com/textmatch/releases/textmatch_4.13.0.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "type": "drupal-library"
         },
         {
             "name": "doctrine/instantiator",
