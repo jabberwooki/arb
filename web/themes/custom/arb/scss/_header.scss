@@ -134,6 +134,12 @@ body.toolbar-fixed .toolbar-oriented .toolbar-bar {
         a.viewnational-resourcesall-resources:before{
             content: '\f0c5';
         }
+        a.vieweventsevents-list:before{
+            content: '\f073';
+        }
+        a.viewthematicspage-1:before{
+            content: '\f02e';
+        }
     }
     #regions-operations{
         background: lighten($brand-primary, 5%);
@@ -374,6 +380,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1d495d', end
 .page-node-type-news,
 .path-ressources,
 .path-actualites,
+.path-agenda,
+.path-thematiques,
 .path-regions{
     .highlighted {
         min-height: 200px;

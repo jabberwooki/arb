@@ -8894,6 +8894,14 @@ body.toolbar-fixed .toolbar-oriented .toolbar-bar {
   content: '\f0c5';
 }
 
+.hamburger .menu--hamburger a.vieweventsevents-list:before {
+  content: '\f073';
+}
+
+.hamburger .menu--hamburger a.viewthematicspage-1:before {
+  content: '\f02e';
+}
+
 .hamburger #regions-operations {
   background: #235870;
 }
@@ -9201,6 +9209,8 @@ body.toolbar-fixed .toolbar-oriented .toolbar-bar {
 .page-node-type-news .highlighted,
 .path-ressources .highlighted,
 .path-actualites .highlighted,
+.path-agenda .highlighted,
+.path-thematiques .highlighted,
 .path-regions .highlighted {
   min-height: 200px;
   position: relative;
@@ -9224,6 +9234,8 @@ body.toolbar-fixed .toolbar-oriented .toolbar-bar {
 .page-node-type-news .highlighted h2,
 .path-ressources .highlighted h2,
 .path-actualites .highlighted h2,
+.path-agenda .highlighted h2,
+.path-thematiques .highlighted h2,
 .path-regions .highlighted h2 {
   position: absolute;
   top: 30%;
@@ -9241,6 +9253,8 @@ body.toolbar-fixed .toolbar-oriented .toolbar-bar {
 .page-node-type-news .highlighted h2:after,
 .path-ressources .highlighted h2:after,
 .path-actualites .highlighted h2:after,
+.path-agenda .highlighted h2:after,
+.path-thematiques .highlighted h2:after,
 .path-regions .highlighted h2:after {
   position: absolute;
   left: 0;
@@ -9584,6 +9598,12 @@ body.toolbar-fixed .toolbar-oriented .toolbar-bar {
   font-size: 14px;
   font-weight: 500;
   color: #1FAD00;
+  margin-bottom: 0;
+}
+
+.view-region-news p.news-thematics, .view-national-news p.news-thematics, .region-latest-news p.news-thematics,
+.block-views-blockregion-news-front-block p.news-thematics {
+  font-size: 10px;
 }
 
 .view-region-news h3, .view-national-news h3, .region-latest-news h3,
@@ -9600,6 +9620,13 @@ body.toolbar-fixed .toolbar-oriented .toolbar-bar {
 }
 
 /*RESSOURCES HOME*/
+.view-national-resources .view-filters,
+.view-regions-resources .view-filters,
+.region-latest-resources .view-filters,
+.block-views-blockregions-resources-front-block .view-filters {
+  margin-bottom: 30px;
+}
+
 .view-national-resources .infos-files,
 .view-regions-resources .infos-files,
 .region-latest-resources .infos-files,
@@ -9608,6 +9635,13 @@ body.toolbar-fixed .toolbar-oriented .toolbar-bar {
   padding: 15px;
   border-bottom: 1px solid #1FAD00;
   margin-bottom: 25px;
+}
+
+.view-national-resources p.thematics-files,
+.view-regions-resources p.thematics-files,
+.region-latest-resources p.thematics-files,
+.block-views-blockregions-resources-front-block p.thematics-files {
+  font-size: 10px;
 }
 
 .view-national-resources p.date-files,
@@ -9933,12 +9967,14 @@ body.toolbar-fixed .toolbar-oriented .toolbar-bar {
   padding-right: 10px;
 }
 
-/*News et ressources*/
+/*News , agenda et ressources*/
+.path-agenda .region-content,
 .path-ressources .region-content,
 .path-actualites .region-content {
   margin-top: 30px;
 }
 
+.path-agenda .btn-info,
 .path-ressources .btn-info,
 .path-actualites .btn-info {
   background: #1FAD00;
@@ -9951,12 +9987,19 @@ body.toolbar-fixed .toolbar-oriented .toolbar-bar {
   padding: 10px 20px;
 }
 
+.path-agenda .btn-info:hover,
 .path-ressources .btn-info:hover,
 .path-actualites .btn-info:hover {
   color: #1D495D;
 }
 
 /*NEWS*/
+.page-node-type-news .field--name-field-thematics {
+  font-weight: 500;
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+
 .page-node-type-news .field--name-field-news-type {
   color: #1FAD00;
   text-transform: uppercase;
@@ -9965,6 +10008,10 @@ body.toolbar-fixed .toolbar-oriented .toolbar-bar {
 
 .page-node-type-news .field--name-body {
   padding-top: 10px;
+}
+
+.page-node-type-news .field--name-field-files {
+  margin-top: 20px;
 }
 
 .page-node-type-news .content {
@@ -10013,6 +10060,12 @@ body.toolbar-fixed .toolbar-oriented .toolbar-bar {
   color: #1FAD00;
 }
 
+.page-node-type-document .field--name-field-thematics {
+  font-weight: 500;
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+
 .page-node-type-document .field--name-field-document-category {
   color: #1FAD00;
   text-transform: uppercase;
@@ -10042,6 +10095,55 @@ body.toolbar-fixed .toolbar-oriented .toolbar-bar {
 
 .page-node-type-editorial-page .content h2 {
   margin-top: 0;
+}
+
+/*AGENDA*/
+.agenda-navigation {
+  text-align: center;
+  padding: 30px 0 0 0;
+}
+
+.agenda-navigation .next-month a,
+.agenda-navigation .previous-month a {
+  background: #1D495D;
+  color: white;
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 60px;
+  padding: 10px 20px;
+  border: 5px double white;
+  outline: 0;
+}
+
+.agenda-navigation .next-month a:hover,
+.agenda-navigation .previous-month a:hover {
+  color: white;
+  background: #1FAD00;
+}
+
+.agenda-navigation .next-month a:after,
+.agenda-navigation .previous-month a:before {
+  font-family: 'fontawesome';
+  color: white;
+  content: '\f054';
+  font-size: 18px;
+  padding-right: 0;
+  padding-left: 10px;
+}
+
+.agenda-navigation .previous-month a:before {
+  content: '\f053';
+  padding-right: 10px;
+  padding-left: 0;
+}
+
+.agenda-navigation .agenda-subtitle {
+  color: #1D495D;
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
 }
 
 .pre-footer {

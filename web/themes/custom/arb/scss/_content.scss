@@ -207,6 +207,10 @@
         font-size: 14px;
         font-weight: 500;
         color:$brand-secondary;
+        margin-bottom:0;
+    }
+    p.news-thematics{
+        font-size:10px;
     }
     h3{
         font-size: 14px;
@@ -224,11 +228,17 @@
 .view-regions-resources,
 .region-latest-resources,
 .block-views-blockregions-resources-front-block{
+    .view-filters{
+        margin-bottom: 30px;
+    }
     .infos-files{
         background: #F5F6F8;
         padding: 15px;
         border-bottom: 1px solid $brand-secondary;
         margin-bottom: 25px;
+    }
+    p.thematics-files{
+        font-size:10px;
     }
     p.date-files{
         font-size: 14px;
@@ -454,7 +464,8 @@
 }
 
 
-/*News et ressources*/
+/*News , agenda et ressources*/
+.path-agenda,
 .path-ressources,
 .path-actualites{
     .region-content{
@@ -467,6 +478,11 @@
 
 /*NEWS*/
 .page-node-type-news{
+    .field--name-field-thematics{
+        font-weight:500;
+        font-size:12px;
+        margin-bottom:5px;
+    }
     .field--name-field-news-type{
         color: $brand-secondary; 
         text-transform: uppercase;
@@ -474,6 +490,9 @@
     }
     .field--name-body{
         padding-top: 10px;
+    }
+    .field--name-field-files{
+        margin-top:20px;
     }
     .content{
         margin-top: 30px;
@@ -520,6 +539,11 @@
             }
         }
     } 
+    .field--name-field-thematics{
+        font-weight:500;
+        font-size:12px;
+        margin-bottom:5px;
+    }
     .field--name-field-document-category{
         color: $brand-secondary; 
         text-transform: uppercase;
@@ -546,6 +570,37 @@
         h2{
             margin-top: 0;
         }
+    }
+}
+
+
+/*AGENDA*/
+.agenda-navigation{
+    text-align: center;
+    padding: 30px 0 0 0;
+    .next-month a,
+    .previous-month a{
+        @include like-btn-a-2;
+    }
+    .next-month a:after,
+    .previous-month a:before{
+        font-family: 'fontawesome';
+        color: white;
+        content: '\f054';
+        font-size: 18px;
+        padding-right: 0;
+        padding-left: 10px;
+    }
+    .previous-month a:before{
+        content: '\f053';
+        padding-right: 10px;
+        padding-left: 0;
+    }
+    .agenda-subtitle{
+        color: $brand-primary; 
+        font-weight: 700;
+        font-size: 14px;
+        text-transform: uppercase;
     }
 }
 

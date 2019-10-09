@@ -134,11 +134,6 @@
           <div class="highlighted">
               {{ page.highlighted }}
               <h2>Agenda</h2>
-              <div class="agenda-subtitle">{{ calendar_navigation_data.calendar_subtitle }}</div>
-              <div class="agenda-navigation">
-                <div class="previous-month"><a href="{{ calendar_navigation_data.previous_month_link }}">{{ calendar_navigation_data.previous_month_text }}</a></div>
-                <div class="next-month"><a href="{{ calendar_navigation_data.next_month_link }}">{{ calendar_navigation_data.next_month_text }}</a></div>
-              </div>
         </div>
         {% endblock %}
       {% endif %}
@@ -150,6 +145,13 @@
 {# Main #}
 {% block main %}
   <div role="main" class="main-container {{ container }} js-quickedit-main-content">
+    <div class="row">
+          <div class="agenda-navigation col-md-12">
+            <div class="previous-month col-md-4"><a href="{{ calendar_navigation_data.previous_month_link }}">{{ calendar_navigation_data.previous_month_text }}</a></div>
+            <div class="agenda-subtitle col-md-4">{{ calendar_navigation_data.calendar_subtitle }}</div>
+            <div class="next-month col-md-4"><a href="{{ calendar_navigation_data.next_month_link }}">{{ calendar_navigation_data.next_month_text }}</a></div>
+          </div>
+    </div>
     <div class="row">
 
       {# Sidebar First #}
