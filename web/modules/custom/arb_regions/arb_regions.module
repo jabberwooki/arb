@@ -73,3 +73,15 @@ function arb_regions_theme($existing, $type, $theme, $path) {
     ],
   ];
 }
+
+/**
+ * Implements hook_form_alter().
+ */
+function arb_regions_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
+  if (in_array($form_id, array('group_regional_group_edit_form','group_national_group_edit_form'))) {
+    $current_user =  \Drupal::currentUser();
+    if ($current_user->id() != 1 && !in_array('administrator', $current_user->getRoles())) {
+      $form['actions']['delete']['#access'] = false;
+    }
+  }
+}
