@@ -1,3 +1,7 @@
+Hotfix suppression-regions-par-admins-drupal-seulement - 2019-10-11
+-------------------------------------------------------------------
+  * Utilisation du hook arb_regions__form_alter() pour empêcher les non admin drupal de supprimer une région.
+
 Plate-forme ARB v1.0 - 2019-10-02
 ---------------------------------
   * Suppression (provisoire) de la fonctionnalité Vidéos dans Ckeditor. Raison : erreur de déploiement des plugins ckeditor en recette.
