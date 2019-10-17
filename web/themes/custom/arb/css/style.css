@@ -9593,6 +9593,11 @@ body.toolbar-fixed .toolbar-oriented .toolbar-bar {
   padding: 15px;
 }
 
+.view-region-news p.news-title, .view-national-news p.news-title, .region-latest-news p.news-title,
+.block-views-blockregion-news-front-block p.news-title {
+  font-weight: 700;
+}
+
 .view-region-news p.news-date, .view-national-news p.news-date, .region-latest-news p.news-date,
 .block-views-blockregion-news-front-block p.news-date {
   font-size: 14px;
@@ -10144,6 +10149,79 @@ body.toolbar-fixed .toolbar-oriented .toolbar-bar {
   font-weight: 700;
   font-size: 14px;
   text-transform: uppercase;
+}
+
+/*THEMATIQUES*/
+.path-thematiques .main-container {
+  margin-top: -50px;
+}
+
+.path-thematiques p.thematics-name {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  margin: 0;
+  color: #1FAD00;
+  font-weight: 600;
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+.path-thematiques .thematics-breadcrumbs {
+  margin: 30px 0 0 0;
+}
+
+.path-thematiques .thematics-breadcrumbs a {
+  font-weight: bold;
+}
+
+.path-thematiques .thematics-breadcrumbs span.no-linked-term {
+  font-weight: bold;
+  color: #1FAD00;
+}
+
+.path-thematiques .view-thematics .views-field-name {
+  background: #F5F6F8;
+  padding: 30px;
+  border: 1px solid #1FAD00;
+  margin-bottom: 25px;
+}
+
+.path-thematiques .view-thematics .views-field-name a {
+  font-size: 18px;
+}
+
+.path-thematiques .view-thematics .views-field-name a:before {
+  font-family: 'fontawesome';
+  content: '\f07c';
+  font-size: 40px;
+  color: #1FAD00;
+  float: left;
+  padding-right: 18px;
+  font-weight: initial;
+  margin-top: -9px;
+}
+
+.path-thematiques .view-thematics .view-header h3 {
+  font-size: 28px;
+  font-weight: 700;
+  margin: 28px 0 28px 0;
+  position: relative;
+}
+
+.path-thematiques .view-thematics .view-header h3:after {
+  position: absolute;
+  left: 0;
+  content: "";
+  display: block;
+  margin: 0 auto;
+  width: 90px;
+  border-bottom: 5px solid #1FAD00;
+  padding-top: 5px;
 }
 
 .pre-footer {
