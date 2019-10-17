@@ -423,7 +423,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "<div class=\"wrapper-event\">\r\n<p class=\"date-event\">{{ field_event_dates_1 }} </p>\r\n<p class=\"group-event\">{{ label }} </p>\r\n<h4 class=\"title-event\">{{ title }}</h4>\r\n<p>{{ field_event_dates }} - {{ field_event_dates_1 }}</p>\r\n<div class=\"body-event\">{{ body }} </div>\r\n</div>"
+            text: "<div class=\"wrapper-event\">\r\n<p class=\"group-event\">{{ label }} </p>\r\n<h4 class=\"title-event\">{{ title }}</h4>\r\n<p>{{ field_event_dates }}</p>\r\n<div class=\"body-event\">{{ body }} </div>\r\n</div>"
             make_link: false
             path: ''
             absolute: false
