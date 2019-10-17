@@ -10103,6 +10103,49 @@ body.toolbar-fixed .toolbar-oriented .toolbar-bar {
 }
 
 /*AGENDA*/
+.path-agenda .view-content h3 {
+  border-top: 1px solid #1FAD00;
+  border-bottom: 1px solid #1FAD00;
+  padding: 15px;
+  margin-bottom: 25px;
+  display: inline-block;
+}
+
+.wrapper-event {
+  background: #F5F6F8;
+  padding: 15px;
+  border-bottom: 1px solid #1FAD00;
+  margin-bottom: 25px;
+}
+
+.wrapper-event .group-event {
+  background: #1FAD00;
+  border-radius: 20px;
+  text-transform: uppercase;
+  color: white;
+  font-weight: 800;
+  font-size: 12px;
+  padding: 2px 14px;
+  display: inline;
+  position: absolute;
+  top: -10px;
+  z-index: 100;
+  right: 5%;
+  text-align: center;
+}
+
+.wrapper-event h4 {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+.wrapper-event .date-display-range {
+  font-size: 14px;
+  font-weight: 500;
+  color: #1FAD00;
+}
+
 .agenda-navigation {
   text-align: center;
   padding: 30px 0 0 0;
