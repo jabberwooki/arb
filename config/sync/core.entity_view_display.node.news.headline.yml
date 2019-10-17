@@ -70,5 +70,6 @@ content:
 hidden:
   field_files: true
   field_image: true
+  field_thematics: true
   langcode: true
   links: true

@@ -707,7 +707,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "<div class=\"infos-files\">\r\n<div class=\"wrapper-files\">\r\n<p class=\"date-files\">{{ created }} <span>{{ label }}</span></p>\r\n<p class=\"thematics-files\">{{ field_thematics }}</p>\r\n<h3 class=\"title-files\">{{ title }}<h3>\r\n</div>\r\n</div>"
+            text: "<div class=\"infos-files\">\r\n<div class=\"wrapper-files\">\r\n<p class=\"thematics-files\">{{ field_thematics }}</p>\r\n<p class=\"date-files\">{{ created }} <span>{{ label }}</span></p>\r\n<h3 class=\"title-files\">{{ title }}<h3>\r\n</div>\r\n</div>"
             make_link: false
             path: ''
             absolute: false
