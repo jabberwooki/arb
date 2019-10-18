@@ -9,7 +9,7 @@ dependencies:
     - group.content_type.regional_group-group_node-event
     - system.menu.hamburger
   module:
-    - date_range_formatter
+    - arb_dates
     - datetime
     - datetime_range
     - group
@@ -47,6 +47,7 @@ display:
           replica: false
           query_comment: ''
           query_tags: {  }
+          contextual_filters_or: 1
       exposed_form:
         type: basic
         options:
@@ -265,18 +266,18 @@ display:
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: value
-          type: date_range_without_time
+          type: date_range_arb_agenda
           settings:
             timezone_override: ''
-            single: 'd F Y'
-            single_all_day: 'd F Y'
-            one_day: 'H:i à {H}:{i}'
-            one_month: '\d\u d à H:i \a\u {d} à {H}:{i}'
-            several_months: 'd F - {d} {F} Y'
-            several_years: 'd F Y - {d} {F} {Y}'
+            date_formats:
+              single: 'à H:i'
+              one_day: '\d\e H:i à {H}:{i}'
+              one_month: '\d\u d à H:i \a\u {d} à {H}:{i}'
+              several_months: '\d\u d F à H:i \a\u {d} {F} à {H}:{i}'
+              several_years: 'd F Y - {d} {F} {Y}'
           group_column: value
           group_columns: {  }
-          group_rows: true
+          group_rows: false
           delta_limit: 0
           delta_offset: 0
           delta_reversed: false
@@ -403,7 +404,7 @@ display:
             separator: '-'
           group_column: value
           group_columns: {  }
-          group_rows: true
+          group_rows: false
           delta_limit: 0
           delta_offset: 0
           delta_reversed: false
@@ -599,10 +600,10 @@ display:
           entity_field: gid
           plugin_id: standard
       arguments:
-        field_event_dates_end_value_year_month:
-          id: field_event_dates_end_value_year_month
+        field_event_dates_value_year_month:
+          id: field_event_dates_value_year_month
           table: node__field_event_dates
-          field: field_event_dates_end_value_year_month
+          field: field_event_dates_value_year_month
           relationship: none
           group_type: group
           admin_label: ''
@@ -613,10 +614,9 @@ display:
             title: All
           title_enable: false
           title: ''
-          default_argument_type: raw
+          default_argument_type: fixed
           default_argument_options:
-            index: 1
-            use_alias: false
+            argument: ''
           default_argument_skip_url: false
           summary_options:
             base_path: ''

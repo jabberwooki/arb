@@ -1,6 +1,7 @@
 module:
   admin_toolbar: 0
   admin_toolbar_tools: 0
+  arb_dates: 0
   arb_misc: 0
   arb_regions: 0
   arb_register: 0
@@ -52,6 +53,7 @@ module:
   media: 0
   menu_ui: 0
   node: 0
+  optional_end_date: 0
   options: 0
   page_cache: 0
   path: 0
@@ -76,6 +78,7 @@ module:
   update: 0
   user: 0
   views_bootstrap: 0
+  views_contextual_filters_or: 0
   views_ui: 0
   ds: 1
   menu_link_content: 1
