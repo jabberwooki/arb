@@ -10,6 +10,8 @@
  * Implements hook_user_login().
  */
 
+use Drupal\views\Plugin\views\field\Url;
+use Drupal\views\ViewExecutable;
 use Symfony\Component\HttpFoundation\RedirectResponse;
 
 function arb_misc_user_login($account) {
@@ -127,3 +129,18 @@ function arb_misc_form_views_exposed_form_alter(&$form, \Drupal\Core\Form\FormSt
     }
   }
 }
+
+/**
+ * Implements hook_views_pre_render().
+ */
+function arb_misc_views_pre_render(ViewExecutable $view) {
+
+}
+
+/**
+ * Implements hook_views_pre_view().
+ */
+function arb_misc_views_pre_view(ViewExecutable $view, $display_id, array &$args) {
+
+}
+

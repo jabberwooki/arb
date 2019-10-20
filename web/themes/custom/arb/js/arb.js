@@ -148,6 +148,14 @@
           $('article.editorial-page.full img').after('<div class="image-caption">' + editorialPageLegend + '</div>');
         }
       }
+
+      // Suppression des textes
+      // "Aucune actualité n'est classée dans cette thématique."
+      // "Aucun document n'est classé dans cette thématique.
+      if (window.location.pathname == '/thematiques' || window.location.pathname == '/thematiques/') {
+        $('.view-national-news').css('display', 'none');
+        $('.view-national-resources').css('display', 'none');
+      }
     }
   };
 })(jQuery);
