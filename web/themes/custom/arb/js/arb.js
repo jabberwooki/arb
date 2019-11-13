@@ -156,6 +156,23 @@
         $('.view-national-news').css('display', 'none');
         $('.view-national-resources').css('display', 'none');
       }
+
+      // Hauteur des colonnes égales dans l'Agenda.
+      if ($('.view-display-id-events_list').length) {
+        $('.view-display-id-events_list .grid.horizontal .row').each(function () {
+          var highestBox = 0;
+          $('.col .wrapper-event', this).each(function () {
+            if ($(this).height() > highestBox) {
+              highestBox = $(this).height();
+            }
+          });
+
+          var styleAttr = $('.col .wrapper-event').attr('style');
+          if (!styleAttr) {
+            $('.col .views-field-nothing .wrapper-event', this).height(highestBox);
+          }
+        });
+      }
     }
   };
 })(jQuery);
