@@ -144,3 +144,23 @@ function arb_misc_views_pre_view(ViewExecutable $view, $display_id, array &$args
 
 }
 
+/**
+ * Implements hook_editor_js_settings_alter().
+ */
+function arb_misc_editor_js_settings_alter(array &$settings) {
+  $node = \Drupal::routeMatch()->getParameter('node');
+  $current_uri = \Drupal::request()->getRequestUri();
+
+  // Si on est dans le ckeditor du formulaire de modification d'un événement, on limite le nombre de caractères.
+  if (($node && $node->getType() == 'event') || $current_uri == '/node/add/event') {
+    $settings['editor']['formats']['full_html']['editorSettings']['extraPlugins'] .= ',wordcount';
+    $settings['editor']['formats']['full_html']['editorSettings']['drupalExternalPlugins']['wordcount'] = '/libraries/ckeditor/plugins/wordcount/wordcount/plugin.js';
+
+    $settings['editor']['formats']['full_html']['editorSettings']['wordcount'] = array(
+      'showParagraphs' => FALSE,
+      'showWordCount' => FALSE,
+      'showCharCount' => TRUE,
+      'maxCharCount' => '200',
+    );
+  }
+}

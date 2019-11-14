@@ -124,6 +124,19 @@
                     "type": "zip"
                 }
             }
+        },
+
+        {
+            "type": "package",
+            "package": {
+                "name": "ckeditor-plugin/wordcount",
+                "version": "1.17.6",
+                "type": "drupal-library",
+                "dist": {
+                    "url": "https://download.ckeditor.com/wordcount/releases/wordcount_1.17.6.zip",
+                    "type": "zip"
+                }
+            }
         }
     ],
     "require": {
@@ -135,6 +148,7 @@
         "ckeditor-plugin/notification": "4.13.0",
         "ckeditor-plugin/notificationaggregator": "4.13.0",
         "ckeditor-plugin/textmatch": "4.13.0",
+        "ckeditor-plugin/wordcount": "1.17.6",
         "composer/installers": "^1.2",
         "cweagans/composer-patches": "^1.6.5",
         "drupal-composer/drupal-scaffold": "^2.5",

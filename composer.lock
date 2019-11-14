@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "fe524ab7ee813a1054a398074054b2c9",
+    "content-hash": "01c92971c5495226ada57967a3763cfc",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -286,6 +286,17 @@
             "dist": {
                 "type": "zip",
                 "url": "https://download.ckeditor.com/textmatch/releases/textmatch_4.13.0.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "type": "drupal-library"
+        },
+        {
+            "name": "ckeditor-plugin/wordcount",
+            "version": "1.17.6",
+            "dist": {
+                "type": "zip",
+                "url": "https://download.ckeditor.com/wordcount/releases/wordcount_1.17.6.zip",
                 "reference": null,
                 "shasum": null
             },
