@@ -196,6 +196,8 @@
                     {# Début bloc Inscrivez-vous #}
                     {% if not logged_in %}
                         {{ drupal_block('arb_register_block') }}
+                    {% else %}
+                        {{ drupal_block('arb_quick_access_block') }}
                     {% endif %}
                     {# Fin bloc Inscrivez-vous #}
 

@@ -1,0 +1,6 @@
+name: ARB Quick Access
+description: Bloc fournissant un accès rapide à différentes rubriques du site.
+package: ARBs
+
+type: module
+core: 8.x
