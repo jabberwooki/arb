@@ -1,0 +1,6 @@
+name: ARBs Dates
+description: Fournit un formateur de dates pour l'agende ARB.
+package: ARBs
+
+type: module
+core: 8.x

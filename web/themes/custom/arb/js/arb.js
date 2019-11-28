@@ -131,6 +131,48 @@
           $('.menu--hamburger .vieweventsevents-list').attr('href', '/agenda/' + year + month + '/');
         }
       }
+
+      // Insertion d'une légende d'image sur l'image d'un node actualité.
+      if ($('article.news.full').length) {
+        if ($('article.news.full img').attr('title')) {
+          var newsLegend = $('article.news.full img').attr('title');
+          $('article.news.full .field--name-field-image .image-caption').remove(); // pour éviter la répétition de la légende
+          $('article.news.full .field--name-field-image').append('<div class="image-caption">' + newsLegend + '</div>');
+        }
+      }
+      // Insertion d'une légende sur l'image d'un node page éditoriale.
+      if ($('article.editorial-page.full').length) {
+        if ($('article.editorial-page.full img').attr('title')) {
+          var editorialPageLegend = $('article.editorial-page.full img').attr('title');
+          $('article.editorial-page.full .image-caption').remove(); // pour éviter la répétition de la légende
+          $('article.editorial-page.full img').after('<div class="image-caption">' + editorialPageLegend + '</div>');
+        }
+      }
+
+      // Suppression des textes
+      // "Aucune actualité n'est classée dans cette thématique."
+      // "Aucun document n'est classé dans cette thématique.
+      if (window.location.pathname == '/thematiques' || window.location.pathname == '/thematiques/') {
+        $('.view-national-news').css('display', 'none');
+        $('.view-national-resources').css('display', 'none');
+      }
+
+      // Hauteur des colonnes égales dans l'Agenda.
+      if ($('.view-display-id-events_list').length) {
+        $('.view-display-id-events_list .grid.horizontal .row').each(function () {
+          var highestBox = 0;
+          $('.col .wrapper-event', this).each(function () {
+            if ($(this).height() > highestBox) {
+              highestBox = $(this).height();
+            }
+          });
+
+          var styleAttr = $('.col .wrapper-event').attr('style');
+          if (!styleAttr) {
+            $('.col .views-field-nothing .wrapper-event', this).height(highestBox);
+          }
+        });
+      }
     }
   };
 })(jQuery);

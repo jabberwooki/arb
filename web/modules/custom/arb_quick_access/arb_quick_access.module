@@ -1,0 +1,20 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: ubuntu
+ * Date: 19/12/18
+ * Time: 08:11
+ */
+
+function arb_quick_access_theme($existing, $type, $theme, $path) {
+  return [
+    'arb_quick_access__block' => [
+      'variables' => [
+          'agenda_text' => '',
+          'agenda_link' => '',
+          'thematics_text' => '',
+          'thematics_link' => '',
+      ],
+    ],
+  ];
+}
