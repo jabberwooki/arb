@@ -1,3 +1,22 @@
+Plate-forme ARB v1.1 - 2019-11-28
+---------------------------------
+  * Ajout de l'activation de arb_quick_access oublié dans le commit précédent.
+  * Création du bloc custom d'accès rapides (arb_quick_access) et positionnement de ce bloc en page d'accueil, visible des non connectés.
+  * Installation du plugin CKEDITO wordcount. Il est paramétré pour être chargé seulement dans les formulaires création et modification d'un événement.
+  * Dans l'agenda, mise à la même hauteur de tous les événement d'une même ligne.
+  * Suppression des messages 'Aucune actualité/document n'est classé dans cette thématique' à la racine des thématiques.
+  * Création du module custom arb_dates pour la gestion des dates de l'Agenda.
+  * CSS page agenda
+  * Update views event
+  * Modification de la views agenda pour affichage
+  * CSS thematiques et autres
+  * Modification views pour l'ordre du champs thematique
+  * Intégration agenda, actu et thematiques : icones de menu, titres des nouvelles pages, nav agenda, champ thematique dans les types de contenus
+  * Modif de paramétrage du module ckeditor_media_embed : dans le template d'URL, http est remplacé par https.
+  * Remise en place du module ckeditor_media_embed et ses réglages.
+  * Correction du code javascript pour afficher le copyright des images : suppression de 'undefined' lorsque le title n'est pas renseigné.
+  * Ajout du copyright d'une image (via le champ title) aux full nodes Actualité et Page éditoriale.
+
 Hotfix suppression-regions-par-admins-drupal-seulement - 2019-10-11
 -------------------------------------------------------------------
   * Utilisation du hook arb_regions__form_alter() pour empêcher les non admin drupal de supprimer une région.
