@@ -56,7 +56,7 @@ a, a:hover, a:focus {
     position: absolute;
     top: 0;
     left: -18%;
-    height: 100%;
+    /*height: 100%;*/
     z-index: 999;
     color: #fff;
     transition: all 0.3s;
@@ -177,7 +177,7 @@ a, a:hover, a:focus {
 
 /* ---------------------------------------------------
     CONTENT STYLE
------------------------------------------------------ 
+-----------------------------------------------------
 #content {
     width: 100%;
     padding: 20px;

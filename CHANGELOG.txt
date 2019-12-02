@@ -1,3 +1,7 @@
+Hotfix lien-deconnexion-invisible - 2019-12-02
+----------------------------------------------
+  * Suppression du height: 100% pour le div id=sidebar (menu hamburger) pour faire réapparaitre le lien de déconnexion.
+
 Plate-forme ARB v1.1 - 2019-11-28
 ---------------------------------
   * Ajout de l'activation de arb_quick_access oublié dans le commit précédent.
