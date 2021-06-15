@@ -248,7 +248,10 @@
         "patches": {
             "drupal/legal": {
                 "Class attribute should be an array not string": "https://www.drupal.org/files/issues/2018-10-30/legal-set-class-to-array.patch"
-            }
+            },
+			"drupal/group":{
+					"Port subgroup to d8 patch174": "https://www.drupal.org/files/issues/2018-12-10/port-subgroups-2736233-174.patch"
+			}
         }
     }
 }
